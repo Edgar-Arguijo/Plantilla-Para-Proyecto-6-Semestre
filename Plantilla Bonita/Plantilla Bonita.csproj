@@ -62,7 +62,6 @@
     <Compile Include="Alumnos.Designer.cs">
       <DependentUpon>Alumnos.cs</DependentUpon>
     </Compile>
-    <Compile Include="ConnectionProtection.cs" />
     <Compile Include="Docentes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -200,6 +199,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\lista1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Acceso_A_Datos\Acceso_A_Datos.csproj">
+      <Project>{d1736965-2380-4783-afce-027110ee260a}</Project>
+      <Name>Acceso_A_Datos</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
