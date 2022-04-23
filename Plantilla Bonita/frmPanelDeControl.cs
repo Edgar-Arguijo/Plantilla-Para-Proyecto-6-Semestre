@@ -11,11 +11,20 @@ using System.Runtime.InteropServices;
 
 namespace Plantilla_Bonita
 {
-    public partial class Form1 : Form
+    public partial class frmPanelDeControl : Form
     {
-        public Form1()
+        private ConnectionProtection _operaciones = new ConnectionProtection(Application.ExecutablePath);
+
+        private void Encriptar() {
+            if (!_operaciones.IsProtected()){
+                _operaciones.EncryptFile();
+            }
+        }
+
+        public frmPanelDeControl()
         {
             InitializeComponent();
+            Encriptar();
         }
         //Mover Forma
         //Libreia de using System.Runtime.InteropServices;
@@ -78,7 +87,6 @@ namespace Plantilla_Bonita
         private void Abrirformaenelpanel(object FormHijo)
         {
             if (this.pnlContenedor.Controls.Count > 0)
-
                 this.pnlContenedor.Controls.RemoveAt(0);
 
             Form fh = FormHijo as Form;
