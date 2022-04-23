@@ -14,5 +14,10 @@ namespace Dominio
         public void ProbarConexion() {
             obj.ProbarConexion();
         }
+
+        public string BuscarCodIngenieria(string text)
+        {
+            return obj.BuscarCodIngenieria(text);
+        }
     }
 }

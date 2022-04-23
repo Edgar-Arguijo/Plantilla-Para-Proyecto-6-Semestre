@@ -21,5 +21,16 @@ namespace Plantilla_Bonita
         {
             this.Close();
         }
+
+        private void ingenieriasBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ingenieriasBindingNavigatorSaveItem_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
