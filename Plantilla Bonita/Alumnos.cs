@@ -16,6 +16,7 @@ namespace Plantilla_Bonita
         public Alumnos()
         {
             InitializeComponent();
+            ingenieriasComboBox.Text = "";
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
