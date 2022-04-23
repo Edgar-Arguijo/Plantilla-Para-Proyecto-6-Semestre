@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plantilla Bonita", "Plantil
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acceso_A_Datos", "Acceso_A_Datos\Acceso_A_Datos.csproj", "{D1736965-2380-4783-AFCE-027110EE260A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominio", "Dominio\Dominio.csproj", "{9274CDFB-74BB-4593-BAFB-4BD44810D8F6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D1736965-2380-4783-AFCE-027110EE260A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1736965-2380-4783-AFCE-027110EE260A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1736965-2380-4783-AFCE-027110EE260A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9274CDFB-74BB-4593-BAFB-4BD44810D8F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9274CDFB-74BB-4593-BAFB-4BD44810D8F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9274CDFB-74BB-4593-BAFB-4BD44810D8F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9274CDFB-74BB-4593-BAFB-4BD44810D8F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
