@@ -74,6 +74,11 @@
     <Compile Include="Docentes.Designer.cs">
       <DependentUpon>Docentes.cs</DependentUpon>
     </Compile>
+    <Compile Include="DocentesDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DocentesDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="frmPanelDeControl.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +101,14 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>IngenieriasDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MateriasDataSet.cs">
+      <DependentUpon>MateriasDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MateriasDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MateriasDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -136,6 +149,17 @@
     <None Include="AlumnosDataSet.xss">
       <DependentUpon>AlumnosDataSet.xsd</DependentUpon>
     </None>
+    <None Include="DocentesDataSet.xsc">
+      <DependentUpon>DocentesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DocentesDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DocentesDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DocentesDataSet.xss">
+      <DependentUpon>DocentesDataSet.xsd</DependentUpon>
+    </None>
     <None Include="IngenieriasDataSet.xsc">
       <DependentUpon>IngenieriasDataSet.xsd</DependentUpon>
     </None>
@@ -146,6 +170,17 @@
     </None>
     <None Include="IngenieriasDataSet.xss">
       <DependentUpon>IngenieriasDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MateriasDataSet.xsc">
+      <DependentUpon>MateriasDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MateriasDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MateriasDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MateriasDataSet.xss">
+      <DependentUpon>MateriasDataSet.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

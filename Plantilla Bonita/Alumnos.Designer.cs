@@ -81,7 +81,6 @@ namespace Plantilla_Bonita
             this.panelAlumnos.Name = "panelAlumnos";
             this.panelAlumnos.Size = new System.Drawing.Size(1228, 558);
             this.panelAlumnos.TabIndex = 0;
-            this.panelAlumnos.Paint += new System.Windows.Forms.PaintEventHandler(this.panelAlumnos_Paint);
             // 
             // txtNombreBusqueda
             // 
