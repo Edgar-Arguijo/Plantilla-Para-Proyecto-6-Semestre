@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32407.343
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plantilla Bonita", "Plantilla Bonita\Plantilla Bonita.csproj", "{FDFB2EDB-85E6-4690-BF3B-FD9F833AAB60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acceso_A_Datos", "Acceso_A_Datos\Acceso_A_Datos.csproj", "{D1736965-2380-4783-AFCE-027110EE260A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominio", "Dominio\Dominio.csproj", "{9274CDFB-74BB-4593-BAFB-4BD44810D8F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +19,19 @@ Global
 		{FDFB2EDB-85E6-4690-BF3B-FD9F833AAB60}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDFB2EDB-85E6-4690-BF3B-FD9F833AAB60}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FDFB2EDB-85E6-4690-BF3B-FD9F833AAB60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1736965-2380-4783-AFCE-027110EE260A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1736965-2380-4783-AFCE-027110EE260A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1736965-2380-4783-AFCE-027110EE260A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1736965-2380-4783-AFCE-027110EE260A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9274CDFB-74BB-4593-BAFB-4BD44810D8F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9274CDFB-74BB-4593-BAFB-4BD44810D8F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9274CDFB-74BB-4593-BAFB-4BD44810D8F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9274CDFB-74BB-4593-BAFB-4BD44810D8F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F0079B0F-D4E8-4237-B972-E0A4A838B79B}
 	EndGlobalSection
 EndGlobal

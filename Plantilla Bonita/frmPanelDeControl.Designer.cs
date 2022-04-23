@@ -1,6 +1,6 @@
 ﻿namespace Plantilla_Bonita
 {
-    partial class Form1
+    partial class frmPanelDeControl
     {
         /// <summary>
         /// Variable del diseñador requerida.
@@ -29,25 +29,26 @@
         private void InitializeComponent()
         {
             this.MenuVertical = new System.Windows.Forms.Panel();
+            this.btnDocentes = new System.Windows.Forms.Button();
+            this.btnAlumnos = new System.Windows.Forms.Button();
+            this.btnAsistencia = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BarraTitulo = new System.Windows.Forms.Panel();
-            this.pnlContenedor = new System.Windows.Forms.Panel();
             this.btnRestaurar = new System.Windows.Forms.PictureBox();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnMaximizar = new System.Windows.Forms.PictureBox();
             this.btnSalir = new System.Windows.Forms.PictureBox();
             this.btnslider = new System.Windows.Forms.PictureBox();
-            this.btnDocentes = new System.Windows.Forms.Button();
-            this.btnAlumnos = new System.Windows.Forms.Button();
-            this.btnAsistencia = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pnlContenedor = new System.Windows.Forms.Panel();
+            this.btnIniciarSesion = new FontAwesome.Sharp.IconButton();
             this.MenuVertical.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.BarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnslider)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // MenuVertical
@@ -56,12 +57,81 @@
             this.MenuVertical.Controls.Add(this.btnDocentes);
             this.MenuVertical.Controls.Add(this.btnAlumnos);
             this.MenuVertical.Controls.Add(this.btnAsistencia);
+            this.MenuVertical.Controls.Add(this.btnIniciarSesion);
             this.MenuVertical.Controls.Add(this.pictureBox1);
             this.MenuVertical.Dock = System.Windows.Forms.DockStyle.Left;
             this.MenuVertical.Location = new System.Drawing.Point(0, 0);
             this.MenuVertical.Name = "MenuVertical";
             this.MenuVertical.Size = new System.Drawing.Size(180, 558);
             this.MenuVertical.TabIndex = 0;
+            // 
+            // btnDocentes
+            // 
+            this.btnDocentes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDocentes.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDocentes.FlatAppearance.BorderSize = 0;
+            this.btnDocentes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.btnDocentes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDocentes.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDocentes.ForeColor = System.Drawing.Color.White;
+            this.btnDocentes.Image = global::Plantilla_Bonita.Properties.Resources.docente3;
+            this.btnDocentes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDocentes.Location = new System.Drawing.Point(0, 200);
+            this.btnDocentes.Name = "btnDocentes";
+            this.btnDocentes.Size = new System.Drawing.Size(180, 45);
+            this.btnDocentes.TabIndex = 3;
+            this.btnDocentes.Text = "Docentes";
+            this.btnDocentes.UseVisualStyleBackColor = true;
+            this.btnDocentes.Click += new System.EventHandler(this.btnDocentes_Click);
+            // 
+            // btnAlumnos
+            // 
+            this.btnAlumnos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAlumnos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAlumnos.FlatAppearance.BorderSize = 0;
+            this.btnAlumnos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.btnAlumnos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAlumnos.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAlumnos.ForeColor = System.Drawing.Color.White;
+            this.btnAlumnos.Image = global::Plantilla_Bonita.Properties.Resources.clientes;
+            this.btnAlumnos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAlumnos.Location = new System.Drawing.Point(0, 155);
+            this.btnAlumnos.Name = "btnAlumnos";
+            this.btnAlumnos.Size = new System.Drawing.Size(180, 45);
+            this.btnAlumnos.TabIndex = 2;
+            this.btnAlumnos.Text = "Alumnos";
+            this.btnAlumnos.UseVisualStyleBackColor = true;
+            this.btnAlumnos.Click += new System.EventHandler(this.btnAlumnos_Click);
+            // 
+            // btnAsistencia
+            // 
+            this.btnAsistencia.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAsistencia.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAsistencia.FlatAppearance.BorderSize = 0;
+            this.btnAsistencia.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.btnAsistencia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAsistencia.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAsistencia.ForeColor = System.Drawing.Color.White;
+            this.btnAsistencia.Image = global::Plantilla_Bonita.Properties.Resources.lista1;
+            this.btnAsistencia.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAsistencia.Location = new System.Drawing.Point(0, 110);
+            this.btnAsistencia.Name = "btnAsistencia";
+            this.btnAsistencia.Size = new System.Drawing.Size(180, 45);
+            this.btnAsistencia.TabIndex = 1;
+            this.btnAsistencia.Text = "Asistencia";
+            this.btnAsistencia.UseVisualStyleBackColor = true;
+            this.btnAsistencia.Click += new System.EventHandler(this.btnAsistencia_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox1.Image = global::Plantilla_Bonita.Properties.Resources.Imagen8;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(180, 56);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // BarraTitulo
             // 
@@ -77,17 +147,6 @@
             this.BarraTitulo.Size = new System.Drawing.Size(940, 53);
             this.BarraTitulo.TabIndex = 1;
             this.BarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BarraTitulo_MouseDown);
-            // 
-            // pnlContenedor
-            // 
-            this.pnlContenedor.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlContenedor.BackColor = System.Drawing.SystemColors.Window;
-            this.pnlContenedor.Location = new System.Drawing.Point(180, 53);
-            this.pnlContenedor.Name = "pnlContenedor";
-            this.pnlContenedor.Size = new System.Drawing.Size(940, 482);
-            this.pnlContenedor.TabIndex = 2;
             // 
             // btnRestaurar
             // 
@@ -154,71 +213,39 @@
             this.btnslider.TabStop = false;
             this.btnslider.Click += new System.EventHandler(this.btnslider_Click);
             // 
-            // btnDocentes
+            // pnlContenedor
             // 
-            this.btnDocentes.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDocentes.FlatAppearance.BorderSize = 0;
-            this.btnDocentes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.btnDocentes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDocentes.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDocentes.ForeColor = System.Drawing.Color.White;
-            this.btnDocentes.Image = global::Plantilla_Bonita.Properties.Resources.docente3;
-            this.btnDocentes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDocentes.Location = new System.Drawing.Point(12, 174);
-            this.btnDocentes.Name = "btnDocentes";
-            this.btnDocentes.Size = new System.Drawing.Size(190, 45);
-            this.btnDocentes.TabIndex = 3;
-            this.btnDocentes.Text = "Docentes";
-            this.btnDocentes.UseVisualStyleBackColor = true;
-            this.btnDocentes.Click += new System.EventHandler(this.btnDocentes_Click);
+            this.pnlContenedor.BackColor = System.Drawing.SystemColors.Window;
+            this.pnlContenedor.Location = new System.Drawing.Point(180, 53);
+            this.pnlContenedor.Name = "pnlContenedor";
+            this.pnlContenedor.Size = new System.Drawing.Size(940, 482);
+            this.pnlContenedor.TabIndex = 2;
             // 
-            // btnAlumnos
+            // btnIniciarSesion
             // 
-            this.btnAlumnos.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAlumnos.FlatAppearance.BorderSize = 0;
-            this.btnAlumnos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.btnAlumnos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAlumnos.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAlumnos.ForeColor = System.Drawing.Color.White;
-            this.btnAlumnos.Image = global::Plantilla_Bonita.Properties.Resources.clientes;
-            this.btnAlumnos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAlumnos.Location = new System.Drawing.Point(3, 123);
-            this.btnAlumnos.Name = "btnAlumnos";
-            this.btnAlumnos.Size = new System.Drawing.Size(199, 45);
-            this.btnAlumnos.TabIndex = 2;
-            this.btnAlumnos.Text = "Alumnos";
-            this.btnAlumnos.UseVisualStyleBackColor = true;
-            this.btnAlumnos.Click += new System.EventHandler(this.btnAlumnos_Click);
+            this.btnIniciarSesion.AutoSize = true;
+            this.btnIniciarSesion.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnIniciarSesion.FlatAppearance.BorderSize = 0;
+            this.btnIniciarSesion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnIniciarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIniciarSesion.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIniciarSesion.ForeColor = System.Drawing.Color.White;
+            this.btnIniciarSesion.IconChar = FontAwesome.Sharp.IconChar.User;
+            this.btnIniciarSesion.IconColor = System.Drawing.Color.White;
+            this.btnIniciarSesion.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnIniciarSesion.IconSize = 30;
+            this.btnIniciarSesion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnIniciarSesion.Location = new System.Drawing.Point(0, 56);
+            this.btnIniciarSesion.Name = "btnIniciarSesion";
+            this.btnIniciarSesion.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btnIniciarSesion.Size = new System.Drawing.Size(180, 54);
+            this.btnIniciarSesion.TabIndex = 0;
+            this.btnIniciarSesion.Text = "Iniciar Sesion";
+            this.btnIniciarSesion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnIniciarSesion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnIniciarSesion.UseVisualStyleBackColor = true;
             // 
-            // btnAsistencia
-            // 
-            this.btnAsistencia.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAsistencia.FlatAppearance.BorderSize = 0;
-            this.btnAsistencia.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.btnAsistencia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAsistencia.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAsistencia.ForeColor = System.Drawing.Color.White;
-            this.btnAsistencia.Image = global::Plantilla_Bonita.Properties.Resources.lista1;
-            this.btnAsistencia.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAsistencia.Location = new System.Drawing.Point(12, 72);
-            this.btnAsistencia.Name = "btnAsistencia";
-            this.btnAsistencia.Size = new System.Drawing.Size(190, 45);
-            this.btnAsistencia.TabIndex = 1;
-            this.btnAsistencia.Text = "Asistencia";
-            this.btnAsistencia.UseVisualStyleBackColor = true;
-            this.btnAsistencia.Click += new System.EventHandler(this.btnAsistencia_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Plantilla_Bonita.Properties.Resources.Imagen8;
-            this.pictureBox1.Location = new System.Drawing.Point(4, 1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(179, 56);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // Form1
+            // frmPanelDeControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -229,18 +256,19 @@
             this.Controls.Add(this.MenuVertical);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MinimumSize = new System.Drawing.Size(680, 500);
-            this.Name = "Form1";
+            this.Name = "frmPanelDeControl";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.MenuVertical.ResumeLayout(false);
+            this.MenuVertical.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.BarraTitulo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnslider)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -259,6 +287,7 @@
         private System.Windows.Forms.Button btnAsistencia;
         private System.Windows.Forms.Button btnDocentes;
         private System.Windows.Forms.Button btnAlumnos;
+        private FontAwesome.Sharp.IconButton btnIniciarSesion;
     }
 }
 
