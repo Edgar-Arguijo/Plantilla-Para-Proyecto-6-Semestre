@@ -205,6 +205,10 @@
       <Project>{d1736965-2380-4783-afce-027110ee260a}</Project>
       <Name>Acceso_A_Datos</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Dominio\Dominio.csproj">
+      <Project>{9274cdfb-74bb-4593-bafb-4bd44810d8f6}</Project>
+      <Name>Dominio</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

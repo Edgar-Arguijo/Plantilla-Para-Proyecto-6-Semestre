@@ -6,6 +6,7 @@ using Acceso_A_Datos;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using Dominio;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
@@ -26,6 +27,8 @@ namespace Plantilla_Bonita
         {
             InitializeComponent();
             Encriptar();
+            ModeloDeUsuario obj = new ModeloDeUsuario();
+            obj.ProbarConexion();
         }
         //Mover Forma
         //Libreia de using System.Runtime.InteropServices;
