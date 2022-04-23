@@ -62,6 +62,12 @@
     <Compile Include="Alumnos.Designer.cs">
       <DependentUpon>Alumnos.cs</DependentUpon>
     </Compile>
+    <Compile Include="AlumnosDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AlumnosDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ClasesAuxiliares\Ingenieria.cs" />
     <Compile Include="Docentes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +91,11 @@
     </Compile>
     <Compile Include="Asistencias.Designer.cs">
       <DependentUpon>Asistencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IngenieriasDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IngenieriasDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -114,6 +125,28 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="AlumnosDataSet.xsc">
+      <DependentUpon>AlumnosDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AlumnosDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AlumnosDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AlumnosDataSet.xss">
+      <DependentUpon>AlumnosDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="IngenieriasDataSet.xsc">
+      <DependentUpon>IngenieriasDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="IngenieriasDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IngenieriasDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="IngenieriasDataSet.xss">
+      <DependentUpon>IngenieriasDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
