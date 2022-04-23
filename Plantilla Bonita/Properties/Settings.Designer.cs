@@ -22,5 +22,15 @@ namespace Plantilla_Bonita.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-J06FE2O;Initial Catalog=Asistencias;Integrated Security=True")]
+        public string CadenaDeConexionAplicacion {
+            get {
+                return ((string)(this["CadenaDeConexionAplicacion"]));
+            }
+        }
     }
 }
