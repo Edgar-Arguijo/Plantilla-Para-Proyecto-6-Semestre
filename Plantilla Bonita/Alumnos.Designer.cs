@@ -93,6 +93,8 @@ namespace Plantilla_Bonita
             // 
             // vista_AlumnosDataGridView
             // 
+            this.vista_AlumnosDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.vista_AlumnosDataGridView.AutoGenerateColumns = false;
             this.vista_AlumnosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.vista_AlumnosDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
