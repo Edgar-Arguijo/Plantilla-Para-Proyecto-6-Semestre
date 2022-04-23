@@ -70,7 +70,7 @@
             this.Controls.Add(this.panelAsistencia);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Asistencias";
-            this.Text = "Productos";
+            this.Text = "h";
             this.panelAsistencia.ResumeLayout(false);
             this.ResumeLayout(false);
 
