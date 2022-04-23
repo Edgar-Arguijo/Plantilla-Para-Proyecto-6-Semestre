@@ -46,7 +46,6 @@ namespace Plantilla_Bonita
             this.ingenieriasTableAdapter.Fill(this.ingenieriasDataSet.Ingenierias);
             // TODO: esta línea de código carga datos en la tabla 'ingenieriasDataSet.Ingenierias' Puede moverla o quitarla según sea necesario.
             this.ingenieriasTableAdapter.Fill(this.ingenieriasDataSet.Ingenierias);
-
         }
 
         private void ingenieriasComboBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -55,10 +54,10 @@ namespace Plantilla_Bonita
             this.vista_AlumnosTableAdapter.FillByCodIngenieria(this.alumnosDataSet.Vista_Alumnos, $"{obj.BuscarCodIngenieria(ingenieriasComboBox.Text)}");
         }
 
-        private void ingenieriasComboBox_SelectedValueChanged(object sender, EventArgs e)
+        private void txtNombreBusqueda_TextChanged(object sender, EventArgs e)
         {
-            
-
+            ModeloDeUsuario obj = new ModeloDeUsuario();
+            this.vista_AlumnosTableAdapter.SearchByName(this.alumnosDataSet.Vista_Alumnos, $"{txtNombreBusqueda.Text}");
         }
     }
 }
