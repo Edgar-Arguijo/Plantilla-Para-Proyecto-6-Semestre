@@ -31,12 +31,14 @@ namespace Plantilla_Bonita
         {
             this.panelAlumnos = new System.Windows.Forms.Panel();
             this.btnCerrar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panelAlumnos.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelAlumnos
             // 
             this.panelAlumnos.BackColor = System.Drawing.Color.White;
+            this.panelAlumnos.Controls.Add(this.button1);
             this.panelAlumnos.Controls.Add(this.btnCerrar);
             this.panelAlumnos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelAlumnos.Location = new System.Drawing.Point(0, 0);
@@ -61,6 +63,16 @@ namespace Plantilla_Bonita
             this.btnCerrar.UseVisualStyleBackColor = true;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(131, 48);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(180, 23);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Presioname We";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Alumnos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -79,5 +91,6 @@ namespace Plantilla_Bonita
 
         private System.Windows.Forms.Panel panelAlumnos;
         private System.Windows.Forms.Button btnCerrar;
+        private System.Windows.Forms.Button button1;
     }
 }
