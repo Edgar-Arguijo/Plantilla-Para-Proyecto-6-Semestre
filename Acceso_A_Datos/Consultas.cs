@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace Acceso_A_Datos
 {
-    //Hola
+    //Holafghfg
     public class Consultas : SQLConection
     {
         public void ProbarConexion() {
