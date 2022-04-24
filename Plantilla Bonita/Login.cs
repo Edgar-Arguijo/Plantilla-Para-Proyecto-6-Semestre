@@ -9,17 +9,27 @@ using System.Threading.Tasks;
 using Plantilla_Bonita.ClasesAuxiliares;
 using Dominio;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 
 namespace Plantilla_Bonita
 {
     public partial class Login : Form
     {
+        //Mover Forma
+        //Libreia de using System.Runtime.InteropServices;
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
+
+
         private TipoUsuario.NivelAutorizacion result;
         public TipoUsuario.NivelAutorizacion Result=> result;
 
         public Login()
         {
             InitializeComponent();
+            txtContraseña.UseSystemPasswordChar = true;
         }
 
         private void btnIniciarSesion_Click(object sender, EventArgs e)
@@ -43,6 +53,29 @@ namespace Plantilla_Bonita
         {
             this.result = TipoUsuario.NivelAutorizacion.Administrador;
             this.DialogResult = DialogResult.OK;
+        }
+
+        private void pnlEncabezado_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void pnlContenedor_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void btnMostrarContraseña_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtContraseña.UseSystemPasswordChar = false;
+        }
+
+        private void btnMostrarContraseña_MouseUp(object sender, MouseEventArgs e)
+        {
+            txtContraseña.UseSystemPasswordChar = true;
+
         }
     }
 }
