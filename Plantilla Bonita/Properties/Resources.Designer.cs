@@ -22,7 +22,7 @@ namespace Plantilla_Bonita.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace Plantilla_Bonita.Properties {
         ///   Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Plantilla_Bonita.Properties.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace Plantilla_Bonita.Properties {
         ///   búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -61,9 +61,45 @@ namespace Plantilla_Bonita.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Administrar.
+        /// </summary>
+        public static string Administrar {
+            get {
+                return ResourceManager.GetString("Administrar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Alumnos.
+        /// </summary>
+        public static string Alumnos {
+            get {
+                return ResourceManager.GetString("Alumnos", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Asistencias.
+        /// </summary>
+        public static string Asistencia {
+            get {
+                return ResourceManager.GetString("Asistencia", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Cerrar Sesion.
+        /// </summary>
+        public static string Cerrar_Sesion {
+            get {
+                return ResourceManager.GetString("Cerrar_Sesion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap clientes {
+        public static System.Drawing.Bitmap clientes {
             get {
                 object obj = ResourceManager.GetObject("clientes", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -73,7 +109,7 @@ namespace Plantilla_Bonita.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap compras {
+        public static System.Drawing.Bitmap compras {
             get {
                 object obj = ResourceManager.GetObject("compras", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -83,7 +119,7 @@ namespace Plantilla_Bonita.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap docente {
+        public static System.Drawing.Bitmap docente {
             get {
                 object obj = ResourceManager.GetObject("docente", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -93,7 +129,7 @@ namespace Plantilla_Bonita.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap docente1 {
+        public static System.Drawing.Bitmap docente1 {
             get {
                 object obj = ResourceManager.GetObject("docente1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -103,7 +139,7 @@ namespace Plantilla_Bonita.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap docente2 {
+        public static System.Drawing.Bitmap docente2 {
             get {
                 object obj = ResourceManager.GetObject("docente2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -113,7 +149,7 @@ namespace Plantilla_Bonita.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap docente3 {
+        public static System.Drawing.Bitmap docente3 {
             get {
                 object obj = ResourceManager.GetObject("docente3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -121,9 +157,18 @@ namespace Plantilla_Bonita.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Docentes.
+        /// </summary>
+        public static string Docentes {
+            get {
+                return ResourceManager.GetString("Docentes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icon_cerrar2 {
+        public static System.Drawing.Bitmap icon_cerrar2 {
             get {
                 object obj = ResourceManager.GetObject("icon cerrar2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -133,7 +178,7 @@ namespace Plantilla_Bonita.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icon_maximizar {
+        public static System.Drawing.Bitmap icon_maximizar {
             get {
                 object obj = ResourceManager.GetObject("icon maximizar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -143,7 +188,7 @@ namespace Plantilla_Bonita.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icon_minimizar {
+        public static System.Drawing.Bitmap icon_minimizar {
             get {
                 object obj = ResourceManager.GetObject("icon minimizar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -153,7 +198,7 @@ namespace Plantilla_Bonita.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icon_restaurar {
+        public static System.Drawing.Bitmap icon_restaurar {
             get {
                 object obj = ResourceManager.GetObject("icon restaurar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -163,7 +208,7 @@ namespace Plantilla_Bonita.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Imagen2 {
+        public static System.Drawing.Bitmap Imagen2 {
             get {
                 object obj = ResourceManager.GetObject("Imagen2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -173,7 +218,7 @@ namespace Plantilla_Bonita.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Imagen3 {
+        public static System.Drawing.Bitmap Imagen3 {
             get {
                 object obj = ResourceManager.GetObject("Imagen3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -183,7 +228,7 @@ namespace Plantilla_Bonita.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Imagen4 {
+        public static System.Drawing.Bitmap Imagen4 {
             get {
                 object obj = ResourceManager.GetObject("Imagen4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -193,7 +238,7 @@ namespace Plantilla_Bonita.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Imagen5 {
+        public static System.Drawing.Bitmap Imagen5 {
             get {
                 object obj = ResourceManager.GetObject("Imagen5", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -203,7 +248,7 @@ namespace Plantilla_Bonita.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Imagen6 {
+        public static System.Drawing.Bitmap Imagen6 {
             get {
                 object obj = ResourceManager.GetObject("Imagen6", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -213,7 +258,7 @@ namespace Plantilla_Bonita.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Imagen8 {
+        public static System.Drawing.Bitmap Imagen8 {
             get {
                 object obj = ResourceManager.GetObject("Imagen8", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -223,7 +268,7 @@ namespace Plantilla_Bonita.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Imagen9 {
+        public static System.Drawing.Bitmap Imagen9 {
             get {
                 object obj = ResourceManager.GetObject("Imagen9", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -233,7 +278,7 @@ namespace Plantilla_Bonita.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap IMO2 {
+        public static System.Drawing.Bitmap IMO2 {
             get {
                 object obj = ResourceManager.GetObject("IMO2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -241,9 +286,18 @@ namespace Plantilla_Bonita.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Iniciar Sesion.
+        /// </summary>
+        public static string Iniciar_Sesion {
+            get {
+                return ResourceManager.GetString("Iniciar_Sesion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap lista1 {
+        public static System.Drawing.Bitmap lista1 {
             get {
                 object obj = ResourceManager.GetObject("lista1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -253,7 +307,7 @@ namespace Plantilla_Bonita.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Mobile_Menu_Icon {
+        public static System.Drawing.Bitmap Mobile_Menu_Icon {
             get {
                 object obj = ResourceManager.GetObject("Mobile-Menu-Icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -263,7 +317,7 @@ namespace Plantilla_Bonita.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap producto {
+        public static System.Drawing.Bitmap producto {
             get {
                 object obj = ResourceManager.GetObject("producto", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -273,7 +327,7 @@ namespace Plantilla_Bonita.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap venta {
+        public static System.Drawing.Bitmap venta {
             get {
                 object obj = ResourceManager.GetObject("venta", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -283,7 +337,7 @@ namespace Plantilla_Bonita.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ventas {
+        public static System.Drawing.Bitmap ventas {
             get {
                 object obj = ResourceManager.GetObject("ventas", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -293,7 +347,7 @@ namespace Plantilla_Bonita.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ventas1 {
+        public static System.Drawing.Bitmap ventas1 {
             get {
                 object obj = ResourceManager.GetObject("ventas1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));

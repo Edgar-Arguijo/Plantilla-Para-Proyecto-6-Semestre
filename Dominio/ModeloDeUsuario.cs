@@ -19,5 +19,15 @@ namespace Dominio
         {
             return obj.BuscarCodIngenieria(text);
         }
+
+        public string BuscarCodMateria(string codIng, string text)
+        {
+            return obj.BuscarCodMateria(codIng, text);
+        }
+
+        public string Loggeo(string usuario, string contraseña)
+        {
+            return obj.Loggeo(usuario, contraseña);
+        }
     }
 }

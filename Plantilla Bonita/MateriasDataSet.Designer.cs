@@ -20,17 +20,17 @@ namespace Plantilla_Bonita {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("AlumnosDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("MateriasDataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class AlumnosDataSet : global::System.Data.DataSet {
+    public partial class MateriasDataSet : global::System.Data.DataSet {
         
-        private Vista_AlumnosDataTable tableVista_Alumnos;
+        private Vista_IngenieriasMateriaDataTable tableVista_IngenieriasMateria;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public AlumnosDataSet() {
+        public MateriasDataSet() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace Plantilla_Bonita {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected AlumnosDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected MateriasDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace Plantilla_Bonita {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["Vista_Alumnos"] != null)) {
-                    base.Tables.Add(new Vista_AlumnosDataTable(ds.Tables["Vista_Alumnos"]));
+                if ((ds.Tables["Vista_IngenieriasMateria"] != null)) {
+                    base.Tables.Add(new Vista_IngenieriasMateriaDataTable(ds.Tables["Vista_IngenieriasMateria"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace Plantilla_Bonita {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public Vista_AlumnosDataTable Vista_Alumnos {
+        public Vista_IngenieriasMateriaDataTable Vista_IngenieriasMateria {
             get {
-                return this.tableVista_Alumnos;
+                return this.tableVista_IngenieriasMateria;
             }
         }
         
@@ -127,7 +127,7 @@ namespace Plantilla_Bonita {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            AlumnosDataSet cln = ((AlumnosDataSet)(base.Clone()));
+            MateriasDataSet cln = ((MateriasDataSet)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace Plantilla_Bonita {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["Vista_Alumnos"] != null)) {
-                    base.Tables.Add(new Vista_AlumnosDataTable(ds.Tables["Vista_Alumnos"]));
+                if ((ds.Tables["Vista_IngenieriasMateria"] != null)) {
+                    base.Tables.Add(new Vista_IngenieriasMateriaDataTable(ds.Tables["Vista_IngenieriasMateria"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace Plantilla_Bonita {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableVista_Alumnos = ((Vista_AlumnosDataTable)(base.Tables["Vista_Alumnos"]));
+            this.tableVista_IngenieriasMateria = ((Vista_IngenieriasMateriaDataTable)(base.Tables["Vista_IngenieriasMateria"]));
             if ((initTable == true)) {
-                if ((this.tableVista_Alumnos != null)) {
-                    this.tableVista_Alumnos.InitVars();
+                if ((this.tableVista_IngenieriasMateria != null)) {
+                    this.tableVista_IngenieriasMateria.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace Plantilla_Bonita {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "AlumnosDataSet";
+            this.DataSetName = "MateriasDataSet";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/AlumnosDataSet.xsd";
+            this.Namespace = "http://tempuri.org/MateriasDataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableVista_Alumnos = new Vista_AlumnosDataTable();
-            base.Tables.Add(this.tableVista_Alumnos);
+            this.tableVista_IngenieriasMateria = new Vista_IngenieriasMateriaDataTable();
+            base.Tables.Add(this.tableVista_IngenieriasMateria);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private bool ShouldSerializeVista_Alumnos() {
+        private bool ShouldSerializeVista_IngenieriasMateria() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace Plantilla_Bonita {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            AlumnosDataSet ds = new AlumnosDataSet();
+            MateriasDataSet ds = new MateriasDataSet();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,23 +270,21 @@ namespace Plantilla_Bonita {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public delegate void Vista_AlumnosRowChangeEventHandler(object sender, Vista_AlumnosRowChangeEvent e);
+        public delegate void Vista_IngenieriasMateriaRowChangeEventHandler(object sender, Vista_IngenieriasMateriaRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class Vista_AlumnosDataTable : global::System.Data.TypedTableBase<Vista_AlumnosRow> {
+        public partial class Vista_IngenieriasMateriaDataTable : global::System.Data.TypedTableBase<Vista_IngenieriasMateriaRow> {
             
-            private global::System.Data.DataColumn columnMatricula;
-            
-            private global::System.Data.DataColumn columnNombre;
+            private global::System.Data.DataColumn columnMateria;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Vista_AlumnosDataTable() {
-                this.TableName = "Vista_Alumnos";
+            public Vista_IngenieriasMateriaDataTable() {
+                this.TableName = "Vista_IngenieriasMateria";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -294,7 +292,7 @@ namespace Plantilla_Bonita {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal Vista_AlumnosDataTable(global::System.Data.DataTable table) {
+            internal Vista_IngenieriasMateriaDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -311,24 +309,16 @@ namespace Plantilla_Bonita {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected Vista_AlumnosDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected Vista_IngenieriasMateriaDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn MatriculaColumn {
+            public global::System.Data.DataColumn MateriaColumn {
                 get {
-                    return this.columnMatricula;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn NombreColumn {
-                get {
-                    return this.columnNombre;
+                    return this.columnMateria;
                 }
             }
             
@@ -343,53 +333,45 @@ namespace Plantilla_Bonita {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Vista_AlumnosRow this[int index] {
+            public Vista_IngenieriasMateriaRow this[int index] {
                 get {
-                    return ((Vista_AlumnosRow)(this.Rows[index]));
+                    return ((Vista_IngenieriasMateriaRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event Vista_AlumnosRowChangeEventHandler Vista_AlumnosRowChanging;
+            public event Vista_IngenieriasMateriaRowChangeEventHandler Vista_IngenieriasMateriaRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event Vista_AlumnosRowChangeEventHandler Vista_AlumnosRowChanged;
+            public event Vista_IngenieriasMateriaRowChangeEventHandler Vista_IngenieriasMateriaRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event Vista_AlumnosRowChangeEventHandler Vista_AlumnosRowDeleting;
+            public event Vista_IngenieriasMateriaRowChangeEventHandler Vista_IngenieriasMateriaRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event Vista_AlumnosRowChangeEventHandler Vista_AlumnosRowDeleted;
+            public event Vista_IngenieriasMateriaRowChangeEventHandler Vista_IngenieriasMateriaRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void AddVista_AlumnosRow(Vista_AlumnosRow row) {
+            public void AddVista_IngenieriasMateriaRow(Vista_IngenieriasMateriaRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Vista_AlumnosRow AddVista_AlumnosRow(string Matricula, string Nombre) {
-                Vista_AlumnosRow rowVista_AlumnosRow = ((Vista_AlumnosRow)(this.NewRow()));
+            public Vista_IngenieriasMateriaRow AddVista_IngenieriasMateriaRow(string Materia) {
+                Vista_IngenieriasMateriaRow rowVista_IngenieriasMateriaRow = ((Vista_IngenieriasMateriaRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        Matricula,
-                        Nombre};
-                rowVista_AlumnosRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowVista_AlumnosRow);
-                return rowVista_AlumnosRow;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Vista_AlumnosRow FindByMatricula(string Matricula) {
-                return ((Vista_AlumnosRow)(this.Rows.Find(new object[] {
-                            Matricula})));
+                        Materia};
+                rowVista_IngenieriasMateriaRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowVista_IngenieriasMateriaRow);
+                return rowVista_IngenieriasMateriaRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                Vista_AlumnosDataTable cln = ((Vista_AlumnosDataTable)(base.Clone()));
+                Vista_IngenieriasMateriaDataTable cln = ((Vista_IngenieriasMateriaDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -397,55 +379,47 @@ namespace Plantilla_Bonita {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new Vista_AlumnosDataTable();
+                return new Vista_IngenieriasMateriaDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             internal void InitVars() {
-                this.columnMatricula = base.Columns["Matricula"];
-                this.columnNombre = base.Columns["Nombre"];
+                this.columnMateria = base.Columns["Materia"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             private void InitClass() {
-                this.columnMatricula = new global::System.Data.DataColumn("Matricula", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnMatricula);
-                this.columnNombre = new global::System.Data.DataColumn("Nombre", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnNombre);
-                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnMatricula}, true));
-                this.columnMatricula.AllowDBNull = false;
-                this.columnMatricula.Unique = true;
-                this.columnMatricula.MaxLength = 10;
-                this.columnNombre.MaxLength = 2147483647;
+                this.columnMateria = new global::System.Data.DataColumn("Materia", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMateria);
+                this.columnMateria.MaxLength = 2147483647;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Vista_AlumnosRow NewVista_AlumnosRow() {
-                return ((Vista_AlumnosRow)(this.NewRow()));
+            public Vista_IngenieriasMateriaRow NewVista_IngenieriasMateriaRow() {
+                return ((Vista_IngenieriasMateriaRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new Vista_AlumnosRow(builder);
+                return new Vista_IngenieriasMateriaRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(Vista_AlumnosRow);
+                return typeof(Vista_IngenieriasMateriaRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.Vista_AlumnosRowChanged != null)) {
-                    this.Vista_AlumnosRowChanged(this, new Vista_AlumnosRowChangeEvent(((Vista_AlumnosRow)(e.Row)), e.Action));
+                if ((this.Vista_IngenieriasMateriaRowChanged != null)) {
+                    this.Vista_IngenieriasMateriaRowChanged(this, new Vista_IngenieriasMateriaRowChangeEvent(((Vista_IngenieriasMateriaRow)(e.Row)), e.Action));
                 }
             }
             
@@ -453,8 +427,8 @@ namespace Plantilla_Bonita {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.Vista_AlumnosRowChanging != null)) {
-                    this.Vista_AlumnosRowChanging(this, new Vista_AlumnosRowChangeEvent(((Vista_AlumnosRow)(e.Row)), e.Action));
+                if ((this.Vista_IngenieriasMateriaRowChanging != null)) {
+                    this.Vista_IngenieriasMateriaRowChanging(this, new Vista_IngenieriasMateriaRowChangeEvent(((Vista_IngenieriasMateriaRow)(e.Row)), e.Action));
                 }
             }
             
@@ -462,8 +436,8 @@ namespace Plantilla_Bonita {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.Vista_AlumnosRowDeleted != null)) {
-                    this.Vista_AlumnosRowDeleted(this, new Vista_AlumnosRowChangeEvent(((Vista_AlumnosRow)(e.Row)), e.Action));
+                if ((this.Vista_IngenieriasMateriaRowDeleted != null)) {
+                    this.Vista_IngenieriasMateriaRowDeleted(this, new Vista_IngenieriasMateriaRowChangeEvent(((Vista_IngenieriasMateriaRow)(e.Row)), e.Action));
                 }
             }
             
@@ -471,14 +445,14 @@ namespace Plantilla_Bonita {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.Vista_AlumnosRowDeleting != null)) {
-                    this.Vista_AlumnosRowDeleting(this, new Vista_AlumnosRowChangeEvent(((Vista_AlumnosRow)(e.Row)), e.Action));
+                if ((this.Vista_IngenieriasMateriaRowDeleting != null)) {
+                    this.Vista_IngenieriasMateriaRowDeleting(this, new Vista_IngenieriasMateriaRowChangeEvent(((Vista_IngenieriasMateriaRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void RemoveVista_AlumnosRow(Vista_AlumnosRow row) {
+            public void RemoveVista_IngenieriasMateriaRow(Vista_IngenieriasMateriaRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -487,7 +461,7 @@ namespace Plantilla_Bonita {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                AlumnosDataSet ds = new AlumnosDataSet();
+                MateriasDataSet ds = new MateriasDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -505,7 +479,7 @@ namespace Plantilla_Bonita {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "Vista_AlumnosDataTable";
+                attribute2.FixedValue = "Vista_IngenieriasMateriaDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -549,54 +523,44 @@ namespace Plantilla_Bonita {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class Vista_AlumnosRow : global::System.Data.DataRow {
+        public partial class Vista_IngenieriasMateriaRow : global::System.Data.DataRow {
             
-            private Vista_AlumnosDataTable tableVista_Alumnos;
+            private Vista_IngenieriasMateriaDataTable tableVista_IngenieriasMateria;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal Vista_AlumnosRow(global::System.Data.DataRowBuilder rb) : 
+            internal Vista_IngenieriasMateriaRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableVista_Alumnos = ((Vista_AlumnosDataTable)(this.Table));
+                this.tableVista_IngenieriasMateria = ((Vista_IngenieriasMateriaDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Matricula {
-                get {
-                    return ((string)(this[this.tableVista_Alumnos.MatriculaColumn]));
-                }
-                set {
-                    this[this.tableVista_Alumnos.MatriculaColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Nombre {
+            public string Materia {
                 get {
                     try {
-                        return ((string)(this[this.tableVista_Alumnos.NombreColumn]));
+                        return ((string)(this[this.tableVista_IngenieriasMateria.MateriaColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Nombre\' de la tabla \'Vista_Alumnos\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Materia\' de la tabla \'Vista_IngenieriasMateria\' es DBNull" +
+                                ".", e);
                     }
                 }
                 set {
-                    this[this.tableVista_Alumnos.NombreColumn] = value;
+                    this[this.tableVista_IngenieriasMateria.MateriaColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsNombreNull() {
-                return this.IsNull(this.tableVista_Alumnos.NombreColumn);
+            public bool IsMateriaNull() {
+                return this.IsNull(this.tableVista_IngenieriasMateria.MateriaColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetNombreNull() {
-                this[this.tableVista_Alumnos.NombreColumn] = global::System.Convert.DBNull;
+            public void SetMateriaNull() {
+                this[this.tableVista_IngenieriasMateria.MateriaColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -604,22 +568,22 @@ namespace Plantilla_Bonita {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public class Vista_AlumnosRowChangeEvent : global::System.EventArgs {
+        public class Vista_IngenieriasMateriaRowChangeEvent : global::System.EventArgs {
             
-            private Vista_AlumnosRow eventRow;
+            private Vista_IngenieriasMateriaRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Vista_AlumnosRowChangeEvent(Vista_AlumnosRow row, global::System.Data.DataRowAction action) {
+            public Vista_IngenieriasMateriaRowChangeEvent(Vista_IngenieriasMateriaRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Vista_AlumnosRow Row {
+            public Vista_IngenieriasMateriaRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -635,7 +599,7 @@ namespace Plantilla_Bonita {
         }
     }
 }
-namespace Plantilla_Bonita.AlumnosDataSetTableAdapters {
+namespace Plantilla_Bonita.MateriasDataSetTableAdapters {
     
     
     /// <summary>
@@ -647,7 +611,7 @@ namespace Plantilla_Bonita.AlumnosDataSetTableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class Vista_AlumnosTableAdapter : global::System.ComponentModel.Component {
+    public partial class Vista_IngenieriasMateriaTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -661,7 +625,7 @@ namespace Plantilla_Bonita.AlumnosDataSetTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public Vista_AlumnosTableAdapter() {
+        public Vista_IngenieriasMateriaTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -758,9 +722,8 @@ namespace Plantilla_Bonita.AlumnosDataSetTableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "Vista_Alumnos";
-            tableMapping.ColumnMappings.Add("Matricula", "Matricula");
-            tableMapping.ColumnMappings.Add("Nombre", "Nombre");
+            tableMapping.DataSetTable = "Vista_IngenieriasMateria";
+            tableMapping.ColumnMappings.Add("Materia", "Materia");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -768,37 +731,31 @@ namespace Plantilla_Bonita.AlumnosDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = "Data Source=DESKTOP-J06FE2O;Initial Catalog=Asistencias;Integrated Security=True";
+            this._connection.ConnectionString = global::Plantilla_Bonita.Properties.Settings.Default.CadenaDeConexionAplicacion;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[3];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT Matricula, Nombre FROM dbo.Vista_Alumnos";
+            this._commandCollection[0].CommandText = "SELECT Materia FROM dbo.Vista_IngenieriasMateria";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = "SELECT Matricula, Nombre FROM dbo.Vista_Alumnos\r\nWhere codIngenieria = @codIngeni" +
-                "eria";
+            this._commandCollection[1].CommandText = "SELECT Materia FROM dbo.Vista_IngenieriasMateria Where Ingeniería = @Ingenieria A" +
+                "nd Semestre =@Semestre";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@codIngenieria", global::System.Data.SqlDbType.VarChar, 20, global::System.Data.ParameterDirection.Input, 0, 0, "codIngenieria", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
-            this._commandCollection[2].Connection = this.Connection;
-            this._commandCollection[2].CommandText = "SELECT        Matricula, Nombre\r\nFROM          Vista_Alumnos\r\nWHERE        (Nombr" +
-                "e LIKE @nombre + \'%\')\r\nAND             codIngenieria = @codIngenieria";
-            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@nombre", global::System.Data.SqlDbType.VarChar, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, "Nombre", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@codIngenieria", global::System.Data.SqlDbType.VarChar, 20, global::System.Data.ParameterDirection.Input, 0, 0, "codIngenieria", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Ingenieria", global::System.Data.SqlDbType.VarChar, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, "Ingeniería", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Semestre", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "Semestre", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(AlumnosDataSet.Vista_AlumnosDataTable dataTable) {
+        public virtual int Fill(MateriasDataSet.Vista_IngenieriasMateriaDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -811,9 +768,9 @@ namespace Plantilla_Bonita.AlumnosDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual AlumnosDataSet.Vista_AlumnosDataTable GetData() {
+        public virtual MateriasDataSet.Vista_IngenieriasMateriaDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            AlumnosDataSet.Vista_AlumnosDataTable dataTable = new AlumnosDataSet.Vista_AlumnosDataTable();
+            MateriasDataSet.Vista_IngenieriasMateriaDataTable dataTable = new MateriasDataSet.Vista_IngenieriasMateriaDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -822,84 +779,25 @@ namespace Plantilla_Bonita.AlumnosDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
-        public virtual int FillByCodIngenieria(AlumnosDataSet.Vista_AlumnosDataTable dataTable, string codIngenieria) {
+        public virtual int FillByIngenieria(MateriasDataSet.Vista_IngenieriasMateriaDataTable dataTable, string Ingenieria, global::System.Nullable<int> Semestre) {
             this.Adapter.SelectCommand = this.CommandCollection[1];
-            if ((codIngenieria == null)) {
+            if ((Ingenieria == null)) {
                 this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(codIngenieria));
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(Ingenieria));
+            }
+            if ((Semestre.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Semestre.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
             }
             int returnValue = this.Adapter.Fill(dataTable);
             return returnValue;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual AlumnosDataSet.Vista_AlumnosDataTable GetDataBy(string codIngenieria) {
-            this.Adapter.SelectCommand = this.CommandCollection[1];
-            if ((codIngenieria == null)) {
-                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(codIngenieria));
-            }
-            AlumnosDataSet.Vista_AlumnosDataTable dataTable = new AlumnosDataSet.Vista_AlumnosDataTable();
-            this.Adapter.Fill(dataTable);
-            return dataTable;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
-        public virtual int SearchByNameAndCareer(AlumnosDataSet.Vista_AlumnosDataTable dataTable, string nombre, string codIngenieria) {
-            this.Adapter.SelectCommand = this.CommandCollection[2];
-            if ((nombre == null)) {
-                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(nombre));
-            }
-            if ((codIngenieria == null)) {
-                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(codIngenieria));
-            }
-            if ((this.ClearBeforeFill == true)) {
-                dataTable.Clear();
-            }
-            int returnValue = this.Adapter.Fill(dataTable);
-            return returnValue;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual AlumnosDataSet.Vista_AlumnosDataTable GetDataBy1(string nombre, string codIngenieria) {
-            this.Adapter.SelectCommand = this.CommandCollection[2];
-            if ((nombre == null)) {
-                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(nombre));
-            }
-            if ((codIngenieria == null)) {
-                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(codIngenieria));
-            }
-            AlumnosDataSet.Vista_AlumnosDataTable dataTable = new AlumnosDataSet.Vista_AlumnosDataTable();
-            this.Adapter.Fill(dataTable);
-            return dataTable;
         }
     }
     
@@ -971,7 +869,7 @@ namespace Plantilla_Bonita.AlumnosDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateUpdatedRows(AlumnosDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(MateriasDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -981,7 +879,7 @@ namespace Plantilla_Bonita.AlumnosDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateInsertedRows(AlumnosDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(MateriasDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -991,7 +889,7 @@ namespace Plantilla_Bonita.AlumnosDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateDeletedRows(AlumnosDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(MateriasDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             return result;
         }
@@ -1025,7 +923,7 @@ namespace Plantilla_Bonita.AlumnosDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public virtual int UpdateAll(AlumnosDataSet dataSet) {
+        public virtual int UpdateAll(MateriasDataSet dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }

@@ -13,6 +13,14 @@ namespace Plantilla_Bonita
 {
     public partial class Alumnos : Form
     {
+        enum Filtros
+        {
+            Carrera,
+            CarreraYBusqueda
+        }
+
+        private Filtros filtros = Filtros.Carrera;
+
         public Alumnos()
         {
             InitializeComponent();
@@ -24,19 +32,31 @@ namespace Plantilla_Bonita
             this.Close();
         }
 
-        private void ingenieriasBindingSource_CurrentChanged(object sender, EventArgs e)
-        {
-
+        private Filtros ComprobarCampos() {
+            if (txtNombreBusqueda.Text != "")
+                return Filtros.CarreraYBusqueda;
+            else
+                return Filtros.Carrera;
         }
 
-        private void ingenieriasBindingNavigator_RefreshItems(object sender, EventArgs e)
-        {
+        private void RellenarTabla() {
+            ModeloDeUsuario obj = new ModeloDeUsuario();
+            string carr = obj.BuscarCodIngenieria(ingenieriasComboBox.Text);
 
-        }
+            switch (ComprobarCampos())
+            {
+                case Filtros.Carrera:
+                    this.vista_AlumnosTableAdapter.FillByCodIngenieria(this.alumnosDataSet.Vista_Alumnos, $"{carr}");
+                    break;
 
-        private void panelAlumnos_Paint(object sender, PaintEventArgs e)
-        {
+                case Filtros.CarreraYBusqueda:
+                    this.vista_AlumnosTableAdapter.SearchByNameAndCareer(this.alumnosDataSet.Vista_Alumnos, $"{txtNombreBusqueda.Text}", $"{carr}");
+                    break;
 
+                default:
+                    this.vista_AlumnosTableAdapter.FillByCodIngenieria(this.alumnosDataSet.Vista_Alumnos, $"{carr}");
+                    break;
+            }
         }
 
         private void Alumnos_Load(object sender, EventArgs e)
@@ -51,14 +71,12 @@ namespace Plantilla_Bonita
 
         private void ingenieriasComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ModeloDeUsuario obj = new ModeloDeUsuario();
-            this.vista_AlumnosTableAdapter.FillByCodIngenieria(this.alumnosDataSet.Vista_Alumnos, $"{obj.BuscarCodIngenieria(ingenieriasComboBox.Text)}");
+            RellenarTabla();
         }
 
         private void txtNombreBusqueda_TextChanged(object sender, EventArgs e)
         {
-            ModeloDeUsuario obj = new ModeloDeUsuario();
-            this.vista_AlumnosTableAdapter.SearchByName(this.alumnosDataSet.Vista_Alumnos, $"{txtNombreBusqueda.Text}");
+            RellenarTabla();
         }
     }
 }
