@@ -32,6 +32,7 @@
             this.btnDocentes = new System.Windows.Forms.Button();
             this.btnAlumnos = new System.Windows.Forms.Button();
             this.btnAsistencia = new System.Windows.Forms.Button();
+            this.btnIniciarSesion = new FontAwesome.Sharp.IconButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BarraTitulo = new System.Windows.Forms.Panel();
             this.btnRestaurar = new System.Windows.Forms.PictureBox();
@@ -40,7 +41,6 @@
             this.btnSalir = new System.Windows.Forms.PictureBox();
             this.btnslider = new System.Windows.Forms.PictureBox();
             this.pnlContenedor = new System.Windows.Forms.Panel();
-            this.btnIniciarSesion = new FontAwesome.Sharp.IconButton();
             this.MenuVertical.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.BarraTitulo.SuspendLayout();
@@ -62,7 +62,7 @@
             this.MenuVertical.Dock = System.Windows.Forms.DockStyle.Left;
             this.MenuVertical.Location = new System.Drawing.Point(0, 0);
             this.MenuVertical.Name = "MenuVertical";
-            this.MenuVertical.Size = new System.Drawing.Size(180, 558);
+            this.MenuVertical.Size = new System.Drawing.Size(180, 600);
             this.MenuVertical.TabIndex = 0;
             // 
             // btnDocentes
@@ -121,6 +121,30 @@
             this.btnAsistencia.Text = "Asistencia";
             this.btnAsistencia.UseVisualStyleBackColor = true;
             this.btnAsistencia.Click += new System.EventHandler(this.btnAsistencia_Click);
+            // 
+            // btnIniciarSesion
+            // 
+            this.btnIniciarSesion.AutoSize = true;
+            this.btnIniciarSesion.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnIniciarSesion.FlatAppearance.BorderSize = 0;
+            this.btnIniciarSesion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnIniciarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIniciarSesion.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIniciarSesion.ForeColor = System.Drawing.Color.White;
+            this.btnIniciarSesion.IconChar = FontAwesome.Sharp.IconChar.User;
+            this.btnIniciarSesion.IconColor = System.Drawing.Color.White;
+            this.btnIniciarSesion.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnIniciarSesion.IconSize = 30;
+            this.btnIniciarSesion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnIniciarSesion.Location = new System.Drawing.Point(0, 56);
+            this.btnIniciarSesion.Name = "btnIniciarSesion";
+            this.btnIniciarSesion.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btnIniciarSesion.Size = new System.Drawing.Size(180, 54);
+            this.btnIniciarSesion.TabIndex = 0;
+            this.btnIniciarSesion.Text = "Iniciar Sesion";
+            this.btnIniciarSesion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnIniciarSesion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnIniciarSesion.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
@@ -215,47 +239,26 @@
             // 
             // pnlContenedor
             // 
+            this.pnlContenedor.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlContenedor.BackColor = System.Drawing.SystemColors.Window;
             this.pnlContenedor.Location = new System.Drawing.Point(180, 53);
             this.pnlContenedor.Name = "pnlContenedor";
-            this.pnlContenedor.Size = new System.Drawing.Size(940, 482);
+            this.pnlContenedor.Size = new System.Drawing.Size(940, 524);
             this.pnlContenedor.TabIndex = 2;
-            // 
-            // btnIniciarSesion
-            // 
-            this.btnIniciarSesion.AutoSize = true;
-            this.btnIniciarSesion.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnIniciarSesion.FlatAppearance.BorderSize = 0;
-            this.btnIniciarSesion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
-            this.btnIniciarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIniciarSesion.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIniciarSesion.ForeColor = System.Drawing.Color.White;
-            this.btnIniciarSesion.IconChar = FontAwesome.Sharp.IconChar.User;
-            this.btnIniciarSesion.IconColor = System.Drawing.Color.White;
-            this.btnIniciarSesion.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnIniciarSesion.IconSize = 30;
-            this.btnIniciarSesion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnIniciarSesion.Location = new System.Drawing.Point(0, 56);
-            this.btnIniciarSesion.Name = "btnIniciarSesion";
-            this.btnIniciarSesion.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnIniciarSesion.Size = new System.Drawing.Size(180, 54);
-            this.btnIniciarSesion.TabIndex = 0;
-            this.btnIniciarSesion.Text = "Iniciar Sesion";
-            this.btnIniciarSesion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnIniciarSesion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnIniciarSesion.UseVisualStyleBackColor = true;
             // 
             // frmPanelDeControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1120, 558);
+            this.ClientSize = new System.Drawing.Size(1120, 600);
             this.Controls.Add(this.pnlContenedor);
             this.Controls.Add(this.BarraTitulo);
             this.Controls.Add(this.MenuVertical);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MinimumSize = new System.Drawing.Size(680, 500);
+            this.MinimumSize = new System.Drawing.Size(780, 500);
             this.Name = "frmPanelDeControl";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
