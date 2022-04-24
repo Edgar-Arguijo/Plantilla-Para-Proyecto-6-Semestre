@@ -41,12 +41,26 @@ namespace Plantilla_Bonita
         {
             if (MenuVertical.Width==180)
             {
-                btnIniciarSesion.ForeColor = Color.Transparent;
+                btnIniciarSesion.Text = "";
+                btnAsistencia.Text = "";
+                btnAlumnos.Text = "";
+                btnDocentes.Text = "";
+                btnCerrarSesion.Text = "";
+                btnAdministrar.Text = "";
+
+                pnlContenedorSubMenu1.Visible = false;
 
                 MenuVertical.Width = 54;
             }
             else
             {
+                btnIniciarSesion.Text = Properties.Resources.Iniciar_Sesion;
+                btnAsistencia.Text = Properties.Resources.Asistencia;
+                btnAlumnos.Text = Properties.Resources.Alumnos;
+                btnDocentes.Text = Properties.Resources.Docentes;
+                btnCerrarSesion.Text = Properties.Resources.Cerrar_Sesion;
+                btnAdministrar.Text = Properties.Resources.Administrar;
+
                 MenuVertical.Width = 180;
             }
         }
@@ -189,6 +203,28 @@ namespace Plantilla_Bonita
             Docentes fm = new Docentes();
             fm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
             Abrirformaenelpanel(fm);
+        }
+
+        private void btnIniciarSesion_Click(object sender, EventArgs e)
+        {
+            btnCerrarSesion.Visible = true;
+        }
+
+        private void btnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            btnCerrarSesion.Visible = false;
+        }
+
+        private void btnAdministrar_Click(object sender, EventArgs e)
+        {
+            if (pnlContenedorSubMenu1.Visible == false)
+            {
+                pnlContenedorSubMenu1.Visible = true;
+            }
+            else
+            {
+                pnlContenedorSubMenu1.Visible = false;
+            }
         }
 
         private void MostrarFormLogoAlCerrarForms(object sender, FormClosedEventArgs e)
