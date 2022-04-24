@@ -9,6 +9,7 @@ using System.Windows.Forms;
 
 namespace Acceso_A_Datos
 {
+    //Hola
     public class Consultas : SQLConection
     {
         public void ProbarConexion() {
