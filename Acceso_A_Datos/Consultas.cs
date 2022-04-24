@@ -41,5 +41,32 @@ namespace Acceso_A_Datos
 
             return null;
         }
+
+        public string BuscarCodMateria(string codIng, string descripcion)
+        {
+            using (SqlConnection conexion = getConnection())
+            {
+                conexion.Open();
+                using (SqlCommand cmd = new SqlCommand("Select Cod_Materia From View_MateriasIngenieria Where Cod_Ing = @codIng and Descripcion = @descripcion", conexion))
+                {
+                    try
+                    {
+                        cmd.Connection = conexion;
+                        cmd.CommandType = CommandType.Text;
+                        cmd.Parameters.AddWithValue("@codIng", codIng);
+                        cmd.Parameters.AddWithValue("@descripcion", descripcion);
+                        return Convert.ToString(cmd.ExecuteScalar());
+                    }
+                    catch (Exception e)
+                    {
+                        Console.WriteLine(e.Message);
+                    }
+                }
+            }
+
+            return null;
+
+            throw new NotImplementedException();
+        }
     }
 }
