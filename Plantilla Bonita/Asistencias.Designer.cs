@@ -613,8 +613,7 @@
             this.Controls.Add(this.panelAsistencia);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Asistencias";
-            this.Text = "Productos";
-            this.Load += new System.EventHandler(this.Asistencias_Load);
+
             this.panelAsistencia.ResumeLayout(false);
             this.panelAsistencia.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnBuscar)).EndInit();
