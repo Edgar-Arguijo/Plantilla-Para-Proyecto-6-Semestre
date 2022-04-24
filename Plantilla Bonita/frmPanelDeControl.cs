@@ -10,13 +10,15 @@ using Dominio;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using Plantilla_Bonita.ClasesAuxiliares;
 
 namespace Plantilla_Bonita
 {
     public partial class frmPanelDeControl : Form
     {
         private ConnectionProtection _operaciones = new ConnectionProtection(Application.ExecutablePath);
-
+        private TipoUsuario.NivelAutorizacion permisos = TipoUsuario.NivelAutorizacion.Invitado;
+            
         private void Encriptar() {
             if (!_operaciones.IsProtected()){
                 _operaciones.EncryptFile();
@@ -26,6 +28,7 @@ namespace Plantilla_Bonita
         public frmPanelDeControl()
         {
             InitializeComponent();
+            ActualizarControles(this.permisos);
             Encriptar();
             ModeloDeUsuario obj = new ModeloDeUsuario();
             obj.ProbarConexion();
@@ -41,10 +44,26 @@ namespace Plantilla_Bonita
         {
             if (MenuVertical.Width==180)
             {
+                btnIniciarSesion.Text = "";
+                btnAsistencia.Text = "";
+                btnAlumnos.Text = "";
+                btnDocentes.Text = "";
+                btnCerrarSesion.Text = "";
+                btnAdministrar.Text = "";
+
+                pnlContenedorSubMenu1.Visible = false;
+
                 MenuVertical.Width = 54;
             }
             else
             {
+                btnIniciarSesion.Text = Properties.Resources.Iniciar_Sesion;
+                btnAsistencia.Text = Properties.Resources.Asistencia;
+                btnAlumnos.Text = Properties.Resources.Alumnos;
+                btnDocentes.Text = Properties.Resources.Docentes;
+                btnCerrarSesion.Text = Properties.Resources.Cerrar_Sesion;
+                btnAdministrar.Text = Properties.Resources.Administrar;
+
                 MenuVertical.Width = 180;
             }
         }
@@ -167,11 +186,110 @@ namespace Plantilla_Bonita
             Abrirformaenelpanel(fm);
         }
 
+        private void btnAlumnos_Click_1(object sender, EventArgs e)
+        {
+            Alumnos fm = new Alumnos();
+            fm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
+            Abrirformaenelpanel(fm);
+        }
+
         private void btnDocentes_Click(object sender, EventArgs e)
         {
             Docentes fm = new Docentes();
             fm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
             Abrirformaenelpanel(fm);
+        }
+
+        private void btnIniciarSesion_Click(object sender, EventArgs e)
+        {
+            using (Login fm = new Login())
+            {
+                fm.ShowDialog();
+
+                if (fm.DialogResult == DialogResult.OK)
+                {
+                    this.permisos = fm.Result;
+                    fm.Close();
+                }
+            }
+
+            ActualizarControles(this.permisos);
+            btnCerrarSesion.Visible = true;
+            btnIniciarSesion.Visible = false;
+        }
+
+        private void ActualizarControles(TipoUsuario.NivelAutorizacion permisos)
+        {
+            switch (permisos)
+            {
+                case TipoUsuario.NivelAutorizacion.Administrador:
+                    ConfigurarN_Admin();
+                    break;
+                case TipoUsuario.NivelAutorizacion.PersonalAdministrativo:
+                    ConfigurarN_Personal();
+                    break;
+                case TipoUsuario.NivelAutorizacion.Usuario:
+                    ConfigurarN_Usuario();
+                    break;
+
+                case TipoUsuario.NivelAutorizacion.Invitado:
+                    ConfigurarN_Invitado();
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        private void ConfigurarN_Invitado()
+        {
+            btnAsistencia.Visible = false;
+            btnAlumnos.Visible = false;
+            btnDocentes.Visible = false;
+            pnlSubMenu1.Visible = false;
+        }
+
+        private void ConfigurarN_Usuario()
+        {
+            btnAsistencia.Visible = true;
+            btnAlumnos.Visible = true;
+            btnDocentes.Visible = true;
+            pnlSubMenu1.Visible = false;
+        }
+
+        private void ConfigurarN_Personal()
+        {
+            btnAsistencia.Visible = true;
+            btnAlumnos.Visible = true;
+            btnDocentes.Visible = true;
+            pnlSubMenu1.Visible = false;
+        }
+
+        private void ConfigurarN_Admin()
+        {
+            btnAsistencia.Visible = true;
+            btnAlumnos.Visible = true;
+            btnDocentes.Visible = true;
+            pnlSubMenu1.Visible = true;
+        }
+
+        private void btnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            this.permisos = TipoUsuario.NivelAutorizacion.Usuario;
+            ActualizarControles(this.permisos);
+            btnIniciarSesion.Visible = true;
+            btnCerrarSesion.Visible = false;
+        }
+
+        private void btnAdministrar_Click(object sender, EventArgs e)
+        {
+            if (pnlContenedorSubMenu1.Visible == false)
+            {
+                pnlContenedorSubMenu1.Visible = true;
+            }
+            else
+            {
+                pnlContenedorSubMenu1.Visible = false;
+            }
         }
 
         private void MostrarFormLogoAlCerrarForms(object sender, FormClosedEventArgs e)
