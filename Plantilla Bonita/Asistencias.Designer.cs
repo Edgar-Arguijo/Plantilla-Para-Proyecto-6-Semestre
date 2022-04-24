@@ -33,6 +33,14 @@
             System.Windows.Forms.Label materiaLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Asistencias));
             this.panelAsistencia = new System.Windows.Forms.Panel();
+            this.listaAsistenciasDataGridView = new System.Windows.Forms.DataGridView();
+            this.listaAsistenciasBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.asistenciasDataSet = new Plantilla_Bonita.AsistenciasDataSet();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblSemestre = new System.Windows.Forms.Label();
+            this.dtPickerFin = new System.Windows.Forms.DateTimePicker();
+            this.dtPickerInicio = new System.Windows.Forms.DateTimePicker();
             this.cboSemestre = new System.Windows.Forms.ComboBox();
             this.materiaComboBox = new System.Windows.Forms.ComboBox();
             this.vista_IngenieriasMateriaBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -62,14 +70,29 @@
             this.ingenieriaToolStripLabel = new System.Windows.Forms.ToolStripLabel();
             this.ingenieriaToolStripTextBox = new System.Windows.Forms.ToolStripTextBox();
             this.fillByIngenieriaToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.lblSemestre = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.listaAsistenciasTableAdapter = new Plantilla_Bonita.AsistenciasDataSetTableAdapters.ListaAsistenciasTableAdapter();
+            this.tableAdapterManager2 = new Plantilla_Bonita.AsistenciasDataSetTableAdapters.TableAdapterManager();
+            this.fillToolStrip = new System.Windows.Forms.ToolStrip();
+            this.codMateriaToolStripLabel = new System.Windows.Forms.ToolStripLabel();
+            this.codMateriaToolStripTextBox = new System.Windows.Forms.ToolStripTextBox();
+            this.codIngenieriaToolStripLabel = new System.Windows.Forms.ToolStripLabel();
+            this.codIngenieriaToolStripTextBox = new System.Windows.Forms.ToolStripTextBox();
+            this.inicioToolStripLabel = new System.Windows.Forms.ToolStripLabel();
+            this.inicioToolStripTextBox = new System.Windows.Forms.ToolStripTextBox();
+            this.finToolStripLabel = new System.Windows.Forms.ToolStripLabel();
+            this.finToolStripTextBox = new System.Windows.Forms.ToolStripTextBox();
+            this.cantidadClasesToolStripLabel = new System.Windows.Forms.ToolStripLabel();
+            this.cantidadClasesToolStripTextBox = new System.Windows.Forms.ToolStripTextBox();
+            this.fillToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             descripcionLabel = new System.Windows.Forms.Label();
             materiaLabel = new System.Windows.Forms.Label();
             this.panelAsistencia.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.listaAsistenciasDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listaAsistenciasBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asistenciasDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vista_IngenieriasMateriaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.materiasDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ingenieriasBindingSource)).BeginInit();
@@ -77,6 +100,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ingenieriasBindingNavigator)).BeginInit();
             this.ingenieriasBindingNavigator.SuspendLayout();
             this.fillByIngenieriaToolStrip.SuspendLayout();
+            this.fillToolStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // descripcionLabel
@@ -100,11 +124,12 @@
             // panelAsistencia
             // 
             this.panelAsistencia.BackColor = System.Drawing.Color.White;
+            this.panelAsistencia.Controls.Add(this.listaAsistenciasDataGridView);
             this.panelAsistencia.Controls.Add(this.label2);
             this.panelAsistencia.Controls.Add(this.label1);
             this.panelAsistencia.Controls.Add(this.lblSemestre);
-            this.panelAsistencia.Controls.Add(this.dateTimePicker2);
-            this.panelAsistencia.Controls.Add(this.dateTimePicker1);
+            this.panelAsistencia.Controls.Add(this.dtPickerFin);
+            this.panelAsistencia.Controls.Add(this.dtPickerInicio);
             this.panelAsistencia.Controls.Add(this.cboSemestre);
             this.panelAsistencia.Controls.Add(materiaLabel);
             this.panelAsistencia.Controls.Add(this.materiaComboBox);
@@ -114,8 +139,73 @@
             this.panelAsistencia.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelAsistencia.Location = new System.Drawing.Point(0, 0);
             this.panelAsistencia.Name = "panelAsistencia";
-            this.panelAsistencia.Size = new System.Drawing.Size(987, 558);
+            this.panelAsistencia.Size = new System.Drawing.Size(996, 558);
             this.panelAsistencia.TabIndex = 4;
+            // 
+            // listaAsistenciasDataGridView
+            // 
+            this.listaAsistenciasDataGridView.AutoGenerateColumns = false;
+            this.listaAsistenciasDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.listaAsistenciasDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3});
+            this.listaAsistenciasDataGridView.DataSource = this.listaAsistenciasBindingSource;
+            this.listaAsistenciasDataGridView.Location = new System.Drawing.Point(33, 301);
+            this.listaAsistenciasDataGridView.Name = "listaAsistenciasDataGridView";
+            this.listaAsistenciasDataGridView.Size = new System.Drawing.Size(750, 220);
+            this.listaAsistenciasDataGridView.TabIndex = 13;
+            // 
+            // listaAsistenciasBindingSource
+            // 
+            this.listaAsistenciasBindingSource.DataMember = "ListaAsistencias";
+            this.listaAsistenciasBindingSource.DataSource = this.asistenciasDataSet;
+            // 
+            // asistenciasDataSet
+            // 
+            this.asistenciasDataSet.DataSetName = "AsistenciasDataSet";
+            this.asistenciasDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(693, 58);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(21, 13);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "Fin";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(433, 58);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(32, 13);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Inicio";
+            // 
+            // lblSemestre
+            // 
+            this.lblSemestre.AutoSize = true;
+            this.lblSemestre.Location = new System.Drawing.Point(30, 114);
+            this.lblSemestre.Name = "lblSemestre";
+            this.lblSemestre.Size = new System.Drawing.Size(51, 13);
+            this.lblSemestre.TabIndex = 11;
+            this.lblSemestre.Text = "Semestre";
+            // 
+            // dtPickerFin
+            // 
+            this.dtPickerFin.Location = new System.Drawing.Point(696, 78);
+            this.dtPickerFin.Name = "dtPickerFin";
+            this.dtPickerFin.Size = new System.Drawing.Size(200, 20);
+            this.dtPickerFin.TabIndex = 10;
+            // 
+            // dtPickerInicio
+            // 
+            this.dtPickerInicio.Location = new System.Drawing.Point(436, 78);
+            this.dtPickerInicio.Name = "dtPickerInicio";
+            this.dtPickerInicio.Size = new System.Drawing.Size(200, 20);
+            this.dtPickerInicio.TabIndex = 9;
             // 
             // cboSemestre
             // 
@@ -191,7 +281,7 @@
             this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCerrar.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrar.ForeColor = System.Drawing.Color.Maroon;
-            this.btnCerrar.Location = new System.Drawing.Point(953, 7);
+            this.btnCerrar.Location = new System.Drawing.Point(962, 7);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(23, 26);
             this.btnCerrar.TabIndex = 5;
@@ -376,57 +466,133 @@
             this.fillByIngenieriaToolStripButton.Name = "fillByIngenieriaToolStripButton";
             this.fillByIngenieriaToolStripButton.Size = new System.Drawing.Size(91, 22);
             this.fillByIngenieriaToolStripButton.Text = "FillByIngenieria";
-            this.fillByIngenieriaToolStripButton.Click += new System.EventHandler(this.fillByIngenieriaToolStripButton_Click);
             // 
-            // dateTimePicker1
+            // listaAsistenciasTableAdapter
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(436, 78);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 9;
+            this.listaAsistenciasTableAdapter.ClearBeforeFill = true;
             // 
-            // dateTimePicker2
+            // tableAdapterManager2
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(696, 78);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker2.TabIndex = 10;
+            this.tableAdapterManager2.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager2.Connection = null;
+            this.tableAdapterManager2.UpdateOrder = Plantilla_Bonita.AsistenciasDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // lblSemestre
+            // fillToolStrip
             // 
-            this.lblSemestre.AutoSize = true;
-            this.lblSemestre.Location = new System.Drawing.Point(30, 114);
-            this.lblSemestre.Name = "lblSemestre";
-            this.lblSemestre.Size = new System.Drawing.Size(51, 13);
-            this.lblSemestre.TabIndex = 11;
-            this.lblSemestre.Text = "Semestre";
+            this.fillToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.codMateriaToolStripLabel,
+            this.codMateriaToolStripTextBox,
+            this.codIngenieriaToolStripLabel,
+            this.codIngenieriaToolStripTextBox,
+            this.inicioToolStripLabel,
+            this.inicioToolStripTextBox,
+            this.finToolStripLabel,
+            this.finToolStripTextBox,
+            this.cantidadClasesToolStripLabel,
+            this.cantidadClasesToolStripTextBox,
+            this.fillToolStripButton});
+            this.fillToolStrip.Location = new System.Drawing.Point(0, 0);
+            this.fillToolStrip.Name = "fillToolStrip";
+            this.fillToolStrip.Size = new System.Drawing.Size(996, 25);
+            this.fillToolStrip.TabIndex = 7;
+            this.fillToolStrip.Text = "fillToolStrip";
             // 
-            // label1
+            // codMateriaToolStripLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(433, 58);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(32, 13);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "Inicio";
+            this.codMateriaToolStripLabel.Name = "codMateriaToolStripLabel";
+            this.codMateriaToolStripLabel.Size = new System.Drawing.Size(70, 22);
+            this.codMateriaToolStripLabel.Text = "codMateria:";
             // 
-            // label2
+            // codMateriaToolStripTextBox
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(693, 58);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(21, 13);
-            this.label2.TabIndex = 13;
-            this.label2.Text = "Fin";
+            this.codMateriaToolStripTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.codMateriaToolStripTextBox.Name = "codMateriaToolStripTextBox";
+            this.codMateriaToolStripTextBox.Size = new System.Drawing.Size(100, 25);
+            // 
+            // codIngenieriaToolStripLabel
+            // 
+            this.codIngenieriaToolStripLabel.Name = "codIngenieriaToolStripLabel";
+            this.codIngenieriaToolStripLabel.Size = new System.Drawing.Size(82, 22);
+            this.codIngenieriaToolStripLabel.Text = "codIngenieria:";
+            // 
+            // codIngenieriaToolStripTextBox
+            // 
+            this.codIngenieriaToolStripTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.codIngenieriaToolStripTextBox.Name = "codIngenieriaToolStripTextBox";
+            this.codIngenieriaToolStripTextBox.Size = new System.Drawing.Size(100, 25);
+            // 
+            // inicioToolStripLabel
+            // 
+            this.inicioToolStripLabel.Name = "inicioToolStripLabel";
+            this.inicioToolStripLabel.Size = new System.Drawing.Size(39, 22);
+            this.inicioToolStripLabel.Text = "inicio:";
+            // 
+            // inicioToolStripTextBox
+            // 
+            this.inicioToolStripTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.inicioToolStripTextBox.Name = "inicioToolStripTextBox";
+            this.inicioToolStripTextBox.Size = new System.Drawing.Size(100, 25);
+            // 
+            // finToolStripLabel
+            // 
+            this.finToolStripLabel.Name = "finToolStripLabel";
+            this.finToolStripLabel.Size = new System.Drawing.Size(24, 22);
+            this.finToolStripLabel.Text = "fin:";
+            // 
+            // finToolStripTextBox
+            // 
+            this.finToolStripTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.finToolStripTextBox.Name = "finToolStripTextBox";
+            this.finToolStripTextBox.Size = new System.Drawing.Size(100, 25);
+            // 
+            // cantidadClasesToolStripLabel
+            // 
+            this.cantidadClasesToolStripLabel.Name = "cantidadClasesToolStripLabel";
+            this.cantidadClasesToolStripLabel.Size = new System.Drawing.Size(89, 22);
+            this.cantidadClasesToolStripLabel.Text = "cantidadClases:";
+            // 
+            // cantidadClasesToolStripTextBox
+            // 
+            this.cantidadClasesToolStripTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.cantidadClasesToolStripTextBox.Name = "cantidadClasesToolStripTextBox";
+            this.cantidadClasesToolStripTextBox.Size = new System.Drawing.Size(100, 25);
+            // 
+            // fillToolStripButton
+            // 
+            this.fillToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.fillToolStripButton.Name = "fillToolStripButton";
+            this.fillToolStripButton.Size = new System.Drawing.Size(26, 22);
+            this.fillToolStripButton.Text = "Fill";
+            this.fillToolStripButton.Click += new System.EventHandler(this.fillToolStripButton_Click);
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "matricula";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Matricula";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "nombre";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Nombre";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "asistencias";
+            this.dataGridViewTextBoxColumn3.HeaderText = "asistencias";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             // 
             // Asistencias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(987, 558);
-            this.Controls.Add(this.fillByIngenieriaToolStrip);
+            this.ClientSize = new System.Drawing.Size(996, 558);
+            this.Controls.Add(this.fillToolStrip);
             this.Controls.Add(this.ingenieriasBindingNavigator);
+            this.Controls.Add(this.fillByIngenieriaToolStrip);
             this.Controls.Add(this.panelAsistencia);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Asistencias";
@@ -434,6 +600,9 @@
             this.Load += new System.EventHandler(this.Asistencias_Load);
             this.panelAsistencia.ResumeLayout(false);
             this.panelAsistencia.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.listaAsistenciasDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listaAsistenciasBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asistenciasDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vista_IngenieriasMateriaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.materiasDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ingenieriasBindingSource)).EndInit();
@@ -443,6 +612,8 @@
             this.ingenieriasBindingNavigator.PerformLayout();
             this.fillByIngenieriaToolStrip.ResumeLayout(false);
             this.fillByIngenieriaToolStrip.PerformLayout();
+            this.fillToolStrip.ResumeLayout(false);
+            this.fillToolStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -479,10 +650,30 @@
         private System.Windows.Forms.ToolStripTextBox ingenieriaToolStripTextBox;
         private System.Windows.Forms.ToolStripButton fillByIngenieriaToolStripButton;
         private System.Windows.Forms.ComboBox cboSemestre;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtPickerFin;
+        private System.Windows.Forms.DateTimePicker dtPickerInicio;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblSemestre;
+        private AsistenciasDataSet asistenciasDataSet;
+        private System.Windows.Forms.BindingSource listaAsistenciasBindingSource;
+        private AsistenciasDataSetTableAdapters.ListaAsistenciasTableAdapter listaAsistenciasTableAdapter;
+        private AsistenciasDataSetTableAdapters.TableAdapterManager tableAdapterManager2;
+        private System.Windows.Forms.ToolStrip fillToolStrip;
+        private System.Windows.Forms.ToolStripLabel codMateriaToolStripLabel;
+        private System.Windows.Forms.ToolStripTextBox codMateriaToolStripTextBox;
+        private System.Windows.Forms.ToolStripLabel codIngenieriaToolStripLabel;
+        private System.Windows.Forms.ToolStripTextBox codIngenieriaToolStripTextBox;
+        private System.Windows.Forms.ToolStripLabel inicioToolStripLabel;
+        private System.Windows.Forms.ToolStripTextBox inicioToolStripTextBox;
+        private System.Windows.Forms.ToolStripLabel finToolStripLabel;
+        private System.Windows.Forms.ToolStripTextBox finToolStripTextBox;
+        private System.Windows.Forms.ToolStripLabel cantidadClasesToolStripLabel;
+        private System.Windows.Forms.ToolStripTextBox cantidadClasesToolStripTextBox;
+        private System.Windows.Forms.ToolStripButton fillToolStripButton;
+        private System.Windows.Forms.DataGridView listaAsistenciasDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
     }
 }

@@ -67,6 +67,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AlumnosDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="AsistenciasDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AsistenciasDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ClasesAuxiliares\Ingenieria.cs" />
     <Compile Include="Docentes.cs">
       <SubType>Form</SubType>
@@ -101,9 +106,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>IngenieriasDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="MateriasDataSet.cs">
-      <DependentUpon>MateriasDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="MateriasDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -148,6 +150,17 @@
     </None>
     <None Include="AlumnosDataSet.xss">
       <DependentUpon>AlumnosDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AsistenciasDataSet.xsc">
+      <DependentUpon>AsistenciasDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AsistenciasDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AsistenciasDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AsistenciasDataSet.xss">
+      <DependentUpon>AsistenciasDataSet.xsd</DependentUpon>
     </None>
     <None Include="DocentesDataSet.xsc">
       <DependentUpon>DocentesDataSet.xsd</DependentUpon>
