@@ -36,11 +36,12 @@
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.btnIngenierias = new FontAwesome.Sharp.IconButton();
             this.btnAdministrar = new FontAwesome.Sharp.IconButton();
-            this.btnCerrarSesion = new FontAwesome.Sharp.IconButton();
+            this.pnlContenedorControles = new System.Windows.Forms.Panel();
             this.btnDocentes = new FontAwesome.Sharp.IconButton();
             this.btnAlumnos = new FontAwesome.Sharp.IconButton();
             this.btnAsistencia = new FontAwesome.Sharp.IconButton();
             this.btnIniciarSesion = new FontAwesome.Sharp.IconButton();
+            this.btnCerrarSesion = new FontAwesome.Sharp.IconButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BarraTitulo = new System.Windows.Forms.Panel();
             this.btnRestaurar = new System.Windows.Forms.PictureBox();
@@ -49,10 +50,10 @@
             this.btnSalir = new System.Windows.Forms.PictureBox();
             this.btnslider = new System.Windows.Forms.PictureBox();
             this.pnlContenedor = new System.Windows.Forms.Panel();
-            this.pnlContenedorControles = new System.Windows.Forms.Panel();
             this.MenuVertical.SuspendLayout();
             this.pnlSubMenu1.SuspendLayout();
             this.pnlContenedorSubMenu1.SuspendLayout();
+            this.pnlContenedorControles.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.BarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
@@ -60,7 +61,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnslider)).BeginInit();
-            this.pnlContenedorControles.SuspendLayout();
             this.SuspendLayout();
             // 
             // MenuVertical
@@ -130,6 +130,7 @@
             this.btnIngenierias.IconSize = 32;
             this.btnIngenierias.Name = "btnIngenierias";
             this.btnIngenierias.UseVisualStyleBackColor = false;
+            this.btnIngenierias.Click += new System.EventHandler(this.btnIngenierias_Click);
             // 
             // btnAdministrar
             // 
@@ -145,19 +146,14 @@
             this.btnAdministrar.UseVisualStyleBackColor = true;
             this.btnAdministrar.Click += new System.EventHandler(this.btnAdministrar_Click);
             // 
-            // btnCerrarSesion
+            // pnlContenedorControles
             // 
-            resources.ApplyResources(this.btnCerrarSesion, "btnCerrarSesion");
-            this.btnCerrarSesion.FlatAppearance.BorderSize = 0;
-            this.btnCerrarSesion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
-            this.btnCerrarSesion.ForeColor = System.Drawing.Color.White;
-            this.btnCerrarSesion.IconChar = FontAwesome.Sharp.IconChar.ExternalLinkAlt;
-            this.btnCerrarSesion.IconColor = System.Drawing.Color.White;
-            this.btnCerrarSesion.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnCerrarSesion.IconSize = 30;
-            this.btnCerrarSesion.Name = "btnCerrarSesion";
-            this.btnCerrarSesion.UseVisualStyleBackColor = true;
-            this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
+            resources.ApplyResources(this.pnlContenedorControles, "pnlContenedorControles");
+            this.pnlContenedorControles.Controls.Add(this.btnDocentes);
+            this.pnlContenedorControles.Controls.Add(this.btnAlumnos);
+            this.pnlContenedorControles.Controls.Add(this.btnAsistencia);
+            this.pnlContenedorControles.Controls.Add(this.btnIniciarSesion);
+            this.pnlContenedorControles.Name = "pnlContenedorControles";
             // 
             // btnDocentes
             // 
@@ -214,6 +210,20 @@
             this.btnIniciarSesion.Name = "btnIniciarSesion";
             this.btnIniciarSesion.UseVisualStyleBackColor = true;
             this.btnIniciarSesion.Click += new System.EventHandler(this.btnIniciarSesion_Click);
+            // 
+            // btnCerrarSesion
+            // 
+            resources.ApplyResources(this.btnCerrarSesion, "btnCerrarSesion");
+            this.btnCerrarSesion.FlatAppearance.BorderSize = 0;
+            this.btnCerrarSesion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnCerrarSesion.ForeColor = System.Drawing.Color.White;
+            this.btnCerrarSesion.IconChar = FontAwesome.Sharp.IconChar.ExternalLinkAlt;
+            this.btnCerrarSesion.IconColor = System.Drawing.Color.White;
+            this.btnCerrarSesion.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCerrarSesion.IconSize = 30;
+            this.btnCerrarSesion.Name = "btnCerrarSesion";
+            this.btnCerrarSesion.UseVisualStyleBackColor = true;
+            this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
             // 
             // pictureBox1
             // 
@@ -285,15 +295,6 @@
             this.pnlContenedor.BackColor = System.Drawing.Color.White;
             this.pnlContenedor.Name = "pnlContenedor";
             // 
-            // pnlContenedorControles
-            // 
-            resources.ApplyResources(this.pnlContenedorControles, "pnlContenedorControles");
-            this.pnlContenedorControles.Controls.Add(this.btnDocentes);
-            this.pnlContenedorControles.Controls.Add(this.btnAlumnos);
-            this.pnlContenedorControles.Controls.Add(this.btnAsistencia);
-            this.pnlContenedorControles.Controls.Add(this.btnIniciarSesion);
-            this.pnlContenedorControles.Name = "pnlContenedorControles";
-            // 
             // frmPanelDeControl
             // 
             resources.ApplyResources(this, "$this");
@@ -311,6 +312,8 @@
             this.pnlSubMenu1.PerformLayout();
             this.pnlContenedorSubMenu1.ResumeLayout(false);
             this.pnlContenedorSubMenu1.PerformLayout();
+            this.pnlContenedorControles.ResumeLayout(false);
+            this.pnlContenedorControles.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.BarraTitulo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).EndInit();
@@ -318,8 +321,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnslider)).EndInit();
-            this.pnlContenedorControles.ResumeLayout(false);
-            this.pnlContenedorControles.PerformLayout();
             this.ResumeLayout(false);
 
         }

@@ -56,6 +56,11 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ABC_IngenieriasDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ABC_IngenieriasDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Alumnos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +88,18 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DocentesDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmIngenierias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIngenierias.Designer.cs">
+      <DependentUpon>frmIngenierias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMaterias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMaterias.Designer.cs">
+      <DependentUpon>frmMaterias.cs</DependentUpon>
     </Compile>
     <Compile Include="frmPanelDeControl.cs">
       <SubType>Form</SubType>
@@ -127,6 +144,12 @@
     <EmbeddedResource Include="Docentes.resx">
       <DependentUpon>Docentes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmIngenierias.resx">
+      <DependentUpon>frmIngenierias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMaterias.resx">
+      <DependentUpon>frmMaterias.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPanelDeControl.es.resx">
       <DependentUpon>frmPanelDeControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -152,6 +175,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="ABC_IngenieriasDataSet.xsc">
+      <DependentUpon>ABC_IngenieriasDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ABC_IngenieriasDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ABC_IngenieriasDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ABC_IngenieriasDataSet.xss">
+      <DependentUpon>ABC_IngenieriasDataSet.xsd</DependentUpon>
+    </None>
     <None Include="AlumnosDataSet.xsc">
       <DependentUpon>AlumnosDataSet.xsd</DependentUpon>
     </None>
