@@ -41,6 +41,8 @@ namespace Plantilla_Bonita
         {
             if (MenuVertical.Width==180)
             {
+                btnIniciarSesion.ForeColor = Color.Transparent;
+
                 MenuVertical.Width = 54;
             }
             else
@@ -160,9 +162,24 @@ namespace Plantilla_Bonita
             Abrirformaenelpanel(fm);
         }
 
+        /*
+        private void btnDocentes_Click(object sender, EventArgs e)
+        {
+            Docentes fm = new Docentes();
+            fm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
+            Abrirformaenelpanel(fm);
+        }*/
+
         private void btnAsistencia_Click(object sender, EventArgs e)
         {
             Asistencias fm = new Asistencias();
+            fm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
+            Abrirformaenelpanel(fm);
+        }
+
+        private void btnAlumnos_Click_1(object sender, EventArgs e)
+        {
+            Alumnos fm = new Alumnos();
             fm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
             Abrirformaenelpanel(fm);
         }

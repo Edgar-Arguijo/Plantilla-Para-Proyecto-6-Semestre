@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.MenuVertical = new System.Windows.Forms.Panel();
-            this.btnDocentes = new System.Windows.Forms.Button();
-            this.btnAlumnos = new System.Windows.Forms.Button();
-            this.btnAsistencia = new System.Windows.Forms.Button();
+            this.btnDocentes = new FontAwesome.Sharp.IconButton();
+            this.btnAlumnos = new FontAwesome.Sharp.IconButton();
+            this.btnAsistencia = new FontAwesome.Sharp.IconButton();
             this.btnIniciarSesion = new FontAwesome.Sharp.IconButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BarraTitulo = new System.Windows.Forms.Panel();
@@ -67,58 +67,75 @@
             // 
             // btnDocentes
             // 
-            this.btnDocentes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDocentes.AutoSize = true;
             this.btnDocentes.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnDocentes.FlatAppearance.BorderSize = 0;
-            this.btnDocentes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.btnDocentes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.btnDocentes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDocentes.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDocentes.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDocentes.ForeColor = System.Drawing.Color.White;
-            this.btnDocentes.Image = global::Plantilla_Bonita.Properties.Resources.docente3;
+            this.btnDocentes.IconChar = FontAwesome.Sharp.IconChar.ChalkboardTeacher;
+            this.btnDocentes.IconColor = System.Drawing.Color.White;
+            this.btnDocentes.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnDocentes.IconSize = 32;
             this.btnDocentes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDocentes.Location = new System.Drawing.Point(0, 200);
+            this.btnDocentes.Location = new System.Drawing.Point(0, 218);
             this.btnDocentes.Name = "btnDocentes";
-            this.btnDocentes.Size = new System.Drawing.Size(180, 45);
-            this.btnDocentes.TabIndex = 3;
+            this.btnDocentes.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.btnDocentes.Size = new System.Drawing.Size(180, 54);
+            this.btnDocentes.TabIndex = 5;
             this.btnDocentes.Text = "Docentes";
+            this.btnDocentes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDocentes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDocentes.UseVisualStyleBackColor = true;
             this.btnDocentes.Click += new System.EventHandler(this.btnDocentes_Click);
             // 
             // btnAlumnos
             // 
-            this.btnAlumnos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAlumnos.AutoSize = true;
             this.btnAlumnos.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnAlumnos.FlatAppearance.BorderSize = 0;
-            this.btnAlumnos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.btnAlumnos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.btnAlumnos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAlumnos.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAlumnos.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAlumnos.ForeColor = System.Drawing.Color.White;
-            this.btnAlumnos.Image = global::Plantilla_Bonita.Properties.Resources.clientes;
+            this.btnAlumnos.IconChar = FontAwesome.Sharp.IconChar.UserGraduate;
+            this.btnAlumnos.IconColor = System.Drawing.Color.White;
+            this.btnAlumnos.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnAlumnos.IconSize = 30;
             this.btnAlumnos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAlumnos.Location = new System.Drawing.Point(0, 155);
+            this.btnAlumnos.Location = new System.Drawing.Point(0, 164);
             this.btnAlumnos.Name = "btnAlumnos";
-            this.btnAlumnos.Size = new System.Drawing.Size(180, 45);
-            this.btnAlumnos.TabIndex = 2;
+            this.btnAlumnos.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btnAlumnos.Size = new System.Drawing.Size(180, 54);
+            this.btnAlumnos.TabIndex = 4;
             this.btnAlumnos.Text = "Alumnos";
+            this.btnAlumnos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAlumnos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAlumnos.UseVisualStyleBackColor = true;
-            this.btnAlumnos.Click += new System.EventHandler(this.btnAlumnos_Click);
+            this.btnAlumnos.Click += new System.EventHandler(this.btnAlumnos_Click_1);
             // 
             // btnAsistencia
             // 
-            this.btnAsistencia.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAsistencia.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnAsistencia.FlatAppearance.BorderSize = 0;
-            this.btnAsistencia.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.btnAsistencia.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.btnAsistencia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAsistencia.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAsistencia.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
             this.btnAsistencia.ForeColor = System.Drawing.Color.White;
-            this.btnAsistencia.Image = global::Plantilla_Bonita.Properties.Resources.lista1;
+            this.btnAsistencia.IconChar = FontAwesome.Sharp.IconChar.List;
+            this.btnAsistencia.IconColor = System.Drawing.Color.White;
+            this.btnAsistencia.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnAsistencia.IconSize = 30;
             this.btnAsistencia.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAsistencia.Location = new System.Drawing.Point(0, 110);
             this.btnAsistencia.Name = "btnAsistencia";
-            this.btnAsistencia.Size = new System.Drawing.Size(180, 45);
-            this.btnAsistencia.TabIndex = 1;
+            this.btnAsistencia.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btnAsistencia.Size = new System.Drawing.Size(180, 54);
+            this.btnAsistencia.TabIndex = 0;
             this.btnAsistencia.Text = "Asistencia";
+            this.btnAsistencia.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAsistencia.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAsistencia.UseVisualStyleBackColor = true;
             this.btnAsistencia.Click += new System.EventHandler(this.btnAsistencia_Click);
             // 
@@ -131,7 +148,7 @@
             this.btnIniciarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIniciarSesion.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIniciarSesion.ForeColor = System.Drawing.Color.White;
-            this.btnIniciarSesion.IconChar = FontAwesome.Sharp.IconChar.User;
+            this.btnIniciarSesion.IconChar = FontAwesome.Sharp.IconChar.UserAlt;
             this.btnIniciarSesion.IconColor = System.Drawing.Color.White;
             this.btnIniciarSesion.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnIniciarSesion.IconSize = 30;
@@ -152,6 +169,7 @@
             this.pictureBox1.Image = global::Plantilla_Bonita.Properties.Resources.Imagen8;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Padding = new System.Windows.Forms.Padding(10, 10, 0, 0);
             this.pictureBox1.Size = new System.Drawing.Size(180, 56);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
@@ -239,10 +257,8 @@
             // 
             // pnlContenedor
             // 
-            this.pnlContenedor.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlContenedor.BackColor = System.Drawing.SystemColors.Window;
+            this.pnlContenedor.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlContenedor.Location = new System.Drawing.Point(180, 53);
             this.pnlContenedor.Name = "pnlContenedor";
             this.pnlContenedor.Size = new System.Drawing.Size(940, 482);
@@ -287,10 +303,10 @@
         private System.Windows.Forms.PictureBox btnMinimizar;
         private System.Windows.Forms.PictureBox btnMaximizar;
         private System.Windows.Forms.PictureBox btnRestaurar;
-        private System.Windows.Forms.Button btnAsistencia;
-        private System.Windows.Forms.Button btnDocentes;
-        private System.Windows.Forms.Button btnAlumnos;
         private FontAwesome.Sharp.IconButton btnIniciarSesion;
+        private FontAwesome.Sharp.IconButton btnAsistencia;
+        private FontAwesome.Sharp.IconButton btnAlumnos;
+        private FontAwesome.Sharp.IconButton btnDocentes;
     }
 }
 

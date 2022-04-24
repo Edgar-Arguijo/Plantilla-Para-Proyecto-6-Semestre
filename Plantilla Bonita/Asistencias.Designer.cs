@@ -33,7 +33,11 @@
             System.Windows.Forms.Label materiaLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Asistencias));
             this.panelAsistencia = new System.Windows.Forms.Panel();
+            this.btnBuscar = new FontAwesome.Sharp.IconPictureBox();
             this.listaAsistenciasDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.listaAsistenciasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.asistenciasDataSet = new Plantilla_Bonita.AsistenciasDataSet();
             this.label2 = new System.Windows.Forms.Label();
@@ -84,12 +88,10 @@
             this.cantidadClasesToolStripLabel = new System.Windows.Forms.ToolStripLabel();
             this.cantidadClasesToolStripTextBox = new System.Windows.Forms.ToolStripTextBox();
             this.fillToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             descripcionLabel = new System.Windows.Forms.Label();
             materiaLabel = new System.Windows.Forms.Label();
             this.panelAsistencia.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnBuscar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaAsistenciasDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaAsistenciasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.asistenciasDataSet)).BeginInit();
@@ -124,6 +126,7 @@
             // panelAsistencia
             // 
             this.panelAsistencia.BackColor = System.Drawing.Color.White;
+            this.panelAsistencia.Controls.Add(this.btnBuscar);
             this.panelAsistencia.Controls.Add(this.listaAsistenciasDataGridView);
             this.panelAsistencia.Controls.Add(this.label2);
             this.panelAsistencia.Controls.Add(this.label1);
@@ -139,8 +142,22 @@
             this.panelAsistencia.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelAsistencia.Location = new System.Drawing.Point(0, 0);
             this.panelAsistencia.Name = "panelAsistencia";
-            this.panelAsistencia.Size = new System.Drawing.Size(996, 558);
+            this.panelAsistencia.Size = new System.Drawing.Size(808, 484);
             this.panelAsistencia.TabIndex = 4;
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.BackColor = System.Drawing.Color.Transparent;
+            this.btnBuscar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnBuscar.IconChar = FontAwesome.Sharp.IconChar.Search;
+            this.btnBuscar.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnBuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnBuscar.Location = new System.Drawing.Point(751, 202);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(32, 32);
+            this.btnBuscar.TabIndex = 14;
+            this.btnBuscar.TabStop = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // listaAsistenciasDataGridView
             // 
@@ -151,10 +168,29 @@
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3});
             this.listaAsistenciasDataGridView.DataSource = this.listaAsistenciasBindingSource;
-            this.listaAsistenciasDataGridView.Location = new System.Drawing.Point(33, 301);
+            this.listaAsistenciasDataGridView.Location = new System.Drawing.Point(33, 240);
             this.listaAsistenciasDataGridView.Name = "listaAsistenciasDataGridView";
             this.listaAsistenciasDataGridView.Size = new System.Drawing.Size(750, 220);
             this.listaAsistenciasDataGridView.TabIndex = 13;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "matricula";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Matricula";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "nombre";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Nombre";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "asistencias";
+            this.dataGridViewTextBoxColumn3.HeaderText = "asistencias";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             // 
             // listaAsistenciasBindingSource
             // 
@@ -169,7 +205,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(693, 58);
+            this.label2.Location = new System.Drawing.Point(433, 111);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(21, 13);
             this.label2.TabIndex = 13;
@@ -195,7 +231,7 @@
             // 
             // dtPickerFin
             // 
-            this.dtPickerFin.Location = new System.Drawing.Point(696, 78);
+            this.dtPickerFin.Location = new System.Drawing.Point(436, 131);
             this.dtPickerFin.Name = "dtPickerFin";
             this.dtPickerFin.Size = new System.Drawing.Size(200, 20);
             this.dtPickerFin.TabIndex = 10;
@@ -281,7 +317,7 @@
             this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCerrar.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrar.ForeColor = System.Drawing.Color.Maroon;
-            this.btnCerrar.Location = new System.Drawing.Point(962, 7);
+            this.btnCerrar.Location = new System.Drawing.Point(774, 7);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(23, 26);
             this.btnCerrar.TabIndex = 5;
@@ -493,9 +529,10 @@
             this.fillToolStripButton});
             this.fillToolStrip.Location = new System.Drawing.Point(0, 0);
             this.fillToolStrip.Name = "fillToolStrip";
-            this.fillToolStrip.Size = new System.Drawing.Size(996, 25);
+            this.fillToolStrip.Size = new System.Drawing.Size(808, 25);
             this.fillToolStrip.TabIndex = 7;
             this.fillToolStrip.Text = "fillToolStrip";
+            this.fillToolStrip.Visible = false;
             // 
             // codMateriaToolStripLabel
             // 
@@ -555,41 +592,21 @@
             // 
             this.cantidadClasesToolStripTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.cantidadClasesToolStripTextBox.Name = "cantidadClasesToolStripTextBox";
-            this.cantidadClasesToolStripTextBox.Size = new System.Drawing.Size(100, 25);
+            this.cantidadClasesToolStripTextBox.Size = new System.Drawing.Size(100, 23);
             // 
             // fillToolStripButton
             // 
             this.fillToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.fillToolStripButton.Name = "fillToolStripButton";
-            this.fillToolStripButton.Size = new System.Drawing.Size(26, 22);
+            this.fillToolStripButton.Size = new System.Drawing.Size(26, 19);
             this.fillToolStripButton.Text = "Fill";
-            this.fillToolStripButton.Click += new System.EventHandler(this.fillToolStripButton_Click);
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "matricula";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Matricula";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "nombre";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Nombre";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "asistencias";
-            this.dataGridViewTextBoxColumn3.HeaderText = "asistencias";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             // 
             // Asistencias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(996, 558);
+            this.ClientSize = new System.Drawing.Size(808, 484);
             this.Controls.Add(this.fillToolStrip);
             this.Controls.Add(this.ingenieriasBindingNavigator);
             this.Controls.Add(this.fillByIngenieriaToolStrip);
@@ -600,6 +617,7 @@
             this.Load += new System.EventHandler(this.Asistencias_Load);
             this.panelAsistencia.ResumeLayout(false);
             this.panelAsistencia.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnBuscar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaAsistenciasDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaAsistenciasBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.asistenciasDataSet)).EndInit();
@@ -675,5 +693,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private FontAwesome.Sharp.IconPictureBox btnBuscar;
     }
 }
