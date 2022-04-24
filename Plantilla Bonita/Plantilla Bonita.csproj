@@ -72,7 +72,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AsistenciasDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="ClasesAuxiliares\Ingenieria.cs" />
+    <Compile Include="ClasesAuxiliares\TipoUsuario.cs" />
     <Compile Include="Docentes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +107,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>IngenieriasDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="MateriasDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -132,6 +138,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Asistencias.resx">
       <DependentUpon>Asistencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

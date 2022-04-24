@@ -34,7 +34,7 @@
             this.pnlContenedorSubMenu1 = new System.Windows.Forms.Panel();
             this.iconButton3 = new FontAwesome.Sharp.IconButton();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
+            this.btnIngenierias = new FontAwesome.Sharp.IconButton();
             this.btnAdministrar = new FontAwesome.Sharp.IconButton();
             this.btnCerrarSesion = new FontAwesome.Sharp.IconButton();
             this.btnDocentes = new FontAwesome.Sharp.IconButton();
@@ -49,6 +49,7 @@
             this.btnSalir = new System.Windows.Forms.PictureBox();
             this.btnslider = new System.Windows.Forms.PictureBox();
             this.pnlContenedor = new System.Windows.Forms.Panel();
+            this.pnlContenedorControles = new System.Windows.Forms.Panel();
             this.MenuVertical.SuspendLayout();
             this.pnlSubMenu1.SuspendLayout();
             this.pnlContenedorSubMenu1.SuspendLayout();
@@ -59,17 +60,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnslider)).BeginInit();
+            this.pnlContenedorControles.SuspendLayout();
             this.SuspendLayout();
             // 
             // MenuVertical
             // 
             this.MenuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.MenuVertical.Controls.Add(this.pnlSubMenu1);
+            this.MenuVertical.Controls.Add(this.pnlContenedorControles);
             this.MenuVertical.Controls.Add(this.btnCerrarSesion);
-            this.MenuVertical.Controls.Add(this.btnDocentes);
-            this.MenuVertical.Controls.Add(this.btnAlumnos);
-            this.MenuVertical.Controls.Add(this.btnAsistencia);
-            this.MenuVertical.Controls.Add(this.btnIniciarSesion);
             this.MenuVertical.Controls.Add(this.pictureBox1);
             resources.ApplyResources(this.MenuVertical, "MenuVertical");
             this.MenuVertical.Name = "MenuVertical";
@@ -84,50 +83,53 @@
             // pnlContenedorSubMenu1
             // 
             resources.ApplyResources(this.pnlContenedorSubMenu1, "pnlContenedorSubMenu1");
-            this.pnlContenedorSubMenu1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.pnlContenedorSubMenu1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.pnlContenedorSubMenu1.Controls.Add(this.iconButton3);
             this.pnlContenedorSubMenu1.Controls.Add(this.iconButton1);
-            this.pnlContenedorSubMenu1.Controls.Add(this.iconButton2);
+            this.pnlContenedorSubMenu1.Controls.Add(this.btnIngenierias);
             this.pnlContenedorSubMenu1.Name = "pnlContenedorSubMenu1";
             // 
             // iconButton3
             // 
             resources.ApplyResources(this.iconButton3, "iconButton3");
+            this.iconButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.iconButton3.FlatAppearance.BorderSize = 0;
             this.iconButton3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.iconButton3.ForeColor = System.Drawing.Color.White;
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.ChalkboardTeacher;
+            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.School;
             this.iconButton3.IconColor = System.Drawing.Color.White;
             this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton3.IconSize = 32;
             this.iconButton3.Name = "iconButton3";
-            this.iconButton3.UseVisualStyleBackColor = true;
+            this.iconButton3.UseVisualStyleBackColor = false;
             // 
             // iconButton1
             // 
             resources.ApplyResources(this.iconButton1, "iconButton1");
+            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.iconButton1.FlatAppearance.BorderSize = 0;
             this.iconButton1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.iconButton1.ForeColor = System.Drawing.Color.White;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.ChalkboardTeacher;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Book;
             this.iconButton1.IconColor = System.Drawing.Color.White;
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.IconSize = 32;
             this.iconButton1.Name = "iconButton1";
-            this.iconButton1.UseVisualStyleBackColor = true;
+            this.iconButton1.UseVisualStyleBackColor = false;
             // 
-            // iconButton2
+            // btnIngenierias
             // 
-            resources.ApplyResources(this.iconButton2, "iconButton2");
-            this.iconButton2.FlatAppearance.BorderSize = 0;
-            this.iconButton2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
-            this.iconButton2.ForeColor = System.Drawing.Color.White;
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.ChalkboardTeacher;
-            this.iconButton2.IconColor = System.Drawing.Color.White;
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.IconSize = 32;
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.btnIngenierias, "btnIngenierias");
+            this.btnIngenierias.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnIngenierias.FlatAppearance.BorderSize = 0;
+            this.btnIngenierias.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnIngenierias.ForeColor = System.Drawing.Color.White;
+            this.btnIngenierias.IconChar = FontAwesome.Sharp.IconChar.HardHat;
+            this.btnIngenierias.IconColor = System.Drawing.Color.White;
+            this.btnIngenierias.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnIngenierias.IconSize = 32;
+            this.btnIngenierias.Name = "btnIngenierias";
+            this.btnIngenierias.UseVisualStyleBackColor = false;
             // 
             // btnAdministrar
             // 
@@ -283,6 +285,15 @@
             this.pnlContenedor.BackColor = System.Drawing.Color.White;
             this.pnlContenedor.Name = "pnlContenedor";
             // 
+            // pnlContenedorControles
+            // 
+            resources.ApplyResources(this.pnlContenedorControles, "pnlContenedorControles");
+            this.pnlContenedorControles.Controls.Add(this.btnDocentes);
+            this.pnlContenedorControles.Controls.Add(this.btnAlumnos);
+            this.pnlContenedorControles.Controls.Add(this.btnAsistencia);
+            this.pnlContenedorControles.Controls.Add(this.btnIniciarSesion);
+            this.pnlContenedorControles.Name = "pnlContenedorControles";
+            // 
             // frmPanelDeControl
             // 
             resources.ApplyResources(this, "$this");
@@ -307,6 +318,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnslider)).EndInit();
+            this.pnlContenedorControles.ResumeLayout(false);
+            this.pnlContenedorControles.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -329,10 +342,11 @@
         private FontAwesome.Sharp.IconButton btnCerrarSesion;
         private System.Windows.Forms.Panel pnlSubMenu1;
         private System.Windows.Forms.Panel pnlContenedorSubMenu1;
-        private FontAwesome.Sharp.IconButton iconButton2;
+        private FontAwesome.Sharp.IconButton btnIngenierias;
         private FontAwesome.Sharp.IconButton btnAdministrar;
         private FontAwesome.Sharp.IconButton iconButton3;
         private FontAwesome.Sharp.IconButton iconButton1;
+        private System.Windows.Forms.Panel pnlContenedorControles;
     }
 }
 

@@ -24,5 +24,10 @@ namespace Dominio
         {
             return obj.BuscarCodMateria(codIng, text);
         }
+
+        public string Loggeo(string usuario, string contraseña)
+        {
+            return obj.Loggeo(usuario, contraseña);
+        }
     }
 }
