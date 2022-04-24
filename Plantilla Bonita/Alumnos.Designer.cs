@@ -102,7 +102,7 @@ namespace Plantilla_Bonita
             this.vista_AlumnosDataGridView.DataSource = this.vista_AlumnosBindingSource;
             this.vista_AlumnosDataGridView.Location = new System.Drawing.Point(23, 166);
             this.vista_AlumnosDataGridView.Name = "vista_AlumnosDataGridView";
-            this.vista_AlumnosDataGridView.Size = new System.Drawing.Size(743, 220);
+            this.vista_AlumnosDataGridView.Size = new System.Drawing.Size(533, 220);
             this.vista_AlumnosDataGridView.TabIndex = 6;
             // 
             // dataGridViewTextBoxColumn1
