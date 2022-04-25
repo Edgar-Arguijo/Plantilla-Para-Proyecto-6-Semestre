@@ -39,7 +39,7 @@
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.listaAsistenciasBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.asistenciasDataSet = new Plantilla_Bonita.AsistenciasDataSet();
+            this.asistenciasDataSet = new Plantilla_Bonita.DataSets.AsistenciasDataSet();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lblSemestre = new System.Windows.Forms.Label();
@@ -48,13 +48,13 @@
             this.cboSemestre = new System.Windows.Forms.ComboBox();
             this.materiaComboBox = new System.Windows.Forms.ComboBox();
             this.vista_IngenieriasMateriaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.materiasDataSet = new Plantilla_Bonita.MateriasDataSet();
+            this.materiasDataSet = new Plantilla_Bonita.DataSets.MateriasDataSet();
             this.descripcionComboBox = new System.Windows.Forms.ComboBox();
             this.ingenieriasBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.ingenieriasDataSet = new Plantilla_Bonita.IngenieriasDataSet();
+            this.ingenieriasDataSet = new Plantilla_Bonita.DataSets.IngenieriasDataSet();
             this.btnCerrar = new System.Windows.Forms.Button();
-            this.ingenieriasTableAdapter = new Plantilla_Bonita.IngenieriasDataSetTableAdapters.IngenieriasTableAdapter();
-            this.tableAdapterManager = new Plantilla_Bonita.IngenieriasDataSetTableAdapters.TableAdapterManager();
+            this.ingenieriasTableAdapter = new Plantilla_Bonita.DataSets.IngenieriasDataSetTableAdapters.IngenieriasTableAdapter();
+            this.tableAdapterManager = new Plantilla_Bonita.DataSets.IngenieriasDataSetTableAdapters.TableAdapterManager();
             this.ingenieriasBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
@@ -68,14 +68,14 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.ingenieriasBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.vista_IngenieriasMateriaTableAdapter = new Plantilla_Bonita.MateriasDataSetTableAdapters.Vista_IngenieriasMateriaTableAdapter();
-            this.tableAdapterManager1 = new Plantilla_Bonita.MateriasDataSetTableAdapters.TableAdapterManager();
+            this.vista_IngenieriasMateriaTableAdapter = new Plantilla_Bonita.DataSets.MateriasDataSetTableAdapters.Vista_IngenieriasMateriaTableAdapter();
+            this.tableAdapterManager1 = new Plantilla_Bonita.DataSets.MateriasDataSetTableAdapters.TableAdapterManager();
             this.fillByIngenieriaToolStrip = new System.Windows.Forms.ToolStrip();
             this.ingenieriaToolStripLabel = new System.Windows.Forms.ToolStripLabel();
             this.ingenieriaToolStripTextBox = new System.Windows.Forms.ToolStripTextBox();
             this.fillByIngenieriaToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.listaAsistenciasTableAdapter = new Plantilla_Bonita.AsistenciasDataSetTableAdapters.ListaAsistenciasTableAdapter();
-            this.tableAdapterManager2 = new Plantilla_Bonita.AsistenciasDataSetTableAdapters.TableAdapterManager();
+            this.listaAsistenciasTableAdapter = new Plantilla_Bonita.DataSets.AsistenciasDataSetTableAdapters.ListaAsistenciasTableAdapter();
+            this.tableAdapterManager2 = new Plantilla_Bonita.DataSets.AsistenciasDataSetTableAdapters.TableAdapterManager();
             this.fillToolStrip = new System.Windows.Forms.ToolStrip();
             this.codMateriaToolStripLabel = new System.Windows.Forms.ToolStripLabel();
             this.codMateriaToolStripTextBox = new System.Windows.Forms.ToolStripTextBox();
@@ -333,7 +333,7 @@
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.Connection = null;
-            this.tableAdapterManager.UpdateOrder = Plantilla_Bonita.IngenieriasDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UpdateOrder = Plantilla_Bonita.DataSets.IngenieriasDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // ingenieriasBindingNavigator
             // 
@@ -469,7 +469,7 @@
             // 
             this.tableAdapterManager1.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager1.Connection = null;
-            this.tableAdapterManager1.UpdateOrder = Plantilla_Bonita.MateriasDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager1.UpdateOrder = Plantilla_Bonita.DataSets.MateriasDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // fillByIngenieriaToolStrip
             // 
@@ -511,7 +511,7 @@
             // 
             this.tableAdapterManager2.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager2.Connection = null;
-            this.tableAdapterManager2.UpdateOrder = Plantilla_Bonita.AsistenciasDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager2.UpdateOrder = Plantilla_Bonita.DataSets.AsistenciasDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // fillToolStrip
             // 
@@ -639,10 +639,10 @@
         #endregion
         private System.Windows.Forms.Panel panelAsistencia;
         private System.Windows.Forms.Button btnCerrar;
-        private IngenieriasDataSet ingenieriasDataSet;
+        private DataSets.IngenieriasDataSet ingenieriasDataSet;
         private System.Windows.Forms.BindingSource ingenieriasBindingSource;
-        private IngenieriasDataSetTableAdapters.IngenieriasTableAdapter ingenieriasTableAdapter;
-        private IngenieriasDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private DataSets.IngenieriasDataSetTableAdapters.IngenieriasTableAdapter ingenieriasTableAdapter;
+        private DataSets.IngenieriasDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.BindingNavigator ingenieriasBindingNavigator;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
@@ -657,10 +657,10 @@
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton ingenieriasBindingNavigatorSaveItem;
         private System.Windows.Forms.ComboBox descripcionComboBox;
-        private MateriasDataSet materiasDataSet;
+        private DataSets.MateriasDataSet materiasDataSet;
         private System.Windows.Forms.BindingSource vista_IngenieriasMateriaBindingSource;
-        private MateriasDataSetTableAdapters.Vista_IngenieriasMateriaTableAdapter vista_IngenieriasMateriaTableAdapter;
-        private MateriasDataSetTableAdapters.TableAdapterManager tableAdapterManager1;
+        private DataSets.MateriasDataSetTableAdapters.Vista_IngenieriasMateriaTableAdapter vista_IngenieriasMateriaTableAdapter;
+        private DataSets.MateriasDataSetTableAdapters.TableAdapterManager tableAdapterManager1;
         private System.Windows.Forms.ComboBox materiaComboBox;
         private System.Windows.Forms.ToolStrip fillByIngenieriaToolStrip;
         private System.Windows.Forms.ToolStripLabel ingenieriaToolStripLabel;
@@ -672,10 +672,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblSemestre;
-        private AsistenciasDataSet asistenciasDataSet;
+        private DataSets.AsistenciasDataSet asistenciasDataSet;
         private System.Windows.Forms.BindingSource listaAsistenciasBindingSource;
-        private AsistenciasDataSetTableAdapters.ListaAsistenciasTableAdapter listaAsistenciasTableAdapter;
-        private AsistenciasDataSetTableAdapters.TableAdapterManager tableAdapterManager2;
+        private DataSets.AsistenciasDataSetTableAdapters.ListaAsistenciasTableAdapter listaAsistenciasTableAdapter;
+        private DataSets.AsistenciasDataSetTableAdapters.TableAdapterManager tableAdapterManager2;
         private System.Windows.Forms.ToolStrip fillToolStrip;
         private System.Windows.Forms.ToolStripLabel codMateriaToolStripLabel;
         private System.Windows.Forms.ToolStripTextBox codMateriaToolStripTextBox;

@@ -35,7 +35,7 @@
             this.ingenieriasBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.ingenieriasBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.aBC_IngenieriasDataSet = new Plantilla_Bonita.ABC_IngenieriasDataSet();
+            this.aBC_IngenieriasDataSet = new Plantilla_Bonita.DataSets.ABC_IngenieriasDataSet();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -52,8 +52,8 @@
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cod_IngTextBox = new System.Windows.Forms.TextBox();
             this.descripcionTextBox = new System.Windows.Forms.TextBox();
-            this.ingenieriasTableAdapter = new Plantilla_Bonita.ABC_IngenieriasDataSetTableAdapters.IngenieriasTableAdapter();
-            this.tableAdapterManager = new Plantilla_Bonita.ABC_IngenieriasDataSetTableAdapters.TableAdapterManager();
+            this.ingenieriasTableAdapter = new Plantilla_Bonita.DataSets.ABC_IngenieriasDataSetTableAdapters.IngenieriasTableAdapter();
+            this.tableAdapterManager = new Plantilla_Bonita.DataSets.ABC_IngenieriasDataSetTableAdapters.TableAdapterManager();
             this.pnlPrincipal = new System.Windows.Forms.Panel();
             this.btnAgregarNuevo = new FontAwesome.Sharp.IconPictureBox();
             this.btnUpdateData = new FontAwesome.Sharp.IconPictureBox();
@@ -278,7 +278,7 @@
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.IngenieriasTableAdapter = this.ingenieriasTableAdapter;
-            this.tableAdapterManager.UpdateOrder = Plantilla_Bonita.ABC_IngenieriasDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UpdateOrder = Plantilla_Bonita.DataSets.ABC_IngenieriasDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // pnlPrincipal
             // 
@@ -384,10 +384,10 @@
 
         #endregion
 
-        private ABC_IngenieriasDataSet aBC_IngenieriasDataSet;
+        private DataSets.ABC_IngenieriasDataSet aBC_IngenieriasDataSet;
         private System.Windows.Forms.BindingSource ingenieriasBindingSource;
-        private ABC_IngenieriasDataSetTableAdapters.IngenieriasTableAdapter ingenieriasTableAdapter;
-        private ABC_IngenieriasDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private DataSets.ABC_IngenieriasDataSetTableAdapters.IngenieriasTableAdapter ingenieriasTableAdapter;
+        private DataSets.ABC_IngenieriasDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.BindingNavigator ingenieriasBindingNavigator;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;

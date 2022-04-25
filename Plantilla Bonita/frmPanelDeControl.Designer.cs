@@ -33,7 +33,7 @@
             this.pnlSubMenu1 = new System.Windows.Forms.Panel();
             this.pnlContenedorSubMenu1 = new System.Windows.Forms.Panel();
             this.iconButton3 = new FontAwesome.Sharp.IconButton();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.btnMaterias = new FontAwesome.Sharp.IconButton();
             this.btnIngenierias = new FontAwesome.Sharp.IconButton();
             this.btnAdministrar = new FontAwesome.Sharp.IconButton();
             this.pnlContenedorControles = new System.Windows.Forms.Panel();
@@ -85,7 +85,7 @@
             resources.ApplyResources(this.pnlContenedorSubMenu1, "pnlContenedorSubMenu1");
             this.pnlContenedorSubMenu1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.pnlContenedorSubMenu1.Controls.Add(this.iconButton3);
-            this.pnlContenedorSubMenu1.Controls.Add(this.iconButton1);
+            this.pnlContenedorSubMenu1.Controls.Add(this.btnMaterias);
             this.pnlContenedorSubMenu1.Controls.Add(this.btnIngenierias);
             this.pnlContenedorSubMenu1.Name = "pnlContenedorSubMenu1";
             // 
@@ -103,19 +103,20 @@
             this.iconButton3.Name = "iconButton3";
             this.iconButton3.UseVisualStyleBackColor = false;
             // 
-            // iconButton1
+            // btnMaterias
             // 
-            resources.ApplyResources(this.iconButton1, "iconButton1");
-            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
-            this.iconButton1.FlatAppearance.BorderSize = 0;
-            this.iconButton1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
-            this.iconButton1.ForeColor = System.Drawing.Color.White;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Book;
-            this.iconButton1.IconColor = System.Drawing.Color.White;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 32;
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.UseVisualStyleBackColor = false;
+            resources.ApplyResources(this.btnMaterias, "btnMaterias");
+            this.btnMaterias.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnMaterias.FlatAppearance.BorderSize = 0;
+            this.btnMaterias.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnMaterias.ForeColor = System.Drawing.Color.White;
+            this.btnMaterias.IconChar = FontAwesome.Sharp.IconChar.Book;
+            this.btnMaterias.IconColor = System.Drawing.Color.White;
+            this.btnMaterias.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnMaterias.IconSize = 32;
+            this.btnMaterias.Name = "btnMaterias";
+            this.btnMaterias.UseVisualStyleBackColor = false;
+            this.btnMaterias.Click += new System.EventHandler(this.btnMaterias_Click);
             // 
             // btnIngenierias
             // 
@@ -346,7 +347,7 @@
         private FontAwesome.Sharp.IconButton btnIngenierias;
         private FontAwesome.Sharp.IconButton btnAdministrar;
         private FontAwesome.Sharp.IconButton iconButton3;
-        private FontAwesome.Sharp.IconButton iconButton1;
+        private FontAwesome.Sharp.IconButton btnMaterias;
         private System.Windows.Forms.Panel pnlContenedorControles;
     }
 }

@@ -37,13 +37,13 @@ namespace Plantilla_Bonita
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.vista_AlumnosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.alumnosDataSet = new Plantilla_Bonita.AlumnosDataSet();
+            this.alumnosDataSet = new Plantilla_Bonita.DataSets.AlumnosDataSet();
             this.ingenieriasComboBox = new System.Windows.Forms.ComboBox();
             this.ingenieriasBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.ingenieriasDataSet = new Plantilla_Bonita.IngenieriasDataSet();
+            this.ingenieriasDataSet = new Plantilla_Bonita.DataSets.IngenieriasDataSet();
             this.btnCerrar = new System.Windows.Forms.Button();
-            this.ingenieriasTableAdapter = new Plantilla_Bonita.IngenieriasDataSetTableAdapters.IngenieriasTableAdapter();
-            this.tableAdapterManager = new Plantilla_Bonita.IngenieriasDataSetTableAdapters.TableAdapterManager();
+            this.ingenieriasTableAdapter = new Plantilla_Bonita.DataSets.IngenieriasDataSetTableAdapters.IngenieriasTableAdapter();
+            this.tableAdapterManager = new Plantilla_Bonita.DataSets.IngenieriasDataSetTableAdapters.TableAdapterManager();
             this.ingenieriasBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
@@ -57,8 +57,8 @@ namespace Plantilla_Bonita
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.ingenieriasBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.vista_AlumnosTableAdapter = new Plantilla_Bonita.AlumnosDataSetTableAdapters.Vista_AlumnosTableAdapter();
-            this.tableAdapterManager1 = new Plantilla_Bonita.AlumnosDataSetTableAdapters.TableAdapterManager();
+            this.vista_AlumnosTableAdapter = new Plantilla_Bonita.DataSets.AlumnosDataSetTableAdapters.Vista_AlumnosTableAdapter();
+            this.tableAdapterManager1 = new Plantilla_Bonita.DataSets.AlumnosDataSetTableAdapters.TableAdapterManager();
             this.panelAlumnos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.vista_AlumnosDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vista_AlumnosBindingSource)).BeginInit();
@@ -176,7 +176,7 @@ namespace Plantilla_Bonita
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.Connection = null;
-            this.tableAdapterManager.UpdateOrder = Plantilla_Bonita.IngenieriasDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UpdateOrder = Plantilla_Bonita.DataSets.IngenieriasDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // ingenieriasBindingNavigator
             // 
@@ -312,7 +312,7 @@ namespace Plantilla_Bonita
             // 
             this.tableAdapterManager1.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager1.Connection = null;
-            this.tableAdapterManager1.UpdateOrder = Plantilla_Bonita.AlumnosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager1.UpdateOrder = Plantilla_Bonita.DataSets.AlumnosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // Alumnos
             // 
@@ -344,11 +344,11 @@ namespace Plantilla_Bonita
 
         private System.Windows.Forms.Panel panelAlumnos;
         private System.Windows.Forms.Button btnCerrar;
-        private IngenieriasDataSet ingenieriaDataSet;
-        private IngenieriasDataSet ingenieriasDataSet;
+        private DataSets.IngenieriasDataSet ingenieriaDataSet;
+        private DataSets.IngenieriasDataSet ingenieriasDataSet;
         private System.Windows.Forms.BindingSource ingenieriasBindingSource;
-        private IngenieriasDataSetTableAdapters.IngenieriasTableAdapter ingenieriasTableAdapter;
-        private IngenieriasDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private DataSets.IngenieriasDataSetTableAdapters.IngenieriasTableAdapter ingenieriasTableAdapter;
+        private DataSets.IngenieriasDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.BindingNavigator ingenieriasBindingNavigator;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
@@ -363,10 +363,10 @@ namespace Plantilla_Bonita
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton ingenieriasBindingNavigatorSaveItem;
         private System.Windows.Forms.ComboBox ingenieriasComboBox;
-        private AlumnosDataSet alumnosDataSet;
+        private DataSets.AlumnosDataSet alumnosDataSet;
         private System.Windows.Forms.BindingSource vista_AlumnosBindingSource;
-        private AlumnosDataSetTableAdapters.Vista_AlumnosTableAdapter vista_AlumnosTableAdapter;
-        private AlumnosDataSetTableAdapters.TableAdapterManager tableAdapterManager1;
+        private DataSets.AlumnosDataSetTableAdapters.Vista_AlumnosTableAdapter vista_AlumnosTableAdapter;
+        private DataSets.AlumnosDataSetTableAdapters.TableAdapterManager tableAdapterManager1;
         private System.Windows.Forms.DataGridView vista_AlumnosDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
