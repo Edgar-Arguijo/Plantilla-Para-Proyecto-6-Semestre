@@ -361,10 +361,9 @@
             this.ingenieriasBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.ingenieriasBindingNavigator.Name = "ingenieriasBindingNavigator";
             this.ingenieriasBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.ingenieriasBindingNavigator.Size = new System.Drawing.Size(1201, 25);
+            this.ingenieriasBindingNavigator.Size = new System.Drawing.Size(808, 25);
             this.ingenieriasBindingNavigator.TabIndex = 5;
             this.ingenieriasBindingNavigator.Text = "bindingNavigator1";
-            this.ingenieriasBindingNavigator.Visible = false;
             // 
             // bindingNavigatorAddNewItem
             // 
@@ -533,6 +532,7 @@
             this.fillToolStrip.TabIndex = 7;
             this.fillToolStrip.Text = "fillToolStrip";
             this.fillToolStrip.Visible = false;
+            this.fillToolStrip.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.fillToolStrip_ItemClicked);
             // 
             // codMateriaToolStripLabel
             // 
@@ -607,9 +607,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(808, 484);
-            this.Controls.Add(this.fillToolStrip);
             this.Controls.Add(this.ingenieriasBindingNavigator);
             this.Controls.Add(this.fillByIngenieriaToolStrip);
+            this.Controls.Add(this.fillToolStrip);
             this.Controls.Add(this.panelAsistencia);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Asistencias";

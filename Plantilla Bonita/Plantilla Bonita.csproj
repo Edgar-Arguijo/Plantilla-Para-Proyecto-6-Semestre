@@ -72,12 +72,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AlumnosDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DataSets\AsistenciasDataSet.cs">
+      <DependentUpon>AsistenciasDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DataSets\AsistenciasDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>AsistenciasDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="ClasesAuxiliares\TipoUsuario.cs" />
+    <Compile Include="DataSets\IngenieriasDataSet.cs">
+      <DependentUpon>IngenieriasDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Docentes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,11 +95,29 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DocentesDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="frmAforos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAforos.Designer.cs">
+      <DependentUpon>frmAforos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAulas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAulas.Designer.cs">
+      <DependentUpon>frmAulas.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmIngenierias.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmIngenierias.Designer.cs">
       <DependentUpon>frmIngenierias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMaterias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMaterias.Designer.cs">
+      <DependentUpon>frmMaterias.cs</DependentUpon>
     </Compile>
     <Compile Include="frmPanelDeControl.cs">
       <SubType>Form</SubType>
@@ -138,8 +162,14 @@
     <EmbeddedResource Include="Docentes.resx">
       <DependentUpon>Docentes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmAulas.resx">
+      <DependentUpon>frmAulas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmIngenierias.resx">
       <DependentUpon>frmIngenierias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMaterias.resx">
+      <DependentUpon>frmMaterias.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPanelDeControl.es.resx">
       <DependentUpon>frmPanelDeControl.cs</DependentUpon>
@@ -215,7 +245,6 @@
     </None>
     <None Include="DataSets\IngenieriasDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>IngenieriasDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
     <None Include="DataSets\IngenieriasDataSet.xss">

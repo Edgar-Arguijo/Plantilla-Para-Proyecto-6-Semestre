@@ -50,6 +50,7 @@ namespace Plantilla_Bonita
                 btnDocentes.Text = "";
                 btnCerrarSesion.Text = "";
                 btnAdministrar.Text = "";
+                btnAforo.Text = "";
 
                 pnlContenedorSubMenu1.Visible = false;
 
@@ -63,6 +64,7 @@ namespace Plantilla_Bonita
                 btnDocentes.Text = Properties.Resources.Docentes;
                 btnCerrarSesion.Text = Properties.Resources.Cerrar_Sesion;
                 btnAdministrar.Text = Properties.Resources.Administrar;
+                btnAforo.Text = Properties.Resources.Aforo;
 
                 MenuVertical.Width = 180;
             }
@@ -214,8 +216,6 @@ namespace Plantilla_Bonita
             }
 
             ActualizarControles(this.permisos);
-            btnCerrarSesion.Visible = true;
-            btnIniciarSesion.Visible = false;
         }
 
         private void ActualizarControles(TipoUsuario.NivelAutorizacion permisos)
@@ -228,56 +228,97 @@ namespace Plantilla_Bonita
                 case TipoUsuario.NivelAutorizacion.PersonalAdministrativo:
                     ConfigurarN_Personal();
                     break;
-                case TipoUsuario.NivelAutorizacion.Usuario:
-                    ConfigurarN_Usuario();
+                case TipoUsuario.NivelAutorizacion.Docente:
+                    ConfigurarN_Docente();
                     break;
 
                 case TipoUsuario.NivelAutorizacion.Invitado:
                     ConfigurarN_Invitado();
                     break;
+                
                 default:
+                    ConfigurarN_Invitado();
                     break;
             }
         }
 
         private void ConfigurarN_Invitado()
         {
+            pnlContenedorControles.Visible = true;
+            pnlSubMenu1.Visible = false;
+
+            btnAdministrar.Visible = false;
+            btnMaterias.Visible = false;
+            btnAulas.Visible = false;
+            btnAforo.Visible = false;
             btnAsistencia.Visible = false;
+            btnIniciarSesion.Visible = true;
             btnAlumnos.Visible = false;
             btnDocentes.Visible = false;
             pnlSubMenu1.Visible = false;
         }
 
-        private void ConfigurarN_Usuario()
+        private void ConfigurarN_Docente()
         {
+            pnlContenedorControles.Visible = true;
+            pnlSubMenu1.Visible = false;
+
+            btnAdministrar.Visible = false;
+            btnMaterias.Visible = false;
+            btnAulas.Visible = false;
+            btnAforo.Visible = false;
             btnAsistencia.Visible = true;
             btnAlumnos.Visible = true;
-            btnDocentes.Visible = true;
+            btnDocentes.Visible = false;
             pnlSubMenu1.Visible = false;
+
+            btnIniciarSesion.Visible = false;
+            btnCerrarSesion.Visible = true;
         }
 
         private void ConfigurarN_Personal()
         {
-            btnAsistencia.Visible = true;
-            btnAlumnos.Visible = true;
-            btnDocentes.Visible = true;
+            pnlContenedorControles.Visible = true;
             pnlSubMenu1.Visible = false;
+
+            btnAdministrar.Visible = false;
+            btnMaterias.Visible = false;
+            btnAulas.Visible = false;
+            btnAforo.Visible = true;
+            btnAsistencia.Visible = false;
+            btnAlumnos.Visible = false;
+            btnDocentes.Visible = false;
+            pnlSubMenu1.Visible = false;
+
+            btnIniciarSesion.Visible = false;
+            btnCerrarSesion.Visible = true;
         }
 
         private void ConfigurarN_Admin()
         {
+            pnlContenedorControles.Visible = true;
+            pnlSubMenu1.Visible = true;
+
+            btnAdministrar.Visible = true;
+            btnMaterias.Visible = true;
+            btnAulas.Visible = true;   
+            btnAforo.Visible = true;
             btnAsistencia.Visible = true;
             btnAlumnos.Visible = true;
             btnDocentes.Visible = true;
             pnlSubMenu1.Visible = true;
+
+            btnIniciarSesion.Visible = false;
+            btnCerrarSesion.Visible = true;
         }
 
         private void btnCerrarSesion_Click(object sender, EventArgs e)
         {
-            this.permisos = TipoUsuario.NivelAutorizacion.Usuario;
-            ActualizarControles(this.permisos);
             btnIniciarSesion.Visible = true;
             btnCerrarSesion.Visible = false;
+            this.permisos = TipoUsuario.NivelAutorizacion.Invitado;
+            ActualizarControles(this.permisos);
+            MostrarFormLogo();
         }
 
         private void btnAdministrar_Click(object sender, EventArgs e)
@@ -302,6 +343,20 @@ namespace Plantilla_Bonita
         private void btnMaterias_Click(object sender, EventArgs e)
         {
             frmMaterias fm = new frmMaterias();
+            fm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
+            Abrirformaenelpanel(fm);
+        }
+
+        private void btnAforo_Click(object sender, EventArgs e)
+        {
+            frmAforo fm = new frmAforo();
+            fm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
+            Abrirformaenelpanel(fm);
+        }
+
+        private void btnAulas_Click(object sender, EventArgs e)
+        {
+            frmAulas fm = new frmAulas();
             fm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
             Abrirformaenelpanel(fm);
         }

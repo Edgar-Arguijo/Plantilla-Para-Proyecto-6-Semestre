@@ -14,7 +14,7 @@ namespace Plantilla_Bonita.ClasesAuxiliares
             Administrador,
             PersonalAdministrativo,
             Invitado,
-            Usuario
+            Docente
         }
 
         private NivelAutorizacion autorizacion;
@@ -38,7 +38,7 @@ namespace Plantilla_Bonita.ClasesAuxiliares
                     return NivelAutorizacion.PersonalAdministrativo;
 
                 case "usuario":
-                    return NivelAutorizacion.Usuario;
+                    return NivelAutorizacion.Docente;
 
                 default:
                     return NivelAutorizacion.Invitado;
