@@ -59,6 +59,7 @@ namespace Plantilla_Bonita
         private void btnDelete_Click(object sender, EventArgs e)
         {
             bindingNavigatorDeleteItem.PerformClick();
+            //guardar cambios
             this.Validate();
             this.ingenieriasBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.aBC_IngenieriasDataSet);

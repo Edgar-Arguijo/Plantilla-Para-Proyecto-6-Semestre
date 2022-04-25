@@ -34,10 +34,10 @@ namespace Plantilla_Bonita.ClasesAuxiliares
                 case "administrador":
                     return NivelAutorizacion.Administrador;
 
-                case "personaladministrativo":
+                case "administrativo":
                     return NivelAutorizacion.PersonalAdministrativo;
 
-                case "usuario":
+                case "docente":
                     return NivelAutorizacion.Docente;
 
                 default:

@@ -349,14 +349,19 @@ namespace Plantilla_Bonita
 
         private void btnAforo_Click(object sender, EventArgs e)
         {
-            frmAforo fm = new frmAforo();
-            fm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
-            Abrirformaenelpanel(fm);
+          
         }
 
         private void btnAulas_Click(object sender, EventArgs e)
         {
             frmAulas fm = new frmAulas();
+            fm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
+            Abrirformaenelpanel(fm);
+        }
+
+        private void btnUsuarios_Click(object sender, EventArgs e)
+        {
+            frmUsuarios fm = new frmUsuarios();
             fm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
             Abrirformaenelpanel(fm);
         }

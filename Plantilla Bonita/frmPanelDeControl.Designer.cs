@@ -32,6 +32,7 @@
             this.MenuVertical = new System.Windows.Forms.Panel();
             this.pnlSubMenu1 = new System.Windows.Forms.Panel();
             this.pnlContenedorSubMenu1 = new System.Windows.Forms.Panel();
+            this.btnUsuarios = new FontAwesome.Sharp.IconButton();
             this.btnAulas = new FontAwesome.Sharp.IconButton();
             this.btnMaterias = new FontAwesome.Sharp.IconButton();
             this.btnIngenierias = new FontAwesome.Sharp.IconButton();
@@ -85,10 +86,26 @@
             // 
             resources.ApplyResources(this.pnlContenedorSubMenu1, "pnlContenedorSubMenu1");
             this.pnlContenedorSubMenu1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.pnlContenedorSubMenu1.Controls.Add(this.btnUsuarios);
             this.pnlContenedorSubMenu1.Controls.Add(this.btnAulas);
             this.pnlContenedorSubMenu1.Controls.Add(this.btnMaterias);
             this.pnlContenedorSubMenu1.Controls.Add(this.btnIngenierias);
             this.pnlContenedorSubMenu1.Name = "pnlContenedorSubMenu1";
+            // 
+            // btnUsuarios
+            // 
+            resources.ApplyResources(this.btnUsuarios, "btnUsuarios");
+            this.btnUsuarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnUsuarios.FlatAppearance.BorderSize = 0;
+            this.btnUsuarios.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnUsuarios.ForeColor = System.Drawing.Color.White;
+            this.btnUsuarios.IconChar = FontAwesome.Sharp.IconChar.AddressCard;
+            this.btnUsuarios.IconColor = System.Drawing.Color.White;
+            this.btnUsuarios.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnUsuarios.IconSize = 32;
+            this.btnUsuarios.Name = "btnUsuarios";
+            this.btnUsuarios.UseVisualStyleBackColor = false;
+            this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
             // 
             // btnAulas
             // 
@@ -367,6 +384,7 @@
         private FontAwesome.Sharp.IconButton btnMaterias;
         private System.Windows.Forms.Panel pnlContenedorControles;
         private FontAwesome.Sharp.IconButton btnAforo;
+        private FontAwesome.Sharp.IconButton btnUsuarios;
     }
 }
 
