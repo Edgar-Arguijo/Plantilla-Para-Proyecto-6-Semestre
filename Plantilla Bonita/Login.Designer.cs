@@ -29,8 +29,9 @@
         private void InitializeComponent()
         {
             this.pnlContenedor = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnMostrarContraseña = new FontAwesome.Sharp.IconPictureBox();
+            this.btnInvitado = new System.Windows.Forms.Button();
+            this.btnPersonal = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btnIniciarSesion = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -38,7 +39,7 @@
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.pnlEncabezado = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnMostrarContraseña = new FontAwesome.Sharp.IconPictureBox();
+            this.btnDocente = new System.Windows.Forms.Button();
             this.pnlContenedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMostrarContraseña)).BeginInit();
             this.SuspendLayout();
@@ -46,9 +47,10 @@
             // pnlContenedor
             // 
             this.pnlContenedor.BackColor = System.Drawing.Color.LemonChiffon;
+            this.pnlContenedor.Controls.Add(this.btnDocente);
             this.pnlContenedor.Controls.Add(this.btnMostrarContraseña);
-            this.pnlContenedor.Controls.Add(this.button3);
-            this.pnlContenedor.Controls.Add(this.button2);
+            this.pnlContenedor.Controls.Add(this.btnInvitado);
+            this.pnlContenedor.Controls.Add(this.btnPersonal);
             this.pnlContenedor.Controls.Add(this.button1);
             this.pnlContenedor.Controls.Add(this.btnIniciarSesion);
             this.pnlContenedor.Controls.Add(this.label2);
@@ -63,33 +65,52 @@
             this.pnlContenedor.TabIndex = 0;
             this.pnlContenedor.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlContenedor_MouseDown);
             // 
-            // button3
+            // btnMostrarContraseña
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(27, 366);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(167, 45);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "Invitado";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnMostrarContraseña.BackColor = System.Drawing.Color.LemonChiffon;
+            this.btnMostrarContraseña.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnMostrarContraseña.IconChar = FontAwesome.Sharp.IconChar.Eye;
+            this.btnMostrarContraseña.IconColor = System.Drawing.SystemColors.ControlText;
+            this.btnMostrarContraseña.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnMostrarContraseña.IconSize = 25;
+            this.btnMostrarContraseña.Location = new System.Drawing.Point(300, 185);
+            this.btnMostrarContraseña.Name = "btnMostrarContraseña";
+            this.btnMostrarContraseña.Size = new System.Drawing.Size(25, 25);
+            this.btnMostrarContraseña.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.btnMostrarContraseña.TabIndex = 9;
+            this.btnMostrarContraseña.TabStop = false;
+            this.btnMostrarContraseña.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnMostrarContraseña_MouseDown);
+            this.btnMostrarContraseña.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnMostrarContraseña_MouseUp);
             // 
-            // button2
+            // btnInvitado
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(27, 417);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(167, 45);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Administrativo";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnInvitado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnInvitado.FlatAppearance.BorderSize = 0;
+            this.btnInvitado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInvitado.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
+            this.btnInvitado.ForeColor = System.Drawing.Color.White;
+            this.btnInvitado.Location = new System.Drawing.Point(27, 366);
+            this.btnInvitado.Name = "btnInvitado";
+            this.btnInvitado.Size = new System.Drawing.Size(167, 45);
+            this.btnInvitado.TabIndex = 8;
+            this.btnInvitado.Text = "Invitado";
+            this.btnInvitado.UseVisualStyleBackColor = false;
+            this.btnInvitado.Click += new System.EventHandler(this.btnInvitado_Click);
+            // 
+            // btnPersonal
+            // 
+            this.btnPersonal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnPersonal.FlatAppearance.BorderSize = 0;
+            this.btnPersonal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPersonal.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
+            this.btnPersonal.ForeColor = System.Drawing.Color.White;
+            this.btnPersonal.Location = new System.Drawing.Point(27, 417);
+            this.btnPersonal.Name = "btnPersonal";
+            this.btnPersonal.Size = new System.Drawing.Size(167, 45);
+            this.btnPersonal.TabIndex = 7;
+            this.btnPersonal.Text = "Administrativo";
+            this.btnPersonal.UseVisualStyleBackColor = false;
+            this.btnPersonal.Click += new System.EventHandler(this.btnPersonal_Click);
             // 
             // button1
             // 
@@ -102,7 +123,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(167, 45);
             this.button1.TabIndex = 6;
-            this.button1.Text = "Admin";
+            this.button1.Text = "Administrador";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -167,22 +188,20 @@
             this.pnlEncabezado.TabIndex = 0;
             this.pnlEncabezado.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlEncabezado_MouseDown);
             // 
-            // btnMostrarContraseña
+            // btnDocente
             // 
-            this.btnMostrarContraseña.BackColor = System.Drawing.Color.LemonChiffon;
-            this.btnMostrarContraseña.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnMostrarContraseña.IconChar = FontAwesome.Sharp.IconChar.Eye;
-            this.btnMostrarContraseña.IconColor = System.Drawing.SystemColors.ControlText;
-            this.btnMostrarContraseña.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnMostrarContraseña.IconSize = 25;
-            this.btnMostrarContraseña.Location = new System.Drawing.Point(300, 185);
-            this.btnMostrarContraseña.Name = "btnMostrarContraseña";
-            this.btnMostrarContraseña.Size = new System.Drawing.Size(25, 25);
-            this.btnMostrarContraseña.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.btnMostrarContraseña.TabIndex = 9;
-            this.btnMostrarContraseña.TabStop = false;
-            this.btnMostrarContraseña.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnMostrarContraseña_MouseDown);
-            this.btnMostrarContraseña.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnMostrarContraseña_MouseUp);
+            this.btnDocente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnDocente.FlatAppearance.BorderSize = 0;
+            this.btnDocente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDocente.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
+            this.btnDocente.ForeColor = System.Drawing.Color.White;
+            this.btnDocente.Location = new System.Drawing.Point(200, 315);
+            this.btnDocente.Name = "btnDocente";
+            this.btnDocente.Size = new System.Drawing.Size(138, 45);
+            this.btnDocente.TabIndex = 10;
+            this.btnDocente.Text = "Docente";
+            this.btnDocente.UseVisualStyleBackColor = false;
+            this.btnDocente.Click += new System.EventHandler(this.btnDocente_Click);
             // 
             // Login
             // 
@@ -209,9 +228,10 @@
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnIniciarSesion;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnInvitado;
+        private System.Windows.Forms.Button btnPersonal;
         private System.Windows.Forms.Button button1;
         private FontAwesome.Sharp.IconPictureBox btnMostrarContraseña;
+        private System.Windows.Forms.Button btnDocente;
     }
 }

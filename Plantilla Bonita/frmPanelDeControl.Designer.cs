@@ -32,14 +32,15 @@
             this.MenuVertical = new System.Windows.Forms.Panel();
             this.pnlSubMenu1 = new System.Windows.Forms.Panel();
             this.pnlContenedorSubMenu1 = new System.Windows.Forms.Panel();
-            this.iconButton3 = new FontAwesome.Sharp.IconButton();
+            this.btnAulas = new FontAwesome.Sharp.IconButton();
             this.btnMaterias = new FontAwesome.Sharp.IconButton();
             this.btnIngenierias = new FontAwesome.Sharp.IconButton();
             this.btnAdministrar = new FontAwesome.Sharp.IconButton();
             this.pnlContenedorControles = new System.Windows.Forms.Panel();
-            this.btnDocentes = new FontAwesome.Sharp.IconButton();
+            this.btnAforo = new FontAwesome.Sharp.IconButton();
             this.btnAlumnos = new FontAwesome.Sharp.IconButton();
             this.btnAsistencia = new FontAwesome.Sharp.IconButton();
+            this.btnDocentes = new FontAwesome.Sharp.IconButton();
             this.btnIniciarSesion = new FontAwesome.Sharp.IconButton();
             this.btnCerrarSesion = new FontAwesome.Sharp.IconButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -75,33 +76,34 @@
             // 
             // pnlSubMenu1
             // 
+            resources.ApplyResources(this.pnlSubMenu1, "pnlSubMenu1");
             this.pnlSubMenu1.Controls.Add(this.pnlContenedorSubMenu1);
             this.pnlSubMenu1.Controls.Add(this.btnAdministrar);
-            resources.ApplyResources(this.pnlSubMenu1, "pnlSubMenu1");
             this.pnlSubMenu1.Name = "pnlSubMenu1";
             // 
             // pnlContenedorSubMenu1
             // 
             resources.ApplyResources(this.pnlContenedorSubMenu1, "pnlContenedorSubMenu1");
             this.pnlContenedorSubMenu1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
-            this.pnlContenedorSubMenu1.Controls.Add(this.iconButton3);
+            this.pnlContenedorSubMenu1.Controls.Add(this.btnAulas);
             this.pnlContenedorSubMenu1.Controls.Add(this.btnMaterias);
             this.pnlContenedorSubMenu1.Controls.Add(this.btnIngenierias);
             this.pnlContenedorSubMenu1.Name = "pnlContenedorSubMenu1";
             // 
-            // iconButton3
+            // btnAulas
             // 
-            resources.ApplyResources(this.iconButton3, "iconButton3");
-            this.iconButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
-            this.iconButton3.FlatAppearance.BorderSize = 0;
-            this.iconButton3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
-            this.iconButton3.ForeColor = System.Drawing.Color.White;
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.School;
-            this.iconButton3.IconColor = System.Drawing.Color.White;
-            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton3.IconSize = 32;
-            this.iconButton3.Name = "iconButton3";
-            this.iconButton3.UseVisualStyleBackColor = false;
+            resources.ApplyResources(this.btnAulas, "btnAulas");
+            this.btnAulas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnAulas.FlatAppearance.BorderSize = 0;
+            this.btnAulas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnAulas.ForeColor = System.Drawing.Color.White;
+            this.btnAulas.IconChar = FontAwesome.Sharp.IconChar.School;
+            this.btnAulas.IconColor = System.Drawing.Color.White;
+            this.btnAulas.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnAulas.IconSize = 32;
+            this.btnAulas.Name = "btnAulas";
+            this.btnAulas.UseVisualStyleBackColor = false;
+            this.btnAulas.Click += new System.EventHandler(this.btnAulas_Click);
             // 
             // btnMaterias
             // 
@@ -150,25 +152,26 @@
             // pnlContenedorControles
             // 
             resources.ApplyResources(this.pnlContenedorControles, "pnlContenedorControles");
-            this.pnlContenedorControles.Controls.Add(this.btnDocentes);
+            this.pnlContenedorControles.Controls.Add(this.btnAforo);
             this.pnlContenedorControles.Controls.Add(this.btnAlumnos);
             this.pnlContenedorControles.Controls.Add(this.btnAsistencia);
+            this.pnlContenedorControles.Controls.Add(this.btnDocentes);
             this.pnlContenedorControles.Controls.Add(this.btnIniciarSesion);
             this.pnlContenedorControles.Name = "pnlContenedorControles";
             // 
-            // btnDocentes
+            // btnAforo
             // 
-            resources.ApplyResources(this.btnDocentes, "btnDocentes");
-            this.btnDocentes.FlatAppearance.BorderSize = 0;
-            this.btnDocentes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
-            this.btnDocentes.ForeColor = System.Drawing.Color.White;
-            this.btnDocentes.IconChar = FontAwesome.Sharp.IconChar.ChalkboardTeacher;
-            this.btnDocentes.IconColor = System.Drawing.Color.White;
-            this.btnDocentes.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnDocentes.IconSize = 32;
-            this.btnDocentes.Name = "btnDocentes";
-            this.btnDocentes.UseVisualStyleBackColor = true;
-            this.btnDocentes.Click += new System.EventHandler(this.btnDocentes_Click);
+            resources.ApplyResources(this.btnAforo, "btnAforo");
+            this.btnAforo.FlatAppearance.BorderSize = 0;
+            this.btnAforo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnAforo.ForeColor = System.Drawing.Color.White;
+            this.btnAforo.IconChar = FontAwesome.Sharp.IconChar.ChartBar;
+            this.btnAforo.IconColor = System.Drawing.Color.White;
+            this.btnAforo.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnAforo.IconSize = 32;
+            this.btnAforo.Name = "btnAforo";
+            this.btnAforo.UseVisualStyleBackColor = true;
+            this.btnAforo.Click += new System.EventHandler(this.btnAforo_Click);
             // 
             // btnAlumnos
             // 
@@ -197,6 +200,20 @@
             this.btnAsistencia.Name = "btnAsistencia";
             this.btnAsistencia.UseVisualStyleBackColor = true;
             this.btnAsistencia.Click += new System.EventHandler(this.btnAsistencia_Click);
+            // 
+            // btnDocentes
+            // 
+            resources.ApplyResources(this.btnDocentes, "btnDocentes");
+            this.btnDocentes.FlatAppearance.BorderSize = 0;
+            this.btnDocentes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnDocentes.ForeColor = System.Drawing.Color.White;
+            this.btnDocentes.IconChar = FontAwesome.Sharp.IconChar.ChalkboardTeacher;
+            this.btnDocentes.IconColor = System.Drawing.Color.White;
+            this.btnDocentes.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnDocentes.IconSize = 32;
+            this.btnDocentes.Name = "btnDocentes";
+            this.btnDocentes.UseVisualStyleBackColor = true;
+            this.btnDocentes.Click += new System.EventHandler(this.btnDocentes_Click);
             // 
             // btnIniciarSesion
             // 
@@ -346,9 +363,10 @@
         private System.Windows.Forms.Panel pnlContenedorSubMenu1;
         private FontAwesome.Sharp.IconButton btnIngenierias;
         private FontAwesome.Sharp.IconButton btnAdministrar;
-        private FontAwesome.Sharp.IconButton iconButton3;
+        private FontAwesome.Sharp.IconButton btnAulas;
         private FontAwesome.Sharp.IconButton btnMaterias;
         private System.Windows.Forms.Panel pnlContenedorControles;
+        private FontAwesome.Sharp.IconButton btnAforo;
     }
 }
 

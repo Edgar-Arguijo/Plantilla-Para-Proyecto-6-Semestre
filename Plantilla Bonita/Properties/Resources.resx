@@ -208,4 +208,7 @@
   <data name="Docentes" xml:space="preserve">
     <value>Docentes</value>
   </data>
+  <data name="Aforo" xml:space="preserve">
+    <value>Aforo</value>
+  </data>
 </root>

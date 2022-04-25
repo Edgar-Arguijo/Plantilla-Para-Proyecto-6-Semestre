@@ -77,5 +77,23 @@ namespace Plantilla_Bonita
             txtContraseña.UseSystemPasswordChar = true;
 
         }
+
+        private void btnInvitado_Click(object sender, EventArgs e)
+        {
+            this.result = TipoUsuario.NivelAutorizacion.Invitado;
+            this.DialogResult = DialogResult.OK;
+        }
+
+        private void btnPersonal_Click(object sender, EventArgs e)
+        {
+            this.result = TipoUsuario.NivelAutorizacion.PersonalAdministrativo;
+            this.DialogResult = DialogResult.OK;
+        }
+
+        private void btnDocente_Click(object sender, EventArgs e)
+        {
+            this.result = TipoUsuario.NivelAutorizacion.Docente;
+            this.DialogResult = DialogResult.OK;
+        }
     }
 }

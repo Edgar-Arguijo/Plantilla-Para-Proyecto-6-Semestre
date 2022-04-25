@@ -70,6 +70,15 @@ namespace Plantilla_Bonita.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Aforo.
+        /// </summary>
+        public static string Aforo {
+            get {
+                return ResourceManager.GetString("Aforo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Alumnos.
         /// </summary>
         public static string Alumnos {

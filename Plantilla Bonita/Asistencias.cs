@@ -60,5 +60,10 @@ namespace Plantilla_Bonita
             // TODO: esta línea de código carga datos en la tabla 'ingenieriasDataSet.Ingenierias' Puede moverla o quitarla según sea necesario.
             this.ingenieriasTableAdapter.Fill(this.ingenieriasDataSet.Ingenierias);
         }
+
+        private void fillToolStrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
     }
 }
