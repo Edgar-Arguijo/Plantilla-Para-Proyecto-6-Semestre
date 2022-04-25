@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.pnlContenedor = new System.Windows.Forms.Panel();
+            this.btnDocente = new System.Windows.Forms.Button();
             this.btnMostrarContraseña = new FontAwesome.Sharp.IconPictureBox();
             this.btnInvitado = new System.Windows.Forms.Button();
             this.btnPersonal = new System.Windows.Forms.Button();
@@ -39,7 +40,6 @@
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.pnlEncabezado = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnDocente = new System.Windows.Forms.Button();
             this.pnlContenedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMostrarContraseña)).BeginInit();
             this.SuspendLayout();
@@ -64,6 +64,21 @@
             this.pnlContenedor.Size = new System.Drawing.Size(350, 500);
             this.pnlContenedor.TabIndex = 0;
             this.pnlContenedor.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlContenedor_MouseDown);
+            // 
+            // btnDocente
+            // 
+            this.btnDocente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnDocente.FlatAppearance.BorderSize = 0;
+            this.btnDocente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDocente.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
+            this.btnDocente.ForeColor = System.Drawing.Color.White;
+            this.btnDocente.Location = new System.Drawing.Point(200, 315);
+            this.btnDocente.Name = "btnDocente";
+            this.btnDocente.Size = new System.Drawing.Size(138, 45);
+            this.btnDocente.TabIndex = 10;
+            this.btnDocente.Text = "Docente";
+            this.btnDocente.UseVisualStyleBackColor = false;
+            this.btnDocente.Click += new System.EventHandler(this.btnDocente_Click);
             // 
             // btnMostrarContraseña
             // 
@@ -188,21 +203,6 @@
             this.pnlEncabezado.TabIndex = 0;
             this.pnlEncabezado.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlEncabezado_MouseDown);
             // 
-            // btnDocente
-            // 
-            this.btnDocente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
-            this.btnDocente.FlatAppearance.BorderSize = 0;
-            this.btnDocente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDocente.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
-            this.btnDocente.ForeColor = System.Drawing.Color.White;
-            this.btnDocente.Location = new System.Drawing.Point(200, 315);
-            this.btnDocente.Name = "btnDocente";
-            this.btnDocente.Size = new System.Drawing.Size(138, 45);
-            this.btnDocente.TabIndex = 10;
-            this.btnDocente.Text = "Docente";
-            this.btnDocente.UseVisualStyleBackColor = false;
-            this.btnDocente.Click += new System.EventHandler(this.btnDocente_Click);
-            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -211,6 +211,7 @@
             this.Controls.Add(this.pnlContenedor);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Login";
             this.pnlContenedor.ResumeLayout(false);
             this.pnlContenedor.PerformLayout();
