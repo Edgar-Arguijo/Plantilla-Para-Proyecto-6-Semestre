@@ -16,20 +16,11 @@ namespace Plantilla_Bonita
         public Asistencias()
         {
             InitializeComponent();
-
-
-            
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void Asistencias_Load(object sender, EventArgs e)
-        {
-            // TODO: esta línea de código carga datos en la tabla 'ingenieriasDataSet.Ingenierias' Puede moverla o quitarla según sea necesario.
-            this.ingenieriasTableAdapter.Fill(this.ingenieriasDataSet.Ingenierias);
         }
 
         private void cboSemestre_SelectedValueChanged(object sender, EventArgs e)
@@ -62,6 +53,12 @@ namespace Plantilla_Bonita
             {
                 System.Windows.Forms.MessageBox.Show(ex.Message);
             }
+        }
+
+        private void Asistencias_Load(object sender, EventArgs e)
+        {
+            // TODO: esta línea de código carga datos en la tabla 'ingenieriasDataSet.Ingenierias' Puede moverla o quitarla según sea necesario.
+            this.ingenieriasTableAdapter.Fill(this.ingenieriasDataSet.Ingenierias);
         }
     }
 }

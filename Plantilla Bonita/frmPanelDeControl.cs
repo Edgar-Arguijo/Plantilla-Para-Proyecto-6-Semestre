@@ -292,6 +292,20 @@ namespace Plantilla_Bonita
             }
         }
 
+        private void btnIngenierias_Click(object sender, EventArgs e)
+        {
+            frmIngenierias fm = new frmIngenierias();
+            fm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
+            Abrirformaenelpanel(fm);
+        }
+
+        private void btnMaterias_Click(object sender, EventArgs e)
+        {
+            frmMaterias fm = new frmMaterias();
+            fm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
+            Abrirformaenelpanel(fm);
+        }
+
         private void MostrarFormLogoAlCerrarForms(object sender, FormClosedEventArgs e)
         {
             MostrarFormLogo();
