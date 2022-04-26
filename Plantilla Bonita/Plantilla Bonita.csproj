@@ -56,33 +56,68 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataSets\ABC_IngenieriasDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ABC_IngenieriasDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Alumnos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Alumnos.Designer.cs">
       <DependentUpon>Alumnos.cs</DependentUpon>
     </Compile>
-    <Compile Include="AlumnosDataSet.Designer.cs">
+    <Compile Include="DataSets\AlumnosDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>AlumnosDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="AsistenciasDataSet.Designer.cs">
+    <Compile Include="DataSets\AsistenciasDataSet.cs">
+      <DependentUpon>AsistenciasDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\AsistenciasDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>AsistenciasDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="ClasesAuxiliares\TipoUsuario.cs" />
+    <Compile Include="DataSets\IngenieriasDataSet.cs">
+      <DependentUpon>IngenieriasDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Docentes.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Docentes.Designer.cs">
       <DependentUpon>Docentes.cs</DependentUpon>
     </Compile>
-    <Compile Include="DocentesDataSet.Designer.cs">
+    <Compile Include="DataSets\DocentesDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DocentesDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmAforos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAforos.Designer.cs">
+      <DependentUpon>frmAforos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAulas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAulas.Designer.cs">
+      <DependentUpon>frmAulas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIngenierias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIngenierias.Designer.cs">
+      <DependentUpon>frmIngenierias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMaterias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMaterias.Designer.cs">
+      <DependentUpon>frmMaterias.cs</DependentUpon>
     </Compile>
     <Compile Include="frmPanelDeControl.cs">
       <SubType>Form</SubType>
@@ -102,10 +137,16 @@
     <Compile Include="Asistencias.Designer.cs">
       <DependentUpon>Asistencias.cs</DependentUpon>
     </Compile>
-    <Compile Include="IngenieriasDataSet.Designer.cs">
+    <Compile Include="DataSets\IngenieriasDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>IngenieriasDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUsuarios.Designer.cs">
+      <DependentUpon>frmUsuarios.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -113,19 +154,33 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="MateriasDataSet.Designer.cs">
+    <Compile Include="DataSets\MateriasDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>MateriasDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SQLConection.cs" />
+    <Compile Include="ClasesAuxiliares\SQLConection.cs" />
+    <Compile Include="UsuariosDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UsuariosDataSet.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Alumnos.resx">
       <DependentUpon>Alumnos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Docentes.resx">
       <DependentUpon>Docentes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAulas.resx">
+      <DependentUpon>frmAulas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIngenierias.resx">
+      <DependentUpon>frmIngenierias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMaterias.resx">
+      <DependentUpon>frmMaterias.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPanelDeControl.es.resx">
       <DependentUpon>frmPanelDeControl.cs</DependentUpon>
@@ -138,6 +193,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Asistencias.resx">
       <DependentUpon>Asistencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUsuarios.resx">
+      <DependentUpon>frmUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -152,59 +210,69 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="AlumnosDataSet.xsc">
+    <None Include="DataSets\ABC_IngenieriasDataSet.xsc">
+      <DependentUpon>ABC_IngenieriasDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\ABC_IngenieriasDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ABC_IngenieriasDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\ABC_IngenieriasDataSet.xss">
+      <DependentUpon>ABC_IngenieriasDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\AlumnosDataSet.xsc">
       <DependentUpon>AlumnosDataSet.xsd</DependentUpon>
     </None>
-    <None Include="AlumnosDataSet.xsd">
+    <None Include="DataSets\AlumnosDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>AlumnosDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="AlumnosDataSet.xss">
+    <None Include="DataSets\AlumnosDataSet.xss">
       <DependentUpon>AlumnosDataSet.xsd</DependentUpon>
     </None>
-    <None Include="AsistenciasDataSet.xsc">
+    <None Include="DataSets\AsistenciasDataSet.xsc">
       <DependentUpon>AsistenciasDataSet.xsd</DependentUpon>
     </None>
-    <None Include="AsistenciasDataSet.xsd">
+    <None Include="DataSets\AsistenciasDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>AsistenciasDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="AsistenciasDataSet.xss">
+    <None Include="DataSets\AsistenciasDataSet.xss">
       <DependentUpon>AsistenciasDataSet.xsd</DependentUpon>
     </None>
-    <None Include="DocentesDataSet.xsc">
+    <None Include="DataSets\DocentesDataSet.xsc">
       <DependentUpon>DocentesDataSet.xsd</DependentUpon>
     </None>
-    <None Include="DocentesDataSet.xsd">
+    <None Include="DataSets\DocentesDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>DocentesDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="DocentesDataSet.xss">
+    <None Include="DataSets\DocentesDataSet.xss">
       <DependentUpon>DocentesDataSet.xsd</DependentUpon>
     </None>
-    <None Include="IngenieriasDataSet.xsc">
+    <None Include="DataSets\IngenieriasDataSet.xsc">
       <DependentUpon>IngenieriasDataSet.xsd</DependentUpon>
     </None>
-    <None Include="IngenieriasDataSet.xsd">
+    <None Include="DataSets\IngenieriasDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>IngenieriasDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="IngenieriasDataSet.xss">
+    <None Include="DataSets\IngenieriasDataSet.xss">
       <DependentUpon>IngenieriasDataSet.xsd</DependentUpon>
     </None>
-    <None Include="MateriasDataSet.xsc">
+    <None Include="DataSets\MateriasDataSet.xsc">
       <DependentUpon>MateriasDataSet.xsd</DependentUpon>
     </None>
-    <None Include="MateriasDataSet.xsd">
+    <None Include="DataSets\MateriasDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>MateriasDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="MateriasDataSet.xss">
+    <None Include="DataSets\MateriasDataSet.xss">
       <DependentUpon>MateriasDataSet.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
@@ -217,6 +285,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="UsuariosDataSet.xsc">
+      <DependentUpon>UsuariosDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UsuariosDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UsuariosDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UsuariosDataSet.xss">
+      <DependentUpon>UsuariosDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -302,6 +381,12 @@
       <Project>{9274cdfb-74bb-4593-bafb-4bd44810d8f6}</Project>
       <Name>Dominio</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen21.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

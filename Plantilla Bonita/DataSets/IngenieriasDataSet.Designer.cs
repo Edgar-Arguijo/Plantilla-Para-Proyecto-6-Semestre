@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace Plantilla_Bonita {
+namespace Plantilla_Bonita.DataSets {
     
     
     /// <summary>
@@ -281,6 +281,8 @@ namespace Plantilla_Bonita {
             
             private global::System.Data.DataColumn columnDescripcion;
             
+            private global::System.Data.DataColumn columnCod_Ing;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public IngenieriasDataTable() {
@@ -324,6 +326,14 @@ namespace Plantilla_Bonita {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn Cod_IngColumn {
+                get {
+                    return this.columnCod_Ing;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -359,13 +369,21 @@ namespace Plantilla_Bonita {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public IngenieriasRow AddIngenieriasRow(string Descripcion) {
+            public IngenieriasRow AddIngenieriasRow(string Descripcion, string Cod_Ing) {
                 IngenieriasRow rowIngenieriasRow = ((IngenieriasRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        Descripcion};
+                        Descripcion,
+                        Cod_Ing};
                 rowIngenieriasRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowIngenieriasRow);
                 return rowIngenieriasRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public IngenieriasRow FindByCod_Ing(string Cod_Ing) {
+                return ((IngenieriasRow)(this.Rows.Find(new object[] {
+                            Cod_Ing})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -386,6 +404,7 @@ namespace Plantilla_Bonita {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             internal void InitVars() {
                 this.columnDescripcion = base.Columns["Descripcion"];
+                this.columnCod_Ing = base.Columns["Cod_Ing"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -393,7 +412,14 @@ namespace Plantilla_Bonita {
             private void InitClass() {
                 this.columnDescripcion = new global::System.Data.DataColumn("Descripcion", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnDescripcion);
+                this.columnCod_Ing = new global::System.Data.DataColumn("Cod_Ing", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCod_Ing);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnCod_Ing}, true));
                 this.columnDescripcion.MaxLength = 2147483647;
+                this.columnCod_Ing.AllowDBNull = false;
+                this.columnCod_Ing.Unique = true;
+                this.columnCod_Ing.MaxLength = 20;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -552,6 +578,17 @@ namespace Plantilla_Bonita {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string Cod_Ing {
+                get {
+                    return ((string)(this[this.tableIngenierias.Cod_IngColumn]));
+                }
+                set {
+                    this[this.tableIngenierias.Cod_IngColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsDescripcionNull() {
                 return this.IsNull(this.tableIngenierias.DescripcionColumn);
             }
@@ -598,7 +635,7 @@ namespace Plantilla_Bonita {
         }
     }
 }
-namespace Plantilla_Bonita.IngenieriasDataSetTableAdapters {
+namespace Plantilla_Bonita.DataSets.IngenieriasDataSetTableAdapters {
     
     
     /// <summary>
@@ -723,6 +760,7 @@ namespace Plantilla_Bonita.IngenieriasDataSetTableAdapters {
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "Ingenierias";
             tableMapping.ColumnMappings.Add("Descripcion", "Descripcion");
+            tableMapping.ColumnMappings.Add("Cod_Ing", "Cod_Ing");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -736,11 +774,15 @@ namespace Plantilla_Bonita.IngenieriasDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT Descripcion FROM dbo.Ingenierias";
+            this._commandCollection[0].CommandText = "SELECT        Cod_Ing, Descripcion\r\nFROM            Ingenierias";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "SELECT Cod_Ing, Descripcion FROM Ingenierias";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -765,6 +807,19 @@ namespace Plantilla_Bonita.IngenieriasDataSetTableAdapters {
             IngenieriasDataSet.IngenieriasDataTable dataTable = new IngenieriasDataSet.IngenieriasDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int Fill_Ingenierias(IngenieriasDataSet.IngenieriasDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
         }
     }
     

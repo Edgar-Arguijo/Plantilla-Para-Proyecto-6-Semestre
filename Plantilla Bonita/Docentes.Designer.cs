@@ -48,11 +48,11 @@ namespace Plantilla_Bonita
             this.vista_DocentesBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.vista_DocentesDataGridView = new System.Windows.Forms.DataGridView();
             this.vista_DocentesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.docentesDataSet = new Plantilla_Bonita.DocentesDataSet();
+            this.docentesDataSet = new Plantilla_Bonita.DataSets.DocentesDataSet();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vista_DocentesTableAdapter = new Plantilla_Bonita.DocentesDataSetTableAdapters.Vista_DocentesTableAdapter();
-            this.tableAdapterManager = new Plantilla_Bonita.DocentesDataSetTableAdapters.TableAdapterManager();
+            this.vista_DocentesTableAdapter = new Plantilla_Bonita.DataSets.DocentesDataSetTableAdapters.Vista_DocentesTableAdapter();
+            this.tableAdapterManager = new Plantilla_Bonita.DataSets.DocentesDataSetTableAdapters.TableAdapterManager();
             this.panelDocentes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.vista_DocentesBindingNavigator)).BeginInit();
             this.vista_DocentesBindingNavigator.SuspendLayout();
@@ -259,7 +259,7 @@ namespace Plantilla_Bonita
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.Connection = null;
-            this.tableAdapterManager.UpdateOrder = Plantilla_Bonita.DocentesDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UpdateOrder = Plantilla_Bonita.DataSets.DocentesDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // Docentes
             // 
@@ -288,10 +288,10 @@ namespace Plantilla_Bonita
 
         private System.Windows.Forms.Panel panelDocentes;
         private System.Windows.Forms.Button btnCerrar;
-        private DocentesDataSet docentesDataSet;
+        private DataSets.DocentesDataSet docentesDataSet;
         private System.Windows.Forms.BindingSource vista_DocentesBindingSource;
-        private DocentesDataSetTableAdapters.Vista_DocentesTableAdapter vista_DocentesTableAdapter;
-        private DocentesDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private DataSets.DocentesDataSetTableAdapters.Vista_DocentesTableAdapter vista_DocentesTableAdapter;
+        private DataSets.DocentesDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.BindingNavigator vista_DocentesBindingNavigator;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
