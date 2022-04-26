@@ -26,6 +26,8 @@ namespace Plantilla_Bonita.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-GF0LP81\\SQLEXPRESS;Initial Catalog=Asistencias;Integrated Sec" +
+            "urity=True")]
         public string CadenaDeConexionAplicacion {
             get {
                 return ((string)(this["CadenaDeConexionAplicacion"]));

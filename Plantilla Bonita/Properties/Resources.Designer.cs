@@ -217,9 +217,29 @@ namespace Plantilla_Bonita.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap Imagen1 {
+            get {
+                object obj = ResourceManager.GetObject("Imagen1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap Imagen2 {
             get {
                 object obj = ResourceManager.GetObject("Imagen2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Imagen21 {
+            get {
+                object obj = ResourceManager.GetObject("Imagen21", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
