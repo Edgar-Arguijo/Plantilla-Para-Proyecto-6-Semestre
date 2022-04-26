@@ -59,6 +59,7 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.usuariosBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.button1 = new System.Windows.Forms.Button();
             nombreDeUsuarioLabel = new System.Windows.Forms.Label();
             contraseñaLabel = new System.Windows.Forms.Label();
             rolLabel = new System.Windows.Forms.Label();
@@ -100,6 +101,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.btnNuevo);
             this.panel1.Controls.Add(rolLabel);
             this.panel1.Controls.Add(this.rolComboBox);
@@ -334,6 +336,15 @@
             this.usuariosBindingNavigatorSaveItem.Text = "Guardar datos";
             this.usuariosBindingNavigatorSaveItem.Click += new System.EventHandler(this.usuariosBindingNavigatorSaveItem_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(235, 123);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // frmUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -387,5 +398,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private FontAwesome.Sharp.IconPictureBox btnNuevo;
+        private System.Windows.Forms.Button button1;
     }
 }
