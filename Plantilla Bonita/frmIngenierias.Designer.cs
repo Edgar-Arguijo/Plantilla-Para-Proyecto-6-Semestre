@@ -55,10 +55,10 @@
             this.ingenieriasTableAdapter = new Plantilla_Bonita.DataSets.ABC_IngenieriasDataSetTableAdapters.IngenieriasTableAdapter();
             this.tableAdapterManager = new Plantilla_Bonita.DataSets.ABC_IngenieriasDataSetTableAdapters.TableAdapterManager();
             this.pnlPrincipal = new System.Windows.Forms.Panel();
+            this.btnDelete = new FontAwesome.Sharp.IconPictureBox();
             this.btnAgregarNuevo = new FontAwesome.Sharp.IconPictureBox();
             this.btnUpdateData = new FontAwesome.Sharp.IconPictureBox();
             this.btnGuardarCambios = new FontAwesome.Sharp.IconPictureBox();
-            this.btnDelete = new FontAwesome.Sharp.IconPictureBox();
             cod_IngLabel = new System.Windows.Forms.Label();
             descripcionLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ingenieriasBindingNavigator)).BeginInit();
@@ -67,10 +67,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.aBC_IngenieriasDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ingenieriasDataGridView)).BeginInit();
             this.pnlPrincipal.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnDelete)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnAgregarNuevo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnUpdateData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnGuardarCambios)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnDelete)).BeginInit();
             this.SuspendLayout();
             // 
             // cod_IngLabel
@@ -230,6 +230,8 @@
             // 
             // ingenieriasDataGridView
             // 
+            this.ingenieriasDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.ingenieriasDataGridView.AutoGenerateColumns = false;
             this.ingenieriasDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ingenieriasDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -298,8 +300,24 @@
             this.pnlPrincipal.Size = new System.Drawing.Size(800, 450);
             this.pnlPrincipal.TabIndex = 6;
             // 
+            // btnDelete
+            // 
+            this.btnDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDelete.BackColor = System.Drawing.Color.White;
+            this.btnDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnDelete.IconChar = FontAwesome.Sharp.IconChar.TrashAlt;
+            this.btnDelete.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnDelete.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnDelete.Location = new System.Drawing.Point(599, 107);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(32, 32);
+            this.btnDelete.TabIndex = 9;
+            this.btnDelete.TabStop = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
             // btnAgregarNuevo
             // 
+            this.btnAgregarNuevo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAgregarNuevo.BackColor = System.Drawing.Color.White;
             this.btnAgregarNuevo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.btnAgregarNuevo.IconChar = FontAwesome.Sharp.IconChar.Plus;
@@ -314,6 +332,7 @@
             // 
             // btnUpdateData
             // 
+            this.btnUpdateData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnUpdateData.BackColor = System.Drawing.Color.White;
             this.btnUpdateData.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.btnUpdateData.IconChar = FontAwesome.Sharp.IconChar.Sync;
@@ -328,6 +347,7 @@
             // 
             // btnGuardarCambios
             // 
+            this.btnGuardarCambios.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnGuardarCambios.BackColor = System.Drawing.Color.White;
             this.btnGuardarCambios.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.btnGuardarCambios.IconChar = FontAwesome.Sharp.IconChar.Save;
@@ -339,20 +359,6 @@
             this.btnGuardarCambios.TabIndex = 6;
             this.btnGuardarCambios.TabStop = false;
             this.btnGuardarCambios.Click += new System.EventHandler(this.btnGuardarCambios_Click);
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.BackColor = System.Drawing.Color.White;
-            this.btnDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
-            this.btnDelete.IconChar = FontAwesome.Sharp.IconChar.TrashAlt;
-            this.btnDelete.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
-            this.btnDelete.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnDelete.Location = new System.Drawing.Point(599, 107);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(32, 32);
-            this.btnDelete.TabIndex = 9;
-            this.btnDelete.TabStop = false;
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // frmIngenierias
             // 
@@ -373,10 +379,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.ingenieriasDataGridView)).EndInit();
             this.pnlPrincipal.ResumeLayout(false);
             this.pnlPrincipal.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnDelete)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnAgregarNuevo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnUpdateData)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnGuardarCambios)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnDelete)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

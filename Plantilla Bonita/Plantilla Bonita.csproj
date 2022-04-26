@@ -285,12 +285,6 @@
     <Compile Include="frmAulas.Designer.cs">
       <DependentUpon>frmAulas.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmCopiaSeguridad.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmCopiaSeguridad.Designer.cs">
-      <DependentUpon>frmCopiaSeguridad.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmIngenierias.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -359,9 +353,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmAulas.resx">
       <DependentUpon>frmAulas.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmCopiaSeguridad.resx">
-      <DependentUpon>frmCopiaSeguridad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmIngenierias.resx">
       <DependentUpon>frmIngenierias.cs</DependentUpon>

@@ -43,6 +43,38 @@ namespace Acceso_A_Datos
             return null;
         }
 
+        public bool CopiaDeSeguridad()
+        {
+            try
+            {
+                using (SqlConnection conexion = getConnection())
+                {
+                    conexion.Open();
+                    using (SqlCommand cmd = new SqlCommand("CopiaDeSeguridad", conexion))
+                    {
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.Add("@flag", SqlDbType.Bit).Direction = ParameterDirection.ReturnValue;
+                        cmd.ExecuteNonQuery();
+
+                        Console.WriteLine($"El resultado es: {cmd.Parameters["@flag"].Value.ToString()}");
+
+                        if (cmd.Parameters["@flag"].Value.ToString()=="0")
+                            return false;
+
+                        if (cmd.Parameters["@flag"].Value.ToString() == "1")
+                            return true;
+
+                        return false;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return false;
+            }
+        }
+
         public string Loggeo(string usuario, string contraseña)
         {
             using (SqlConnection conexion = getConnection())
@@ -91,10 +123,7 @@ namespace Acceso_A_Datos
                     }
                 }
             }
-
             return null;
-
-            throw new NotImplementedException();
         }
     }
 }

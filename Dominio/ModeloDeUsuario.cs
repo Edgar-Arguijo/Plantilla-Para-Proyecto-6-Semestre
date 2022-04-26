@@ -15,6 +15,10 @@ namespace Dominio
             obj.ProbarConexion();
         }
 
+        public bool CopiaDeSeguridad() 
+        { 
+            return obj.CopiaDeSeguridad();
+        }
         public string BuscarCodIngenieria(string text)
         {
             return obj.BuscarCodIngenieria(text);

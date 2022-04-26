@@ -370,9 +370,16 @@ namespace Plantilla_Bonita
 
         private void btnCopiaSeguridad_Click(object sender, EventArgs e)
         {
-            frmCopiaSeguridad fm = new frmCopiaSeguridad();
-            fm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
-            Abrirformaenelpanel(fm);
+            ModeloDeUsuario obj = new ModeloDeUsuario();
+
+            if (obj.CopiaDeSeguridad())
+            {
+                MessageBox.Show("Se ha realizado la copia de seguridad exitosamente");
+            }
+            else
+            {
+                MessageBox.Show("No se ha podido realizar la copia de seguridad");
+            }
         }
 
         private void MostrarFormLogoAlCerrarForms(object sender, FormClosedEventArgs e)
