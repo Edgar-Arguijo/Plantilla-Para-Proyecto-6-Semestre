@@ -108,7 +108,7 @@
             // descripcionLabel
             // 
             descripcionLabel.AutoSize = true;
-            descripcionLabel.Location = new System.Drawing.Point(30, 58);
+            descripcionLabel.Location = new System.Drawing.Point(30, 31);
             descripcionLabel.Name = "descripcionLabel";
             descripcionLabel.Size = new System.Drawing.Size(55, 13);
             descripcionLabel.TabIndex = 5;
@@ -117,7 +117,7 @@
             // materiaLabel
             // 
             materiaLabel.AutoSize = true;
-            materiaLabel.Location = new System.Drawing.Point(30, 163);
+            materiaLabel.Location = new System.Drawing.Point(30, 136);
             materiaLabel.Name = "materiaLabel";
             materiaLabel.Size = new System.Drawing.Size(45, 13);
             materiaLabel.TabIndex = 6;
@@ -147,12 +147,13 @@
             // 
             // btnBuscar
             // 
+            this.btnBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnBuscar.BackColor = System.Drawing.Color.Transparent;
             this.btnBuscar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.btnBuscar.IconChar = FontAwesome.Sharp.IconChar.Search;
             this.btnBuscar.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.btnBuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnBuscar.Location = new System.Drawing.Point(751, 202);
+            this.btnBuscar.Location = new System.Drawing.Point(751, 166);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(32, 32);
             this.btnBuscar.TabIndex = 14;
@@ -161,6 +162,9 @@
             // 
             // listaAsistenciasDataGridView
             // 
+            this.listaAsistenciasDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.listaAsistenciasDataGridView.AutoGenerateColumns = false;
             this.listaAsistenciasDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.listaAsistenciasDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -168,9 +172,9 @@
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3});
             this.listaAsistenciasDataGridView.DataSource = this.listaAsistenciasBindingSource;
-            this.listaAsistenciasDataGridView.Location = new System.Drawing.Point(33, 240);
+            this.listaAsistenciasDataGridView.Location = new System.Drawing.Point(33, 204);
             this.listaAsistenciasDataGridView.Name = "listaAsistenciasDataGridView";
-            this.listaAsistenciasDataGridView.Size = new System.Drawing.Size(750, 220);
+            this.listaAsistenciasDataGridView.Size = new System.Drawing.Size(750, 256);
             this.listaAsistenciasDataGridView.TabIndex = 13;
             // 
             // dataGridViewTextBoxColumn1
@@ -205,7 +209,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(433, 111);
+            this.label2.Location = new System.Drawing.Point(432, 84);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(21, 13);
             this.label2.TabIndex = 13;
@@ -214,7 +218,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(433, 58);
+            this.label1.Location = new System.Drawing.Point(432, 31);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(32, 13);
             this.label1.TabIndex = 12;
@@ -223,7 +227,7 @@
             // lblSemestre
             // 
             this.lblSemestre.AutoSize = true;
-            this.lblSemestre.Location = new System.Drawing.Point(30, 114);
+            this.lblSemestre.Location = new System.Drawing.Point(30, 87);
             this.lblSemestre.Name = "lblSemestre";
             this.lblSemestre.Size = new System.Drawing.Size(51, 13);
             this.lblSemestre.TabIndex = 11;
@@ -231,16 +235,16 @@
             // 
             // dtPickerFin
             // 
-            this.dtPickerFin.Location = new System.Drawing.Point(436, 131);
+            this.dtPickerFin.Location = new System.Drawing.Point(435, 104);
             this.dtPickerFin.Name = "dtPickerFin";
-            this.dtPickerFin.Size = new System.Drawing.Size(200, 20);
+            this.dtPickerFin.Size = new System.Drawing.Size(226, 20);
             this.dtPickerFin.TabIndex = 10;
             // 
             // dtPickerInicio
             // 
-            this.dtPickerInicio.Location = new System.Drawing.Point(436, 78);
+            this.dtPickerInicio.Location = new System.Drawing.Point(435, 51);
             this.dtPickerInicio.Name = "dtPickerInicio";
-            this.dtPickerInicio.Size = new System.Drawing.Size(200, 20);
+            this.dtPickerInicio.Size = new System.Drawing.Size(226, 20);
             this.dtPickerInicio.TabIndex = 9;
             // 
             // cboSemestre
@@ -256,7 +260,7 @@
             "7mo Semestre",
             "8vo Semestre",
             "9no Semestre"});
-            this.cboSemestre.Location = new System.Drawing.Point(33, 130);
+            this.cboSemestre.Location = new System.Drawing.Point(33, 103);
             this.cboSemestre.Name = "cboSemestre";
             this.cboSemestre.Size = new System.Drawing.Size(210, 21);
             this.cboSemestre.TabIndex = 8;
@@ -269,7 +273,7 @@
             this.materiaComboBox.DataSource = this.vista_IngenieriasMateriaBindingSource;
             this.materiaComboBox.DisplayMember = "Materia";
             this.materiaComboBox.FormattingEnabled = true;
-            this.materiaComboBox.Location = new System.Drawing.Point(33, 179);
+            this.materiaComboBox.Location = new System.Drawing.Point(33, 152);
             this.materiaComboBox.Name = "materiaComboBox";
             this.materiaComboBox.Size = new System.Drawing.Size(210, 21);
             this.materiaComboBox.TabIndex = 7;
@@ -292,7 +296,7 @@
             this.descripcionComboBox.DataSource = this.ingenieriasBindingSource;
             this.descripcionComboBox.DisplayMember = "Descripcion";
             this.descripcionComboBox.FormattingEnabled = true;
-            this.descripcionComboBox.Location = new System.Drawing.Point(33, 77);
+            this.descripcionComboBox.Location = new System.Drawing.Point(33, 50);
             this.descripcionComboBox.Name = "descripcionComboBox";
             this.descripcionComboBox.Size = new System.Drawing.Size(315, 21);
             this.descripcionComboBox.TabIndex = 6;
@@ -364,6 +368,7 @@
             this.ingenieriasBindingNavigator.Size = new System.Drawing.Size(808, 25);
             this.ingenieriasBindingNavigator.TabIndex = 5;
             this.ingenieriasBindingNavigator.Text = "bindingNavigator1";
+            this.ingenieriasBindingNavigator.Visible = false;
             // 
             // bindingNavigatorAddNewItem
             // 

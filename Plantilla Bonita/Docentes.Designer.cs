@@ -32,33 +32,33 @@ namespace Plantilla_Bonita
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Docentes));
             this.panelDocentes = new System.Windows.Forms.Panel();
+            this.vista_DocentesDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vista_DocentesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.docentesDataSet = new Plantilla_Bonita.DataSets.DocentesDataSet();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.vista_DocentesBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.vista_DocentesBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.vista_DocentesDataGridView = new System.Windows.Forms.DataGridView();
-            this.vista_DocentesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.docentesDataSet = new Plantilla_Bonita.DataSets.DocentesDataSet();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.vista_DocentesTableAdapter = new Plantilla_Bonita.DataSets.DocentesDataSetTableAdapters.Vista_DocentesTableAdapter();
             this.tableAdapterManager = new Plantilla_Bonita.DataSets.DocentesDataSetTableAdapters.TableAdapterManager();
             this.panelDocentes.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.vista_DocentesBindingNavigator)).BeginInit();
-            this.vista_DocentesBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.vista_DocentesDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vista_DocentesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.docentesDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vista_DocentesBindingNavigator)).BeginInit();
+            this.vista_DocentesBindingNavigator.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelDocentes
@@ -69,8 +69,47 @@ namespace Plantilla_Bonita
             this.panelDocentes.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDocentes.Location = new System.Drawing.Point(0, 0);
             this.panelDocentes.Name = "panelDocentes";
-            this.panelDocentes.Size = new System.Drawing.Size(1129, 558);
+            this.panelDocentes.Size = new System.Drawing.Size(757, 558);
             this.panelDocentes.TabIndex = 0;
+            // 
+            // vista_DocentesDataGridView
+            // 
+            this.vista_DocentesDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.vista_DocentesDataGridView.AutoGenerateColumns = false;
+            this.vista_DocentesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.vista_DocentesDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2});
+            this.vista_DocentesDataGridView.DataSource = this.vista_DocentesBindingSource;
+            this.vista_DocentesDataGridView.Location = new System.Drawing.Point(12, 12);
+            this.vista_DocentesDataGridView.Name = "vista_DocentesDataGridView";
+            this.vista_DocentesDataGridView.Size = new System.Drawing.Size(658, 534);
+            this.vista_DocentesDataGridView.TabIndex = 6;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Identificador";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Identificador";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Nombre";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Nombre";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // vista_DocentesBindingSource
+            // 
+            this.vista_DocentesBindingSource.DataMember = "Vista_Docentes";
+            this.vista_DocentesBindingSource.DataSource = this.docentesDataSet;
+            // 
+            // docentesDataSet
+            // 
+            this.docentesDataSet.DataSetName = "DocentesDataSet";
+            this.docentesDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // btnCerrar
             // 
@@ -81,7 +120,7 @@ namespace Plantilla_Bonita
             this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCerrar.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrar.ForeColor = System.Drawing.Color.Maroon;
-            this.btnCerrar.Location = new System.Drawing.Point(1095, 7);
+            this.btnCerrar.Location = new System.Drawing.Point(723, 7);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(23, 26);
             this.btnCerrar.TabIndex = 6;
@@ -120,6 +159,31 @@ namespace Plantilla_Bonita
             this.vista_DocentesBindingNavigator.Text = "bindingNavigator1";
             this.vista_DocentesBindingNavigator.Visible = false;
             // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Agregar nuevo";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 22);
+            this.bindingNavigatorCountItem.Text = "de {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Número total de elementos";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Eliminar";
+            // 
             // bindingNavigatorMoveFirstItem
             // 
             this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -153,16 +217,9 @@ namespace Plantilla_Bonita
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Posición actual";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 22);
-            this.bindingNavigatorCountItem.Text = "de {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Número total de elementos";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
@@ -185,26 +242,8 @@ namespace Plantilla_Bonita
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Agregar nuevo";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorDeleteItem.Text = "Eliminar";
             // 
             // vista_DocentesBindingNavigatorSaveItem
             // 
@@ -214,42 +253,6 @@ namespace Plantilla_Bonita
             this.vista_DocentesBindingNavigatorSaveItem.Name = "vista_DocentesBindingNavigatorSaveItem";
             this.vista_DocentesBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
             this.vista_DocentesBindingNavigatorSaveItem.Text = "Guardar datos";
-            // 
-            // vista_DocentesDataGridView
-            // 
-            this.vista_DocentesDataGridView.AutoGenerateColumns = false;
-            this.vista_DocentesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.vista_DocentesDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2});
-            this.vista_DocentesDataGridView.DataSource = this.vista_DocentesBindingSource;
-            this.vista_DocentesDataGridView.Location = new System.Drawing.Point(21, 155);
-            this.vista_DocentesDataGridView.Name = "vista_DocentesDataGridView";
-            this.vista_DocentesDataGridView.Size = new System.Drawing.Size(697, 220);
-            this.vista_DocentesDataGridView.TabIndex = 6;
-            // 
-            // vista_DocentesBindingSource
-            // 
-            this.vista_DocentesBindingSource.DataMember = "Vista_Docentes";
-            this.vista_DocentesBindingSource.DataSource = this.docentesDataSet;
-            // 
-            // docentesDataSet
-            // 
-            this.docentesDataSet.DataSetName = "DocentesDataSet";
-            this.docentesDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Identificador";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Identificador";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Nombre";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Nombre";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             // 
             // vista_DocentesTableAdapter
             // 
@@ -265,7 +268,7 @@ namespace Plantilla_Bonita
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1129, 558);
+            this.ClientSize = new System.Drawing.Size(757, 558);
             this.Controls.Add(this.vista_DocentesBindingNavigator);
             this.Controls.Add(this.panelDocentes);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -273,12 +276,12 @@ namespace Plantilla_Bonita
             this.Text = "Docentes";
             this.Load += new System.EventHandler(this.Docentes_Load);
             this.panelDocentes.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.vista_DocentesBindingNavigator)).EndInit();
-            this.vista_DocentesBindingNavigator.ResumeLayout(false);
-            this.vista_DocentesBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.vista_DocentesDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vista_DocentesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.docentesDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vista_DocentesBindingNavigator)).EndInit();
+            this.vista_DocentesBindingNavigator.ResumeLayout(false);
+            this.vista_DocentesBindingNavigator.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
