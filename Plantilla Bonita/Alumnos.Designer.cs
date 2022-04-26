@@ -79,7 +79,7 @@ namespace Plantilla_Bonita
             this.panelAlumnos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelAlumnos.Location = new System.Drawing.Point(0, 0);
             this.panelAlumnos.Name = "panelAlumnos";
-            this.panelAlumnos.Size = new System.Drawing.Size(1228, 558);
+            this.panelAlumnos.Size = new System.Drawing.Size(803, 558);
             this.panelAlumnos.TabIndex = 0;
             // 
             // txtNombreBusqueda
@@ -92,7 +92,8 @@ namespace Plantilla_Bonita
             // 
             // vista_AlumnosDataGridView
             // 
-            this.vista_AlumnosDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.vista_AlumnosDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.vista_AlumnosDataGridView.AutoGenerateColumns = false;
             this.vista_AlumnosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -100,9 +101,9 @@ namespace Plantilla_Bonita
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2});
             this.vista_AlumnosDataGridView.DataSource = this.vista_AlumnosBindingSource;
-            this.vista_AlumnosDataGridView.Location = new System.Drawing.Point(23, 166);
+            this.vista_AlumnosDataGridView.Location = new System.Drawing.Point(23, 112);
             this.vista_AlumnosDataGridView.Name = "vista_AlumnosDataGridView";
-            this.vista_AlumnosDataGridView.Size = new System.Drawing.Size(533, 220);
+            this.vista_AlumnosDataGridView.Size = new System.Drawing.Size(655, 420);
             this.vista_AlumnosDataGridView.TabIndex = 6;
             // 
             // dataGridViewTextBoxColumn1
@@ -160,7 +161,7 @@ namespace Plantilla_Bonita
             this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCerrar.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrar.ForeColor = System.Drawing.Color.Maroon;
-            this.btnCerrar.Location = new System.Drawing.Point(1194, 7);
+            this.btnCerrar.Location = new System.Drawing.Point(769, 7);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(23, 26);
             this.btnCerrar.TabIndex = 6;
@@ -318,7 +319,7 @@ namespace Plantilla_Bonita
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1228, 558);
+            this.ClientSize = new System.Drawing.Size(803, 558);
             this.Controls.Add(this.ingenieriasBindingNavigator);
             this.Controls.Add(this.panelAlumnos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

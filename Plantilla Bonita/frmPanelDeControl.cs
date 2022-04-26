@@ -382,6 +382,13 @@ namespace Plantilla_Bonita
             }
         }
 
+        private void btnBitacora_Click(object sender, EventArgs e)
+        {
+            frmBitacora fm = new frmBitacora();
+            fm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
+            Abrirformaenelpanel(fm);
+        }
+
         private void MostrarFormLogoAlCerrarForms(object sender, FormClosedEventArgs e)
         {
             MostrarFormLogo();

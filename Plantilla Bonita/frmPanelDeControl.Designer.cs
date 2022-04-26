@@ -32,6 +32,7 @@
             this.MenuVertical = new System.Windows.Forms.Panel();
             this.pnlSubMenu1 = new System.Windows.Forms.Panel();
             this.pnlContenedorSubMenu1 = new System.Windows.Forms.Panel();
+            this.btnCopiaSeguridad = new FontAwesome.Sharp.IconButton();
             this.btnUsuarios = new FontAwesome.Sharp.IconButton();
             this.btnAulas = new FontAwesome.Sharp.IconButton();
             this.btnMaterias = new FontAwesome.Sharp.IconButton();
@@ -54,7 +55,7 @@
             this.btnSalir = new System.Windows.Forms.PictureBox();
             this.btnslider = new System.Windows.Forms.PictureBox();
             this.pnlContenedor = new System.Windows.Forms.Panel();
-            this.btnCopiaSeguridad = new FontAwesome.Sharp.IconButton();
+            this.btnBitacora = new FontAwesome.Sharp.IconButton();
             this.MenuVertical.SuspendLayout();
             this.pnlSubMenu1.SuspendLayout();
             this.pnlContenedorSubMenu1.SuspendLayout();
@@ -90,12 +91,28 @@
             // 
             resources.ApplyResources(this.pnlContenedorSubMenu1, "pnlContenedorSubMenu1");
             this.pnlContenedorSubMenu1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.pnlContenedorSubMenu1.Controls.Add(this.btnBitacora);
             this.pnlContenedorSubMenu1.Controls.Add(this.btnCopiaSeguridad);
             this.pnlContenedorSubMenu1.Controls.Add(this.btnUsuarios);
             this.pnlContenedorSubMenu1.Controls.Add(this.btnAulas);
             this.pnlContenedorSubMenu1.Controls.Add(this.btnMaterias);
             this.pnlContenedorSubMenu1.Controls.Add(this.btnIngenierias);
             this.pnlContenedorSubMenu1.Name = "pnlContenedorSubMenu1";
+            // 
+            // btnCopiaSeguridad
+            // 
+            resources.ApplyResources(this.btnCopiaSeguridad, "btnCopiaSeguridad");
+            this.btnCopiaSeguridad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnCopiaSeguridad.FlatAppearance.BorderSize = 0;
+            this.btnCopiaSeguridad.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnCopiaSeguridad.ForeColor = System.Drawing.Color.White;
+            this.btnCopiaSeguridad.IconChar = FontAwesome.Sharp.IconChar.Lock;
+            this.btnCopiaSeguridad.IconColor = System.Drawing.Color.White;
+            this.btnCopiaSeguridad.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCopiaSeguridad.IconSize = 32;
+            this.btnCopiaSeguridad.Name = "btnCopiaSeguridad";
+            this.btnCopiaSeguridad.UseVisualStyleBackColor = false;
+            this.btnCopiaSeguridad.Click += new System.EventHandler(this.btnCopiaSeguridad_Click);
             // 
             // btnUsuarios
             // 
@@ -350,20 +367,20 @@
             this.pnlContenedor.BackColor = System.Drawing.Color.White;
             this.pnlContenedor.Name = "pnlContenedor";
             // 
-            // btnCopiaSeguridad
+            // btnBitacora
             // 
-            resources.ApplyResources(this.btnCopiaSeguridad, "btnCopiaSeguridad");
-            this.btnCopiaSeguridad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
-            this.btnCopiaSeguridad.FlatAppearance.BorderSize = 0;
-            this.btnCopiaSeguridad.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
-            this.btnCopiaSeguridad.ForeColor = System.Drawing.Color.White;
-            this.btnCopiaSeguridad.IconChar = FontAwesome.Sharp.IconChar.Lock;
-            this.btnCopiaSeguridad.IconColor = System.Drawing.Color.White;
-            this.btnCopiaSeguridad.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnCopiaSeguridad.IconSize = 32;
-            this.btnCopiaSeguridad.Name = "btnCopiaSeguridad";
-            this.btnCopiaSeguridad.UseVisualStyleBackColor = false;
-            this.btnCopiaSeguridad.Click += new System.EventHandler(this.btnCopiaSeguridad_Click);
+            resources.ApplyResources(this.btnBitacora, "btnBitacora");
+            this.btnBitacora.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnBitacora.FlatAppearance.BorderSize = 0;
+            this.btnBitacora.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnBitacora.ForeColor = System.Drawing.Color.White;
+            this.btnBitacora.IconChar = FontAwesome.Sharp.IconChar.BookOpen;
+            this.btnBitacora.IconColor = System.Drawing.Color.White;
+            this.btnBitacora.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnBitacora.IconSize = 32;
+            this.btnBitacora.Name = "btnBitacora";
+            this.btnBitacora.UseVisualStyleBackColor = false;
+            this.btnBitacora.Click += new System.EventHandler(this.btnBitacora_Click);
             // 
             // frmPanelDeControl
             // 
@@ -425,6 +442,7 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel1;
         private FontAwesome.Sharp.IconButton btnCopiaSeguridad;
+        private FontAwesome.Sharp.IconButton btnBitacora;
     }
 }
 
