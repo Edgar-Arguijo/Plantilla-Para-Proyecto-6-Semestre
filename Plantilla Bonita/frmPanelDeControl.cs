@@ -1,4 +1,6 @@
 ﻿using System;
+using System.IO;
+using Microsoft.SqlServer.Management.Smo;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -362,6 +364,13 @@ namespace Plantilla_Bonita
         private void btnUsuarios_Click(object sender, EventArgs e)
         {
             frmUsuarios fm = new frmUsuarios();
+            fm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
+            Abrirformaenelpanel(fm);
+        }
+
+        private void btnCopiaSeguridad_Click(object sender, EventArgs e)
+        {
+            frmCopiaSeguridad fm = new frmCopiaSeguridad();
             fm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
             Abrirformaenelpanel(fm);
         }

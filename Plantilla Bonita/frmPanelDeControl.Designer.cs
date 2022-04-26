@@ -37,45 +37,46 @@
             this.btnMaterias = new FontAwesome.Sharp.IconButton();
             this.btnIngenierias = new FontAwesome.Sharp.IconButton();
             this.btnAdministrar = new FontAwesome.Sharp.IconButton();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pnlContenedorControles = new System.Windows.Forms.Panel();
             this.btnAforo = new FontAwesome.Sharp.IconButton();
             this.btnAlumnos = new FontAwesome.Sharp.IconButton();
             this.btnAsistencia = new FontAwesome.Sharp.IconButton();
             this.btnDocentes = new FontAwesome.Sharp.IconButton();
             this.btnIniciarSesion = new FontAwesome.Sharp.IconButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnCerrarSesion = new FontAwesome.Sharp.IconButton();
             this.BarraTitulo = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnRestaurar = new System.Windows.Forms.PictureBox();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnMaximizar = new System.Windows.Forms.PictureBox();
             this.btnSalir = new System.Windows.Forms.PictureBox();
             this.btnslider = new System.Windows.Forms.PictureBox();
             this.pnlContenedor = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnCopiaSeguridad = new FontAwesome.Sharp.IconButton();
             this.MenuVertical.SuspendLayout();
             this.pnlSubMenu1.SuspendLayout();
             this.pnlContenedorSubMenu1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.pnlContenedorControles.SuspendLayout();
-            this.BarraTitulo.SuspendLayout();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.BarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnslider)).BeginInit();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // MenuVertical
             // 
+            resources.ApplyResources(this.MenuVertical, "MenuVertical");
             this.MenuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.MenuVertical.Controls.Add(this.pnlSubMenu1);
             this.MenuVertical.Controls.Add(this.pnlContenedorControles);
             this.MenuVertical.Controls.Add(this.btnCerrarSesion);
-            resources.ApplyResources(this.MenuVertical, "MenuVertical");
             this.MenuVertical.Name = "MenuVertical";
             // 
             // pnlSubMenu1
@@ -89,6 +90,7 @@
             // 
             resources.ApplyResources(this.pnlContenedorSubMenu1, "pnlContenedorSubMenu1");
             this.pnlContenedorSubMenu1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.pnlContenedorSubMenu1.Controls.Add(this.btnCopiaSeguridad);
             this.pnlContenedorSubMenu1.Controls.Add(this.btnUsuarios);
             this.pnlContenedorSubMenu1.Controls.Add(this.btnAulas);
             this.pnlContenedorSubMenu1.Controls.Add(this.btnMaterias);
@@ -168,13 +170,6 @@
             this.btnAdministrar.Name = "btnAdministrar";
             this.btnAdministrar.UseVisualStyleBackColor = true;
             this.btnAdministrar.Click += new System.EventHandler(this.btnAdministrar_Click);
-            // 
-            // pictureBox2
-            // 
-            resources.ApplyResources(this.pictureBox2, "pictureBox2");
-            this.pictureBox2.Image = global::Plantilla_Bonita.Properties.Resources.Imagen1;
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.TabStop = false;
             // 
             // pnlContenedorControles
             // 
@@ -257,6 +252,27 @@
             this.btnIniciarSesion.UseVisualStyleBackColor = true;
             this.btnIniciarSesion.Click += new System.EventHandler(this.btnIniciarSesion_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.pictureBox3);
+            this.panel1.Controls.Add(this.pictureBox2);
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Name = "panel1";
+            // 
+            // pictureBox3
+            // 
+            resources.ApplyResources(this.pictureBox3, "pictureBox3");
+            this.pictureBox3.Image = global::Plantilla_Bonita.Properties.Resources.Imagen21;
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            resources.ApplyResources(this.pictureBox2, "pictureBox2");
+            this.pictureBox2.Image = global::Plantilla_Bonita.Properties.Resources.Imagen1;
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.TabStop = false;
+            // 
             // btnCerrarSesion
             // 
             resources.ApplyResources(this.btnCerrarSesion, "btnCerrarSesion");
@@ -282,13 +298,6 @@
             resources.ApplyResources(this.BarraTitulo, "BarraTitulo");
             this.BarraTitulo.Name = "BarraTitulo";
             this.BarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BarraTitulo_MouseDown);
-            // 
-            // pictureBox3
-            // 
-            resources.ApplyResources(this.pictureBox3, "pictureBox3");
-            this.pictureBox3.Image = global::Plantilla_Bonita.Properties.Resources.Imagen21;
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.TabStop = false;
             // 
             // btnRestaurar
             // 
@@ -341,12 +350,20 @@
             this.pnlContenedor.BackColor = System.Drawing.Color.White;
             this.pnlContenedor.Name = "pnlContenedor";
             // 
-            // panel1
+            // btnCopiaSeguridad
             // 
-            this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Controls.Add(this.pictureBox2);
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Name = "panel1";
+            resources.ApplyResources(this.btnCopiaSeguridad, "btnCopiaSeguridad");
+            this.btnCopiaSeguridad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnCopiaSeguridad.FlatAppearance.BorderSize = 0;
+            this.btnCopiaSeguridad.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnCopiaSeguridad.ForeColor = System.Drawing.Color.White;
+            this.btnCopiaSeguridad.IconChar = FontAwesome.Sharp.IconChar.Lock;
+            this.btnCopiaSeguridad.IconColor = System.Drawing.Color.White;
+            this.btnCopiaSeguridad.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCopiaSeguridad.IconSize = 32;
+            this.btnCopiaSeguridad.Name = "btnCopiaSeguridad";
+            this.btnCopiaSeguridad.UseVisualStyleBackColor = false;
+            this.btnCopiaSeguridad.Click += new System.EventHandler(this.btnCopiaSeguridad_Click);
             // 
             // frmPanelDeControl
             // 
@@ -365,17 +382,17 @@
             this.pnlSubMenu1.PerformLayout();
             this.pnlContenedorSubMenu1.ResumeLayout(false);
             this.pnlContenedorSubMenu1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.pnlContenedorControles.ResumeLayout(false);
             this.pnlContenedorControles.PerformLayout();
-            this.BarraTitulo.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.BarraTitulo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnslider)).EndInit();
-            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -407,6 +424,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel1;
+        private FontAwesome.Sharp.IconButton btnCopiaSeguridad;
     }
 }
 
