@@ -9,7 +9,7 @@ namespace Acceso_A_Datos
 
         public SQLConection()
         {
-            conectionString = $"{ConfigurationManager.ConnectionStrings["CadenaDeConexionAplicacion"].ConnectionString}";
+            conectionString = $"{ConfigurationManager.ConnectionStrings["Plantilla_Bonita.Properties.Settings.CadenaDeConexionAplicacion"].ConnectionString}";
         }
 
         protected SqlConnection getConnection()
