@@ -370,6 +370,8 @@ namespace Plantilla_Bonita
 
         private void btnCopiaSeguridad_Click(object sender, EventArgs e)
         {
+            //Para realizar la copia de seguridad
+
             ModeloDeUsuario obj = new ModeloDeUsuario();
 
             if (obj.CopiaDeSeguridad())
