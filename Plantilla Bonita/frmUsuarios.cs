@@ -29,12 +29,27 @@ namespace Plantilla_Bonita
         {
             // TODO: esta línea de código carga datos en la tabla 'usuariosDataSet.Usuarios' Puede moverla o quitarla según sea necesario.
             this.usuariosTableAdapter.Fill(this.usuariosDataSet.Usuarios);
-
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
             bindingNavigatorAddNewItem.PerformClick();
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            usuariosBindingNavigatorSaveItem.PerformClick();
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            bindingNavigatorDeleteItem.PerformClick();
+            usuariosBindingNavigatorSaveItem.PerformClick();
+        }
+
+        private void btnUpdateData_Click(object sender, EventArgs e)
+        {
+            this.usuariosTableAdapter.Fill(this.usuariosDataSet.Usuarios);
         }
     }
 }

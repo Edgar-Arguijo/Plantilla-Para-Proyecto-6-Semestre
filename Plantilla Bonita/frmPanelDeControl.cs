@@ -1,4 +1,6 @@
 ﻿using System;
+using System.IO;
+using Microsoft.SqlServer.Management.Smo;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -362,6 +364,29 @@ namespace Plantilla_Bonita
         private void btnUsuarios_Click(object sender, EventArgs e)
         {
             frmUsuarios fm = new frmUsuarios();
+            fm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
+            Abrirformaenelpanel(fm);
+        }
+
+        private void btnCopiaSeguridad_Click(object sender, EventArgs e)
+        {
+            //Para realizar la copia de seguridad
+
+            ModeloDeUsuario obj = new ModeloDeUsuario();
+
+            if (obj.CopiaDeSeguridad())
+            {
+                MessageBox.Show("Se ha realizado la copia de seguridad exitosamente");
+            }
+            else
+            {
+                MessageBox.Show("No se ha podido realizar la copia de seguridad");
+            }
+        }
+
+        private void btnBitacora_Click(object sender, EventArgs e)
+        {
+            frmBitacora fm = new frmBitacora();
             fm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
             Abrirformaenelpanel(fm);
         }
