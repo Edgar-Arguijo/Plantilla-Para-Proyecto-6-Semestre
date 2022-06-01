@@ -234,6 +234,22 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AforosDataSet.cs">
+      <DependentUpon>AforosDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AforosDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AforosDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AulasDataSet.cs">
+      <DependentUpon>AulasDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AulasDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AulasDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="BitacoraDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -277,6 +293,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DocentesDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EdificiosDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EdificiosDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="frmAforos.cs">
       <SubType>Form</SubType>
@@ -362,6 +383,9 @@
     <EmbeddedResource Include="Docentes.resx">
       <DependentUpon>Docentes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmAforos.resx">
+      <DependentUpon>frmAforos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAulas.resx">
       <DependentUpon>frmAulas.cs</DependentUpon>
     </EmbeddedResource>
@@ -402,6 +426,28 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="AforosDataSet.xsc">
+      <DependentUpon>AforosDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AforosDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AforosDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AforosDataSet.xss">
+      <DependentUpon>AforosDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AulasDataSet.xsc">
+      <DependentUpon>AulasDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AulasDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AulasDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AulasDataSet.xss">
+      <DependentUpon>AulasDataSet.xsd</DependentUpon>
+    </None>
     <None Include="BitacoraDataSet.xsc">
       <DependentUpon>BitacoraDataSet.xsd</DependentUpon>
     </None>
@@ -477,6 +523,17 @@
     </None>
     <None Include="DataSets\MateriasDataSet.xss">
       <DependentUpon>MateriasDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EdificiosDataSet.xsc">
+      <DependentUpon>EdificiosDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EdificiosDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EdificiosDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EdificiosDataSet.xss">
+      <DependentUpon>EdificiosDataSet.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
