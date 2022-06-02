@@ -7,9 +7,11 @@
     }
 }
 
-namespace Plantilla_Bonita.IngenieriasDataSetTableAdapters {
-    
-    
-    public partial class IngenieriasTableAdapter {
+namespace Plantilla_Bonita.DataSets.IngenieriasDataSetTableAdapters
+{
+
+
+    public partial class IngenieriasTableAdapter
+    {
     }
 }

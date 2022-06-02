@@ -2,14 +2,15 @@
 <xs:schema id="IngenieriasDataSet" targetNamespace="http://tempuri.org/IngenieriasDataSet.xsd" xmlns:mstns="http://tempuri.org/IngenieriasDataSet.xsd" xmlns="http://tempuri.org/IngenieriasDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
-      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
           <Connection ConnectionStringObject="Data Source=DESKTOP-J06FE2O;Initial Catalog=Asistencias;Integrated Security=True" IsAppSettingsProperty="false" Modifier="Assembly" Name="desktop-j06fe2o.Asistencias.dbo" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="AsistenciaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="AsistenciaConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Plantilla_Bonita.Properties.Settings.GlobalReference.Default.AsistenciaConnectionString" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="IngenieriasTableAdapter" GeneratorDataComponentClassName="IngenieriasTableAdapter" Name="Ingenierias" UserDataComponentName="IngenieriasTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="desktop-j06fe2o.Asistencias.dbo" DbObjectName="Asistencias.dbo.Ingenierias" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="AsistenciaConnectionString (Settings)" DbObjectName="Asistencia.dbo.Ingenierias" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT        Cod_Ing, Descripcion
@@ -24,7 +25,7 @@ FROM            Ingenierias</CommandText>
               <Mapping SourceColumn="Cod_Ing" DataSetColumn="Cod_Ing" />
             </Mappings>
             <Sources>
-              <DbSource ConnectionRef="desktop-j06fe2o.Asistencias.dbo" DbObjectName="Asistencias.dbo.Ingenierias" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill_Ingenierias" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="Fill_Ingenierias" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="Fill_Ingenierias">
+              <DbSource ConnectionRef="AsistenciaConnectionString (Settings)" DbObjectName="Asistencia.dbo.Ingenierias" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill_Ingenierias" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="Fill_Ingenierias" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="Fill_Ingenierias">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>SELECT Cod_Ing, Descripcion FROM Ingenierias</CommandText>
@@ -52,7 +53,7 @@ FROM            Ingenierias</CommandText>
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Cod_Ing" msprop:Generator_ColumnPropNameInRow="Cod_Ing" msprop:Generator_ColumnPropNameInTable="Cod_IngColumn" msprop:Generator_ColumnVarNameInTable="columnCod_Ing" msprop:Generator_UserColumnName="Cod_Ing">
+              <xs:element name="Cod_Ing" msprop:Generator_UserColumnName="Cod_Ing" msprop:Generator_ColumnPropNameInTable="Cod_IngColumn" msprop:Generator_ColumnPropNameInRow="Cod_Ing" msprop:Generator_ColumnVarNameInTable="columnCod_Ing">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="20" />
