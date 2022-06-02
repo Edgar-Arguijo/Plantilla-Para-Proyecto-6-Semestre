@@ -10,8 +10,16 @@ using System.Windows.Forms;
 
 namespace Plantilla_Bonita
 {
+    enum Filtro
+    {
+        Edificio_Aula,
+        Edificio_Aula_Fecha
+    }
+
     public partial class frmAforos : Form
     {
+        private Filtro filtro = Filtro.Edificio_Aula_Fecha;
+
         public frmAforos()
         {
             InitializeComponent();
@@ -27,9 +35,77 @@ namespace Plantilla_Bonita
 
         private void frmAforos_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'aforosDataSet.Vista_AforosGeneral' Puede moverla o quitarla según sea necesario.
+            this.vista_AforosGeneralTableAdapter.Fill(this.aforosDataSet.Vista_AforosGeneral);
             // TODO: esta línea de código carga datos en la tabla 'edificiosDataSet.Edificios' Puede moverla o quitarla según sea necesario.
             this.edificiosTableAdapter.Fill(this.edificiosDataSet.Edificios);
+        }
 
+        private void codigoEdificioComboBox_SelectedValueChanged(object sender, EventArgs e)
+        {
+            this.aulasTableAdapter.FillByEdificio(this.aulasDataSet.Aulas, codigoEdificioComboBox.Text);
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LlenarTabla() {
+
+            switch (this.filtro)
+            {
+                case Filtro.Edificio_Aula:
+                    this.vista_AforosGeneralTableAdapter.FillByEdificioAula(this.aforosDataSet.Vista_AforosGeneral, codigoEdificioComboBox.Text, codigoAulaComboBox.Text);
+                    break;
+
+                case Filtro.Edificio_Aula_Fecha:
+
+                    DateTime inicio = dtTPckInicio.Value.Date;
+                    DateTime fin = dtTPckFin.Value.Date;
+                    string prim = inicio.ToString();
+                    string seg = fin.ToString();
+                    this.vista_AforosGeneralTableAdapter.FillByEdificioAulaFecha(this.aforosDataSet.Vista_AforosGeneral, codigoEdificioComboBox.Text, codigoAulaComboBox.Text, inicio, fin);                    break;
+
+                default:
+                    this.vista_AforosGeneralTableAdapter.Fill(this.aforosDataSet.Vista_AforosGeneral);
+                    break;
+            }
+
+        }
+
+        private void chkFecha_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkFecha.CheckState==CheckState.Checked)
+            {
+                this.filtro = Filtro.Edificio_Aula_Fecha;
+                dtTPckFin.Enabled = true;
+                dtTPckInicio.Enabled = true;
+            }
+            else
+            {
+                this.filtro = Filtro.Edificio_Aula;
+                dtTPckFin.Enabled = false;
+                dtTPckInicio.Enabled = false;
+            }
+
+            LlenarTabla();
+        }
+
+        private void dtTPckFin_ValueChanged(object sender, EventArgs e)
+        {
+            LlenarTabla();
+        }
+
+        private void dtTPckInicio_ValueChanged(object sender, EventArgs e)
+        {
+            LlenarTabla();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.label1.Text = dtTPckInicio.Value.Date.ToString();
+            this.label2.Text = dtTPckFin.Value.Date.ToString();
         }
     }
 }
