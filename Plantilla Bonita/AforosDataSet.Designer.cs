@@ -987,19 +987,25 @@ namespace Plantilla_Bonita.AforosDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = "Data Source=DESKTOP-GF0LP81\\SQLEXPRESS;Initial Catalog=Asistencia;Integrated Secu" +
-                "rity=True";
+            this._connection.ConnectionString = global::Plantilla_Bonita.Properties.Settings.Default.CadenaDeConexionAplicacion;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT Edificio, Aula, Aforo, Fecha, Docente, Cod_Materia, Materia, Semestre FROM" +
                 " dbo.Vista_AforosGeneral";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "SELECT Edificio, Aula, Aforo, Fecha, Docente, Cod_Materia, Materia, Semestre FROM" +
+                " dbo.Vista_AforosGeneral\r\nwhere Edificio = @edificio and Aula = @aula";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@edificio", global::System.Data.SqlDbType.VarChar, 3, global::System.Data.ParameterDirection.Input, 0, 0, "Edificio", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@aula", global::System.Data.SqlDbType.VarChar, 6, global::System.Data.ParameterDirection.Input, 0, 0, "Aula", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1021,6 +1027,54 @@ namespace Plantilla_Bonita.AforosDataSetTableAdapters {
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
         public virtual AforosDataSet.Vista_AforosGeneralDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            AforosDataSet.Vista_AforosGeneralDataTable dataTable = new AforosDataSet.Vista_AforosGeneralDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillByEdificioAula(AforosDataSet.Vista_AforosGeneralDataTable dataTable, string edificio, string aula) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((edificio == null)) {
+                throw new global::System.ArgumentNullException("edificio");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(edificio));
+            }
+            if ((aula == null)) {
+                throw new global::System.ArgumentNullException("aula");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(aula));
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual AforosDataSet.Vista_AforosGeneralDataTable GetDataByEdificioAula(string edificio, string aula) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((edificio == null)) {
+                throw new global::System.ArgumentNullException("edificio");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(edificio));
+            }
+            if ((aula == null)) {
+                throw new global::System.ArgumentNullException("aula");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(aula));
+            }
             AforosDataSet.Vista_AforosGeneralDataTable dataTable = new AforosDataSet.Vista_AforosGeneralDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
