@@ -278,12 +278,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DocentesDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="frmAforos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmAforos.Designer.cs">
-      <DependentUpon>frmAforos.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmAulas.cs">
       <SubType>Form</SubType>
     </Compile>
