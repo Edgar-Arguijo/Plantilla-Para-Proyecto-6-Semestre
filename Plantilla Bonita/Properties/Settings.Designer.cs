@@ -33,5 +33,27 @@ namespace Plantilla_Bonita.Properties {
                 return ((string)(this["CadenaDeConexionAplicacion"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-GF0LP81\\SQLEXPRESS;Initial Catalog=Asistencia;Integrated Secu" +
+            "rity=True")]
+        public string AsistenciaConnectionString {
+            get {
+                return ((string)(this["AsistenciaConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-GF0LP81\\SQLEXPRESS;Initial Catalog=Asistencia;Integrated Secu" +
+            "rity=True")]
+        public string AsistenciaConnectionString1 {
+            get {
+                return ((string)(this["AsistenciaConnectionString1"]));
+            }
+        }
     }
 }

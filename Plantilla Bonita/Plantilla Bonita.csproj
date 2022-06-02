@@ -242,6 +242,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AforosDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="AsistenciaejemploDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AsistenciaejemploDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="AulasDataSet.cs">
       <DependentUpon>AulasDataSet.xsd</DependentUpon>
     </Compile>
@@ -437,13 +442,24 @@
     <None Include="AforosDataSet.xss">
       <DependentUpon>AforosDataSet.xsd</DependentUpon>
     </None>
+    <None Include="AsistenciaejemploDataSet.xsc">
+      <DependentUpon>AsistenciaejemploDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AsistenciaejemploDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AsistenciaejemploDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AsistenciaejemploDataSet.xss">
+      <DependentUpon>AsistenciaejemploDataSet.xsd</DependentUpon>
+    </None>
     <None Include="AulasDataSet.xsc">
       <DependentUpon>AulasDataSet.xsd</DependentUpon>
     </None>
     <None Include="AulasDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>AulasDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>AulasDataSet.Designer.cs</LastGenOutput>
     </None>
     <None Include="AulasDataSet.xss">
       <DependentUpon>AulasDataSet.xsd</DependentUpon>
