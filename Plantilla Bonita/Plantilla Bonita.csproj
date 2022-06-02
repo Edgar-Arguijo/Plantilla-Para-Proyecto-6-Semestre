@@ -270,11 +270,6 @@
     <Compile Include="DataSets\IngenieriasDataSet.cs">
       <DependentUpon>IngenieriasDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="DataSets\IngenieriasDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>IngenieriasDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Docentes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -286,10 +281,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DocentesDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="EdificiosDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EdificiosDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="EJEMPLODataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>EJEMPLODataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmAforos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAforos.Designer.cs">
+      <DependentUpon>frmAforos.cs</DependentUpon>
     </Compile>
     <Compile Include="frmAulas.cs">
       <SubType>Form</SubType>
@@ -368,6 +374,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Docentes.resx">
       <DependentUpon>Docentes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAforos.resx">
+      <DependentUpon>frmAforos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAulas.resx">
       <DependentUpon>frmAulas.cs</DependentUpon>
@@ -485,6 +494,17 @@
     </None>
     <None Include="DataSets\MateriasDataSet.xss">
       <DependentUpon>MateriasDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EdificiosDataSet.xsc">
+      <DependentUpon>EdificiosDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EdificiosDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EdificiosDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EdificiosDataSet.xss">
+      <DependentUpon>EdificiosDataSet.xsd</DependentUpon>
     </None>
     <None Include="EJEMPLODataSet1.xsc">
       <DependentUpon>EJEMPLODataSet1.xsd</DependentUpon>
