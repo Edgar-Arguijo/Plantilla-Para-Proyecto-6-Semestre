@@ -113,16 +113,22 @@ namespace Plantilla_Bonita
         }
         private void Abrirformaenelpanel(object FormHijo)
         {
-            if (this.pnlContenedor.Controls.Count > 0)
-                this.pnlContenedor.Controls.RemoveAt(0);
+            try
+            {
+                if (this.pnlContenedor.Controls.Count > 0)
+                    this.pnlContenedor.Controls.RemoveAt(0);
 
-            Form fh = FormHijo as Form;
-            fh.TopLevel = false;
-            this.pnlContenedor.Controls.Add(fh);
-            this.pnlContenedor.Tag = fh;
-            fh.Dock = DockStyle.Fill;
-            fh.Show();
-
+                Form fh = FormHijo as Form;
+                fh.TopLevel = false;
+                this.pnlContenedor.Controls.Add(fh);
+                this.pnlContenedor.Tag = fh;
+                fh.Dock = DockStyle.Fill;
+                fh.Show();
+            }
+            catch (Exception ex)
+            {
+                Console.Write(ex.Message);
+            }
         }
 
         //METODO PARA REDIMENCIONAR/CAMBIAR TAMAÑO A FORMULARIO  TIEMPO DE EJECUCION 
@@ -358,7 +364,7 @@ namespace Plantilla_Bonita
 
         private void btnAulas_Click(object sender, EventArgs e)
         {
-            frmAulas fm = new frmAulas();
+            frmABCAulas fm = new frmABCAulas();
             fm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
             Abrirformaenelpanel(fm);
         }

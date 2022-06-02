@@ -20,17 +20,17 @@ namespace Plantilla_Bonita {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("UsuariosDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("EJEMPLODataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class UsuariosDataSet : global::System.Data.DataSet {
+    public partial class EJEMPLODataSet : global::System.Data.DataSet {
         
-        private UsuariosDataTable tableUsuarios;
+        private AforosDataTable tableAforos;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public UsuariosDataSet() {
+        public EJEMPLODataSet() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace Plantilla_Bonita {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected UsuariosDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected EJEMPLODataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace Plantilla_Bonita {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["Usuarios"] != null)) {
-                    base.Tables.Add(new UsuariosDataTable(ds.Tables["Usuarios"]));
+                if ((ds.Tables["Aforos"] != null)) {
+                    base.Tables.Add(new AforosDataTable(ds.Tables["Aforos"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace Plantilla_Bonita {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public UsuariosDataTable Usuarios {
+        public AforosDataTable Aforos {
             get {
-                return this.tableUsuarios;
+                return this.tableAforos;
             }
         }
         
@@ -127,7 +127,7 @@ namespace Plantilla_Bonita {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            UsuariosDataSet cln = ((UsuariosDataSet)(base.Clone()));
+            EJEMPLODataSet cln = ((EJEMPLODataSet)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace Plantilla_Bonita {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["Usuarios"] != null)) {
-                    base.Tables.Add(new UsuariosDataTable(ds.Tables["Usuarios"]));
+                if ((ds.Tables["Aforos"] != null)) {
+                    base.Tables.Add(new AforosDataTable(ds.Tables["Aforos"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace Plantilla_Bonita {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableUsuarios = ((UsuariosDataTable)(base.Tables["Usuarios"]));
+            this.tableAforos = ((AforosDataTable)(base.Tables["Aforos"]));
             if ((initTable == true)) {
-                if ((this.tableUsuarios != null)) {
-                    this.tableUsuarios.InitVars();
+                if ((this.tableAforos != null)) {
+                    this.tableAforos.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace Plantilla_Bonita {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "UsuariosDataSet";
+            this.DataSetName = "EJEMPLODataSet";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/UsuariosDataSet.xsd";
+            this.Namespace = "http://tempuri.org/EJEMPLODataSet1.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableUsuarios = new UsuariosDataTable();
-            base.Tables.Add(this.tableUsuarios);
+            this.tableAforos = new AforosDataTable();
+            base.Tables.Add(this.tableAforos);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private bool ShouldSerializeUsuarios() {
+        private bool ShouldSerializeAforos() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace Plantilla_Bonita {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            UsuariosDataSet ds = new UsuariosDataSet();
+            EJEMPLODataSet ds = new EJEMPLODataSet();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,25 +270,25 @@ namespace Plantilla_Bonita {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public delegate void UsuariosRowChangeEventHandler(object sender, UsuariosRowChangeEvent e);
+        public delegate void AforosRowChangeEventHandler(object sender, AforosRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class UsuariosDataTable : global::System.Data.TypedTableBase<UsuariosRow> {
+        public partial class AforosDataTable : global::System.Data.TypedTableBase<AforosRow> {
             
-            private global::System.Data.DataColumn columnNombreDeUsuario;
+            private global::System.Data.DataColumn columncodAula;
             
-            private global::System.Data.DataColumn columnContraseña;
+            private global::System.Data.DataColumn columnCantidad;
             
-            private global::System.Data.DataColumn columnRol;
+            private global::System.Data.DataColumn columncodClase;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public UsuariosDataTable() {
-                this.TableName = "Usuarios";
+            public AforosDataTable() {
+                this.TableName = "Aforos";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -296,7 +296,7 @@ namespace Plantilla_Bonita {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal UsuariosDataTable(global::System.Data.DataTable table) {
+            internal AforosDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -313,32 +313,32 @@ namespace Plantilla_Bonita {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected UsuariosDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected AforosDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn NombreDeUsuarioColumn {
+            public global::System.Data.DataColumn codAulaColumn {
                 get {
-                    return this.columnNombreDeUsuario;
+                    return this.columncodAula;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn ContraseñaColumn {
+            public global::System.Data.DataColumn CantidadColumn {
                 get {
-                    return this.columnContraseña;
+                    return this.columnCantidad;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn RolColumn {
+            public global::System.Data.DataColumn codClaseColumn {
                 get {
-                    return this.columnRol;
+                    return this.columncodClase;
                 }
             }
             
@@ -353,54 +353,47 @@ namespace Plantilla_Bonita {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public UsuariosRow this[int index] {
+            public AforosRow this[int index] {
                 get {
-                    return ((UsuariosRow)(this.Rows[index]));
+                    return ((AforosRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event UsuariosRowChangeEventHandler UsuariosRowChanging;
+            public event AforosRowChangeEventHandler AforosRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event UsuariosRowChangeEventHandler UsuariosRowChanged;
+            public event AforosRowChangeEventHandler AforosRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event UsuariosRowChangeEventHandler UsuariosRowDeleting;
+            public event AforosRowChangeEventHandler AforosRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event UsuariosRowChangeEventHandler UsuariosRowDeleted;
+            public event AforosRowChangeEventHandler AforosRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void AddUsuariosRow(UsuariosRow row) {
+            public void AddAforosRow(AforosRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public UsuariosRow AddUsuariosRow(string NombreDeUsuario, string Contraseña, string Rol) {
-                UsuariosRow rowUsuariosRow = ((UsuariosRow)(this.NewRow()));
+            public AforosRow AddAforosRow(string codAula, int Cantidad, string codClase) {
+                AforosRow rowAforosRow = ((AforosRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        NombreDeUsuario,
-                        Contraseña,
-                        Rol};
-                rowUsuariosRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowUsuariosRow);
-                return rowUsuariosRow;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public UsuariosRow FindByNombreDeUsuario(string NombreDeUsuario) {
-                return ((UsuariosRow)(this.Rows.Find(new object[] {
-                            NombreDeUsuario})));
+                        codAula,
+                        Cantidad,
+                        codClase};
+                rowAforosRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowAforosRow);
+                return rowAforosRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                UsuariosDataTable cln = ((UsuariosDataTable)(base.Clone()));
+                AforosDataTable cln = ((AforosDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -408,61 +401,56 @@ namespace Plantilla_Bonita {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new UsuariosDataTable();
+                return new AforosDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             internal void InitVars() {
-                this.columnNombreDeUsuario = base.Columns["NombreDeUsuario"];
-                this.columnContraseña = base.Columns["Contraseña"];
-                this.columnRol = base.Columns["Rol"];
+                this.columncodAula = base.Columns["codAula"];
+                this.columnCantidad = base.Columns["Cantidad"];
+                this.columncodClase = base.Columns["codClase"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             private void InitClass() {
-                this.columnNombreDeUsuario = new global::System.Data.DataColumn("NombreDeUsuario", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnNombreDeUsuario);
-                this.columnContraseña = new global::System.Data.DataColumn("Contraseña", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnContraseña);
-                this.columnRol = new global::System.Data.DataColumn("Rol", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnRol);
-                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnNombreDeUsuario}, true));
-                this.columnNombreDeUsuario.AllowDBNull = false;
-                this.columnNombreDeUsuario.Unique = true;
-                this.columnNombreDeUsuario.MaxLength = 50;
-                this.columnContraseña.AllowDBNull = false;
-                this.columnContraseña.MaxLength = 2147483647;
-                this.columnRol.AllowDBNull = false;
-                this.columnRol.MaxLength = 20;
+                this.columncodAula = new global::System.Data.DataColumn("codAula", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncodAula);
+                this.columnCantidad = new global::System.Data.DataColumn("Cantidad", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCantidad);
+                this.columncodClase = new global::System.Data.DataColumn("codClase", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncodClase);
+                this.columncodAula.AllowDBNull = false;
+                this.columncodAula.MaxLength = 6;
+                this.columncodClase.AllowDBNull = false;
+                this.columncodClase.MaxLength = 15;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public UsuariosRow NewUsuariosRow() {
-                return ((UsuariosRow)(this.NewRow()));
+            public AforosRow NewAforosRow() {
+                return ((AforosRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new UsuariosRow(builder);
+                return new AforosRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(UsuariosRow);
+                return typeof(AforosRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.UsuariosRowChanged != null)) {
-                    this.UsuariosRowChanged(this, new UsuariosRowChangeEvent(((UsuariosRow)(e.Row)), e.Action));
+                if ((this.AforosRowChanged != null)) {
+                    this.AforosRowChanged(this, new AforosRowChangeEvent(((AforosRow)(e.Row)), e.Action));
                 }
             }
             
@@ -470,8 +458,8 @@ namespace Plantilla_Bonita {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.UsuariosRowChanging != null)) {
-                    this.UsuariosRowChanging(this, new UsuariosRowChangeEvent(((UsuariosRow)(e.Row)), e.Action));
+                if ((this.AforosRowChanging != null)) {
+                    this.AforosRowChanging(this, new AforosRowChangeEvent(((AforosRow)(e.Row)), e.Action));
                 }
             }
             
@@ -479,8 +467,8 @@ namespace Plantilla_Bonita {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.UsuariosRowDeleted != null)) {
-                    this.UsuariosRowDeleted(this, new UsuariosRowChangeEvent(((UsuariosRow)(e.Row)), e.Action));
+                if ((this.AforosRowDeleted != null)) {
+                    this.AforosRowDeleted(this, new AforosRowChangeEvent(((AforosRow)(e.Row)), e.Action));
                 }
             }
             
@@ -488,14 +476,14 @@ namespace Plantilla_Bonita {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.UsuariosRowDeleting != null)) {
-                    this.UsuariosRowDeleting(this, new UsuariosRowChangeEvent(((UsuariosRow)(e.Row)), e.Action));
+                if ((this.AforosRowDeleting != null)) {
+                    this.AforosRowDeleting(this, new AforosRowChangeEvent(((AforosRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void RemoveUsuariosRow(UsuariosRow row) {
+            public void RemoveAforosRow(AforosRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -504,7 +492,7 @@ namespace Plantilla_Bonita {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                UsuariosDataSet ds = new UsuariosDataSet();
+                EJEMPLODataSet ds = new EJEMPLODataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -522,7 +510,7 @@ namespace Plantilla_Bonita {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "UsuariosDataTable";
+                attribute2.FixedValue = "AforosDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -566,48 +554,65 @@ namespace Plantilla_Bonita {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class UsuariosRow : global::System.Data.DataRow {
+        public partial class AforosRow : global::System.Data.DataRow {
             
-            private UsuariosDataTable tableUsuarios;
+            private AforosDataTable tableAforos;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal UsuariosRow(global::System.Data.DataRowBuilder rb) : 
+            internal AforosRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableUsuarios = ((UsuariosDataTable)(this.Table));
+                this.tableAforos = ((AforosDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string NombreDeUsuario {
+            public string codAula {
                 get {
-                    return ((string)(this[this.tableUsuarios.NombreDeUsuarioColumn]));
+                    return ((string)(this[this.tableAforos.codAulaColumn]));
                 }
                 set {
-                    this[this.tableUsuarios.NombreDeUsuarioColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Contraseña {
-                get {
-                    return ((string)(this[this.tableUsuarios.ContraseñaColumn]));
-                }
-                set {
-                    this[this.tableUsuarios.ContraseñaColumn] = value;
+                    this[this.tableAforos.codAulaColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Rol {
+            public int Cantidad {
                 get {
-                    return ((string)(this[this.tableUsuarios.RolColumn]));
+                    try {
+                        return ((int)(this[this.tableAforos.CantidadColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Cantidad\' de la tabla \'Aforos\' es DBNull.", e);
+                    }
                 }
                 set {
-                    this[this.tableUsuarios.RolColumn] = value;
+                    this[this.tableAforos.CantidadColumn] = value;
                 }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string codClase {
+                get {
+                    return ((string)(this[this.tableAforos.codClaseColumn]));
+                }
+                set {
+                    this[this.tableAforos.codClaseColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsCantidadNull() {
+                return this.IsNull(this.tableAforos.CantidadColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetCantidadNull() {
+                this[this.tableAforos.CantidadColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -615,22 +620,22 @@ namespace Plantilla_Bonita {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public class UsuariosRowChangeEvent : global::System.EventArgs {
+        public class AforosRowChangeEvent : global::System.EventArgs {
             
-            private UsuariosRow eventRow;
+            private AforosRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public UsuariosRowChangeEvent(UsuariosRow row, global::System.Data.DataRowAction action) {
+            public AforosRowChangeEvent(AforosRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public UsuariosRow Row {
+            public AforosRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -646,7 +651,7 @@ namespace Plantilla_Bonita {
         }
     }
 }
-namespace Plantilla_Bonita.UsuariosDataSetTableAdapters {
+namespace Plantilla_Bonita.EJEMPLODataSetTableAdapters {
     
     
     /// <summary>
@@ -658,7 +663,7 @@ namespace Plantilla_Bonita.UsuariosDataSetTableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class UsuariosTableAdapter : global::System.ComponentModel.Component {
+    public partial class AforosTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -672,7 +677,7 @@ namespace Plantilla_Bonita.UsuariosDataSetTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public UsuariosTableAdapter() {
+        public AforosTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -769,37 +774,19 @@ namespace Plantilla_Bonita.UsuariosDataSetTableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "Usuarios";
-            tableMapping.ColumnMappings.Add("NombreDeUsuario", "NombreDeUsuario");
-            tableMapping.ColumnMappings.Add("Contraseña", "Contraseña");
-            tableMapping.ColumnMappings.Add("Rol", "Rol");
+            tableMapping.DataSetTable = "Aforos";
+            tableMapping.ColumnMappings.Add("codAula", "codAula");
+            tableMapping.ColumnMappings.Add("Cantidad", "Cantidad");
+            tableMapping.ColumnMappings.Add("codClase", "codClase");
             this._adapter.TableMappings.Add(tableMapping);
-            this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[Usuarios] WHERE (([NombreDeUsuario] = @Original_NombreDeUsuari" +
-                "o) AND ([Rol] = @Original_Rol))";
-            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_NombreDeUsuario", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NombreDeUsuario", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Rol", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Rol", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Usuarios] ([NombreDeUsuario], [Contraseña], [Rol]) VALUES (@No" +
-                "mbreDeUsuario, @Contraseña, @Rol);\r\nSELECT NombreDeUsuario, Contraseña, Rol FROM" +
-                " Usuarios WHERE (NombreDeUsuario = @NombreDeUsuario)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Aforos] ([codAula], [Cantidad], [codClase]) VALUES (@codAula, " +
+                "@Cantidad, @codClase)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NombreDeUsuario", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NombreDeUsuario", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Contraseña", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Contraseña", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Rol", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Rol", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Usuarios] SET [NombreDeUsuario] = @NombreDeUsuario, [Contraseña] = @Contraseña, [Rol] = @Rol WHERE (([NombreDeUsuario] = @Original_NombreDeUsuario) AND ([Rol] = @Original_Rol));
-SELECT NombreDeUsuario, Contraseña, Rol FROM Usuarios WHERE (NombreDeUsuario = @NombreDeUsuario)";
-            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NombreDeUsuario", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NombreDeUsuario", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Contraseña", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Contraseña", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Rol", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Rol", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_NombreDeUsuario", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NombreDeUsuario", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Rol", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Rol", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@codAula", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "codAula", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Cantidad", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Cantidad", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@codClase", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "codClase", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -815,7 +802,7 @@ SELECT NombreDeUsuario, Contraseña, Rol FROM Usuarios WHERE (NombreDeUsuario = 
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT NombreDeUsuario, Contraseña, Rol FROM dbo.Usuarios";
+            this._commandCollection[0].CommandText = "SELECT codAula, Cantidad, codClase FROM dbo.Aforos";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -823,7 +810,7 @@ SELECT NombreDeUsuario, Contraseña, Rol FROM Usuarios WHERE (NombreDeUsuario = 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(UsuariosDataSet.UsuariosDataTable dataTable) {
+        public virtual int Fill(EJEMPLODataSet.AforosDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -836,9 +823,9 @@ SELECT NombreDeUsuario, Contraseña, Rol FROM Usuarios WHERE (NombreDeUsuario = 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual UsuariosDataSet.UsuariosDataTable GetData() {
+        public virtual EJEMPLODataSet.AforosDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            UsuariosDataSet.UsuariosDataTable dataTable = new UsuariosDataSet.UsuariosDataTable();
+            EJEMPLODataSet.AforosDataTable dataTable = new EJEMPLODataSet.AforosDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -846,15 +833,15 @@ SELECT NombreDeUsuario, Contraseña, Rol FROM Usuarios WHERE (NombreDeUsuario = 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(UsuariosDataSet.UsuariosDataTable dataTable) {
+        public virtual int Update(EJEMPLODataSet.AforosDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(UsuariosDataSet dataSet) {
-            return this.Adapter.Update(dataSet, "Usuarios");
+        public virtual int Update(EJEMPLODataSet dataSet) {
+            return this.Adapter.Update(dataSet, "Aforos");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -875,58 +862,25 @@ SELECT NombreDeUsuario, Contraseña, Rol FROM Usuarios WHERE (NombreDeUsuario = 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(string Original_NombreDeUsuario, string Original_Rol) {
-            if ((Original_NombreDeUsuario == null)) {
-                throw new global::System.ArgumentNullException("Original_NombreDeUsuario");
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[0].Value = ((string)(Original_NombreDeUsuario));
-            }
-            if ((Original_Rol == null)) {
-                throw new global::System.ArgumentNullException("Original_Rol");
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[1].Value = ((string)(Original_Rol));
-            }
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
-            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.DeleteCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.DeleteCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string NombreDeUsuario, string Contraseña, string Rol) {
-            if ((NombreDeUsuario == null)) {
-                throw new global::System.ArgumentNullException("NombreDeUsuario");
+        public virtual int Insert(string codAula, global::System.Nullable<int> Cantidad, string codClase) {
+            if ((codAula == null)) {
+                throw new global::System.ArgumentNullException("codAula");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(NombreDeUsuario));
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(codAula));
             }
-            if ((Contraseña == null)) {
-                throw new global::System.ArgumentNullException("Contraseña");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(Contraseña));
-            }
-            if ((Rol == null)) {
-                throw new global::System.ArgumentNullException("Rol");
+            if ((Cantidad.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[1].Value = ((int)(Cantidad.Value));
             }
             else {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(Rol));
+                this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            if ((codClase == null)) {
+                throw new global::System.ArgumentNullException("codClase");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(codClase));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -943,65 +897,6 @@ SELECT NombreDeUsuario, Contraseña, Rol FROM Usuarios WHERE (NombreDeUsuario = 
                 }
             }
         }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string NombreDeUsuario, string Contraseña, string Rol, string Original_NombreDeUsuario, string Original_Rol) {
-            if ((NombreDeUsuario == null)) {
-                throw new global::System.ArgumentNullException("NombreDeUsuario");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(NombreDeUsuario));
-            }
-            if ((Contraseña == null)) {
-                throw new global::System.ArgumentNullException("Contraseña");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(Contraseña));
-            }
-            if ((Rol == null)) {
-                throw new global::System.ArgumentNullException("Rol");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(Rol));
-            }
-            if ((Original_NombreDeUsuario == null)) {
-                throw new global::System.ArgumentNullException("Original_NombreDeUsuario");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(Original_NombreDeUsuario));
-            }
-            if ((Original_Rol == null)) {
-                throw new global::System.ArgumentNullException("Original_Rol");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(Original_Rol));
-            }
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
-            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.UpdateCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.UpdateCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string Contraseña, string Rol, string Original_NombreDeUsuario, string Original_Rol) {
-            return this.Update(Original_NombreDeUsuario, Contraseña, Rol, Original_NombreDeUsuario, Original_Rol);
-        }
     }
     
     /// <summary>
@@ -1016,7 +911,7 @@ SELECT NombreDeUsuario, Contraseña, Rol FROM Usuarios WHERE (NombreDeUsuario = 
         
         private UpdateOrderOption _updateOrder;
         
-        private UsuariosTableAdapter _usuariosTableAdapter;
+        private AforosTableAdapter _aforosTableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -1038,12 +933,12 @@ SELECT NombreDeUsuario, Contraseña, Rol FROM Usuarios WHERE (NombreDeUsuario = 
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public UsuariosTableAdapter UsuariosTableAdapter {
+        public AforosTableAdapter AforosTableAdapter {
             get {
-                return this._usuariosTableAdapter;
+                return this._aforosTableAdapter;
             }
             set {
-                this._usuariosTableAdapter = value;
+                this._aforosTableAdapter = value;
             }
         }
         
@@ -1066,9 +961,9 @@ SELECT NombreDeUsuario, Contraseña, Rol FROM Usuarios WHERE (NombreDeUsuario = 
                 if ((this._connection != null)) {
                     return this._connection;
                 }
-                if (((this._usuariosTableAdapter != null) 
-                            && (this._usuariosTableAdapter.Connection != null))) {
-                    return this._usuariosTableAdapter.Connection;
+                if (((this._aforosTableAdapter != null) 
+                            && (this._aforosTableAdapter.Connection != null))) {
+                    return this._aforosTableAdapter.Connection;
                 }
                 return null;
             }
@@ -1083,7 +978,7 @@ SELECT NombreDeUsuario, Contraseña, Rol FROM Usuarios WHERE (NombreDeUsuario = 
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
-                if ((this._usuariosTableAdapter != null)) {
+                if ((this._aforosTableAdapter != null)) {
                     count = (count + 1);
                 }
                 return count;
@@ -1095,14 +990,14 @@ SELECT NombreDeUsuario, Contraseña, Rol FROM Usuarios WHERE (NombreDeUsuario = 
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateUpdatedRows(UsuariosDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(EJEMPLODataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._usuariosTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.Usuarios.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._aforosTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.Aforos.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._usuariosTableAdapter.Update(updatedRows));
+                    result = (result + this._aforosTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -1114,13 +1009,13 @@ SELECT NombreDeUsuario, Contraseña, Rol FROM Usuarios WHERE (NombreDeUsuario = 
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateInsertedRows(UsuariosDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(EJEMPLODataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._usuariosTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.Usuarios.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._aforosTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.Aforos.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._usuariosTableAdapter.Update(addedRows));
+                    result = (result + this._aforosTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -1132,13 +1027,13 @@ SELECT NombreDeUsuario, Contraseña, Rol FROM Usuarios WHERE (NombreDeUsuario = 
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateDeletedRows(UsuariosDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(EJEMPLODataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._usuariosTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.Usuarios.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._aforosTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.Aforos.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._usuariosTableAdapter.Update(deletedRows));
+                    result = (result + this._aforosTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -1174,15 +1069,15 @@ SELECT NombreDeUsuario, Contraseña, Rol FROM Usuarios WHERE (NombreDeUsuario = 
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public virtual int UpdateAll(UsuariosDataSet dataSet) {
+        public virtual int UpdateAll(EJEMPLODataSet dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
             if ((dataSet.HasChanges() == false)) {
                 return 0;
             }
-            if (((this._usuariosTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._usuariosTableAdapter.Connection) == false))) {
+            if (((this._aforosTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._aforosTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("Todos los TableAdapters administrados por un TableAdapterManager deben usar la mi" +
                         "sma cadena de conexión.");
             }
@@ -1218,13 +1113,13 @@ SELECT NombreDeUsuario, Contraseña, Rol FROM Usuarios WHERE (NombreDeUsuario = 
             try {
                 // ---- Prepare for update -----------
                 //
-                if ((this._usuariosTableAdapter != null)) {
-                    revertConnections.Add(this._usuariosTableAdapter, this._usuariosTableAdapter.Connection);
-                    this._usuariosTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._usuariosTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._usuariosTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._usuariosTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._usuariosTableAdapter.Adapter);
+                if ((this._aforosTableAdapter != null)) {
+                    revertConnections.Add(this._aforosTableAdapter, this._aforosTableAdapter.Connection);
+                    this._aforosTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._aforosTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._aforosTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._aforosTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._aforosTableAdapter.Adapter);
                     }
                 }
                 // 
@@ -1285,9 +1180,9 @@ SELECT NombreDeUsuario, Contraseña, Rol FROM Usuarios WHERE (NombreDeUsuario = 
                 if (workConnOpened) {
                     workConnection.Close();
                 }
-                if ((this._usuariosTableAdapter != null)) {
-                    this._usuariosTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._usuariosTableAdapter]));
-                    this._usuariosTableAdapter.Transaction = null;
+                if ((this._aforosTableAdapter != null)) {
+                    this._aforosTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._aforosTableAdapter]));
+                    this._aforosTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

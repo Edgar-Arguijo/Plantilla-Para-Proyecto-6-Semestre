@@ -2,14 +2,15 @@
 <xs:schema id="ABC_IngenieriasDataSet" targetNamespace="http://tempuri.org/ABC_IngenieriasDataSet.xsd" xmlns:mstns="http://tempuri.org/ABC_IngenieriasDataSet.xsd" xmlns="http://tempuri.org/ABC_IngenieriasDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
-      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
           <Connection ConnectionStringObject="Data Source=DESKTOP-J06FE2O;Initial Catalog=Asistencias;Integrated Security=True" IsAppSettingsProperty="false" Modifier="Assembly" Name="desktop-j06fe2o.Asistencias.dbo" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="AsistenciaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="AsistenciaConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Plantilla_Bonita.Properties.Settings.GlobalReference.Default.AsistenciaConnectionString" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="IngenieriasTableAdapter" GeneratorDataComponentClassName="IngenieriasTableAdapter" Name="Ingenierias" UserDataComponentName="IngenieriasTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="desktop-j06fe2o.Asistencias.dbo" DbObjectName="Asistencias.dbo.Ingenierias" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="AsistenciaConnectionString (Settings)" DbObjectName="Asistencia.dbo.Ingenierias" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM [dbo].[Ingenierias] WHERE (([Cod_Ing] = @Original_Cod_Ing))</CommandText>
@@ -58,20 +59,20 @@ SELECT Cod_Ing, Descripcion FROM Ingenierias WHERE (Cod_Ing = @Cod_Ing)</Command
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="ABC_IngenieriasDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="ABC_IngenieriasDataSet" msprop:Generator_DataSetName="ABC_IngenieriasDataSet">
+  <xs:element name="ABC_IngenieriasDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="ABC_IngenieriasDataSet" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="ABC_IngenieriasDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Ingenierias" msprop:Generator_RowEvHandlerName="IngenieriasRowChangeEventHandler" msprop:Generator_RowDeletedName="IngenieriasRowDeleted" msprop:Generator_RowDeletingName="IngenieriasRowDeleting" msprop:Generator_RowEvArgName="IngenieriasRowChangeEvent" msprop:Generator_TablePropName="Ingenierias" msprop:Generator_RowChangedName="IngenieriasRowChanged" msprop:Generator_RowChangingName="IngenieriasRowChanging" msprop:Generator_TableClassName="IngenieriasDataTable" msprop:Generator_RowClassName="IngenieriasRow" msprop:Generator_TableVarName="tableIngenierias" msprop:Generator_UserTableName="Ingenierias">
+        <xs:element name="Ingenierias" msprop:Generator_RowClassName="IngenieriasRow" msprop:Generator_RowEvHandlerName="IngenieriasRowChangeEventHandler" msprop:Generator_RowDeletedName="IngenieriasRowDeleted" msprop:Generator_RowDeletingName="IngenieriasRowDeleting" msprop:Generator_RowEvArgName="IngenieriasRowChangeEvent" msprop:Generator_TablePropName="Ingenierias" msprop:Generator_RowChangedName="IngenieriasRowChanged" msprop:Generator_UserTableName="Ingenierias" msprop:Generator_RowChangingName="IngenieriasRowChanging" msprop:Generator_TableClassName="IngenieriasDataTable" msprop:Generator_TableVarName="tableIngenierias">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="Cod_Ing" msprop:Generator_ColumnPropNameInRow="Cod_Ing" msprop:Generator_ColumnPropNameInTable="Cod_IngColumn" msprop:Generator_ColumnVarNameInTable="columnCod_Ing" msprop:Generator_UserColumnName="Cod_Ing">
+              <xs:element name="Cod_Ing" msprop:Generator_UserColumnName="Cod_Ing" msprop:Generator_ColumnPropNameInTable="Cod_IngColumn" msprop:Generator_ColumnPropNameInRow="Cod_Ing" msprop:Generator_ColumnVarNameInTable="columnCod_Ing">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="20" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Descripcion" msprop:Generator_ColumnPropNameInRow="Descripcion" msprop:Generator_ColumnPropNameInTable="DescripcionColumn" msprop:Generator_ColumnVarNameInTable="columnDescripcion" msprop:Generator_UserColumnName="Descripcion" minOccurs="0">
+              <xs:element name="Descripcion" msprop:Generator_UserColumnName="Descripcion" msprop:Generator_ColumnPropNameInTable="DescripcionColumn" msprop:Generator_ColumnPropNameInRow="Descripcion" msprop:Generator_ColumnVarNameInTable="columnDescripcion" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="2147483647" />
