@@ -57,6 +57,14 @@ SELECT Matricula, Nombre, codIngenieria FROM Alumnos WHERE (Matricula = @Matricu
               <Mapping SourceColumn="codIngenieria" DataSetColumn="codIngenieria" />
             </Mappings>
             <Sources>
+              <DbSource ConnectionRef="AsistenciaConnectionString (Settings)" DbObjectName="Asistencia.dbo.Alumnos" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy" GeneratorSourceName="FillBy" GetMethodModifier="Public" GetMethodName="GetDataBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT Matricula, Nombre, codIngenieria FROM dbo.Alumnos</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
               <DbSource ConnectionRef="AsistenciaConnectionString (Settings)" DbObjectName="Asistencia.dbo.Alumnos" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillByejemploaaa" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByenjemploaaa" GeneratorSourceName="FillByejemploaaa" GetMethodModifier="Public" GetMethodName="GetDataByenjemploaaa" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByenjemploaaa" UserSourceName="FillByejemploaaa">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">

@@ -828,7 +828,7 @@ SELECT Matricula, Nombre, codIngenieria FROM Alumnos WHERE (Matricula = @Matricu
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[3];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT Matricula, Nombre, codIngenieria FROM dbo.Alumnos";
@@ -837,6 +837,10 @@ SELECT Matricula, Nombre, codIngenieria FROM Alumnos WHERE (Matricula = @Matricu
             this._commandCollection[1].Connection = this.Connection;
             this._commandCollection[1].CommandText = "SELECT Matricula, Nombre, codIngenieria FROM dbo.Alumnos";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[2].Connection = this.Connection;
+            this._commandCollection[2].CommandText = "SELECT Matricula, Nombre, codIngenieria FROM dbo.Alumnos";
+            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -867,7 +871,7 @@ SELECT Matricula, Nombre, codIngenieria FROM Alumnos WHERE (Matricula = @Matricu
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
-        public virtual int FillByejemploaaa(AsistenciaejemploDataSet.AlumnosDataTable dataTable) {
+        public virtual int FillBy(AsistenciaejemploDataSet.AlumnosDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[1];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -880,8 +884,32 @@ SELECT Matricula, Nombre, codIngenieria FROM Alumnos WHERE (Matricula = @Matricu
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual AsistenciaejemploDataSet.AlumnosDataTable GetDataByenjemploaaa() {
+        public virtual AsistenciaejemploDataSet.AlumnosDataTable GetDataBy() {
             this.Adapter.SelectCommand = this.CommandCollection[1];
+            AsistenciaejemploDataSet.AlumnosDataTable dataTable = new AsistenciaejemploDataSet.AlumnosDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillByejemploaaa(AsistenciaejemploDataSet.AlumnosDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[2];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual AsistenciaejemploDataSet.AlumnosDataTable GetDataByenjemploaaa() {
+            this.Adapter.SelectCommand = this.CommandCollection[2];
             AsistenciaejemploDataSet.AlumnosDataTable dataTable = new AsistenciaejemploDataSet.AlumnosDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
