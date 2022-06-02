@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AforosDataSet" targetNamespace="http://tempuri.org/AforosDataSet.xsd" xmlns:mstns="http://tempuri.org/AforosDataSet.xsd" xmlns="http://tempuri.org/AforosDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection ConnectionStringObject="Data Source=DESKTOP-GF0LP81\SQLEXPRESS;Initial Catalog=Asistencia;Integrated Security=True" IsAppSettingsProperty="false" Modifier="Assembly" Name="desktop-gf0lp81\sqlexpress.Asistencia.dbo" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Vista_AforosGeneralTableAdapter" GeneratorDataComponentClassName="Vista_AforosGeneralTableAdapter" Name="Vista_AforosGeneral" UserDataComponentName="Vista_AforosGeneralTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="desktop-gf0lp81\sqlexpress.Asistencia.dbo" DbObjectName="Asistencia.dbo.Vista_AforosGeneral" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Edificio, Aula, Aforo, Fecha, Docente, Cod_Materia, Materia, Semestre FROM dbo.Vista_AforosGeneral</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Edificio" DataSetColumn="Edificio" />
+              <Mapping SourceColumn="Aula" DataSetColumn="Aula" />
+              <Mapping SourceColumn="Aforo" DataSetColumn="Aforo" />
+              <Mapping SourceColumn="Fecha" DataSetColumn="Fecha" />
+              <Mapping SourceColumn="Docente" DataSetColumn="Docente" />
+              <Mapping SourceColumn="Cod_Materia" DataSetColumn="Cod_Materia" />
+              <Mapping SourceColumn="Materia" DataSetColumn="Materia" />
+              <Mapping SourceColumn="Semestre" DataSetColumn="Semestre" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AforosDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="AforosDataSet" msprop:Generator_DataSetName="AforosDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Vista_AforosGeneral" msprop:Generator_RowEvHandlerName="Vista_AforosGeneralRowChangeEventHandler" msprop:Generator_RowDeletedName="Vista_AforosGeneralRowDeleted" msprop:Generator_RowDeletingName="Vista_AforosGeneralRowDeleting" msprop:Generator_RowEvArgName="Vista_AforosGeneralRowChangeEvent" msprop:Generator_TablePropName="Vista_AforosGeneral" msprop:Generator_RowChangedName="Vista_AforosGeneralRowChanged" msprop:Generator_RowChangingName="Vista_AforosGeneralRowChanging" msprop:Generator_TableClassName="Vista_AforosGeneralDataTable" msprop:Generator_RowClassName="Vista_AforosGeneralRow" msprop:Generator_TableVarName="tableVista_AforosGeneral" msprop:Generator_UserTableName="Vista_AforosGeneral">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Edificio" msprop:Generator_ColumnPropNameInRow="Edificio" msprop:Generator_ColumnPropNameInTable="EdificioColumn" msprop:Generator_ColumnVarNameInTable="columnEdificio" msprop:Generator_UserColumnName="Edificio">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Aula" msprop:Generator_ColumnPropNameInRow="Aula" msprop:Generator_ColumnPropNameInTable="AulaColumn" msprop:Generator_ColumnVarNameInTable="columnAula" msprop:Generator_UserColumnName="Aula">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Aforo" msprop:Generator_ColumnPropNameInRow="Aforo" msprop:Generator_ColumnPropNameInTable="AforoColumn" msprop:Generator_ColumnVarNameInTable="columnAforo" msprop:Generator_UserColumnName="Aforo" type="xs:int" minOccurs="0" />
+              <xs:element name="Fecha" msprop:Generator_ColumnPropNameInRow="Fecha" msprop:Generator_ColumnPropNameInTable="FechaColumn" msprop:Generator_ColumnVarNameInTable="columnFecha" msprop:Generator_UserColumnName="Fecha" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Docente" msprop:Generator_ColumnPropNameInRow="Docente" msprop:Generator_ColumnPropNameInTable="DocenteColumn" msprop:Generator_ColumnVarNameInTable="columnDocente" msprop:Generator_UserColumnName="Docente" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cod_Materia" msprop:Generator_ColumnPropNameInRow="Cod_Materia" msprop:Generator_ColumnPropNameInTable="Cod_MateriaColumn" msprop:Generator_ColumnVarNameInTable="columnCod_Materia" msprop:Generator_UserColumnName="Cod_Materia">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Materia" msprop:Generator_ColumnPropNameInRow="Materia" msprop:Generator_ColumnPropNameInTable="MateriaColumn" msprop:Generator_ColumnVarNameInTable="columnMateria" msprop:Generator_UserColumnName="Materia" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Semestre" msprop:Generator_ColumnPropNameInRow="Semestre" msprop:Generator_ColumnPropNameInTable="SemestreColumn" msprop:Generator_ColumnVarNameInTable="columnSemestre" msprop:Generator_UserColumnName="Semestre" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

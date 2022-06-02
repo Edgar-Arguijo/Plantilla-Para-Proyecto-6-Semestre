@@ -351,7 +351,9 @@ namespace Plantilla_Bonita
 
         private void btnAforo_Click(object sender, EventArgs e)
         {
-          
+            frmAforos fm = new frmAforos();
+            fm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
+            Abrirformaenelpanel(fm);
         }
 
         private void btnAulas_Click(object sender, EventArgs e)
