@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace Plantilla_Bonita.DataSets {
+namespace Plantilla_Bonita {
     
     
     /// <summary>
@@ -20,17 +20,17 @@ namespace Plantilla_Bonita.DataSets {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("ABC_IngenieriasDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("EJEMPLODataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class ABC_IngenieriasDataSet : global::System.Data.DataSet {
+    public partial class EJEMPLODataSet : global::System.Data.DataSet {
         
-        private IngenieriasDataTable tableIngenierias;
+        private AforosDataTable tableAforos;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public ABC_IngenieriasDataSet() {
+        public EJEMPLODataSet() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace Plantilla_Bonita.DataSets {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected ABC_IngenieriasDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected EJEMPLODataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace Plantilla_Bonita.DataSets {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["Ingenierias"] != null)) {
-                    base.Tables.Add(new IngenieriasDataTable(ds.Tables["Ingenierias"]));
+                if ((ds.Tables["Aforos"] != null)) {
+                    base.Tables.Add(new AforosDataTable(ds.Tables["Aforos"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace Plantilla_Bonita.DataSets {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public IngenieriasDataTable Ingenierias {
+        public AforosDataTable Aforos {
             get {
-                return this.tableIngenierias;
+                return this.tableAforos;
             }
         }
         
@@ -127,7 +127,7 @@ namespace Plantilla_Bonita.DataSets {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            ABC_IngenieriasDataSet cln = ((ABC_IngenieriasDataSet)(base.Clone()));
+            EJEMPLODataSet cln = ((EJEMPLODataSet)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace Plantilla_Bonita.DataSets {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["Ingenierias"] != null)) {
-                    base.Tables.Add(new IngenieriasDataTable(ds.Tables["Ingenierias"]));
+                if ((ds.Tables["Aforos"] != null)) {
+                    base.Tables.Add(new AforosDataTable(ds.Tables["Aforos"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace Plantilla_Bonita.DataSets {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableIngenierias = ((IngenieriasDataTable)(base.Tables["Ingenierias"]));
+            this.tableAforos = ((AforosDataTable)(base.Tables["Aforos"]));
             if ((initTable == true)) {
-                if ((this.tableIngenierias != null)) {
-                    this.tableIngenierias.InitVars();
+                if ((this.tableAforos != null)) {
+                    this.tableAforos.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace Plantilla_Bonita.DataSets {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "ABC_IngenieriasDataSet";
+            this.DataSetName = "EJEMPLODataSet";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/ABC_IngenieriasDataSet.xsd";
+            this.Namespace = "http://tempuri.org/EJEMPLODataSet1.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableIngenierias = new IngenieriasDataTable();
-            base.Tables.Add(this.tableIngenierias);
+            this.tableAforos = new AforosDataTable();
+            base.Tables.Add(this.tableAforos);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private bool ShouldSerializeIngenierias() {
+        private bool ShouldSerializeAforos() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace Plantilla_Bonita.DataSets {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            ABC_IngenieriasDataSet ds = new ABC_IngenieriasDataSet();
+            EJEMPLODataSet ds = new EJEMPLODataSet();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,23 +270,25 @@ namespace Plantilla_Bonita.DataSets {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public delegate void IngenieriasRowChangeEventHandler(object sender, IngenieriasRowChangeEvent e);
+        public delegate void AforosRowChangeEventHandler(object sender, AforosRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class IngenieriasDataTable : global::System.Data.TypedTableBase<IngenieriasRow> {
+        public partial class AforosDataTable : global::System.Data.TypedTableBase<AforosRow> {
             
-            private global::System.Data.DataColumn columnCod_Ing;
+            private global::System.Data.DataColumn columncodAula;
             
-            private global::System.Data.DataColumn columnDescripcion;
+            private global::System.Data.DataColumn columnCantidad;
+            
+            private global::System.Data.DataColumn columncodClase;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public IngenieriasDataTable() {
-                this.TableName = "Ingenierias";
+            public AforosDataTable() {
+                this.TableName = "Aforos";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -294,7 +296,7 @@ namespace Plantilla_Bonita.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal IngenieriasDataTable(global::System.Data.DataTable table) {
+            internal AforosDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -311,24 +313,32 @@ namespace Plantilla_Bonita.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected IngenieriasDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected AforosDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn Cod_IngColumn {
+            public global::System.Data.DataColumn codAulaColumn {
                 get {
-                    return this.columnCod_Ing;
+                    return this.columncodAula;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn DescripcionColumn {
+            public global::System.Data.DataColumn CantidadColumn {
                 get {
-                    return this.columnDescripcion;
+                    return this.columnCantidad;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn codClaseColumn {
+                get {
+                    return this.columncodClase;
                 }
             }
             
@@ -343,53 +353,47 @@ namespace Plantilla_Bonita.DataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public IngenieriasRow this[int index] {
+            public AforosRow this[int index] {
                 get {
-                    return ((IngenieriasRow)(this.Rows[index]));
+                    return ((AforosRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event IngenieriasRowChangeEventHandler IngenieriasRowChanging;
+            public event AforosRowChangeEventHandler AforosRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event IngenieriasRowChangeEventHandler IngenieriasRowChanged;
+            public event AforosRowChangeEventHandler AforosRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event IngenieriasRowChangeEventHandler IngenieriasRowDeleting;
+            public event AforosRowChangeEventHandler AforosRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event IngenieriasRowChangeEventHandler IngenieriasRowDeleted;
+            public event AforosRowChangeEventHandler AforosRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void AddIngenieriasRow(IngenieriasRow row) {
+            public void AddAforosRow(AforosRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public IngenieriasRow AddIngenieriasRow(string Cod_Ing, string Descripcion) {
-                IngenieriasRow rowIngenieriasRow = ((IngenieriasRow)(this.NewRow()));
+            public AforosRow AddAforosRow(string codAula, int Cantidad, string codClase) {
+                AforosRow rowAforosRow = ((AforosRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        Cod_Ing,
-                        Descripcion};
-                rowIngenieriasRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowIngenieriasRow);
-                return rowIngenieriasRow;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public IngenieriasRow FindByCod_Ing(string Cod_Ing) {
-                return ((IngenieriasRow)(this.Rows.Find(new object[] {
-                            Cod_Ing})));
+                        codAula,
+                        Cantidad,
+                        codClase};
+                rowAforosRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowAforosRow);
+                return rowAforosRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                IngenieriasDataTable cln = ((IngenieriasDataTable)(base.Clone()));
+                AforosDataTable cln = ((AforosDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -397,55 +401,56 @@ namespace Plantilla_Bonita.DataSets {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new IngenieriasDataTable();
+                return new AforosDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             internal void InitVars() {
-                this.columnCod_Ing = base.Columns["Cod_Ing"];
-                this.columnDescripcion = base.Columns["Descripcion"];
+                this.columncodAula = base.Columns["codAula"];
+                this.columnCantidad = base.Columns["Cantidad"];
+                this.columncodClase = base.Columns["codClase"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             private void InitClass() {
-                this.columnCod_Ing = new global::System.Data.DataColumn("Cod_Ing", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCod_Ing);
-                this.columnDescripcion = new global::System.Data.DataColumn("Descripcion", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnDescripcion);
-                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnCod_Ing}, true));
-                this.columnCod_Ing.AllowDBNull = false;
-                this.columnCod_Ing.Unique = true;
-                this.columnCod_Ing.MaxLength = 20;
-                this.columnDescripcion.MaxLength = 2147483647;
+                this.columncodAula = new global::System.Data.DataColumn("codAula", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncodAula);
+                this.columnCantidad = new global::System.Data.DataColumn("Cantidad", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCantidad);
+                this.columncodClase = new global::System.Data.DataColumn("codClase", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncodClase);
+                this.columncodAula.AllowDBNull = false;
+                this.columncodAula.MaxLength = 6;
+                this.columncodClase.AllowDBNull = false;
+                this.columncodClase.MaxLength = 15;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public IngenieriasRow NewIngenieriasRow() {
-                return ((IngenieriasRow)(this.NewRow()));
+            public AforosRow NewAforosRow() {
+                return ((AforosRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new IngenieriasRow(builder);
+                return new AforosRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(IngenieriasRow);
+                return typeof(AforosRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.IngenieriasRowChanged != null)) {
-                    this.IngenieriasRowChanged(this, new IngenieriasRowChangeEvent(((IngenieriasRow)(e.Row)), e.Action));
+                if ((this.AforosRowChanged != null)) {
+                    this.AforosRowChanged(this, new AforosRowChangeEvent(((AforosRow)(e.Row)), e.Action));
                 }
             }
             
@@ -453,8 +458,8 @@ namespace Plantilla_Bonita.DataSets {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.IngenieriasRowChanging != null)) {
-                    this.IngenieriasRowChanging(this, new IngenieriasRowChangeEvent(((IngenieriasRow)(e.Row)), e.Action));
+                if ((this.AforosRowChanging != null)) {
+                    this.AforosRowChanging(this, new AforosRowChangeEvent(((AforosRow)(e.Row)), e.Action));
                 }
             }
             
@@ -462,8 +467,8 @@ namespace Plantilla_Bonita.DataSets {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.IngenieriasRowDeleted != null)) {
-                    this.IngenieriasRowDeleted(this, new IngenieriasRowChangeEvent(((IngenieriasRow)(e.Row)), e.Action));
+                if ((this.AforosRowDeleted != null)) {
+                    this.AforosRowDeleted(this, new AforosRowChangeEvent(((AforosRow)(e.Row)), e.Action));
                 }
             }
             
@@ -471,14 +476,14 @@ namespace Plantilla_Bonita.DataSets {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.IngenieriasRowDeleting != null)) {
-                    this.IngenieriasRowDeleting(this, new IngenieriasRowChangeEvent(((IngenieriasRow)(e.Row)), e.Action));
+                if ((this.AforosRowDeleting != null)) {
+                    this.AforosRowDeleting(this, new AforosRowChangeEvent(((AforosRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void RemoveIngenieriasRow(IngenieriasRow row) {
+            public void RemoveAforosRow(AforosRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -487,7 +492,7 @@ namespace Plantilla_Bonita.DataSets {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                ABC_IngenieriasDataSet ds = new ABC_IngenieriasDataSet();
+                EJEMPLODataSet ds = new EJEMPLODataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -505,7 +510,7 @@ namespace Plantilla_Bonita.DataSets {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "IngenieriasDataTable";
+                attribute2.FixedValue = "AforosDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -549,54 +554,65 @@ namespace Plantilla_Bonita.DataSets {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class IngenieriasRow : global::System.Data.DataRow {
+        public partial class AforosRow : global::System.Data.DataRow {
             
-            private IngenieriasDataTable tableIngenierias;
+            private AforosDataTable tableAforos;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal IngenieriasRow(global::System.Data.DataRowBuilder rb) : 
+            internal AforosRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableIngenierias = ((IngenieriasDataTable)(this.Table));
+                this.tableAforos = ((AforosDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Cod_Ing {
+            public string codAula {
                 get {
-                    return ((string)(this[this.tableIngenierias.Cod_IngColumn]));
+                    return ((string)(this[this.tableAforos.codAulaColumn]));
                 }
                 set {
-                    this[this.tableIngenierias.Cod_IngColumn] = value;
+                    this[this.tableAforos.codAulaColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Descripcion {
+            public int Cantidad {
                 get {
                     try {
-                        return ((string)(this[this.tableIngenierias.DescripcionColumn]));
+                        return ((int)(this[this.tableAforos.CantidadColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Descripcion\' de la tabla \'Ingenierias\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Cantidad\' de la tabla \'Aforos\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableIngenierias.DescripcionColumn] = value;
+                    this[this.tableAforos.CantidadColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsDescripcionNull() {
-                return this.IsNull(this.tableIngenierias.DescripcionColumn);
+            public string codClase {
+                get {
+                    return ((string)(this[this.tableAforos.codClaseColumn]));
+                }
+                set {
+                    this[this.tableAforos.codClaseColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetDescripcionNull() {
-                this[this.tableIngenierias.DescripcionColumn] = global::System.Convert.DBNull;
+            public bool IsCantidadNull() {
+                return this.IsNull(this.tableAforos.CantidadColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetCantidadNull() {
+                this[this.tableAforos.CantidadColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -604,22 +620,22 @@ namespace Plantilla_Bonita.DataSets {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public class IngenieriasRowChangeEvent : global::System.EventArgs {
+        public class AforosRowChangeEvent : global::System.EventArgs {
             
-            private IngenieriasRow eventRow;
+            private AforosRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public IngenieriasRowChangeEvent(IngenieriasRow row, global::System.Data.DataRowAction action) {
+            public AforosRowChangeEvent(AforosRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public IngenieriasRow Row {
+            public AforosRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -635,7 +651,7 @@ namespace Plantilla_Bonita.DataSets {
         }
     }
 }
-namespace Plantilla_Bonita.DataSets.ABC_IngenieriasDataSetTableAdapters {
+namespace Plantilla_Bonita.EJEMPLODataSetTableAdapters {
     
     
     /// <summary>
@@ -647,7 +663,7 @@ namespace Plantilla_Bonita.DataSets.ABC_IngenieriasDataSetTableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class IngenieriasTableAdapter : global::System.ComponentModel.Component {
+    public partial class AforosTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -661,7 +677,7 @@ namespace Plantilla_Bonita.DataSets.ABC_IngenieriasDataSetTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public IngenieriasTableAdapter() {
+        public AforosTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -758,32 +774,19 @@ namespace Plantilla_Bonita.DataSets.ABC_IngenieriasDataSetTableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "Ingenierias";
-            tableMapping.ColumnMappings.Add("Cod_Ing", "Cod_Ing");
-            tableMapping.ColumnMappings.Add("Descripcion", "Descripcion");
+            tableMapping.DataSetTable = "Aforos";
+            tableMapping.ColumnMappings.Add("codAula", "codAula");
+            tableMapping.ColumnMappings.Add("Cantidad", "Cantidad");
+            tableMapping.ColumnMappings.Add("codClase", "codClase");
             this._adapter.TableMappings.Add(tableMapping);
-            this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[Ingenierias] WHERE (([Cod_Ing] = @Original_Cod_Ing))";
-            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Cod_Ing", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Cod_Ing", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Ingenierias] ([Cod_Ing], [Descripcion]) VALUES (@Cod_Ing, @Des" +
-                "cripcion);\r\nSELECT Cod_Ing, Descripcion FROM Ingenierias WHERE (Cod_Ing = @Cod_I" +
-                "ng)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Aforos] ([codAula], [Cantidad], [codClase]) VALUES (@codAula, " +
+                "@Cantidad, @codClase)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Cod_Ing", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Cod_Ing", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Descripcion", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Descripcion", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[Ingenierias] SET [Cod_Ing] = @Cod_Ing, [Descripcion] = @Descripcion" +
-                " WHERE (([Cod_Ing] = @Original_Cod_Ing));\r\nSELECT Cod_Ing, Descripcion FROM Inge" +
-                "nierias WHERE (Cod_Ing = @Cod_Ing)";
-            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Cod_Ing", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Cod_Ing", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Descripcion", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Descripcion", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Cod_Ing", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Cod_Ing", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@codAula", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "codAula", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Cantidad", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Cantidad", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@codClase", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "codClase", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -799,7 +802,7 @@ namespace Plantilla_Bonita.DataSets.ABC_IngenieriasDataSetTableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT Cod_Ing, Descripcion FROM dbo.Ingenierias";
+            this._commandCollection[0].CommandText = "SELECT codAula, Cantidad, codClase FROM dbo.Aforos";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -807,7 +810,7 @@ namespace Plantilla_Bonita.DataSets.ABC_IngenieriasDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(ABC_IngenieriasDataSet.IngenieriasDataTable dataTable) {
+        public virtual int Fill(EJEMPLODataSet.AforosDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -820,9 +823,9 @@ namespace Plantilla_Bonita.DataSets.ABC_IngenieriasDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual ABC_IngenieriasDataSet.IngenieriasDataTable GetData() {
+        public virtual EJEMPLODataSet.AforosDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            ABC_IngenieriasDataSet.IngenieriasDataTable dataTable = new ABC_IngenieriasDataSet.IngenieriasDataTable();
+            EJEMPLODataSet.AforosDataTable dataTable = new EJEMPLODataSet.AforosDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -830,15 +833,15 @@ namespace Plantilla_Bonita.DataSets.ABC_IngenieriasDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(ABC_IngenieriasDataSet.IngenieriasDataTable dataTable) {
+        public virtual int Update(EJEMPLODataSet.AforosDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(ABC_IngenieriasDataSet dataSet) {
-            return this.Adapter.Update(dataSet, "Ingenierias");
+        public virtual int Update(EJEMPLODataSet dataSet) {
+            return this.Adapter.Update(dataSet, "Aforos");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -859,46 +862,25 @@ namespace Plantilla_Bonita.DataSets.ABC_IngenieriasDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(string Original_Cod_Ing) {
-            if ((Original_Cod_Ing == null)) {
-                throw new global::System.ArgumentNullException("Original_Cod_Ing");
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[0].Value = ((string)(Original_Cod_Ing));
-            }
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
-            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.DeleteCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.DeleteCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string Cod_Ing, string Descripcion) {
-            if ((Cod_Ing == null)) {
-                throw new global::System.ArgumentNullException("Cod_Ing");
+        public virtual int Insert(string codAula, global::System.Nullable<int> Cantidad, string codClase) {
+            if ((codAula == null)) {
+                throw new global::System.ArgumentNullException("codAula");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(Cod_Ing));
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(codAula));
             }
-            if ((Descripcion == null)) {
+            if ((Cantidad.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[1].Value = ((int)(Cantidad.Value));
+            }
+            else {
                 this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
+            if ((codClase == null)) {
+                throw new global::System.ArgumentNullException("codClase");
+            }
             else {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(Descripcion));
+                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(codClase));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -915,53 +897,6 @@ namespace Plantilla_Bonita.DataSets.ABC_IngenieriasDataSetTableAdapters {
                 }
             }
         }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string Cod_Ing, string Descripcion, string Original_Cod_Ing) {
-            if ((Cod_Ing == null)) {
-                throw new global::System.ArgumentNullException("Cod_Ing");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(Cod_Ing));
-            }
-            if ((Descripcion == null)) {
-                this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(Descripcion));
-            }
-            if ((Original_Cod_Ing == null)) {
-                throw new global::System.ArgumentNullException("Original_Cod_Ing");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(Original_Cod_Ing));
-            }
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
-            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.UpdateCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.UpdateCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string Descripcion, string Original_Cod_Ing) {
-            return this.Update(Original_Cod_Ing, Descripcion, Original_Cod_Ing);
-        }
     }
     
     /// <summary>
@@ -976,7 +911,7 @@ namespace Plantilla_Bonita.DataSets.ABC_IngenieriasDataSetTableAdapters {
         
         private UpdateOrderOption _updateOrder;
         
-        private IngenieriasTableAdapter _ingenieriasTableAdapter;
+        private AforosTableAdapter _aforosTableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -998,12 +933,12 @@ namespace Plantilla_Bonita.DataSets.ABC_IngenieriasDataSetTableAdapters {
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public IngenieriasTableAdapter IngenieriasTableAdapter {
+        public AforosTableAdapter AforosTableAdapter {
             get {
-                return this._ingenieriasTableAdapter;
+                return this._aforosTableAdapter;
             }
             set {
-                this._ingenieriasTableAdapter = value;
+                this._aforosTableAdapter = value;
             }
         }
         
@@ -1026,9 +961,9 @@ namespace Plantilla_Bonita.DataSets.ABC_IngenieriasDataSetTableAdapters {
                 if ((this._connection != null)) {
                     return this._connection;
                 }
-                if (((this._ingenieriasTableAdapter != null) 
-                            && (this._ingenieriasTableAdapter.Connection != null))) {
-                    return this._ingenieriasTableAdapter.Connection;
+                if (((this._aforosTableAdapter != null) 
+                            && (this._aforosTableAdapter.Connection != null))) {
+                    return this._aforosTableAdapter.Connection;
                 }
                 return null;
             }
@@ -1043,7 +978,7 @@ namespace Plantilla_Bonita.DataSets.ABC_IngenieriasDataSetTableAdapters {
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
-                if ((this._ingenieriasTableAdapter != null)) {
+                if ((this._aforosTableAdapter != null)) {
                     count = (count + 1);
                 }
                 return count;
@@ -1055,14 +990,14 @@ namespace Plantilla_Bonita.DataSets.ABC_IngenieriasDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateUpdatedRows(ABC_IngenieriasDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(EJEMPLODataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._ingenieriasTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.Ingenierias.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._aforosTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.Aforos.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._ingenieriasTableAdapter.Update(updatedRows));
+                    result = (result + this._aforosTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -1074,13 +1009,13 @@ namespace Plantilla_Bonita.DataSets.ABC_IngenieriasDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateInsertedRows(ABC_IngenieriasDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(EJEMPLODataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._ingenieriasTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.Ingenierias.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._aforosTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.Aforos.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._ingenieriasTableAdapter.Update(addedRows));
+                    result = (result + this._aforosTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -1092,13 +1027,13 @@ namespace Plantilla_Bonita.DataSets.ABC_IngenieriasDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateDeletedRows(ABC_IngenieriasDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(EJEMPLODataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._ingenieriasTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.Ingenierias.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._aforosTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.Aforos.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._ingenieriasTableAdapter.Update(deletedRows));
+                    result = (result + this._aforosTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -1134,15 +1069,15 @@ namespace Plantilla_Bonita.DataSets.ABC_IngenieriasDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public virtual int UpdateAll(ABC_IngenieriasDataSet dataSet) {
+        public virtual int UpdateAll(EJEMPLODataSet dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
             if ((dataSet.HasChanges() == false)) {
                 return 0;
             }
-            if (((this._ingenieriasTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._ingenieriasTableAdapter.Connection) == false))) {
+            if (((this._aforosTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._aforosTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("Todos los TableAdapters administrados por un TableAdapterManager deben usar la mi" +
                         "sma cadena de conexión.");
             }
@@ -1178,13 +1113,13 @@ namespace Plantilla_Bonita.DataSets.ABC_IngenieriasDataSetTableAdapters {
             try {
                 // ---- Prepare for update -----------
                 //
-                if ((this._ingenieriasTableAdapter != null)) {
-                    revertConnections.Add(this._ingenieriasTableAdapter, this._ingenieriasTableAdapter.Connection);
-                    this._ingenieriasTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._ingenieriasTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._ingenieriasTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._ingenieriasTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._ingenieriasTableAdapter.Adapter);
+                if ((this._aforosTableAdapter != null)) {
+                    revertConnections.Add(this._aforosTableAdapter, this._aforosTableAdapter.Connection);
+                    this._aforosTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._aforosTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._aforosTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._aforosTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._aforosTableAdapter.Adapter);
                     }
                 }
                 // 
@@ -1245,9 +1180,9 @@ namespace Plantilla_Bonita.DataSets.ABC_IngenieriasDataSetTableAdapters {
                 if (workConnOpened) {
                     workConnection.Close();
                 }
-                if ((this._ingenieriasTableAdapter != null)) {
-                    this._ingenieriasTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._ingenieriasTableAdapter]));
-                    this._ingenieriasTableAdapter.Transaction = null;
+                if ((this._aforosTableAdapter != null)) {
+                    this._aforosTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._aforosTableAdapter]));
+                    this._aforosTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];
