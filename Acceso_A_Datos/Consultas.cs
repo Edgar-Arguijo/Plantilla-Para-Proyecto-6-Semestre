@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+//nada
 namespace Acceso_A_Datos
 {
     public class Consultas : SQLConection
