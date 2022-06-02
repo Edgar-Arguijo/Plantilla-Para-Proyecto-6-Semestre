@@ -270,6 +270,11 @@
     <Compile Include="DataSets\IngenieriasDataSet.cs">
       <DependentUpon>IngenieriasDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DataSets\IngenieriasDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IngenieriasDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Docentes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -465,6 +470,7 @@
     <None Include="DataSets\IngenieriasDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <SubType>Designer</SubType>
+      <LastGenOutput>IngenieriasDataSet1.Designer.cs</LastGenOutput>
     </None>
     <None Include="DataSets\IngenieriasDataSet.xss">
       <DependentUpon>IngenieriasDataSet.xsd</DependentUpon>
