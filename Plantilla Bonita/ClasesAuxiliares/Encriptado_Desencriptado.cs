@@ -11,7 +11,8 @@ namespace Plantilla_Bonita.ClasesAuxiliares
     {
         private static string hash = "clave:0";
 
-        static string Encriptar(string cadena) {
+        public static string Encriptar(string cadena) 
+        {
             
             byte[] data = UTF8Encoding.UTF8.GetBytes(cadena);
             using (MD5CryptoServiceProvider md5 = new MD5CryptoServiceProvider())
@@ -27,7 +28,7 @@ namespace Plantilla_Bonita.ClasesAuxiliares
             }
         }
 
-        static string Desencriptar(string cadena) 
+        public static string Desencriptar(string cadena) 
         {
             byte[] data = Convert.FromBase64String(cadena);
 
