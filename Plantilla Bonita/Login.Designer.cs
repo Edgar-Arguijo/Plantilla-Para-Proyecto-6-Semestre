@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.pnlContenedor = new System.Windows.Forms.Panel();
+            this.lnkRegistro = new System.Windows.Forms.LinkLabel();
             this.btnDocente = new System.Windows.Forms.Button();
             this.btnMostrarContraseña = new FontAwesome.Sharp.IconPictureBox();
             this.btnInvitado = new System.Windows.Forms.Button();
@@ -47,6 +48,7 @@
             // pnlContenedor
             // 
             this.pnlContenedor.BackColor = System.Drawing.Color.LemonChiffon;
+            this.pnlContenedor.Controls.Add(this.lnkRegistro);
             this.pnlContenedor.Controls.Add(this.btnDocente);
             this.pnlContenedor.Controls.Add(this.btnMostrarContraseña);
             this.pnlContenedor.Controls.Add(this.btnInvitado);
@@ -65,6 +67,17 @@
             this.pnlContenedor.TabIndex = 0;
             this.pnlContenedor.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlContenedor_MouseDown);
             // 
+            // lnkRegistro
+            // 
+            this.lnkRegistro.AutoSize = true;
+            this.lnkRegistro.Location = new System.Drawing.Point(116, 295);
+            this.lnkRegistro.Name = "lnkRegistro";
+            this.lnkRegistro.Size = new System.Drawing.Size(130, 13);
+            this.lnkRegistro.TabIndex = 11;
+            this.lnkRegistro.TabStop = true;
+            this.lnkRegistro.Text = "¿Eres nuevo? ¡Registrate!";
+            this.lnkRegistro.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkRegistro_LinkClicked);
+            // 
             // btnDocente
             // 
             this.btnDocente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
@@ -72,7 +85,7 @@
             this.btnDocente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDocente.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
             this.btnDocente.ForeColor = System.Drawing.Color.White;
-            this.btnDocente.Location = new System.Drawing.Point(200, 315);
+            this.btnDocente.Location = new System.Drawing.Point(200, 381);
             this.btnDocente.Name = "btnDocente";
             this.btnDocente.Size = new System.Drawing.Size(138, 45);
             this.btnDocente.TabIndex = 10;
@@ -104,7 +117,7 @@
             this.btnInvitado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInvitado.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
             this.btnInvitado.ForeColor = System.Drawing.Color.White;
-            this.btnInvitado.Location = new System.Drawing.Point(27, 366);
+            this.btnInvitado.Location = new System.Drawing.Point(27, 381);
             this.btnInvitado.Name = "btnInvitado";
             this.btnInvitado.Size = new System.Drawing.Size(167, 45);
             this.btnInvitado.TabIndex = 8;
@@ -119,7 +132,7 @@
             this.btnPersonal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPersonal.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
             this.btnPersonal.ForeColor = System.Drawing.Color.White;
-            this.btnPersonal.Location = new System.Drawing.Point(27, 417);
+            this.btnPersonal.Location = new System.Drawing.Point(27, 432);
             this.btnPersonal.Name = "btnPersonal";
             this.btnPersonal.Size = new System.Drawing.Size(167, 45);
             this.btnPersonal.TabIndex = 7;
@@ -134,7 +147,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(27, 315);
+            this.button1.Location = new System.Drawing.Point(27, 330);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(167, 45);
             this.button1.TabIndex = 6;
@@ -234,5 +247,6 @@
         private System.Windows.Forms.Button button1;
         private FontAwesome.Sharp.IconPictureBox btnMostrarContraseña;
         private System.Windows.Forms.Button btnDocente;
+        private System.Windows.Forms.LinkLabel lnkRegistro;
     }
 }

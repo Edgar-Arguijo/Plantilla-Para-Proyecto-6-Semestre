@@ -95,5 +95,11 @@ namespace Plantilla_Bonita
             this.result = TipoUsuario.NivelAutorizacion.Docente;
             this.DialogResult = DialogResult.OK;
         }
+
+        private void lnkRegistro_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmRegistro frmRegistro = new frmRegistro();
+            frmRegistro.ShowDialog();
+        }
     }
 }

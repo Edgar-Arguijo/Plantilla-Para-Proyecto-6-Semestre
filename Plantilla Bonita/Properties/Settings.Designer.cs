@@ -26,17 +26,8 @@ namespace Plantilla_Bonita.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-2HNOC1U;Initial Catalog=Asistencias;Integrated Security=True")]
-        public string CadenaDeConexionAplicacion {
-            get {
-                return ((string)(this["CadenaDeConexionAplicacion"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-J06FE2O;Initial Catalog=Asistencia;Integrated Security=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=sgaitsldb.database.windows.net;Initial Catalog=Asistencia;Persist Sec" +
+            "urity Info=True;User ID=victor;Password=4KvpUD<4(?4")]
         public string AsistenciaConnectionString {
             get {
                 return ((string)(this["AsistenciaConnectionString"]));

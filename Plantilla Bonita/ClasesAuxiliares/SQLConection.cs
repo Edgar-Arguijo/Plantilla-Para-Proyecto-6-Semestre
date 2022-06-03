@@ -13,7 +13,7 @@ namespace Plantilla_Bonita
 
         public SQLConection()
         {
-            conectionString = global::Plantilla_Bonita.Properties.Settings.Default.CadenaDeConexionAplicacion;
+            conectionString = global::Plantilla_Bonita.Properties.Settings.Default.AsistenciaConnectionString;
         }
 
         protected SqlConnection getConnection()

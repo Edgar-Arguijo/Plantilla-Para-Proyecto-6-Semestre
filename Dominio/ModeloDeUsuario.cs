@@ -33,5 +33,10 @@ namespace Dominio
         {
             return obj.Loggeo(usuario, contraseña);
         }
+
+        public bool AltaUsuario(string usuario, string contra)
+        {
+            return obj.AltaUsuario(usuario, contra);
+        }
     }
 }
