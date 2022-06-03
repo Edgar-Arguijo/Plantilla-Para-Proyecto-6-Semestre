@@ -43,6 +43,30 @@ namespace Acceso_A_Datos
             return null;
         }
 
+        public bool AltaUsuario(string usuario, string contra)
+        {
+            using (SqlConnection conexion = getConnection())
+            {
+                conexion.Open();
+                using (SqlCommand cmd = new SqlCommand("AltaUsuario", conexion))
+                {
+                    try
+                    {
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.AddWithValue("@usuario", usuario);
+                        cmd.Parameters.AddWithValue("@contraseña", contra);
+                        cmd.Parameters.AddWithValue("@fecha", DateTime.Now);
+                        return (cmd.ExecuteNonQuery()>0);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                        return false;
+                    }
+                }
+            }
+        }
+
         public bool CopiaDeSeguridad()
         {
             try
