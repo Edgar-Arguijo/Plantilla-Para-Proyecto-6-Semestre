@@ -88,6 +88,7 @@ namespace Acceso_A_Datos
                         cmd.CommandType = CommandType.StoredProcedure;
                         cmd.Parameters.AddWithValue("@usuario", usuario);
                         cmd.Parameters.AddWithValue("@contraseña", contraseña);
+                        cmd.Parameters.AddWithValue("@fecha", DateTime.Now);
                         cmd.Parameters.Add("@level", SqlDbType.VarChar, Int32.MaxValue).Direction = ParameterDirection.Output;
                         cmd.ExecuteNonQuery();
 
