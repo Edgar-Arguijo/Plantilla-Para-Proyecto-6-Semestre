@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.pnlContenedor = new System.Windows.Forms.Panel();
+            this.lnkRegistro = new System.Windows.Forms.LinkLabel();
             this.btnDocente = new System.Windows.Forms.Button();
             this.btnMostrarContraseña = new FontAwesome.Sharp.IconPictureBox();
             this.btnInvitado = new System.Windows.Forms.Button();
@@ -40,7 +41,6 @@
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.pnlEncabezado = new System.Windows.Forms.FlowLayoutPanel();
-            this.lnkRegistro = new System.Windows.Forms.LinkLabel();
             this.pnlContenedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMostrarContraseña)).BeginInit();
             this.SuspendLayout();
@@ -66,6 +66,17 @@
             this.pnlContenedor.Size = new System.Drawing.Size(350, 500);
             this.pnlContenedor.TabIndex = 0;
             this.pnlContenedor.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlContenedor_MouseDown);
+            // 
+            // lnkRegistro
+            // 
+            this.lnkRegistro.AutoSize = true;
+            this.lnkRegistro.Location = new System.Drawing.Point(116, 295);
+            this.lnkRegistro.Name = "lnkRegistro";
+            this.lnkRegistro.Size = new System.Drawing.Size(130, 13);
+            this.lnkRegistro.TabIndex = 11;
+            this.lnkRegistro.TabStop = true;
+            this.lnkRegistro.Text = "¿Eres nuevo? ¡Registrate!";
+            this.lnkRegistro.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkRegistro_LinkClicked);
             // 
             // btnDocente
             // 
@@ -204,17 +215,6 @@
             this.pnlEncabezado.Size = new System.Drawing.Size(350, 41);
             this.pnlEncabezado.TabIndex = 0;
             this.pnlEncabezado.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlEncabezado_MouseDown);
-            // 
-            // lnkRegistro
-            // 
-            this.lnkRegistro.AutoSize = true;
-            this.lnkRegistro.Location = new System.Drawing.Point(116, 295);
-            this.lnkRegistro.Name = "lnkRegistro";
-            this.lnkRegistro.Size = new System.Drawing.Size(130, 13);
-            this.lnkRegistro.TabIndex = 11;
-            this.lnkRegistro.TabStop = true;
-            this.lnkRegistro.Text = "¿Eres nuevo? ¡Registrate!";
-            this.lnkRegistro.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkRegistro_LinkClicked);
             // 
             // Login
             // 
