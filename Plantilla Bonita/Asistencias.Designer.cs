@@ -35,9 +35,6 @@
             this.panelAsistencia = new System.Windows.Forms.Panel();
             this.btnBuscar = new FontAwesome.Sharp.IconPictureBox();
             this.listaAsistenciasDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.listaAsistenciasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.asistenciasDataSet = new Plantilla_Bonita.DataSets.AsistenciasDataSet();
             this.label2 = new System.Windows.Forms.Label();
@@ -88,6 +85,10 @@
             this.cantidadClasesToolStripLabel = new System.Windows.Forms.ToolStripLabel();
             this.cantidadClasesToolStripTextBox = new System.Windows.Forms.ToolStripTextBox();
             this.fillToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.btnPrint = new FontAwesome.Sharp.IconPictureBox();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             descripcionLabel = new System.Windows.Forms.Label();
             materiaLabel = new System.Windows.Forms.Label();
             this.panelAsistencia.SuspendLayout();
@@ -103,6 +104,7 @@
             this.ingenieriasBindingNavigator.SuspendLayout();
             this.fillByIngenieriaToolStrip.SuspendLayout();
             this.fillToolStrip.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnPrint)).BeginInit();
             this.SuspendLayout();
             // 
             // descripcionLabel
@@ -126,6 +128,7 @@
             // panelAsistencia
             // 
             this.panelAsistencia.BackColor = System.Drawing.Color.White;
+            this.panelAsistencia.Controls.Add(this.btnPrint);
             this.panelAsistencia.Controls.Add(this.btnBuscar);
             this.panelAsistencia.Controls.Add(this.listaAsistenciasDataGridView);
             this.panelAsistencia.Controls.Add(this.label2);
@@ -162,6 +165,8 @@
             // 
             // listaAsistenciasDataGridView
             // 
+            this.listaAsistenciasDataGridView.AllowUserToAddRows = false;
+            this.listaAsistenciasDataGridView.AllowUserToDeleteRows = false;
             this.listaAsistenciasDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -174,27 +179,9 @@
             this.listaAsistenciasDataGridView.DataSource = this.listaAsistenciasBindingSource;
             this.listaAsistenciasDataGridView.Location = new System.Drawing.Point(33, 204);
             this.listaAsistenciasDataGridView.Name = "listaAsistenciasDataGridView";
+            this.listaAsistenciasDataGridView.ReadOnly = true;
             this.listaAsistenciasDataGridView.Size = new System.Drawing.Size(750, 256);
             this.listaAsistenciasDataGridView.TabIndex = 13;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "matricula";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Matricula";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "nombre";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Nombre";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "asistencias";
-            this.dataGridViewTextBoxColumn3.HeaderText = "asistencias";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             // 
             // listaAsistenciasBindingSource
             // 
@@ -606,6 +593,44 @@
             this.fillToolStripButton.Size = new System.Drawing.Size(26, 19);
             this.fillToolStripButton.Text = "Fill";
             // 
+            // btnPrint
+            // 
+            this.btnPrint.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPrint.BackColor = System.Drawing.Color.Transparent;
+            this.btnPrint.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnPrint.IconChar = FontAwesome.Sharp.IconChar.Print;
+            this.btnPrint.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnPrint.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnPrint.Location = new System.Drawing.Point(713, 166);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(32, 32);
+            this.btnPrint.TabIndex = 15;
+            this.btnPrint.TabStop = false;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "matricula";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Matricula";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "nombre";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Nombre";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Width = 69;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "asistencias";
+            this.dataGridViewTextBoxColumn3.HeaderText = "asistencias";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
             // Asistencias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -636,6 +661,7 @@
             this.fillByIngenieriaToolStrip.PerformLayout();
             this.fillToolStrip.ResumeLayout(false);
             this.fillToolStrip.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnPrint)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -694,9 +720,10 @@
         private System.Windows.Forms.ToolStripTextBox cantidadClasesToolStripTextBox;
         private System.Windows.Forms.ToolStripButton fillToolStripButton;
         private System.Windows.Forms.DataGridView listaAsistenciasDataGridView;
+        private FontAwesome.Sharp.IconPictureBox btnBuscar;
+        private FontAwesome.Sharp.IconPictureBox btnPrint;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private FontAwesome.Sharp.IconPictureBox btnBuscar;
     }
 }
