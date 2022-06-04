@@ -39,7 +39,7 @@ namespace Plantilla_Bonita
                 if (txtUsuario.Text!="" & txtContraseña.Text!="")
                 {
                     ModeloDeUsuario obj = new ModeloDeUsuario();
-                    this.result = TipoUsuario.ObtenerNivel(obj.Loggeo(txtUsuario.Text, txtContraseña.Text));
+                    this.result = TipoUsuario.ObtenerNivel(obj.Loggeo(txtUsuario.Text,  txtContraseña.Text));
                     this.DialogResult = DialogResult.OK;
                 }
             }

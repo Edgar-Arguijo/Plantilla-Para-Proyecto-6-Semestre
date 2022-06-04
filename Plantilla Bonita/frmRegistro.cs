@@ -42,7 +42,7 @@ namespace Plantilla_Bonita
             {
                 ModeloDeUsuario obj = new ModeloDeUsuario();
 
-                if (obj.AltaUsuario(txtNomUsuario.Text, Encriptado_Desencriptado.Encriptar(txtContra.Text)))
+                if (obj.AltaUsuario(txtNomUsuario.Text, txtContra.Text))
                     MessageBox.Show("El usuario fue dado de alta exitosamente");
                 else 
                     MessageBox.Show("No se pudo registrar el usuario");
@@ -57,6 +57,12 @@ namespace Plantilla_Bonita
         }
 
         private void btnRegistro_Click(object sender, EventArgs e)
+        {
+            if (VerificarCampos())
+                Generar_Registro();
+        }
+
+        private void btnRegistrarse_Click(object sender, EventArgs e)
         {
             if (VerificarCampos())
                 Generar_Registro();
