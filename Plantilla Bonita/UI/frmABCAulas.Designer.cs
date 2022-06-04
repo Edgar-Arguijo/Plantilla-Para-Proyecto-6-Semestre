@@ -34,10 +34,10 @@
             System.Windows.Forms.Label codigoAulaLabel;
             System.Windows.Forms.Label codEdificioLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmABCAulas));
-            this.aulasDataSet = new Plantilla_Bonita.AulasDataSet();
+            this.aulasDataSet = new Plantilla_Bonita.DataSets.AulasDataSet();
             this.aulasBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.aulasTableAdapter = new Plantilla_Bonita.AulasDataSetTableAdapters.AulasTableAdapter();
-            this.tableAdapterManager = new Plantilla_Bonita.AulasDataSetTableAdapters.TableAdapterManager();
+            this.aulasTableAdapter = new Plantilla_Bonita.DataSets.AulasDataSetTableAdapters.AulasTableAdapter();
+            this.tableAdapterManager = new Plantilla_Bonita.DataSets.AulasDataSetTableAdapters.TableAdapterManager();
             this.aulasBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
@@ -55,10 +55,10 @@
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.edificiosDataSet = new Plantilla_Bonita.EdificiosDataSet();
+            this.edificiosDataSet = new Plantilla_Bonita.DataSets.EdificiosDataSet();
             this.edificiosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.edificiosTableAdapter = new Plantilla_Bonita.EdificiosDataSetTableAdapters.EdificiosTableAdapter();
-            this.tableAdapterManager1 = new Plantilla_Bonita.EdificiosDataSetTableAdapters.TableAdapterManager();
+            this.edificiosTableAdapter = new Plantilla_Bonita.DataSets.EdificiosDataSetTableAdapters.EdificiosTableAdapter();
+            this.tableAdapterManager1 = new Plantilla_Bonita.DataSets.EdificiosDataSetTableAdapters.TableAdapterManager();
             this.codigoEdificioComboBox = new System.Windows.Forms.ComboBox();
             this.edificiosBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.edificiosDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -143,7 +143,7 @@
             // 
             this.tableAdapterManager.AulasTableAdapter = this.aulasTableAdapter;
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.UpdateOrder = Plantilla_Bonita.AulasDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UpdateOrder = Plantilla_Bonita.DataSets.AulasDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // aulasBindingNavigator
             // 
@@ -327,7 +327,7 @@
             // 
             this.tableAdapterManager1.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager1.EdificiosTableAdapter = this.edificiosTableAdapter;
-            this.tableAdapterManager1.UpdateOrder = Plantilla_Bonita.EdificiosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager1.UpdateOrder = Plantilla_Bonita.DataSets.EdificiosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // codigoEdificioComboBox
             // 
@@ -480,10 +480,10 @@
 
         #endregion
 
-        private AulasDataSet aulasDataSet;
+        private DataSets.AulasDataSet aulasDataSet;
         private System.Windows.Forms.BindingSource aulasBindingSource;
-        private AulasDataSetTableAdapters.AulasTableAdapter aulasTableAdapter;
-        private AulasDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private DataSets.AulasDataSetTableAdapters.AulasTableAdapter aulasTableAdapter;
+        private DataSets.AulasDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.BindingNavigator aulasBindingNavigator;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
@@ -501,10 +501,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private EdificiosDataSet edificiosDataSet;
+        private DataSets.EdificiosDataSet edificiosDataSet;
         private System.Windows.Forms.BindingSource edificiosBindingSource;
-        private EdificiosDataSetTableAdapters.EdificiosTableAdapter edificiosTableAdapter;
-        private EdificiosDataSetTableAdapters.TableAdapterManager tableAdapterManager1;
+        private DataSets.EdificiosDataSetTableAdapters.EdificiosTableAdapter edificiosTableAdapter;
+        private DataSets.EdificiosDataSetTableAdapters.TableAdapterManager tableAdapterManager1;
         private System.Windows.Forms.ComboBox codigoEdificioComboBox;
         private System.Windows.Forms.BindingSource edificiosBindingSource1;
         private System.Windows.Forms.BindingSource edificiosDataSetBindingSource;

@@ -31,10 +31,10 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBitacora));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.bitacoraDataSet = new Plantilla_Bonita.BitacoraDataSet();
+            this.bitacoraDataSet = new Plantilla_Bonita.DataSets.BitacoraDataSet();
             this.bitacoraClasesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.bitacoraClasesTableAdapter = new Plantilla_Bonita.BitacoraDataSetTableAdapters.BitacoraClasesTableAdapter();
-            this.tableAdapterManager = new Plantilla_Bonita.BitacoraDataSetTableAdapters.TableAdapterManager();
+            this.bitacoraClasesTableAdapter = new Plantilla_Bonita.DataSets.BitacoraDataSetTableAdapters.BitacoraClasesTableAdapter();
+            this.tableAdapterManager = new Plantilla_Bonita.DataSets.BitacoraDataSetTableAdapters.TableAdapterManager();
             this.bitacoraClasesBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
@@ -90,7 +90,7 @@
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.BitacoraClasesTableAdapter = this.bitacoraClasesTableAdapter;
-            this.tableAdapterManager.UpdateOrder = Plantilla_Bonita.BitacoraDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UpdateOrder = Plantilla_Bonita.DataSets.BitacoraDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // bitacoraClasesBindingNavigator
             // 
@@ -293,10 +293,10 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private BitacoraDataSet bitacoraDataSet;
+        private DataSets.BitacoraDataSet bitacoraDataSet;
         private System.Windows.Forms.BindingSource bitacoraClasesBindingSource;
-        private BitacoraDataSetTableAdapters.BitacoraClasesTableAdapter bitacoraClasesTableAdapter;
-        private BitacoraDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private DataSets.BitacoraDataSetTableAdapters.BitacoraClasesTableAdapter bitacoraClasesTableAdapter;
+        private DataSets.BitacoraDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.BindingNavigator bitacoraClasesBindingNavigator;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
