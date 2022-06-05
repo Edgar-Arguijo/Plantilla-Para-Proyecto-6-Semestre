@@ -54,6 +54,7 @@ namespace Acceso_A_Datos
 
         public void ProbarConexion() {
 
+
             try
             {
                 using (SqlConnection conexion = getConnection())
@@ -69,7 +70,6 @@ namespace Acceso_A_Datos
                 Environment.Exit(0);
             }
 
-            
         }
 
         public string BuscarCodIngenieria(string text)

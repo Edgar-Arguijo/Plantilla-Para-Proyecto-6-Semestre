@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.pnlContenedor = new System.Windows.Forms.Panel();
+            this.btnCerrar = new FontAwesome.Sharp.IconPictureBox();
             this.lnkRegistro = new System.Windows.Forms.LinkLabel();
             this.btnDocente = new System.Windows.Forms.Button();
             this.btnMostrarContraseña = new FontAwesome.Sharp.IconPictureBox();
@@ -42,12 +43,14 @@
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.pnlEncabezado = new System.Windows.Forms.FlowLayoutPanel();
             this.pnlContenedor.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMostrarContraseña)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlContenedor
             // 
             this.pnlContenedor.BackColor = System.Drawing.Color.LemonChiffon;
+            this.pnlContenedor.Controls.Add(this.btnCerrar);
             this.pnlContenedor.Controls.Add(this.lnkRegistro);
             this.pnlContenedor.Controls.Add(this.btnDocente);
             this.pnlContenedor.Controls.Add(this.btnMostrarContraseña);
@@ -67,10 +70,26 @@
             this.pnlContenedor.TabIndex = 0;
             this.pnlContenedor.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlContenedor_MouseDown);
             // 
+            // btnCerrar
+            // 
+            this.btnCerrar.BackColor = System.Drawing.Color.LemonChiffon;
+            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCerrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnCerrar.IconChar = FontAwesome.Sharp.IconChar.Times;
+            this.btnCerrar.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnCerrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCerrar.IconSize = 27;
+            this.btnCerrar.Location = new System.Drawing.Point(318, 45);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(27, 27);
+            this.btnCerrar.TabIndex = 12;
+            this.btnCerrar.TabStop = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
             // lnkRegistro
             // 
             this.lnkRegistro.AutoSize = true;
-            this.lnkRegistro.Location = new System.Drawing.Point(116, 295);
+            this.lnkRegistro.Location = new System.Drawing.Point(107, 279);
             this.lnkRegistro.Name = "lnkRegistro";
             this.lnkRegistro.Size = new System.Drawing.Size(130, 13);
             this.lnkRegistro.TabIndex = 11;
@@ -96,12 +115,13 @@
             // btnMostrarContraseña
             // 
             this.btnMostrarContraseña.BackColor = System.Drawing.Color.LemonChiffon;
+            this.btnMostrarContraseña.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMostrarContraseña.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnMostrarContraseña.IconChar = FontAwesome.Sharp.IconChar.Eye;
             this.btnMostrarContraseña.IconColor = System.Drawing.SystemColors.ControlText;
             this.btnMostrarContraseña.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnMostrarContraseña.IconSize = 25;
-            this.btnMostrarContraseña.Location = new System.Drawing.Point(300, 185);
+            this.btnMostrarContraseña.Location = new System.Drawing.Point(300, 171);
             this.btnMostrarContraseña.Name = "btnMostrarContraseña";
             this.btnMostrarContraseña.Size = new System.Drawing.Size(25, 25);
             this.btnMostrarContraseña.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -158,11 +178,12 @@
             // btnIniciarSesion
             // 
             this.btnIniciarSesion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnIniciarSesion.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnIniciarSesion.FlatAppearance.BorderSize = 0;
             this.btnIniciarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIniciarSesion.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
             this.btnIniciarSesion.ForeColor = System.Drawing.Color.White;
-            this.btnIniciarSesion.Location = new System.Drawing.Point(92, 238);
+            this.btnIniciarSesion.Location = new System.Drawing.Point(92, 224);
             this.btnIniciarSesion.Name = "btnIniciarSesion";
             this.btnIniciarSesion.Size = new System.Drawing.Size(167, 45);
             this.btnIniciarSesion.TabIndex = 5;
@@ -174,26 +195,26 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
-            this.label2.Location = new System.Drawing.Point(22, 146);
+            this.label2.Location = new System.Drawing.Point(22, 142);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(94, 25);
+            this.label2.Size = new System.Drawing.Size(98, 25);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Contraseña";
+            this.label2.Text = "Contraseña:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
-            this.label1.Location = new System.Drawing.Point(22, 67);
+            this.label1.Location = new System.Drawing.Point(22, 65);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(143, 25);
+            this.label1.Size = new System.Drawing.Size(147, 25);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Nombre de Usuario";
+            this.label1.Text = "Nombre de Usuario:";
             // 
             // txtContraseña
             // 
             this.txtContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtContraseña.Location = new System.Drawing.Point(27, 184);
+            this.txtContraseña.Location = new System.Drawing.Point(27, 170);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(267, 26);
             this.txtContraseña.TabIndex = 2;
@@ -201,7 +222,7 @@
             // txtUsuario
             // 
             this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsuario.Location = new System.Drawing.Point(27, 107);
+            this.txtUsuario.Location = new System.Drawing.Point(27, 93);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(298, 26);
             this.txtUsuario.TabIndex = 1;
@@ -228,6 +249,7 @@
             this.Text = "Login";
             this.pnlContenedor.ResumeLayout(false);
             this.pnlContenedor.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMostrarContraseña)).EndInit();
             this.ResumeLayout(false);
 
@@ -248,5 +270,6 @@
         private FontAwesome.Sharp.IconPictureBox btnMostrarContraseña;
         private System.Windows.Forms.Button btnDocente;
         private System.Windows.Forms.LinkLabel lnkRegistro;
+        private FontAwesome.Sharp.IconPictureBox btnCerrar;
     }
 }

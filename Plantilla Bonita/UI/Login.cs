@@ -44,7 +44,7 @@ namespace Plantilla_Bonita
                     this.DialogResult = DialogResult.OK;
                     this.generated = new Usuario(txtUsuario.Text);
                 }
-            }
+              }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
@@ -101,6 +101,11 @@ namespace Plantilla_Bonita
         {
             frmRegistro frmRegistro = new frmRegistro();
             frmRegistro.ShowDialog();
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

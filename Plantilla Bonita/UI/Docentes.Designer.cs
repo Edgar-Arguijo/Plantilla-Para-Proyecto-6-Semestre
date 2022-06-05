@@ -37,7 +37,6 @@ namespace Plantilla_Bonita
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.vista_DocentesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.docentesDataSet = new Plantilla_Bonita.DataSets.DocentesDataSet();
-            this.btnCerrar = new System.Windows.Forms.Button();
             this.vista_DocentesBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
@@ -65,7 +64,6 @@ namespace Plantilla_Bonita
             // 
             this.panelDocentes.BackColor = System.Drawing.Color.White;
             this.panelDocentes.Controls.Add(this.vista_DocentesDataGridView);
-            this.panelDocentes.Controls.Add(this.btnCerrar);
             this.panelDocentes.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDocentes.Location = new System.Drawing.Point(0, 0);
             this.panelDocentes.Name = "panelDocentes";
@@ -85,7 +83,7 @@ namespace Plantilla_Bonita
             this.vista_DocentesDataGridView.DataSource = this.vista_DocentesBindingSource;
             this.vista_DocentesDataGridView.Location = new System.Drawing.Point(12, 12);
             this.vista_DocentesDataGridView.Name = "vista_DocentesDataGridView";
-            this.vista_DocentesDataGridView.Size = new System.Drawing.Size(658, 534);
+            this.vista_DocentesDataGridView.Size = new System.Drawing.Size(733, 534);
             this.vista_DocentesDataGridView.TabIndex = 6;
             // 
             // dataGridViewTextBoxColumn1
@@ -110,23 +108,6 @@ namespace Plantilla_Bonita
             // 
             this.docentesDataSet.DataSetName = "DocentesDataSet";
             this.docentesDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // btnCerrar
-            // 
-            this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCerrar.FlatAppearance.BorderSize = 0;
-            this.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCerrar.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCerrar.ForeColor = System.Drawing.Color.Maroon;
-            this.btnCerrar.Location = new System.Drawing.Point(723, 7);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(23, 26);
-            this.btnCerrar.TabIndex = 6;
-            this.btnCerrar.Text = "X";
-            this.btnCerrar.UseVisualStyleBackColor = true;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // vista_DocentesBindingNavigator
             // 
@@ -290,7 +271,6 @@ namespace Plantilla_Bonita
         #endregion
 
         private System.Windows.Forms.Panel panelDocentes;
-        private System.Windows.Forms.Button btnCerrar;
         private DataSets.DocentesDataSet docentesDataSet;
         private System.Windows.Forms.BindingSource vista_DocentesBindingSource;
         private DataSets.DocentesDataSetTableAdapters.Vista_DocentesTableAdapter vista_DocentesTableAdapter;
