@@ -107,5 +107,23 @@ namespace Plantilla_Bonita
             this.label1.Text = dtTPckInicio.Value.Date.ToString();
             this.label2.Text = dtTPckFin.Value.Date.ToString();
         }
+
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+            DGVPrinter printer = new DGVPrinter();
+            printer.Title = "Reporte de Aforos";
+            printer.SubTitle = $"Periodo: {dtTPckInicio.Value.ToString("dd/MM/yyyy")} - {dtTPckFin.Value.ToString("dd/MM/yyyy")}";
+            printer.SubTitleFormatFlags = StringFormatFlags.LineLimit | StringFormatFlags.NoClip;
+            printer.PageNumbers = true;
+            printer.PageNumberInHeader = false;
+            printer.PorportionalColumns = true;
+            printer.HeaderCellAlignment = StringAlignment.Near;
+            printer.Footer = "SGA ITSL";
+            printer.FooterSpacing = 15;
+            printer.PrintDataGridView(vista_AforosGeneralDataGridView);
+            printer.ColumnWidths.Add("matricula", 50);
+            printer.ColumnWidths.Add("nombre", 150);
+            printer.ColumnWidths.Add("asistencias", 20);
+        }
     }
 }

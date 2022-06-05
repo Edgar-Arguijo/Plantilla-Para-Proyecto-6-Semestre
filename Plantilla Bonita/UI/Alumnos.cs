@@ -78,5 +78,23 @@ namespace Plantilla_Bonita
         {
             RellenarTabla();
         }
+
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+            DGVPrinter printer = new DGVPrinter();
+            printer.Title = "Lista de Alumnos";
+            printer.SubTitle = $"Ingeniereia: {ingenieriasComboBox.Text}";
+            printer.SubTitleFormatFlags = StringFormatFlags.LineLimit | StringFormatFlags.NoClip;
+            printer.PageNumbers = true;
+            printer.PageNumberInHeader = false;
+            printer.PorportionalColumns = true;
+            printer.HeaderCellAlignment = StringAlignment.Near;
+            printer.Footer = "SGA ITSL";
+            printer.FooterSpacing = 15;
+            printer.PrintDataGridView(vista_AlumnosDataGridView);
+            printer.ColumnWidths.Add("matricula", 50);
+            printer.ColumnWidths.Add("nombre", 150);
+            printer.ColumnWidths.Add("asistencias", 20);
+        }
     }
 }

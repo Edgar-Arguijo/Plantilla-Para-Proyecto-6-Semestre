@@ -66,7 +66,7 @@
             this.pnlContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlContenedor.Location = new System.Drawing.Point(0, 0);
             this.pnlContenedor.Name = "pnlContenedor";
-            this.pnlContenedor.Size = new System.Drawing.Size(350, 326);
+            this.pnlContenedor.Size = new System.Drawing.Size(350, 498);
             this.pnlContenedor.TabIndex = 0;
             this.pnlContenedor.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlContenedor_MouseDown);
             // 
@@ -84,7 +84,6 @@
             // btnDocente
             // 
             this.btnDocente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
-            this.btnDocente.Enabled = false;
             this.btnDocente.FlatAppearance.BorderSize = 0;
             this.btnDocente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDocente.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
@@ -95,7 +94,6 @@
             this.btnDocente.TabIndex = 10;
             this.btnDocente.Text = "Docente";
             this.btnDocente.UseVisualStyleBackColor = false;
-            this.btnDocente.Visible = false;
             this.btnDocente.Click += new System.EventHandler(this.btnDocente_Click);
             // 
             // btnMostrarContraseña
@@ -119,7 +117,6 @@
             // btnInvitado
             // 
             this.btnInvitado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
-            this.btnInvitado.Enabled = false;
             this.btnInvitado.FlatAppearance.BorderSize = 0;
             this.btnInvitado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInvitado.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
@@ -130,13 +127,11 @@
             this.btnInvitado.TabIndex = 8;
             this.btnInvitado.Text = "Invitado";
             this.btnInvitado.UseVisualStyleBackColor = false;
-            this.btnInvitado.Visible = false;
             this.btnInvitado.Click += new System.EventHandler(this.btnInvitado_Click);
             // 
             // btnPersonal
             // 
             this.btnPersonal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
-            this.btnPersonal.Enabled = false;
             this.btnPersonal.FlatAppearance.BorderSize = 0;
             this.btnPersonal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPersonal.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
@@ -147,13 +142,11 @@
             this.btnPersonal.TabIndex = 7;
             this.btnPersonal.Text = "Administrativo";
             this.btnPersonal.UseVisualStyleBackColor = false;
-            this.btnPersonal.Visible = false;
             this.btnPersonal.Click += new System.EventHandler(this.btnPersonal_Click);
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
-            this.button1.Enabled = false;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
@@ -164,7 +157,6 @@
             this.button1.TabIndex = 6;
             this.button1.Text = "Administrador";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Visible = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnIniciarSesion
@@ -247,7 +239,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(350, 326);
+            this.ClientSize = new System.Drawing.Size(350, 498);
             this.Controls.Add(this.pnlContenedor);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
