@@ -234,6 +234,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClasesAuxiliares\Usuario.cs" />
     <Compile Include="DataSets\AforosDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -296,6 +297,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>EdificiosDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormasABC\Altas\AltaIngenieria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormasABC\Altas\AltaIngenieria.Designer.cs">
+      <DependentUpon>AltaIngenieria.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\frmABCAulas.cs">
       <SubType>Form</SubType>
@@ -392,6 +399,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Docentes.resx">
       <DependentUpon>Docentes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormasABC\Altas\AltaIngenieria.resx">
+      <DependentUpon>AltaIngenieria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\frmABCAulas.resx">
       <DependentUpon>frmABCAulas.cs</DependentUpon>

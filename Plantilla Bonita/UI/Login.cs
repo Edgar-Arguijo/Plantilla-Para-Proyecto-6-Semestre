@@ -21,10 +21,11 @@ namespace Plantilla_Bonita
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
-
-
+        
         private TipoUsuario.NivelAutorizacion result;
         public TipoUsuario.NivelAutorizacion Result=> result;
+
+        public Usuario generated;
 
         public Login()
         {
@@ -41,6 +42,7 @@ namespace Plantilla_Bonita
                     ModeloDeUsuario obj = new ModeloDeUsuario();
                     this.result = TipoUsuario.ObtenerNivel(obj.Loggeo(txtUsuario.Text,  txtContraseña.Text));
                     this.DialogResult = DialogResult.OK;
+                    this.generated = new Usuario(txtUsuario.Text);
                 }
               }
             catch (Exception ex)
@@ -75,7 +77,6 @@ namespace Plantilla_Bonita
         private void btnMostrarContraseña_MouseUp(object sender, MouseEventArgs e)
         {
             txtContraseña.UseSystemPasswordChar = true;
-
         }
 
         private void btnInvitado_Click(object sender, EventArgs e)

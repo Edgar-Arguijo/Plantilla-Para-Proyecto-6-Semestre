@@ -120,6 +120,42 @@ namespace Acceso_A_Datos
             }
         }
 
+        public bool AltaIngenieria(string usuario, string cod, string desc) 
+        {
+            try
+            {
+                using (SqlConnection conexion = getConnection())
+                {
+                    conexion.Open();
+                    using (SqlCommand cmd = new SqlCommand("AltaIngenieria", conexion)) 
+                    {
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.AddWithValue("@usuario@codIngenieria", usuario);
+                        cmd.Parameters.AddWithValue("@codIngenieria", cod);
+                        cmd.Parameters.AddWithValue("@Nombre", desc);
+                        cmd.Parameters.AddWithValue("@Fecha", DateTime.Now);
+                        cmd.Parameters.Add("@flag", SqlDbType.Bit).Direction = ParameterDirection.ReturnValue;
+                        cmd.ExecuteNonQuery();
+
+                        if (cmd.Parameters["@flag"].Value.ToString() == "0")
+                            return false;
+
+                        if (cmd.Parameters["@flag"].Value.ToString() == "1")
+                            return true;
+
+                        //
+
+                        return false;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return false;
+            }
+        }
+
         public bool CopiaDeSeguridad()
         {
             try
