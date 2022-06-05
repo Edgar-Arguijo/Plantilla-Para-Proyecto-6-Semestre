@@ -90,18 +90,20 @@ namespace Plantilla_Bonita
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(20, 56);
+            this.label2.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
+            this.label2.Location = new System.Drawing.Point(18, 68);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 13);
+            this.label2.Size = new System.Drawing.Size(86, 25);
             this.label2.TabIndex = 19;
             this.label2.Text = "Ingeniería:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 10);
+            this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
+            this.label1.Location = new System.Drawing.Point(18, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(116, 13);
+            this.label1.Size = new System.Drawing.Size(168, 25);
             this.label1.TabIndex = 18;
             this.label1.Text = "Busqueda por Nombre:";
             // 
@@ -114,7 +116,7 @@ namespace Plantilla_Bonita
             this.btnPrint.IconChar = FontAwesome.Sharp.IconChar.Print;
             this.btnPrint.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.btnPrint.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnPrint.Location = new System.Drawing.Point(748, 74);
+            this.btnPrint.Location = new System.Drawing.Point(748, 99);
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.Size = new System.Drawing.Size(32, 32);
             this.btnPrint.TabIndex = 17;
@@ -123,7 +125,7 @@ namespace Plantilla_Bonita
             // 
             // txtNombreBusqueda
             // 
-            this.txtNombreBusqueda.Location = new System.Drawing.Point(23, 28);
+            this.txtNombreBusqueda.Location = new System.Drawing.Point(23, 39);
             this.txtNombreBusqueda.Name = "txtNombreBusqueda";
             this.txtNombreBusqueda.Size = new System.Drawing.Size(219, 20);
             this.txtNombreBusqueda.TabIndex = 7;
@@ -140,9 +142,9 @@ namespace Plantilla_Bonita
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2});
             this.vista_AlumnosDataGridView.DataSource = this.vista_AlumnosBindingSource;
-            this.vista_AlumnosDataGridView.Location = new System.Drawing.Point(23, 112);
+            this.vista_AlumnosDataGridView.Location = new System.Drawing.Point(23, 137);
             this.vista_AlumnosDataGridView.Name = "vista_AlumnosDataGridView";
-            this.vista_AlumnosDataGridView.Size = new System.Drawing.Size(757, 420);
+            this.vista_AlumnosDataGridView.Size = new System.Drawing.Size(757, 395);
             this.vista_AlumnosDataGridView.TabIndex = 6;
             // 
             // dataGridViewTextBoxColumn1
@@ -178,7 +180,7 @@ namespace Plantilla_Bonita
             this.ingenieriasComboBox.DataSource = this.ingenieriasBindingSource;
             this.ingenieriasComboBox.DisplayMember = "Descripcion";
             this.ingenieriasComboBox.FormattingEnabled = true;
-            this.ingenieriasComboBox.Location = new System.Drawing.Point(23, 72);
+            this.ingenieriasComboBox.Location = new System.Drawing.Point(23, 96);
             this.ingenieriasComboBox.Name = "ingenieriasComboBox";
             this.ingenieriasComboBox.Size = new System.Drawing.Size(451, 21);
             this.ingenieriasComboBox.TabIndex = 6;

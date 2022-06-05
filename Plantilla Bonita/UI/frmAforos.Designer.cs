@@ -77,18 +77,20 @@
             // codigoEdificioLabel
             // 
             codigoEdificioLabel.AutoSize = true;
-            codigoEdificioLabel.Location = new System.Drawing.Point(19, 27);
+            codigoEdificioLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
+            codigoEdificioLabel.Location = new System.Drawing.Point(18, 23);
             codigoEdificioLabel.Name = "codigoEdificioLabel";
-            codigoEdificioLabel.Size = new System.Drawing.Size(80, 13);
+            codigoEdificioLabel.Size = new System.Drawing.Size(114, 25);
             codigoEdificioLabel.TabIndex = 0;
             codigoEdificioLabel.Text = "Codigo Edificio:";
             // 
             // codigoAulaLabel
             // 
             codigoAulaLabel.AutoSize = true;
-            codigoAulaLabel.Location = new System.Drawing.Point(19, 70);
+            codigoAulaLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
+            codigoAulaLabel.Location = new System.Drawing.Point(18, 63);
             codigoAulaLabel.Name = "codigoAulaLabel";
-            codigoAulaLabel.Size = new System.Drawing.Size(84, 13);
+            codigoAulaLabel.Size = new System.Drawing.Size(122, 25);
             codigoAulaLabel.TabIndex = 2;
             codigoAulaLabel.Text = "Codigo del Aula:";
             // 
@@ -205,9 +207,10 @@
             this.chkFecha.AutoSize = true;
             this.chkFecha.Checked = true;
             this.chkFecha.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkFecha.Location = new System.Drawing.Point(266, 47);
+            this.chkFecha.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
+            this.chkFecha.Location = new System.Drawing.Point(285, 27);
             this.chkFecha.Name = "chkFecha";
-            this.chkFecha.Size = new System.Drawing.Size(125, 17);
+            this.chkFecha.Size = new System.Drawing.Size(172, 29);
             this.chkFecha.TabIndex = 8;
             this.chkFecha.Text = "Busqueda por Fecha";
             this.chkFecha.UseVisualStyleBackColor = true;
@@ -216,9 +219,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(237, 151);
+            this.label2.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
+            this.label2.Location = new System.Drawing.Point(235, 139);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 13);
+            this.label2.Size = new System.Drawing.Size(117, 25);
             this.label2.TabIndex = 7;
             this.label2.Text = "Fin del Periodo:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -226,9 +230,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 151);
+            this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
+            this.label1.Location = new System.Drawing.Point(20, 139);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 13);
+            this.label1.Size = new System.Drawing.Size(105, 25);
             this.label1.TabIndex = 6;
             this.label1.Text = "Fecha Inicial:";
             // 
@@ -256,7 +261,7 @@
             this.codigoAulaComboBox.DataSource = this.aulasBindingSource1;
             this.codigoAulaComboBox.DisplayMember = "CodigoAula";
             this.codigoAulaComboBox.FormattingEnabled = true;
-            this.codigoAulaComboBox.Location = new System.Drawing.Point(105, 67);
+            this.codigoAulaComboBox.Location = new System.Drawing.Point(146, 67);
             this.codigoAulaComboBox.Name = "codigoAulaComboBox";
             this.codigoAulaComboBox.Size = new System.Drawing.Size(121, 21);
             this.codigoAulaComboBox.TabIndex = 3;
@@ -283,7 +288,7 @@
             this.codigoEdificioComboBox.DataSource = this.edificiosBindingSource1;
             this.codigoEdificioComboBox.DisplayMember = "CodigoEdificio";
             this.codigoEdificioComboBox.FormattingEnabled = true;
-            this.codigoEdificioComboBox.Location = new System.Drawing.Point(105, 24);
+            this.codigoEdificioComboBox.Location = new System.Drawing.Point(146, 27);
             this.codigoEdificioComboBox.Name = "codigoEdificioComboBox";
             this.codigoEdificioComboBox.Size = new System.Drawing.Size(121, 21);
             this.codigoEdificioComboBox.TabIndex = 1;

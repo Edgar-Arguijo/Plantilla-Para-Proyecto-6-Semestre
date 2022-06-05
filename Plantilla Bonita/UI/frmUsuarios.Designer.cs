@@ -80,27 +80,30 @@
             // nombreDeUsuarioLabel
             // 
             nombreDeUsuarioLabel.AutoSize = true;
-            nombreDeUsuarioLabel.Location = new System.Drawing.Point(27, 28);
+            nombreDeUsuarioLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
+            nombreDeUsuarioLabel.Location = new System.Drawing.Point(25, 16);
             nombreDeUsuarioLabel.Name = "nombreDeUsuarioLabel";
-            nombreDeUsuarioLabel.Size = new System.Drawing.Size(103, 13);
+            nombreDeUsuarioLabel.Size = new System.Drawing.Size(148, 25);
             nombreDeUsuarioLabel.TabIndex = 1;
             nombreDeUsuarioLabel.Text = "Nombre De Usuario:";
             // 
             // contraseñaLabel
             // 
             contraseñaLabel.AutoSize = true;
-            contraseñaLabel.Location = new System.Drawing.Point(27, 77);
+            contraseñaLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
+            contraseñaLabel.Location = new System.Drawing.Point(25, 65);
             contraseñaLabel.Name = "contraseñaLabel";
-            contraseñaLabel.Size = new System.Drawing.Size(64, 13);
+            contraseñaLabel.Size = new System.Drawing.Size(98, 25);
             contraseñaLabel.TabIndex = 3;
             contraseñaLabel.Text = "Contraseña:";
             // 
             // rolLabel
             // 
             rolLabel.AutoSize = true;
-            rolLabel.Location = new System.Drawing.Point(325, 46);
+            rolLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
+            rolLabel.Location = new System.Drawing.Point(313, 39);
             rolLabel.Name = "rolLabel";
-            rolLabel.Size = new System.Drawing.Size(26, 13);
+            rolLabel.Size = new System.Drawing.Size(38, 25);
             rolLabel.TabIndex = 5;
             rolLabel.Text = "Rol:";
             // 
@@ -128,6 +131,7 @@
             // 
             this.btnUpdateData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnUpdateData.BackColor = System.Drawing.Color.White;
+            this.btnUpdateData.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnUpdateData.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.btnUpdateData.IconChar = FontAwesome.Sharp.IconChar.Sync;
             this.btnUpdateData.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
@@ -143,11 +147,12 @@
             // 
             this.btnDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDelete.BackColor = System.Drawing.Color.White;
+            this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.btnDelete.IconChar = FontAwesome.Sharp.IconChar.TrashAlt;
             this.btnDelete.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.btnDelete.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnDelete.Location = new System.Drawing.Point(551, 123);
+            this.btnDelete.Location = new System.Drawing.Point(589, 123);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(32, 32);
             this.btnDelete.TabIndex = 10;
@@ -158,6 +163,7 @@
             // 
             this.btnGuardar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnGuardar.BackColor = System.Drawing.Color.White;
+            this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGuardar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.btnGuardar.IconChar = FontAwesome.Sharp.IconChar.Save;
             this.btnGuardar.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
@@ -173,6 +179,7 @@
             // 
             this.btnNuevo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnNuevo.BackColor = System.Drawing.Color.White;
+            this.btnNuevo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNuevo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.btnNuevo.IconChar = FontAwesome.Sharp.IconChar.Plus;
             this.btnNuevo.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
@@ -353,6 +360,7 @@
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Posición";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";

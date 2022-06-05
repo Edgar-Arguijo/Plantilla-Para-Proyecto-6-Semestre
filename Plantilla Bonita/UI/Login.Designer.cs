@@ -89,7 +89,7 @@
             // lnkRegistro
             // 
             this.lnkRegistro.AutoSize = true;
-            this.lnkRegistro.Location = new System.Drawing.Point(107, 279);
+            this.lnkRegistro.Location = new System.Drawing.Point(107, 271);
             this.lnkRegistro.Name = "lnkRegistro";
             this.lnkRegistro.Size = new System.Drawing.Size(130, 13);
             this.lnkRegistro.TabIndex = 11;
@@ -121,7 +121,7 @@
             this.btnMostrarContraseña.IconColor = System.Drawing.SystemColors.ControlText;
             this.btnMostrarContraseña.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnMostrarContraseña.IconSize = 25;
-            this.btnMostrarContraseña.Location = new System.Drawing.Point(300, 171);
+            this.btnMostrarContraseña.Location = new System.Drawing.Point(300, 163);
             this.btnMostrarContraseña.Name = "btnMostrarContraseña";
             this.btnMostrarContraseña.Size = new System.Drawing.Size(25, 25);
             this.btnMostrarContraseña.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -183,7 +183,7 @@
             this.btnIniciarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIniciarSesion.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
             this.btnIniciarSesion.ForeColor = System.Drawing.Color.White;
-            this.btnIniciarSesion.Location = new System.Drawing.Point(92, 224);
+            this.btnIniciarSesion.Location = new System.Drawing.Point(92, 216);
             this.btnIniciarSesion.Name = "btnIniciarSesion";
             this.btnIniciarSesion.Size = new System.Drawing.Size(167, 45);
             this.btnIniciarSesion.TabIndex = 5;
@@ -195,7 +195,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
-            this.label2.Location = new System.Drawing.Point(22, 142);
+            this.label2.Location = new System.Drawing.Point(22, 134);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(98, 25);
             this.label2.TabIndex = 4;
@@ -214,7 +214,7 @@
             // txtContraseña
             // 
             this.txtContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtContraseña.Location = new System.Drawing.Point(27, 170);
+            this.txtContraseña.Location = new System.Drawing.Point(27, 162);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(267, 26);
             this.txtContraseña.TabIndex = 2;
