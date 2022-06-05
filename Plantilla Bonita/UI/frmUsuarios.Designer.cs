@@ -40,15 +40,15 @@
             this.btnNuevo = new FontAwesome.Sharp.IconPictureBox();
             this.rolComboBox = new System.Windows.Forms.ComboBox();
             this.usuariosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.usuariosDataSet = new Plantilla_Bonita.UsuariosDataSet();
+            this.usuariosDataSet = new Plantilla_Bonita.DataSets.UsuariosDataSet();
             this.contraseñaTextBox = new System.Windows.Forms.TextBox();
             this.nombreDeUsuarioTextBox = new System.Windows.Forms.TextBox();
             this.usuariosDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.usuariosTableAdapter = new Plantilla_Bonita.UsuariosDataSetTableAdapters.UsuariosTableAdapter();
-            this.tableAdapterManager = new Plantilla_Bonita.UsuariosDataSetTableAdapters.TableAdapterManager();
+            this.usuariosTableAdapter = new Plantilla_Bonita.DataSets.UsuariosDataSetTableAdapters.UsuariosTableAdapter();
+            this.tableAdapterManager = new Plantilla_Bonita.DataSets.UsuariosDataSetTableAdapters.TableAdapterManager();
             this.usuariosBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
@@ -267,7 +267,7 @@
             // tableAdapterManager
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.UpdateOrder = Plantilla_Bonita.UsuariosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UpdateOrder = Plantilla_Bonita.DataSets.UsuariosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.UsuariosTableAdapter = this.usuariosTableAdapter;
             // 
             // usuariosBindingNavigator
@@ -426,10 +426,10 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private UsuariosDataSet usuariosDataSet;
+        private DataSets.UsuariosDataSet usuariosDataSet;
         private System.Windows.Forms.BindingSource usuariosBindingSource;
-        private UsuariosDataSetTableAdapters.UsuariosTableAdapter usuariosTableAdapter;
-        private UsuariosDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private DataSets.UsuariosDataSetTableAdapters.UsuariosTableAdapter usuariosTableAdapter;
+        private DataSets.UsuariosDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.BindingNavigator usuariosBindingNavigator;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;

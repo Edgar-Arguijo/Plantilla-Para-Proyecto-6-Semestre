@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace Plantilla_Bonita {
+namespace Plantilla_Bonita.DataSets {
     
     
     /// <summary>
@@ -20,17 +20,17 @@ namespace Plantilla_Bonita {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("AforosDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("BitacoraDataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class AforosDataSet : global::System.Data.DataSet {
+    public partial class BitacoraDataSet : global::System.Data.DataSet {
         
-        private Vista_AforosGeneralDataTable tableVista_AforosGeneral;
+        private BitacoraClasesDataTable tableBitacoraClases;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public AforosDataSet() {
+        public BitacoraDataSet() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace Plantilla_Bonita {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected AforosDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected BitacoraDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace Plantilla_Bonita {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["Vista_AforosGeneral"] != null)) {
-                    base.Tables.Add(new Vista_AforosGeneralDataTable(ds.Tables["Vista_AforosGeneral"]));
+                if ((ds.Tables["BitacoraClases"] != null)) {
+                    base.Tables.Add(new BitacoraClasesDataTable(ds.Tables["BitacoraClases"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace Plantilla_Bonita {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public Vista_AforosGeneralDataTable Vista_AforosGeneral {
+        public BitacoraClasesDataTable BitacoraClases {
             get {
-                return this.tableVista_AforosGeneral;
+                return this.tableBitacoraClases;
             }
         }
         
@@ -127,7 +127,7 @@ namespace Plantilla_Bonita {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            AforosDataSet cln = ((AforosDataSet)(base.Clone()));
+            BitacoraDataSet cln = ((BitacoraDataSet)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace Plantilla_Bonita {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["Vista_AforosGeneral"] != null)) {
-                    base.Tables.Add(new Vista_AforosGeneralDataTable(ds.Tables["Vista_AforosGeneral"]));
+                if ((ds.Tables["BitacoraClases"] != null)) {
+                    base.Tables.Add(new BitacoraClasesDataTable(ds.Tables["BitacoraClases"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace Plantilla_Bonita {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableVista_AforosGeneral = ((Vista_AforosGeneralDataTable)(base.Tables["Vista_AforosGeneral"]));
+            this.tableBitacoraClases = ((BitacoraClasesDataTable)(base.Tables["BitacoraClases"]));
             if ((initTable == true)) {
-                if ((this.tableVista_AforosGeneral != null)) {
-                    this.tableVista_AforosGeneral.InitVars();
+                if ((this.tableBitacoraClases != null)) {
+                    this.tableBitacoraClases.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace Plantilla_Bonita {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "AforosDataSet";
+            this.DataSetName = "BitacoraDataSet";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/AforosDataSet.xsd";
+            this.Namespace = "http://tempuri.org/BitacoraDataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableVista_AforosGeneral = new Vista_AforosGeneralDataTable();
-            base.Tables.Add(this.tableVista_AforosGeneral);
+            this.tableBitacoraClases = new BitacoraClasesDataTable();
+            base.Tables.Add(this.tableBitacoraClases);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private bool ShouldSerializeVista_AforosGeneral() {
+        private bool ShouldSerializeBitacoraClases() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace Plantilla_Bonita {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            AforosDataSet ds = new AforosDataSet();
+            BitacoraDataSet ds = new BitacoraDataSet();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,35 +270,29 @@ namespace Plantilla_Bonita {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public delegate void Vista_AforosGeneralRowChangeEventHandler(object sender, Vista_AforosGeneralRowChangeEvent e);
+        public delegate void BitacoraClasesRowChangeEventHandler(object sender, BitacoraClasesRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class Vista_AforosGeneralDataTable : global::System.Data.TypedTableBase<Vista_AforosGeneralRow> {
+        public partial class BitacoraClasesDataTable : global::System.Data.TypedTableBase<BitacoraClasesRow> {
             
-            private global::System.Data.DataColumn columnEdificio;
+            private global::System.Data.DataColumn columnHoraDeRegistro;
             
-            private global::System.Data.DataColumn columnAula;
+            private global::System.Data.DataColumn columnHoraDeSincronizacion;
             
-            private global::System.Data.DataColumn columnAforo;
+            private global::System.Data.DataColumn columnCodClase;
             
-            private global::System.Data.DataColumn columnFecha;
+            private global::System.Data.DataColumn columnDescripcion;
             
-            private global::System.Data.DataColumn columnDocente;
-            
-            private global::System.Data.DataColumn columnCod_Materia;
-            
-            private global::System.Data.DataColumn columnMateria;
-            
-            private global::System.Data.DataColumn columnSemestre;
+            private global::System.Data.DataColumn columnMotivo;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Vista_AforosGeneralDataTable() {
-                this.TableName = "Vista_AforosGeneral";
+            public BitacoraClasesDataTable() {
+                this.TableName = "BitacoraClases";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -306,7 +300,7 @@ namespace Plantilla_Bonita {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal Vista_AforosGeneralDataTable(global::System.Data.DataTable table) {
+            internal BitacoraClasesDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -323,72 +317,48 @@ namespace Plantilla_Bonita {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected Vista_AforosGeneralDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected BitacoraClasesDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn EdificioColumn {
+            public global::System.Data.DataColumn HoraDeRegistroColumn {
                 get {
-                    return this.columnEdificio;
+                    return this.columnHoraDeRegistro;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn AulaColumn {
+            public global::System.Data.DataColumn HoraDeSincronizacionColumn {
                 get {
-                    return this.columnAula;
+                    return this.columnHoraDeSincronizacion;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn AforoColumn {
+            public global::System.Data.DataColumn CodClaseColumn {
                 get {
-                    return this.columnAforo;
+                    return this.columnCodClase;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn FechaColumn {
+            public global::System.Data.DataColumn DescripcionColumn {
                 get {
-                    return this.columnFecha;
+                    return this.columnDescripcion;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn DocenteColumn {
+            public global::System.Data.DataColumn MotivoColumn {
                 get {
-                    return this.columnDocente;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn Cod_MateriaColumn {
-                get {
-                    return this.columnCod_Materia;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn MateriaColumn {
-                get {
-                    return this.columnMateria;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn SemestreColumn {
-                get {
-                    return this.columnSemestre;
+                    return this.columnMotivo;
                 }
             }
             
@@ -403,52 +373,49 @@ namespace Plantilla_Bonita {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Vista_AforosGeneralRow this[int index] {
+            public BitacoraClasesRow this[int index] {
                 get {
-                    return ((Vista_AforosGeneralRow)(this.Rows[index]));
+                    return ((BitacoraClasesRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event Vista_AforosGeneralRowChangeEventHandler Vista_AforosGeneralRowChanging;
+            public event BitacoraClasesRowChangeEventHandler BitacoraClasesRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event Vista_AforosGeneralRowChangeEventHandler Vista_AforosGeneralRowChanged;
+            public event BitacoraClasesRowChangeEventHandler BitacoraClasesRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event Vista_AforosGeneralRowChangeEventHandler Vista_AforosGeneralRowDeleting;
+            public event BitacoraClasesRowChangeEventHandler BitacoraClasesRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event Vista_AforosGeneralRowChangeEventHandler Vista_AforosGeneralRowDeleted;
+            public event BitacoraClasesRowChangeEventHandler BitacoraClasesRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void AddVista_AforosGeneralRow(Vista_AforosGeneralRow row) {
+            public void AddBitacoraClasesRow(BitacoraClasesRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Vista_AforosGeneralRow AddVista_AforosGeneralRow(string Edificio, string Aula, int Aforo, System.DateTime Fecha, string Docente, string Cod_Materia, string Materia, int Semestre) {
-                Vista_AforosGeneralRow rowVista_AforosGeneralRow = ((Vista_AforosGeneralRow)(this.NewRow()));
+            public BitacoraClasesRow AddBitacoraClasesRow(System.DateTime HoraDeRegistro, System.DateTime HoraDeSincronizacion, string CodClase, string Descripcion, string Motivo) {
+                BitacoraClasesRow rowBitacoraClasesRow = ((BitacoraClasesRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        Edificio,
-                        Aula,
-                        Aforo,
-                        Fecha,
-                        Docente,
-                        Cod_Materia,
-                        Materia,
-                        Semestre};
-                rowVista_AforosGeneralRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowVista_AforosGeneralRow);
-                return rowVista_AforosGeneralRow;
+                        HoraDeRegistro,
+                        HoraDeSincronizacion,
+                        CodClase,
+                        Descripcion,
+                        Motivo};
+                rowBitacoraClasesRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowBitacoraClasesRow);
+                return rowBitacoraClasesRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                Vista_AforosGeneralDataTable cln = ((Vista_AforosGeneralDataTable)(base.Clone()));
+                BitacoraClasesDataTable cln = ((BitacoraClasesDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -456,75 +423,62 @@ namespace Plantilla_Bonita {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new Vista_AforosGeneralDataTable();
+                return new BitacoraClasesDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             internal void InitVars() {
-                this.columnEdificio = base.Columns["Edificio"];
-                this.columnAula = base.Columns["Aula"];
-                this.columnAforo = base.Columns["Aforo"];
-                this.columnFecha = base.Columns["Fecha"];
-                this.columnDocente = base.Columns["Docente"];
-                this.columnCod_Materia = base.Columns["Cod_Materia"];
-                this.columnMateria = base.Columns["Materia"];
-                this.columnSemestre = base.Columns["Semestre"];
+                this.columnHoraDeRegistro = base.Columns["HoraDeRegistro"];
+                this.columnHoraDeSincronizacion = base.Columns["HoraDeSincronizacion"];
+                this.columnCodClase = base.Columns["CodClase"];
+                this.columnDescripcion = base.Columns["Descripcion"];
+                this.columnMotivo = base.Columns["Motivo"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             private void InitClass() {
-                this.columnEdificio = new global::System.Data.DataColumn("Edificio", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnEdificio);
-                this.columnAula = new global::System.Data.DataColumn("Aula", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnAula);
-                this.columnAforo = new global::System.Data.DataColumn("Aforo", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnAforo);
-                this.columnFecha = new global::System.Data.DataColumn("Fecha", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnFecha);
-                this.columnDocente = new global::System.Data.DataColumn("Docente", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnDocente);
-                this.columnCod_Materia = new global::System.Data.DataColumn("Cod_Materia", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCod_Materia);
-                this.columnMateria = new global::System.Data.DataColumn("Materia", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnMateria);
-                this.columnSemestre = new global::System.Data.DataColumn("Semestre", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnSemestre);
-                this.columnEdificio.AllowDBNull = false;
-                this.columnEdificio.MaxLength = 3;
-                this.columnAula.AllowDBNull = false;
-                this.columnAula.MaxLength = 6;
-                this.columnDocente.MaxLength = 2147483647;
-                this.columnCod_Materia.AllowDBNull = false;
-                this.columnCod_Materia.MaxLength = 10;
-                this.columnMateria.MaxLength = 2147483647;
+                this.columnHoraDeRegistro = new global::System.Data.DataColumn("HoraDeRegistro", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnHoraDeRegistro);
+                this.columnHoraDeSincronizacion = new global::System.Data.DataColumn("HoraDeSincronizacion", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnHoraDeSincronizacion);
+                this.columnCodClase = new global::System.Data.DataColumn("CodClase", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCodClase);
+                this.columnDescripcion = new global::System.Data.DataColumn("Descripcion", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDescripcion);
+                this.columnMotivo = new global::System.Data.DataColumn("Motivo", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMotivo);
+                this.columnCodClase.MaxLength = 15;
+                this.columnDescripcion.AllowDBNull = false;
+                this.columnDescripcion.MaxLength = 2147483647;
+                this.columnMotivo.MaxLength = 25;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Vista_AforosGeneralRow NewVista_AforosGeneralRow() {
-                return ((Vista_AforosGeneralRow)(this.NewRow()));
+            public BitacoraClasesRow NewBitacoraClasesRow() {
+                return ((BitacoraClasesRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new Vista_AforosGeneralRow(builder);
+                return new BitacoraClasesRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(Vista_AforosGeneralRow);
+                return typeof(BitacoraClasesRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.Vista_AforosGeneralRowChanged != null)) {
-                    this.Vista_AforosGeneralRowChanged(this, new Vista_AforosGeneralRowChangeEvent(((Vista_AforosGeneralRow)(e.Row)), e.Action));
+                if ((this.BitacoraClasesRowChanged != null)) {
+                    this.BitacoraClasesRowChanged(this, new BitacoraClasesRowChangeEvent(((BitacoraClasesRow)(e.Row)), e.Action));
                 }
             }
             
@@ -532,8 +486,8 @@ namespace Plantilla_Bonita {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.Vista_AforosGeneralRowChanging != null)) {
-                    this.Vista_AforosGeneralRowChanging(this, new Vista_AforosGeneralRowChangeEvent(((Vista_AforosGeneralRow)(e.Row)), e.Action));
+                if ((this.BitacoraClasesRowChanging != null)) {
+                    this.BitacoraClasesRowChanging(this, new BitacoraClasesRowChangeEvent(((BitacoraClasesRow)(e.Row)), e.Action));
                 }
             }
             
@@ -541,8 +495,8 @@ namespace Plantilla_Bonita {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.Vista_AforosGeneralRowDeleted != null)) {
-                    this.Vista_AforosGeneralRowDeleted(this, new Vista_AforosGeneralRowChangeEvent(((Vista_AforosGeneralRow)(e.Row)), e.Action));
+                if ((this.BitacoraClasesRowDeleted != null)) {
+                    this.BitacoraClasesRowDeleted(this, new BitacoraClasesRowChangeEvent(((BitacoraClasesRow)(e.Row)), e.Action));
                 }
             }
             
@@ -550,14 +504,14 @@ namespace Plantilla_Bonita {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.Vista_AforosGeneralRowDeleting != null)) {
-                    this.Vista_AforosGeneralRowDeleting(this, new Vista_AforosGeneralRowChangeEvent(((Vista_AforosGeneralRow)(e.Row)), e.Action));
+                if ((this.BitacoraClasesRowDeleting != null)) {
+                    this.BitacoraClasesRowDeleting(this, new BitacoraClasesRowChangeEvent(((BitacoraClasesRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void RemoveVista_AforosGeneralRow(Vista_AforosGeneralRow row) {
+            public void RemoveBitacoraClasesRow(BitacoraClasesRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -566,7 +520,7 @@ namespace Plantilla_Bonita {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                AforosDataSet ds = new AforosDataSet();
+                BitacoraDataSet ds = new BitacoraDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -584,7 +538,7 @@ namespace Plantilla_Bonita {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "Vista_AforosGeneralDataTable";
+                attribute2.FixedValue = "BitacoraClasesDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -628,188 +582,139 @@ namespace Plantilla_Bonita {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class Vista_AforosGeneralRow : global::System.Data.DataRow {
+        public partial class BitacoraClasesRow : global::System.Data.DataRow {
             
-            private Vista_AforosGeneralDataTable tableVista_AforosGeneral;
+            private BitacoraClasesDataTable tableBitacoraClases;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal Vista_AforosGeneralRow(global::System.Data.DataRowBuilder rb) : 
+            internal BitacoraClasesRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableVista_AforosGeneral = ((Vista_AforosGeneralDataTable)(this.Table));
+                this.tableBitacoraClases = ((BitacoraClasesDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Edificio {
-                get {
-                    return ((string)(this[this.tableVista_AforosGeneral.EdificioColumn]));
-                }
-                set {
-                    this[this.tableVista_AforosGeneral.EdificioColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Aula {
-                get {
-                    return ((string)(this[this.tableVista_AforosGeneral.AulaColumn]));
-                }
-                set {
-                    this[this.tableVista_AforosGeneral.AulaColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int Aforo {
+            public System.DateTime HoraDeRegistro {
                 get {
                     try {
-                        return ((int)(this[this.tableVista_AforosGeneral.AforoColumn]));
+                        return ((global::System.DateTime)(this[this.tableBitacoraClases.HoraDeRegistroColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Aforo\' de la tabla \'Vista_AforosGeneral\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'HoraDeRegistro\' de la tabla \'BitacoraClases\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableVista_AforosGeneral.AforoColumn] = value;
+                    this[this.tableBitacoraClases.HoraDeRegistroColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public System.DateTime Fecha {
+            public System.DateTime HoraDeSincronizacion {
                 get {
                     try {
-                        return ((global::System.DateTime)(this[this.tableVista_AforosGeneral.FechaColumn]));
+                        return ((global::System.DateTime)(this[this.tableBitacoraClases.HoraDeSincronizacionColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Fecha\' de la tabla \'Vista_AforosGeneral\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'HoraDeSincronizacion\' de la tabla \'BitacoraClases\' es DBN" +
+                                "ull.", e);
                     }
                 }
                 set {
-                    this[this.tableVista_AforosGeneral.FechaColumn] = value;
+                    this[this.tableBitacoraClases.HoraDeSincronizacionColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Docente {
+            public string CodClase {
                 get {
                     try {
-                        return ((string)(this[this.tableVista_AforosGeneral.DocenteColumn]));
+                        return ((string)(this[this.tableBitacoraClases.CodClaseColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Docente\' de la tabla \'Vista_AforosGeneral\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'CodClase\' de la tabla \'BitacoraClases\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableVista_AforosGeneral.DocenteColumn] = value;
+                    this[this.tableBitacoraClases.CodClaseColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Cod_Materia {
+            public string Descripcion {
                 get {
-                    return ((string)(this[this.tableVista_AforosGeneral.Cod_MateriaColumn]));
+                    return ((string)(this[this.tableBitacoraClases.DescripcionColumn]));
                 }
                 set {
-                    this[this.tableVista_AforosGeneral.Cod_MateriaColumn] = value;
+                    this[this.tableBitacoraClases.DescripcionColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Materia {
-                get {
-                    try {
-                        return ((string)(this[this.tableVista_AforosGeneral.MateriaColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Materia\' de la tabla \'Vista_AforosGeneral\' es DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableVista_AforosGeneral.MateriaColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int Semestre {
+            public string Motivo {
                 get {
                     try {
-                        return ((int)(this[this.tableVista_AforosGeneral.SemestreColumn]));
+                        return ((string)(this[this.tableBitacoraClases.MotivoColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Semestre\' de la tabla \'Vista_AforosGeneral\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Motivo\' de la tabla \'BitacoraClases\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableVista_AforosGeneral.SemestreColumn] = value;
+                    this[this.tableBitacoraClases.MotivoColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsAforoNull() {
-                return this.IsNull(this.tableVista_AforosGeneral.AforoColumn);
+            public bool IsHoraDeRegistroNull() {
+                return this.IsNull(this.tableBitacoraClases.HoraDeRegistroColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetAforoNull() {
-                this[this.tableVista_AforosGeneral.AforoColumn] = global::System.Convert.DBNull;
+            public void SetHoraDeRegistroNull() {
+                this[this.tableBitacoraClases.HoraDeRegistroColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsFechaNull() {
-                return this.IsNull(this.tableVista_AforosGeneral.FechaColumn);
+            public bool IsHoraDeSincronizacionNull() {
+                return this.IsNull(this.tableBitacoraClases.HoraDeSincronizacionColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetFechaNull() {
-                this[this.tableVista_AforosGeneral.FechaColumn] = global::System.Convert.DBNull;
+            public void SetHoraDeSincronizacionNull() {
+                this[this.tableBitacoraClases.HoraDeSincronizacionColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsDocenteNull() {
-                return this.IsNull(this.tableVista_AforosGeneral.DocenteColumn);
+            public bool IsCodClaseNull() {
+                return this.IsNull(this.tableBitacoraClases.CodClaseColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetDocenteNull() {
-                this[this.tableVista_AforosGeneral.DocenteColumn] = global::System.Convert.DBNull;
+            public void SetCodClaseNull() {
+                this[this.tableBitacoraClases.CodClaseColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsMateriaNull() {
-                return this.IsNull(this.tableVista_AforosGeneral.MateriaColumn);
+            public bool IsMotivoNull() {
+                return this.IsNull(this.tableBitacoraClases.MotivoColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetMateriaNull() {
-                this[this.tableVista_AforosGeneral.MateriaColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsSemestreNull() {
-                return this.IsNull(this.tableVista_AforosGeneral.SemestreColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetSemestreNull() {
-                this[this.tableVista_AforosGeneral.SemestreColumn] = global::System.Convert.DBNull;
+            public void SetMotivoNull() {
+                this[this.tableBitacoraClases.MotivoColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -817,22 +722,22 @@ namespace Plantilla_Bonita {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public class Vista_AforosGeneralRowChangeEvent : global::System.EventArgs {
+        public class BitacoraClasesRowChangeEvent : global::System.EventArgs {
             
-            private Vista_AforosGeneralRow eventRow;
+            private BitacoraClasesRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Vista_AforosGeneralRowChangeEvent(Vista_AforosGeneralRow row, global::System.Data.DataRowAction action) {
+            public BitacoraClasesRowChangeEvent(BitacoraClasesRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Vista_AforosGeneralRow Row {
+            public BitacoraClasesRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -848,7 +753,7 @@ namespace Plantilla_Bonita {
         }
     }
 }
-namespace Plantilla_Bonita.AforosDataSetTableAdapters {
+namespace Plantilla_Bonita.DataSets.BitacoraDataSetTableAdapters {
     
     
     /// <summary>
@@ -860,7 +765,7 @@ namespace Plantilla_Bonita.AforosDataSetTableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class Vista_AforosGeneralTableAdapter : global::System.ComponentModel.Component {
+    public partial class BitacoraClasesTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -874,7 +779,7 @@ namespace Plantilla_Bonita.AforosDataSetTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public Vista_AforosGeneralTableAdapter() {
+        public BitacoraClasesTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -971,16 +876,24 @@ namespace Plantilla_Bonita.AforosDataSetTableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "Vista_AforosGeneral";
-            tableMapping.ColumnMappings.Add("Edificio", "Edificio");
-            tableMapping.ColumnMappings.Add("Aula", "Aula");
-            tableMapping.ColumnMappings.Add("Aforo", "Aforo");
-            tableMapping.ColumnMappings.Add("Fecha", "Fecha");
-            tableMapping.ColumnMappings.Add("Docente", "Docente");
-            tableMapping.ColumnMappings.Add("Cod_Materia", "Cod_Materia");
-            tableMapping.ColumnMappings.Add("Materia", "Materia");
-            tableMapping.ColumnMappings.Add("Semestre", "Semestre");
+            tableMapping.DataSetTable = "BitacoraClases";
+            tableMapping.ColumnMappings.Add("HoraDeRegistro", "HoraDeRegistro");
+            tableMapping.ColumnMappings.Add("HoraDeSincronizacion", "HoraDeSincronizacion");
+            tableMapping.ColumnMappings.Add("CodClase", "CodClase");
+            tableMapping.ColumnMappings.Add("Descripcion", "Descripcion");
+            tableMapping.ColumnMappings.Add("Motivo", "Motivo");
             this._adapter.TableMappings.Add(tableMapping);
+            this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.InsertCommand.Connection = this.Connection;
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[BitacoraClases] ([HoraDeRegistro], [HoraDeSincronizacion], [Co" +
+                "dClase], [Descripcion], [Motivo]) VALUES (@HoraDeRegistro, @HoraDeSincronizacion" +
+                ", @CodClase, @Descripcion, @Motivo)";
+            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@HoraDeRegistro", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "HoraDeRegistro", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@HoraDeSincronizacion", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "HoraDeSincronizacion", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CodClase", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CodClase", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Descripcion", global::System.Data.SqlDbType.Text, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Descripcion", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Motivo", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Motivo", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -993,36 +906,19 @@ namespace Plantilla_Bonita.AforosDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[3];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT Edificio, Aula, Aforo, Fecha, Docente, Cod_Materia, Materia, Semestre FROM" +
-                " dbo.Vista_AforosGeneral";
+            this._commandCollection[0].CommandText = "SELECT HoraDeRegistro, HoraDeSincronizacion, CodClase, Descripcion, Motivo FROM d" +
+                "bo.BitacoraClases";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
-            this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = "SELECT Edificio, Aula, Aforo, Fecha, Docente, Cod_Materia, Materia, Semestre FROM" +
-                " dbo.Vista_AforosGeneral\r\nWhere Edificio = @edificio And Aula = @aula";
-            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@edificio", global::System.Data.SqlDbType.VarChar, 3, global::System.Data.ParameterDirection.Input, 0, 0, "Edificio", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@aula", global::System.Data.SqlDbType.VarChar, 6, global::System.Data.ParameterDirection.Input, 0, 0, "Aula", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
-            this._commandCollection[2].Connection = this.Connection;
-            this._commandCollection[2].CommandText = "SELECT Edificio, Aula, Aforo, Fecha, Docente, Cod_Materia, Materia, Semestre FROM" +
-                " dbo.Vista_AforosGeneral\r\nWhere Edificio = @edificio And Aula = @aula And Fecha " +
-                "Between @inicio And @fin";
-            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@edificio", global::System.Data.SqlDbType.VarChar, 3, global::System.Data.ParameterDirection.Input, 0, 0, "Edificio", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@aula", global::System.Data.SqlDbType.VarChar, 6, global::System.Data.ParameterDirection.Input, 0, 0, "Aula", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@inicio", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 0, 0, "Fecha", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@fin", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 0, 0, "Fecha", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(AforosDataSet.Vista_AforosGeneralDataTable dataTable) {
+        public virtual int Fill(BitacoraDataSet.BitacoraClasesDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1035,9 +931,9 @@ namespace Plantilla_Bonita.AforosDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual AforosDataSet.Vista_AforosGeneralDataTable GetData() {
+        public virtual BitacoraDataSet.BitacoraClasesDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            AforosDataSet.Vista_AforosGeneralDataTable dataTable = new AforosDataSet.Vista_AforosGeneralDataTable();
+            BitacoraDataSet.BitacoraClasesDataTable dataTable = new BitacoraDataSet.BitacoraClasesDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1045,121 +941,81 @@ namespace Plantilla_Bonita.AforosDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
-        public virtual int FillByEdificioAula(AforosDataSet.Vista_AforosGeneralDataTable dataTable, string edificio, string aula) {
-            this.Adapter.SelectCommand = this.CommandCollection[1];
-            if ((edificio == null)) {
-                throw new global::System.ArgumentNullException("edificio");
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(edificio));
-            }
-            if ((aula == null)) {
-                throw new global::System.ArgumentNullException("aula");
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(aula));
-            }
-            if ((this.ClearBeforeFill == true)) {
-                dataTable.Clear();
-            }
-            int returnValue = this.Adapter.Fill(dataTable);
-            return returnValue;
+        public virtual int Update(BitacoraDataSet.BitacoraClasesDataTable dataTable) {
+            return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual AforosDataSet.Vista_AforosGeneralDataTable GetDataByEdificioAula(string edificio, string aula) {
-            this.Adapter.SelectCommand = this.CommandCollection[1];
-            if ((edificio == null)) {
-                throw new global::System.ArgumentNullException("edificio");
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(edificio));
-            }
-            if ((aula == null)) {
-                throw new global::System.ArgumentNullException("aula");
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(aula));
-            }
-            AforosDataSet.Vista_AforosGeneralDataTable dataTable = new AforosDataSet.Vista_AforosGeneralDataTable();
-            this.Adapter.Fill(dataTable);
-            return dataTable;
+        public virtual int Update(BitacoraDataSet dataSet) {
+            return this.Adapter.Update(dataSet, "BitacoraClases");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
-        public virtual int FillByEdificioAulaFecha(AforosDataSet.Vista_AforosGeneralDataTable dataTable, string edificio, string aula, global::System.Nullable<global::System.DateTime> inicio, global::System.Nullable<global::System.DateTime> fin) {
-            this.Adapter.SelectCommand = this.CommandCollection[2];
-            if ((edificio == null)) {
-                throw new global::System.ArgumentNullException("edificio");
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(edificio));
-            }
-            if ((aula == null)) {
-                throw new global::System.ArgumentNullException("aula");
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(aula));
-            }
-            if ((inicio.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[2].Value = ((System.DateTime)(inicio.Value));
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
-            }
-            if ((fin.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[3].Value = ((System.DateTime)(fin.Value));
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[3].Value = global::System.DBNull.Value;
-            }
-            if ((this.ClearBeforeFill == true)) {
-                dataTable.Clear();
-            }
-            int returnValue = this.Adapter.Fill(dataTable);
-            return returnValue;
+        public virtual int Update(global::System.Data.DataRow dataRow) {
+            return this.Adapter.Update(new global::System.Data.DataRow[] {
+                        dataRow});
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual AforosDataSet.Vista_AforosGeneralDataTable GetDataByEdificioAulaFecha(string edificio, string aula, global::System.Nullable<global::System.DateTime> inicio, global::System.Nullable<global::System.DateTime> fin) {
-            this.Adapter.SelectCommand = this.CommandCollection[2];
-            if ((edificio == null)) {
-                throw new global::System.ArgumentNullException("edificio");
+        public virtual int Update(global::System.Data.DataRow[] dataRows) {
+            return this.Adapter.Update(dataRows);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
+        public virtual int Insert(global::System.Nullable<global::System.DateTime> HoraDeRegistro, global::System.Nullable<global::System.DateTime> HoraDeSincronizacion, string CodClase, string Descripcion, string Motivo) {
+            if ((HoraDeRegistro.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[0].Value = ((System.DateTime)(HoraDeRegistro.Value));
             }
             else {
-                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(edificio));
+                this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
-            if ((aula == null)) {
-                throw new global::System.ArgumentNullException("aula");
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(aula));
-            }
-            if ((inicio.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[2].Value = ((System.DateTime)(inicio.Value));
+            if ((HoraDeSincronizacion.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[1].Value = ((System.DateTime)(HoraDeSincronizacion.Value));
             }
             else {
-                this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
+                this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
-            if ((fin.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[3].Value = ((System.DateTime)(fin.Value));
+            if ((CodClase == null)) {
+                this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.SelectCommand.Parameters[3].Value = global::System.DBNull.Value;
+                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(CodClase));
             }
-            AforosDataSet.Vista_AforosGeneralDataTable dataTable = new AforosDataSet.Vista_AforosGeneralDataTable();
-            this.Adapter.Fill(dataTable);
-            return dataTable;
+            if ((Descripcion == null)) {
+                throw new global::System.ArgumentNullException("Descripcion");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(Descripcion));
+            }
+            if ((Motivo == null)) {
+                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(Motivo));
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
+            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.InsertCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.InsertCommand.Connection.Close();
+                }
+            }
         }
     }
     
@@ -1175,6 +1031,8 @@ namespace Plantilla_Bonita.AforosDataSetTableAdapters {
         
         private UpdateOrderOption _updateOrder;
         
+        private BitacoraClasesTableAdapter _bitacoraClasesTableAdapter;
+        
         private bool _backupDataSetBeforeUpdate;
         
         private global::System.Data.IDbConnection _connection;
@@ -1187,6 +1045,20 @@ namespace Plantilla_Bonita.AforosDataSetTableAdapters {
             }
             set {
                 this._updateOrder = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
+            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
+            "a", "System.Drawing.Design.UITypeEditor")]
+        public BitacoraClasesTableAdapter BitacoraClasesTableAdapter {
+            get {
+                return this._bitacoraClasesTableAdapter;
+            }
+            set {
+                this._bitacoraClasesTableAdapter = value;
             }
         }
         
@@ -1209,6 +1081,10 @@ namespace Plantilla_Bonita.AforosDataSetTableAdapters {
                 if ((this._connection != null)) {
                     return this._connection;
                 }
+                if (((this._bitacoraClasesTableAdapter != null) 
+                            && (this._bitacoraClasesTableAdapter.Connection != null))) {
+                    return this._bitacoraClasesTableAdapter.Connection;
+                }
                 return null;
             }
             set {
@@ -1222,6 +1098,9 @@ namespace Plantilla_Bonita.AforosDataSetTableAdapters {
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
+                if ((this._bitacoraClasesTableAdapter != null)) {
+                    count = (count + 1);
+                }
                 return count;
             }
         }
@@ -1231,8 +1110,17 @@ namespace Plantilla_Bonita.AforosDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateUpdatedRows(AforosDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(BitacoraDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
+            if ((this._bitacoraClasesTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.BitacoraClases.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._bitacoraClasesTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
             return result;
         }
         
@@ -1241,8 +1129,16 @@ namespace Plantilla_Bonita.AforosDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateInsertedRows(AforosDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(BitacoraDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
+            if ((this._bitacoraClasesTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.BitacoraClases.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._bitacoraClasesTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
             return result;
         }
         
@@ -1251,8 +1147,16 @@ namespace Plantilla_Bonita.AforosDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateDeletedRows(AforosDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(BitacoraDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
+            if ((this._bitacoraClasesTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.BitacoraClases.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._bitacoraClasesTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
             return result;
         }
         
@@ -1285,12 +1189,17 @@ namespace Plantilla_Bonita.AforosDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public virtual int UpdateAll(AforosDataSet dataSet) {
+        public virtual int UpdateAll(BitacoraDataSet dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
             if ((dataSet.HasChanges() == false)) {
                 return 0;
+            }
+            if (((this._bitacoraClasesTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._bitacoraClasesTableAdapter.Connection) == false))) {
+                throw new global::System.ArgumentException("Todos los TableAdapters administrados por un TableAdapterManager deben usar la mi" +
+                        "sma cadena de conexión.");
             }
             global::System.Data.IDbConnection workConnection = this.Connection;
             if ((workConnection == null)) {
@@ -1324,6 +1233,15 @@ namespace Plantilla_Bonita.AforosDataSetTableAdapters {
             try {
                 // ---- Prepare for update -----------
                 //
+                if ((this._bitacoraClasesTableAdapter != null)) {
+                    revertConnections.Add(this._bitacoraClasesTableAdapter, this._bitacoraClasesTableAdapter.Connection);
+                    this._bitacoraClasesTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._bitacoraClasesTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._bitacoraClasesTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._bitacoraClasesTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._bitacoraClasesTableAdapter.Adapter);
+                    }
+                }
                 // 
                 //---- Perform updates -----------
                 //
@@ -1381,6 +1299,10 @@ namespace Plantilla_Bonita.AforosDataSetTableAdapters {
             finally {
                 if (workConnOpened) {
                     workConnection.Close();
+                }
+                if ((this._bitacoraClasesTableAdapter != null)) {
+                    this._bitacoraClasesTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._bitacoraClasesTableAdapter]));
+                    this._bitacoraClasesTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

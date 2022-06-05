@@ -32,6 +32,7 @@
             this.MenuVertical = new System.Windows.Forms.Panel();
             this.pnlSubMenu1 = new System.Windows.Forms.Panel();
             this.pnlContenedorSubMenu1 = new System.Windows.Forms.Panel();
+            this.btnBitacora = new FontAwesome.Sharp.IconButton();
             this.btnCopiaSeguridad = new FontAwesome.Sharp.IconButton();
             this.btnUsuarios = new FontAwesome.Sharp.IconButton();
             this.btnAulas = new FontAwesome.Sharp.IconButton();
@@ -55,7 +56,6 @@
             this.btnSalir = new System.Windows.Forms.PictureBox();
             this.btnslider = new System.Windows.Forms.PictureBox();
             this.pnlContenedor = new System.Windows.Forms.Panel();
-            this.btnBitacora = new FontAwesome.Sharp.IconButton();
             this.MenuVertical.SuspendLayout();
             this.pnlSubMenu1.SuspendLayout();
             this.pnlContenedorSubMenu1.SuspendLayout();
@@ -98,6 +98,21 @@
             this.pnlContenedorSubMenu1.Controls.Add(this.btnMaterias);
             this.pnlContenedorSubMenu1.Controls.Add(this.btnIngenierias);
             this.pnlContenedorSubMenu1.Name = "pnlContenedorSubMenu1";
+            // 
+            // btnBitacora
+            // 
+            resources.ApplyResources(this.btnBitacora, "btnBitacora");
+            this.btnBitacora.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnBitacora.FlatAppearance.BorderSize = 0;
+            this.btnBitacora.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnBitacora.ForeColor = System.Drawing.Color.White;
+            this.btnBitacora.IconChar = FontAwesome.Sharp.IconChar.BookOpen;
+            this.btnBitacora.IconColor = System.Drawing.Color.White;
+            this.btnBitacora.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnBitacora.IconSize = 32;
+            this.btnBitacora.Name = "btnBitacora";
+            this.btnBitacora.UseVisualStyleBackColor = false;
+            this.btnBitacora.Click += new System.EventHandler(this.btnBitacora_Click);
             // 
             // btnCopiaSeguridad
             // 
@@ -363,24 +378,9 @@
             // 
             // pnlContenedor
             // 
-            resources.ApplyResources(this.pnlContenedor, "pnlContenedor");
             this.pnlContenedor.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.pnlContenedor, "pnlContenedor");
             this.pnlContenedor.Name = "pnlContenedor";
-            // 
-            // btnBitacora
-            // 
-            resources.ApplyResources(this.btnBitacora, "btnBitacora");
-            this.btnBitacora.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
-            this.btnBitacora.FlatAppearance.BorderSize = 0;
-            this.btnBitacora.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
-            this.btnBitacora.ForeColor = System.Drawing.Color.White;
-            this.btnBitacora.IconChar = FontAwesome.Sharp.IconChar.BookOpen;
-            this.btnBitacora.IconColor = System.Drawing.Color.White;
-            this.btnBitacora.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnBitacora.IconSize = 32;
-            this.btnBitacora.Name = "btnBitacora";
-            this.btnBitacora.UseVisualStyleBackColor = false;
-            this.btnBitacora.Click += new System.EventHandler(this.btnBitacora_Click);
             // 
             // frmPanelDeControl
             // 

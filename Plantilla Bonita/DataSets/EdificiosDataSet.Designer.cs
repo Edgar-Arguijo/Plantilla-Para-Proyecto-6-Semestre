@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace Plantilla_Bonita {
+namespace Plantilla_Bonita.DataSets {
     
     
     /// <summary>
@@ -635,7 +635,7 @@ namespace Plantilla_Bonita {
         }
     }
 }
-namespace Plantilla_Bonita.EdificiosDataSetTableAdapters {
+namespace Plantilla_Bonita.DataSets.EdificiosDataSetTableAdapters {
     
     
     /// <summary>

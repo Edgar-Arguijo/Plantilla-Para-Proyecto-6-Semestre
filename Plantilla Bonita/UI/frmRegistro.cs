@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,6 +15,13 @@ namespace Plantilla_Bonita
 {
     public partial class frmRegistro : Form
     {
+        //Mover Forma
+        //Libreia de using System.Runtime.InteropServices;
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
+
         public frmRegistro()
         {
             InitializeComponent();
@@ -42,7 +50,7 @@ namespace Plantilla_Bonita
             {
                 ModeloDeUsuario obj = new ModeloDeUsuario();
 
-                if (obj.AltaUsuario(txtNomUsuario.Text, Encriptado_Desencriptado.Encriptar(txtContra.Text)))
+                if (obj.AltaUsuario(txtNomUsuario.Text, txtContra.Text))
                     MessageBox.Show("El usuario fue dado de alta exitosamente");
                 else 
                     MessageBox.Show("No se pudo registrar el usuario");
@@ -60,6 +68,30 @@ namespace Plantilla_Bonita
         {
             if (VerificarCampos())
                 Generar_Registro();
+        }
+
+        private void btnRegistrarse_Click(object sender, EventArgs e)
+        {
+            if (VerificarCampos())
+                Generar_Registro();
+        }
+
+        private void pblEncabezado_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.Cancel;
+            this.Close();
         }
     }
 }

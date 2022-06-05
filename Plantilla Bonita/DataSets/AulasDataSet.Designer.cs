@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace Plantilla_Bonita {
+namespace Plantilla_Bonita.DataSets {
     
     
     /// <summary>
@@ -20,17 +20,17 @@ namespace Plantilla_Bonita {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("BitacoraDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("AulasDataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class BitacoraDataSet : global::System.Data.DataSet {
+    public partial class AulasDataSet : global::System.Data.DataSet {
         
-        private BitacoraClasesDataTable tableBitacoraClases;
+        private AulasDataTable tableAulas;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public BitacoraDataSet() {
+        public AulasDataSet() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace Plantilla_Bonita {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected BitacoraDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected AulasDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace Plantilla_Bonita {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["BitacoraClases"] != null)) {
-                    base.Tables.Add(new BitacoraClasesDataTable(ds.Tables["BitacoraClases"]));
+                if ((ds.Tables["Aulas"] != null)) {
+                    base.Tables.Add(new AulasDataTable(ds.Tables["Aulas"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace Plantilla_Bonita {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public BitacoraClasesDataTable BitacoraClases {
+        public AulasDataTable Aulas {
             get {
-                return this.tableBitacoraClases;
+                return this.tableAulas;
             }
         }
         
@@ -127,7 +127,7 @@ namespace Plantilla_Bonita {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            BitacoraDataSet cln = ((BitacoraDataSet)(base.Clone()));
+            AulasDataSet cln = ((AulasDataSet)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace Plantilla_Bonita {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["BitacoraClases"] != null)) {
-                    base.Tables.Add(new BitacoraClasesDataTable(ds.Tables["BitacoraClases"]));
+                if ((ds.Tables["Aulas"] != null)) {
+                    base.Tables.Add(new AulasDataTable(ds.Tables["Aulas"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace Plantilla_Bonita {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableBitacoraClases = ((BitacoraClasesDataTable)(base.Tables["BitacoraClases"]));
+            this.tableAulas = ((AulasDataTable)(base.Tables["Aulas"]));
             if ((initTable == true)) {
-                if ((this.tableBitacoraClases != null)) {
-                    this.tableBitacoraClases.InitVars();
+                if ((this.tableAulas != null)) {
+                    this.tableAulas.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace Plantilla_Bonita {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "BitacoraDataSet";
+            this.DataSetName = "AulasDataSet";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/BitacoraDataSet.xsd";
+            this.Namespace = "http://tempuri.org/AulasDataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableBitacoraClases = new BitacoraClasesDataTable();
-            base.Tables.Add(this.tableBitacoraClases);
+            this.tableAulas = new AulasDataTable();
+            base.Tables.Add(this.tableAulas);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private bool ShouldSerializeBitacoraClases() {
+        private bool ShouldSerializeAulas() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace Plantilla_Bonita {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            BitacoraDataSet ds = new BitacoraDataSet();
+            AulasDataSet ds = new AulasDataSet();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,29 +270,25 @@ namespace Plantilla_Bonita {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public delegate void BitacoraClasesRowChangeEventHandler(object sender, BitacoraClasesRowChangeEvent e);
+        public delegate void AulasRowChangeEventHandler(object sender, AulasRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class BitacoraClasesDataTable : global::System.Data.TypedTableBase<BitacoraClasesRow> {
+        public partial class AulasDataTable : global::System.Data.TypedTableBase<AulasRow> {
             
-            private global::System.Data.DataColumn columnHoraDeRegistro;
-            
-            private global::System.Data.DataColumn columnHoraDeSincronizacion;
-            
-            private global::System.Data.DataColumn columnCodClase;
+            private global::System.Data.DataColumn columncodEdificio;
             
             private global::System.Data.DataColumn columnDescripcion;
             
-            private global::System.Data.DataColumn columnMotivo;
+            private global::System.Data.DataColumn columnCodigoAula;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public BitacoraClasesDataTable() {
-                this.TableName = "BitacoraClases";
+            public AulasDataTable() {
+                this.TableName = "Aulas";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -300,7 +296,7 @@ namespace Plantilla_Bonita {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal BitacoraClasesDataTable(global::System.Data.DataTable table) {
+            internal AulasDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -317,32 +313,16 @@ namespace Plantilla_Bonita {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected BitacoraClasesDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected AulasDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn HoraDeRegistroColumn {
+            public global::System.Data.DataColumn codEdificioColumn {
                 get {
-                    return this.columnHoraDeRegistro;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn HoraDeSincronizacionColumn {
-                get {
-                    return this.columnHoraDeSincronizacion;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn CodClaseColumn {
-                get {
-                    return this.columnCodClase;
+                    return this.columncodEdificio;
                 }
             }
             
@@ -356,9 +336,9 @@ namespace Plantilla_Bonita {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn MotivoColumn {
+            public global::System.Data.DataColumn CodigoAulaColumn {
                 get {
-                    return this.columnMotivo;
+                    return this.columnCodigoAula;
                 }
             }
             
@@ -373,49 +353,54 @@ namespace Plantilla_Bonita {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public BitacoraClasesRow this[int index] {
+            public AulasRow this[int index] {
                 get {
-                    return ((BitacoraClasesRow)(this.Rows[index]));
+                    return ((AulasRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event BitacoraClasesRowChangeEventHandler BitacoraClasesRowChanging;
+            public event AulasRowChangeEventHandler AulasRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event BitacoraClasesRowChangeEventHandler BitacoraClasesRowChanged;
+            public event AulasRowChangeEventHandler AulasRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event BitacoraClasesRowChangeEventHandler BitacoraClasesRowDeleting;
+            public event AulasRowChangeEventHandler AulasRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event BitacoraClasesRowChangeEventHandler BitacoraClasesRowDeleted;
+            public event AulasRowChangeEventHandler AulasRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void AddBitacoraClasesRow(BitacoraClasesRow row) {
+            public void AddAulasRow(AulasRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public BitacoraClasesRow AddBitacoraClasesRow(System.DateTime HoraDeRegistro, System.DateTime HoraDeSincronizacion, string CodClase, string Descripcion, string Motivo) {
-                BitacoraClasesRow rowBitacoraClasesRow = ((BitacoraClasesRow)(this.NewRow()));
+            public AulasRow AddAulasRow(string codEdificio, string Descripcion, string CodigoAula) {
+                AulasRow rowAulasRow = ((AulasRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        HoraDeRegistro,
-                        HoraDeSincronizacion,
-                        CodClase,
+                        codEdificio,
                         Descripcion,
-                        Motivo};
-                rowBitacoraClasesRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowBitacoraClasesRow);
-                return rowBitacoraClasesRow;
+                        CodigoAula};
+                rowAulasRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowAulasRow);
+                return rowAulasRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public AulasRow FindByCodigoAula(string CodigoAula) {
+                return ((AulasRow)(this.Rows.Find(new object[] {
+                            CodigoAula})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                BitacoraClasesDataTable cln = ((BitacoraClasesDataTable)(base.Clone()));
+                AulasDataTable cln = ((AulasDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -423,62 +408,60 @@ namespace Plantilla_Bonita {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new BitacoraClasesDataTable();
+                return new AulasDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             internal void InitVars() {
-                this.columnHoraDeRegistro = base.Columns["HoraDeRegistro"];
-                this.columnHoraDeSincronizacion = base.Columns["HoraDeSincronizacion"];
-                this.columnCodClase = base.Columns["CodClase"];
+                this.columncodEdificio = base.Columns["codEdificio"];
                 this.columnDescripcion = base.Columns["Descripcion"];
-                this.columnMotivo = base.Columns["Motivo"];
+                this.columnCodigoAula = base.Columns["CodigoAula"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             private void InitClass() {
-                this.columnHoraDeRegistro = new global::System.Data.DataColumn("HoraDeRegistro", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnHoraDeRegistro);
-                this.columnHoraDeSincronizacion = new global::System.Data.DataColumn("HoraDeSincronizacion", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnHoraDeSincronizacion);
-                this.columnCodClase = new global::System.Data.DataColumn("CodClase", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCodClase);
+                this.columncodEdificio = new global::System.Data.DataColumn("codEdificio", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncodEdificio);
                 this.columnDescripcion = new global::System.Data.DataColumn("Descripcion", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnDescripcion);
-                this.columnMotivo = new global::System.Data.DataColumn("Motivo", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnMotivo);
-                this.columnCodClase.MaxLength = 15;
-                this.columnDescripcion.AllowDBNull = false;
+                this.columnCodigoAula = new global::System.Data.DataColumn("CodigoAula", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCodigoAula);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnCodigoAula}, true));
+                this.columncodEdificio.AllowDBNull = false;
+                this.columncodEdificio.MaxLength = 3;
                 this.columnDescripcion.MaxLength = 2147483647;
-                this.columnMotivo.MaxLength = 25;
+                this.columnCodigoAula.AllowDBNull = false;
+                this.columnCodigoAula.Unique = true;
+                this.columnCodigoAula.MaxLength = 6;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public BitacoraClasesRow NewBitacoraClasesRow() {
-                return ((BitacoraClasesRow)(this.NewRow()));
+            public AulasRow NewAulasRow() {
+                return ((AulasRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new BitacoraClasesRow(builder);
+                return new AulasRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(BitacoraClasesRow);
+                return typeof(AulasRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.BitacoraClasesRowChanged != null)) {
-                    this.BitacoraClasesRowChanged(this, new BitacoraClasesRowChangeEvent(((BitacoraClasesRow)(e.Row)), e.Action));
+                if ((this.AulasRowChanged != null)) {
+                    this.AulasRowChanged(this, new AulasRowChangeEvent(((AulasRow)(e.Row)), e.Action));
                 }
             }
             
@@ -486,8 +469,8 @@ namespace Plantilla_Bonita {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.BitacoraClasesRowChanging != null)) {
-                    this.BitacoraClasesRowChanging(this, new BitacoraClasesRowChangeEvent(((BitacoraClasesRow)(e.Row)), e.Action));
+                if ((this.AulasRowChanging != null)) {
+                    this.AulasRowChanging(this, new AulasRowChangeEvent(((AulasRow)(e.Row)), e.Action));
                 }
             }
             
@@ -495,8 +478,8 @@ namespace Plantilla_Bonita {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.BitacoraClasesRowDeleted != null)) {
-                    this.BitacoraClasesRowDeleted(this, new BitacoraClasesRowChangeEvent(((BitacoraClasesRow)(e.Row)), e.Action));
+                if ((this.AulasRowDeleted != null)) {
+                    this.AulasRowDeleted(this, new AulasRowChangeEvent(((AulasRow)(e.Row)), e.Action));
                 }
             }
             
@@ -504,14 +487,14 @@ namespace Plantilla_Bonita {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.BitacoraClasesRowDeleting != null)) {
-                    this.BitacoraClasesRowDeleting(this, new BitacoraClasesRowChangeEvent(((BitacoraClasesRow)(e.Row)), e.Action));
+                if ((this.AulasRowDeleting != null)) {
+                    this.AulasRowDeleting(this, new AulasRowChangeEvent(((AulasRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void RemoveBitacoraClasesRow(BitacoraClasesRow row) {
+            public void RemoveAulasRow(AulasRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -520,7 +503,7 @@ namespace Plantilla_Bonita {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                BitacoraDataSet ds = new BitacoraDataSet();
+                AulasDataSet ds = new AulasDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -538,7 +521,7 @@ namespace Plantilla_Bonita {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "BitacoraClasesDataTable";
+                attribute2.FixedValue = "AulasDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -582,63 +565,25 @@ namespace Plantilla_Bonita {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class BitacoraClasesRow : global::System.Data.DataRow {
+        public partial class AulasRow : global::System.Data.DataRow {
             
-            private BitacoraClasesDataTable tableBitacoraClases;
+            private AulasDataTable tableAulas;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal BitacoraClasesRow(global::System.Data.DataRowBuilder rb) : 
+            internal AulasRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableBitacoraClases = ((BitacoraClasesDataTable)(this.Table));
+                this.tableAulas = ((AulasDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public System.DateTime HoraDeRegistro {
+            public string codEdificio {
                 get {
-                    try {
-                        return ((global::System.DateTime)(this[this.tableBitacoraClases.HoraDeRegistroColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'HoraDeRegistro\' de la tabla \'BitacoraClases\' es DBNull.", e);
-                    }
+                    return ((string)(this[this.tableAulas.codEdificioColumn]));
                 }
                 set {
-                    this[this.tableBitacoraClases.HoraDeRegistroColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public System.DateTime HoraDeSincronizacion {
-                get {
-                    try {
-                        return ((global::System.DateTime)(this[this.tableBitacoraClases.HoraDeSincronizacionColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'HoraDeSincronizacion\' de la tabla \'BitacoraClases\' es DBN" +
-                                "ull.", e);
-                    }
-                }
-                set {
-                    this[this.tableBitacoraClases.HoraDeSincronizacionColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string CodClase {
-                get {
-                    try {
-                        return ((string)(this[this.tableBitacoraClases.CodClaseColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'CodClase\' de la tabla \'BitacoraClases\' es DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableBitacoraClases.CodClaseColumn] = value;
+                    this[this.tableAulas.codEdificioColumn] = value;
                 }
             }
             
@@ -646,75 +591,39 @@ namespace Plantilla_Bonita {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public string Descripcion {
                 get {
-                    return ((string)(this[this.tableBitacoraClases.DescripcionColumn]));
-                }
-                set {
-                    this[this.tableBitacoraClases.DescripcionColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Motivo {
-                get {
                     try {
-                        return ((string)(this[this.tableBitacoraClases.MotivoColumn]));
+                        return ((string)(this[this.tableAulas.DescripcionColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Motivo\' de la tabla \'BitacoraClases\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Descripcion\' de la tabla \'Aulas\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableBitacoraClases.MotivoColumn] = value;
+                    this[this.tableAulas.DescripcionColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsHoraDeRegistroNull() {
-                return this.IsNull(this.tableBitacoraClases.HoraDeRegistroColumn);
+            public string CodigoAula {
+                get {
+                    return ((string)(this[this.tableAulas.CodigoAulaColumn]));
+                }
+                set {
+                    this[this.tableAulas.CodigoAulaColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetHoraDeRegistroNull() {
-                this[this.tableBitacoraClases.HoraDeRegistroColumn] = global::System.Convert.DBNull;
+            public bool IsDescripcionNull() {
+                return this.IsNull(this.tableAulas.DescripcionColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsHoraDeSincronizacionNull() {
-                return this.IsNull(this.tableBitacoraClases.HoraDeSincronizacionColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetHoraDeSincronizacionNull() {
-                this[this.tableBitacoraClases.HoraDeSincronizacionColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsCodClaseNull() {
-                return this.IsNull(this.tableBitacoraClases.CodClaseColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetCodClaseNull() {
-                this[this.tableBitacoraClases.CodClaseColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsMotivoNull() {
-                return this.IsNull(this.tableBitacoraClases.MotivoColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetMotivoNull() {
-                this[this.tableBitacoraClases.MotivoColumn] = global::System.Convert.DBNull;
+            public void SetDescripcionNull() {
+                this[this.tableAulas.DescripcionColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -722,22 +631,22 @@ namespace Plantilla_Bonita {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public class BitacoraClasesRowChangeEvent : global::System.EventArgs {
+        public class AulasRowChangeEvent : global::System.EventArgs {
             
-            private BitacoraClasesRow eventRow;
+            private AulasRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public BitacoraClasesRowChangeEvent(BitacoraClasesRow row, global::System.Data.DataRowAction action) {
+            public AulasRowChangeEvent(AulasRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public BitacoraClasesRow Row {
+            public AulasRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -753,7 +662,7 @@ namespace Plantilla_Bonita {
         }
     }
 }
-namespace Plantilla_Bonita.BitacoraDataSetTableAdapters {
+namespace Plantilla_Bonita.DataSets.AulasDataSetTableAdapters {
     
     
     /// <summary>
@@ -765,7 +674,7 @@ namespace Plantilla_Bonita.BitacoraDataSetTableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class BitacoraClasesTableAdapter : global::System.ComponentModel.Component {
+    public partial class AulasTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -779,7 +688,7 @@ namespace Plantilla_Bonita.BitacoraDataSetTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public BitacoraClasesTableAdapter() {
+        public AulasTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -876,24 +785,37 @@ namespace Plantilla_Bonita.BitacoraDataSetTableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "BitacoraClases";
-            tableMapping.ColumnMappings.Add("HoraDeRegistro", "HoraDeRegistro");
-            tableMapping.ColumnMappings.Add("HoraDeSincronizacion", "HoraDeSincronizacion");
-            tableMapping.ColumnMappings.Add("CodClase", "CodClase");
+            tableMapping.DataSetTable = "Aulas";
+            tableMapping.ColumnMappings.Add("codEdificio", "codEdificio");
             tableMapping.ColumnMappings.Add("Descripcion", "Descripcion");
-            tableMapping.ColumnMappings.Add("Motivo", "Motivo");
+            tableMapping.ColumnMappings.Add("CodigoAula", "CodigoAula");
             this._adapter.TableMappings.Add(tableMapping);
+            this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.DeleteCommand.Connection = this.Connection;
+            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[Aulas] WHERE (([codEdificio] = @Original_codEdificio) AND ([Co" +
+                "digoAula] = @Original_CodigoAula))";
+            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_codEdificio", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "codEdificio", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_CodigoAula", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CodigoAula", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[BitacoraClases] ([HoraDeRegistro], [HoraDeSincronizacion], [Co" +
-                "dClase], [Descripcion], [Motivo]) VALUES (@HoraDeRegistro, @HoraDeSincronizacion" +
-                ", @CodClase, @Descripcion, @Motivo)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Aulas] ([codEdificio], [Descripcion], [CodigoAula]) VALUES (@c" +
+                "odEdificio, @Descripcion, @CodigoAula);\r\nSELECT codEdificio, Descripcion, Codigo" +
+                "Aula FROM Aulas WHERE (CodigoAula = @CodigoAula)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@HoraDeRegistro", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "HoraDeRegistro", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@HoraDeSincronizacion", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "HoraDeSincronizacion", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CodClase", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CodClase", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@codEdificio", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "codEdificio", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Descripcion", global::System.Data.SqlDbType.Text, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Descripcion", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Motivo", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Motivo", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CodigoAula", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CodigoAula", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.UpdateCommand.Connection = this.Connection;
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Aulas] SET [codEdificio] = @codEdificio, [Descripcion] = @Descripcion, [CodigoAula] = @CodigoAula WHERE (([codEdificio] = @Original_codEdificio) AND ([CodigoAula] = @Original_CodigoAula));
+SELECT codEdificio, Descripcion, CodigoAula FROM Aulas WHERE (CodigoAula = @CodigoAula)";
+            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@codEdificio", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "codEdificio", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Descripcion", global::System.Data.SqlDbType.Text, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Descripcion", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CodigoAula", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CodigoAula", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_codEdificio", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "codEdificio", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_CodigoAula", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CodigoAula", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -906,19 +828,24 @@ namespace Plantilla_Bonita.BitacoraDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT HoraDeRegistro, HoraDeSincronizacion, CodClase, Descripcion, Motivo FROM d" +
-                "bo.BitacoraClases";
+            this._commandCollection[0].CommandText = "SELECT codEdificio, Descripcion, CodigoAula FROM dbo.Aulas";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "SELECT codEdificio, Descripcion, CodigoAula FROM dbo.Aulas\r\nWhere codEdificio = @" +
+                "edificio";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@edificio", global::System.Data.SqlDbType.VarChar, 3, global::System.Data.ParameterDirection.Input, 0, 0, "codEdificio", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(BitacoraDataSet.BitacoraClasesDataTable dataTable) {
+        public virtual int Fill(AulasDataSet.AulasDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -931,9 +858,9 @@ namespace Plantilla_Bonita.BitacoraDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual BitacoraDataSet.BitacoraClasesDataTable GetData() {
+        public virtual AulasDataSet.AulasDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            BitacoraDataSet.BitacoraClasesDataTable dataTable = new BitacoraDataSet.BitacoraClasesDataTable();
+            AulasDataSet.AulasDataTable dataTable = new AulasDataSet.AulasDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -941,15 +868,51 @@ namespace Plantilla_Bonita.BitacoraDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(BitacoraDataSet.BitacoraClasesDataTable dataTable) {
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillByEdificio(AulasDataSet.AulasDataTable dataTable, string edificio) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((edificio == null)) {
+                throw new global::System.ArgumentNullException("edificio");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(edificio));
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual AulasDataSet.AulasDataTable GetDataByEdificio(string edificio) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((edificio == null)) {
+                throw new global::System.ArgumentNullException("edificio");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(edificio));
+            }
+            AulasDataSet.AulasDataTable dataTable = new AulasDataSet.AulasDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(AulasDataSet.AulasDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(BitacoraDataSet dataSet) {
-            return this.Adapter.Update(dataSet, "BitacoraClases");
+        public virtual int Update(AulasDataSet dataSet) {
+            return this.Adapter.Update(dataSet, "Aulas");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -970,37 +933,58 @@ namespace Plantilla_Bonita.BitacoraDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
+        public virtual int Delete(string Original_codEdificio, string Original_CodigoAula) {
+            if ((Original_codEdificio == null)) {
+                throw new global::System.ArgumentNullException("Original_codEdificio");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[0].Value = ((string)(Original_codEdificio));
+            }
+            if ((Original_CodigoAula == null)) {
+                throw new global::System.ArgumentNullException("Original_CodigoAula");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((string)(Original_CodigoAula));
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
+            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.DeleteCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.DeleteCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(global::System.Nullable<global::System.DateTime> HoraDeRegistro, global::System.Nullable<global::System.DateTime> HoraDeSincronizacion, string CodClase, string Descripcion, string Motivo) {
-            if ((HoraDeRegistro.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((System.DateTime)(HoraDeRegistro.Value));
+        public virtual int Insert(string codEdificio, string Descripcion, string CodigoAula) {
+            if ((codEdificio == null)) {
+                throw new global::System.ArgumentNullException("codEdificio");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
-            }
-            if ((HoraDeSincronizacion.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((System.DateTime)(HoraDeSincronizacion.Value));
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
-            }
-            if ((CodClase == null)) {
-                this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(CodClase));
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(codEdificio));
             }
             if ((Descripcion == null)) {
-                throw new global::System.ArgumentNullException("Descripcion");
+                this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(Descripcion));
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(Descripcion));
             }
-            if ((Motivo == null)) {
-                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
+            if ((CodigoAula == null)) {
+                throw new global::System.ArgumentNullException("CodigoAula");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(Motivo));
+                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(CodigoAula));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -1017,6 +1001,65 @@ namespace Plantilla_Bonita.BitacoraDataSetTableAdapters {
                 }
             }
         }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(string codEdificio, string Descripcion, string CodigoAula, string Original_codEdificio, string Original_CodigoAula) {
+            if ((codEdificio == null)) {
+                throw new global::System.ArgumentNullException("codEdificio");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(codEdificio));
+            }
+            if ((Descripcion == null)) {
+                this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(Descripcion));
+            }
+            if ((CodigoAula == null)) {
+                throw new global::System.ArgumentNullException("CodigoAula");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(CodigoAula));
+            }
+            if ((Original_codEdificio == null)) {
+                throw new global::System.ArgumentNullException("Original_codEdificio");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(Original_codEdificio));
+            }
+            if ((Original_CodigoAula == null)) {
+                throw new global::System.ArgumentNullException("Original_CodigoAula");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(Original_CodigoAula));
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
+            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.UpdateCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.UpdateCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(string codEdificio, string Descripcion, string Original_codEdificio, string Original_CodigoAula) {
+            return this.Update(codEdificio, Descripcion, Original_CodigoAula, Original_codEdificio, Original_CodigoAula);
+        }
     }
     
     /// <summary>
@@ -1031,7 +1074,7 @@ namespace Plantilla_Bonita.BitacoraDataSetTableAdapters {
         
         private UpdateOrderOption _updateOrder;
         
-        private BitacoraClasesTableAdapter _bitacoraClasesTableAdapter;
+        private AulasTableAdapter _aulasTableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -1053,12 +1096,12 @@ namespace Plantilla_Bonita.BitacoraDataSetTableAdapters {
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public BitacoraClasesTableAdapter BitacoraClasesTableAdapter {
+        public AulasTableAdapter AulasTableAdapter {
             get {
-                return this._bitacoraClasesTableAdapter;
+                return this._aulasTableAdapter;
             }
             set {
-                this._bitacoraClasesTableAdapter = value;
+                this._aulasTableAdapter = value;
             }
         }
         
@@ -1081,9 +1124,9 @@ namespace Plantilla_Bonita.BitacoraDataSetTableAdapters {
                 if ((this._connection != null)) {
                     return this._connection;
                 }
-                if (((this._bitacoraClasesTableAdapter != null) 
-                            && (this._bitacoraClasesTableAdapter.Connection != null))) {
-                    return this._bitacoraClasesTableAdapter.Connection;
+                if (((this._aulasTableAdapter != null) 
+                            && (this._aulasTableAdapter.Connection != null))) {
+                    return this._aulasTableAdapter.Connection;
                 }
                 return null;
             }
@@ -1098,7 +1141,7 @@ namespace Plantilla_Bonita.BitacoraDataSetTableAdapters {
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
-                if ((this._bitacoraClasesTableAdapter != null)) {
+                if ((this._aulasTableAdapter != null)) {
                     count = (count + 1);
                 }
                 return count;
@@ -1110,14 +1153,14 @@ namespace Plantilla_Bonita.BitacoraDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateUpdatedRows(BitacoraDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(AulasDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._bitacoraClasesTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.BitacoraClases.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._aulasTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.Aulas.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._bitacoraClasesTableAdapter.Update(updatedRows));
+                    result = (result + this._aulasTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -1129,13 +1172,13 @@ namespace Plantilla_Bonita.BitacoraDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateInsertedRows(BitacoraDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(AulasDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._bitacoraClasesTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.BitacoraClases.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._aulasTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.Aulas.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._bitacoraClasesTableAdapter.Update(addedRows));
+                    result = (result + this._aulasTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -1147,13 +1190,13 @@ namespace Plantilla_Bonita.BitacoraDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateDeletedRows(BitacoraDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(AulasDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._bitacoraClasesTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.BitacoraClases.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._aulasTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.Aulas.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._bitacoraClasesTableAdapter.Update(deletedRows));
+                    result = (result + this._aulasTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -1189,15 +1232,15 @@ namespace Plantilla_Bonita.BitacoraDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public virtual int UpdateAll(BitacoraDataSet dataSet) {
+        public virtual int UpdateAll(AulasDataSet dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
             if ((dataSet.HasChanges() == false)) {
                 return 0;
             }
-            if (((this._bitacoraClasesTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._bitacoraClasesTableAdapter.Connection) == false))) {
+            if (((this._aulasTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._aulasTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("Todos los TableAdapters administrados por un TableAdapterManager deben usar la mi" +
                         "sma cadena de conexión.");
             }
@@ -1233,13 +1276,13 @@ namespace Plantilla_Bonita.BitacoraDataSetTableAdapters {
             try {
                 // ---- Prepare for update -----------
                 //
-                if ((this._bitacoraClasesTableAdapter != null)) {
-                    revertConnections.Add(this._bitacoraClasesTableAdapter, this._bitacoraClasesTableAdapter.Connection);
-                    this._bitacoraClasesTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._bitacoraClasesTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._bitacoraClasesTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._bitacoraClasesTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._bitacoraClasesTableAdapter.Adapter);
+                if ((this._aulasTableAdapter != null)) {
+                    revertConnections.Add(this._aulasTableAdapter, this._aulasTableAdapter.Connection);
+                    this._aulasTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._aulasTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._aulasTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._aulasTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._aulasTableAdapter.Adapter);
                     }
                 }
                 // 
@@ -1300,9 +1343,9 @@ namespace Plantilla_Bonita.BitacoraDataSetTableAdapters {
                 if (workConnOpened) {
                     workConnection.Close();
                 }
-                if ((this._bitacoraClasesTableAdapter != null)) {
-                    this._bitacoraClasesTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._bitacoraClasesTableAdapter]));
-                    this._bitacoraClasesTableAdapter.Transaction = null;
+                if ((this._aulasTableAdapter != null)) {
+                    this._aulasTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._aulasTableAdapter]));
+                    this._aulasTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

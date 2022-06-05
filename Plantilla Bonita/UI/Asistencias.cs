@@ -65,5 +65,23 @@ namespace Plantilla_Bonita
         {
 
         }
+
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+            DGVPrinter printer = new DGVPrinter();
+            printer.Title = "Reporte de Asistencias";
+            printer.SubTitle = $"Periodo: {dtPickerInicio.Value.ToString("dd/MM/yyyy")} - {dtPickerFin.Value.ToString("dd/MM/yyyy")}";
+            printer.SubTitleFormatFlags = StringFormatFlags.LineLimit | StringFormatFlags.NoClip;
+            printer.PageNumbers = true;
+            printer.PageNumberInHeader = false;
+            printer.PorportionalColumns = true;
+            printer.HeaderCellAlignment = StringAlignment.Near;
+            printer.Footer = "SGA ITSL";
+            printer.FooterSpacing = 15;
+            printer.PrintDataGridView(listaAsistenciasDataGridView);
+            printer.ColumnWidths.Add("matricula", 50);
+            printer.ColumnWidths.Add("nombre", 150);
+            printer.ColumnWidths.Add("asistencias", 20);
+        }
     }
 }
