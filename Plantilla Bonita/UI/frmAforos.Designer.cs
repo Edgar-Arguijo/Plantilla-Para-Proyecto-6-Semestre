@@ -32,7 +32,12 @@
             System.Windows.Forms.Label codigoEdificioLabel;
             System.Windows.Forms.Label codigoAulaLabel;
             this.pnlContendor = new System.Windows.Forms.Panel();
+            this.btnPrint = new FontAwesome.Sharp.IconPictureBox();
             this.vista_AforosGeneralDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.vista_AforosGeneralBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.aforosDataSet = new Plantilla_Bonita.DataSets.AforosDataSet();
             this.chkFecha = new System.Windows.Forms.CheckBox();
@@ -54,14 +59,10 @@
             this.tableAdapterManager1 = new Plantilla_Bonita.DataSets.AulasDataSetTableAdapters.TableAdapterManager();
             this.vista_AforosGeneralTableAdapter = new Plantilla_Bonita.DataSets.AforosDataSetTableAdapters.Vista_AforosGeneralTableAdapter();
             this.tableAdapterManager2 = new Plantilla_Bonita.DataSets.AforosDataSetTableAdapters.TableAdapterManager();
-            this.btnPrint = new FontAwesome.Sharp.IconPictureBox();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             codigoEdificioLabel = new System.Windows.Forms.Label();
             codigoAulaLabel = new System.Windows.Forms.Label();
             this.pnlContendor.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnPrint)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vista_AforosGeneralDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vista_AforosGeneralBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aforosDataSet)).BeginInit();
@@ -71,24 +72,25 @@
             ((System.ComponentModel.ISupportInitialize)(this.edificiosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.edificiosDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.edificiosBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnPrint)).BeginInit();
             this.SuspendLayout();
             // 
             // codigoEdificioLabel
             // 
             codigoEdificioLabel.AutoSize = true;
+            codigoEdificioLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
             codigoEdificioLabel.Location = new System.Drawing.Point(19, 27);
             codigoEdificioLabel.Name = "codigoEdificioLabel";
-            codigoEdificioLabel.Size = new System.Drawing.Size(80, 13);
+            codigoEdificioLabel.Size = new System.Drawing.Size(114, 25);
             codigoEdificioLabel.TabIndex = 0;
             codigoEdificioLabel.Text = "Codigo Edificio:";
             // 
             // codigoAulaLabel
             // 
             codigoAulaLabel.AutoSize = true;
+            codigoAulaLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
             codigoAulaLabel.Location = new System.Drawing.Point(19, 70);
             codigoAulaLabel.Name = "codigoAulaLabel";
-            codigoAulaLabel.Size = new System.Drawing.Size(84, 13);
+            codigoAulaLabel.Size = new System.Drawing.Size(122, 25);
             codigoAulaLabel.TabIndex = 2;
             codigoAulaLabel.Text = "Codigo del Aula:";
             // 
@@ -110,6 +112,21 @@
             this.pnlContendor.Name = "pnlContendor";
             this.pnlContendor.Size = new System.Drawing.Size(892, 509);
             this.pnlContendor.TabIndex = 0;
+            // 
+            // btnPrint
+            // 
+            this.btnPrint.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPrint.BackColor = System.Drawing.Color.Transparent;
+            this.btnPrint.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnPrint.IconChar = FontAwesome.Sharp.IconChar.Print;
+            this.btnPrint.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnPrint.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnPrint.Location = new System.Drawing.Point(833, 175);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(32, 32);
+            this.btnPrint.TabIndex = 16;
+            this.btnPrint.TabStop = false;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
             // vista_AforosGeneralDataGridView
             // 
@@ -133,6 +150,46 @@
             this.vista_AforosGeneralDataGridView.Size = new System.Drawing.Size(844, 274);
             this.vista_AforosGeneralDataGridView.TabIndex = 9;
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Edificio";
+            this.dataGridViewTextBoxColumn1.FillWeight = 10F;
+            this.dataGridViewTextBoxColumn1.HeaderText = "Edificio";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 66;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Aula";
+            this.dataGridViewTextBoxColumn2.FillWeight = 40F;
+            this.dataGridViewTextBoxColumn2.HeaderText = "Aula";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Width = 53;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Fecha";
+            this.dataGridViewTextBoxColumn4.FillWeight = 40F;
+            this.dataGridViewTextBoxColumn4.HeaderText = "Fecha";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            this.dataGridViewTextBoxColumn4.Width = 62;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Aforo";
+            this.dataGridViewTextBoxColumn3.FillWeight = 10F;
+            this.dataGridViewTextBoxColumn3.HeaderText = "Aforo";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            this.dataGridViewTextBoxColumn3.Width = 57;
+            // 
             // vista_AforosGeneralBindingSource
             // 
             this.vista_AforosGeneralBindingSource.DataMember = "Vista_AforosGeneral";
@@ -148,9 +205,10 @@
             this.chkFecha.AutoSize = true;
             this.chkFecha.Checked = true;
             this.chkFecha.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkFecha.Location = new System.Drawing.Point(474, 180);
+            this.chkFecha.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
+            this.chkFecha.Location = new System.Drawing.Point(480, 172);
             this.chkFecha.Name = "chkFecha";
-            this.chkFecha.Size = new System.Drawing.Size(125, 17);
+            this.chkFecha.Size = new System.Drawing.Size(172, 29);
             this.chkFecha.TabIndex = 8;
             this.chkFecha.Text = "Busqueda por Fecha";
             this.chkFecha.UseVisualStyleBackColor = true;
@@ -159,9 +217,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(236, 161);
+            this.label2.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
+            this.label2.Location = new System.Drawing.Point(234, 139);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 13);
+            this.label2.Size = new System.Drawing.Size(113, 25);
             this.label2.TabIndex = 7;
             this.label2.Text = "Fin del periodo";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -169,9 +228,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(19, 161);
+            this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
+            this.label1.Location = new System.Drawing.Point(17, 139);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 13);
+            this.label1.Size = new System.Drawing.Size(101, 25);
             this.label1.TabIndex = 6;
             this.label1.Text = "Fecha Inicial";
             // 
@@ -197,7 +257,7 @@
             this.codigoAulaComboBox.DataSource = this.aulasBindingSource1;
             this.codigoAulaComboBox.DisplayMember = "CodigoAula";
             this.codigoAulaComboBox.FormattingEnabled = true;
-            this.codigoAulaComboBox.Location = new System.Drawing.Point(101, 67);
+            this.codigoAulaComboBox.Location = new System.Drawing.Point(147, 74);
             this.codigoAulaComboBox.Name = "codigoAulaComboBox";
             this.codigoAulaComboBox.Size = new System.Drawing.Size(121, 21);
             this.codigoAulaComboBox.TabIndex = 3;
@@ -224,7 +284,7 @@
             this.codigoEdificioComboBox.DataSource = this.edificiosBindingSource1;
             this.codigoEdificioComboBox.DisplayMember = "CodigoEdificio";
             this.codigoEdificioComboBox.FormattingEnabled = true;
-            this.codigoEdificioComboBox.Location = new System.Drawing.Point(105, 24);
+            this.codigoEdificioComboBox.Location = new System.Drawing.Point(144, 31);
             this.codigoEdificioComboBox.Name = "codigoEdificioComboBox";
             this.codigoEdificioComboBox.Size = new System.Drawing.Size(121, 21);
             this.codigoEdificioComboBox.TabIndex = 1;
@@ -276,61 +336,6 @@
             this.tableAdapterManager2.Connection = null;
             this.tableAdapterManager2.UpdateOrder = Plantilla_Bonita.DataSets.AforosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // btnPrint
-            // 
-            this.btnPrint.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPrint.BackColor = System.Drawing.Color.Transparent;
-            this.btnPrint.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
-            this.btnPrint.IconChar = FontAwesome.Sharp.IconChar.Print;
-            this.btnPrint.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
-            this.btnPrint.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnPrint.Location = new System.Drawing.Point(833, 175);
-            this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(32, 32);
-            this.btnPrint.TabIndex = 16;
-            this.btnPrint.TabStop = false;
-            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Edificio";
-            this.dataGridViewTextBoxColumn1.FillWeight = 10F;
-            this.dataGridViewTextBoxColumn1.HeaderText = "Edificio";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Width = 66;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Aula";
-            this.dataGridViewTextBoxColumn2.FillWeight = 40F;
-            this.dataGridViewTextBoxColumn2.HeaderText = "Aula";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Width = 53;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Fecha";
-            this.dataGridViewTextBoxColumn4.FillWeight = 40F;
-            this.dataGridViewTextBoxColumn4.HeaderText = "Fecha";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            this.dataGridViewTextBoxColumn4.Width = 62;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Aforo";
-            this.dataGridViewTextBoxColumn3.FillWeight = 10F;
-            this.dataGridViewTextBoxColumn3.HeaderText = "Aforo";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            this.dataGridViewTextBoxColumn3.Width = 57;
-            // 
             // frmAforos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -343,6 +348,7 @@
             this.Load += new System.EventHandler(this.frmAforos_Load);
             this.pnlContendor.ResumeLayout(false);
             this.pnlContendor.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnPrint)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vista_AforosGeneralDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vista_AforosGeneralBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.aforosDataSet)).EndInit();
@@ -352,7 +358,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.edificiosBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.edificiosDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.edificiosBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnPrint)).EndInit();
             this.ResumeLayout(false);
 
         }
