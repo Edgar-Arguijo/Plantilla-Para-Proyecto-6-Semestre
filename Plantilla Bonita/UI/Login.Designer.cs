@@ -41,13 +41,16 @@
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.pnlEncabezado = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnCerrar = new FontAwesome.Sharp.IconPictureBox();
             this.pnlContenedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMostrarContraseña)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlContenedor
             // 
             this.pnlContenedor.BackColor = System.Drawing.Color.LemonChiffon;
+            this.pnlContenedor.Controls.Add(this.btnCerrar);
             this.pnlContenedor.Controls.Add(this.lnkRegistro);
             this.pnlContenedor.Controls.Add(this.btnDocente);
             this.pnlContenedor.Controls.Add(this.btnMostrarContraseña);
@@ -70,7 +73,7 @@
             // lnkRegistro
             // 
             this.lnkRegistro.AutoSize = true;
-            this.lnkRegistro.Location = new System.Drawing.Point(116, 295);
+            this.lnkRegistro.Location = new System.Drawing.Point(105, 295);
             this.lnkRegistro.Name = "lnkRegistro";
             this.lnkRegistro.Size = new System.Drawing.Size(130, 13);
             this.lnkRegistro.TabIndex = 11;
@@ -98,6 +101,7 @@
             // btnMostrarContraseña
             // 
             this.btnMostrarContraseña.BackColor = System.Drawing.Color.LemonChiffon;
+            this.btnMostrarContraseña.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMostrarContraseña.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnMostrarContraseña.IconChar = FontAwesome.Sharp.IconChar.Eye;
             this.btnMostrarContraseña.IconColor = System.Drawing.SystemColors.ControlText;
@@ -166,6 +170,7 @@
             // btnIniciarSesion
             // 
             this.btnIniciarSesion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnIniciarSesion.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnIniciarSesion.FlatAppearance.BorderSize = 0;
             this.btnIniciarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIniciarSesion.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
@@ -224,6 +229,20 @@
             this.pnlEncabezado.TabIndex = 0;
             this.pnlEncabezado.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlEncabezado_MouseDown);
             // 
+            // btnCerrar
+            // 
+            this.btnCerrar.BackColor = System.Drawing.Color.LemonChiffon;
+            this.btnCerrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnCerrar.IconChar = FontAwesome.Sharp.IconChar.Times;
+            this.btnCerrar.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnCerrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCerrar.Location = new System.Drawing.Point(313, 45);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(32, 32);
+            this.btnCerrar.TabIndex = 12;
+            this.btnCerrar.TabStop = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -237,6 +256,7 @@
             this.pnlContenedor.ResumeLayout(false);
             this.pnlContenedor.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMostrarContraseña)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -256,5 +276,6 @@
         private FontAwesome.Sharp.IconPictureBox btnMostrarContraseña;
         private System.Windows.Forms.Button btnDocente;
         private System.Windows.Forms.LinkLabel lnkRegistro;
+        private FontAwesome.Sharp.IconPictureBox btnCerrar;
     }
 }

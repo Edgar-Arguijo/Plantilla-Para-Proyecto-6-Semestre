@@ -101,5 +101,10 @@ namespace Plantilla_Bonita
             frmRegistro frmRegistro = new frmRegistro();
             frmRegistro.ShowDialog();
         }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
