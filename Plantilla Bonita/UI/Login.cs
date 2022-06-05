@@ -42,7 +42,7 @@ namespace Plantilla_Bonita
                     this.result = TipoUsuario.ObtenerNivel(obj.Loggeo(txtUsuario.Text,  txtContraseña.Text));
                     this.DialogResult = DialogResult.OK;
                 }
-            }
+              }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);

@@ -33,6 +33,7 @@
             System.Windows.Forms.Label materiaLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Asistencias));
             this.panelAsistencia = new System.Windows.Forms.Panel();
+            this.btnPrint = new FontAwesome.Sharp.IconPictureBox();
             this.btnBuscar = new FontAwesome.Sharp.IconPictureBox();
             this.listaAsistenciasDataGridView = new System.Windows.Forms.DataGridView();
             this.listaAsistenciasBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -49,7 +50,6 @@
             this.descripcionComboBox = new System.Windows.Forms.ComboBox();
             this.ingenieriasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ingenieriasDataSet = new Plantilla_Bonita.DataSets.IngenieriasDataSet();
-            this.btnCerrar = new System.Windows.Forms.Button();
             this.ingenieriasTableAdapter = new Plantilla_Bonita.DataSets.IngenieriasDataSetTableAdapters.IngenieriasTableAdapter();
             this.tableAdapterManager = new Plantilla_Bonita.DataSets.IngenieriasDataSetTableAdapters.TableAdapterManager();
             this.ingenieriasBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
@@ -85,13 +85,13 @@
             this.cantidadClasesToolStripLabel = new System.Windows.Forms.ToolStripLabel();
             this.cantidadClasesToolStripTextBox = new System.Windows.Forms.ToolStripTextBox();
             this.fillToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.btnPrint = new FontAwesome.Sharp.IconPictureBox();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             descripcionLabel = new System.Windows.Forms.Label();
             materiaLabel = new System.Windows.Forms.Label();
             this.panelAsistencia.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnPrint)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnBuscar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaAsistenciasDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaAsistenciasBindingSource)).BeginInit();
@@ -104,7 +104,6 @@
             this.ingenieriasBindingNavigator.SuspendLayout();
             this.fillByIngenieriaToolStrip.SuspendLayout();
             this.fillToolStrip.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnPrint)).BeginInit();
             this.SuspendLayout();
             // 
             // descripcionLabel
@@ -112,9 +111,9 @@
             descripcionLabel.AutoSize = true;
             descripcionLabel.Location = new System.Drawing.Point(30, 31);
             descripcionLabel.Name = "descripcionLabel";
-            descripcionLabel.Size = new System.Drawing.Size(55, 13);
+            descripcionLabel.Size = new System.Drawing.Size(58, 13);
             descripcionLabel.TabIndex = 5;
-            descripcionLabel.Text = "Ingeniería";
+            descripcionLabel.Text = "Ingeniería:";
             // 
             // materiaLabel
             // 
@@ -141,22 +140,38 @@
             this.panelAsistencia.Controls.Add(this.materiaComboBox);
             this.panelAsistencia.Controls.Add(descripcionLabel);
             this.panelAsistencia.Controls.Add(this.descripcionComboBox);
-            this.panelAsistencia.Controls.Add(this.btnCerrar);
             this.panelAsistencia.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelAsistencia.Location = new System.Drawing.Point(0, 0);
             this.panelAsistencia.Name = "panelAsistencia";
             this.panelAsistencia.Size = new System.Drawing.Size(808, 484);
             this.panelAsistencia.TabIndex = 4;
             // 
+            // btnPrint
+            // 
+            this.btnPrint.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPrint.BackColor = System.Drawing.Color.Transparent;
+            this.btnPrint.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPrint.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnPrint.IconChar = FontAwesome.Sharp.IconChar.Print;
+            this.btnPrint.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnPrint.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnPrint.Location = new System.Drawing.Point(751, 166);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(32, 32);
+            this.btnPrint.TabIndex = 15;
+            this.btnPrint.TabStop = false;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
+            // 
             // btnBuscar
             // 
             this.btnBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnBuscar.BackColor = System.Drawing.Color.Transparent;
+            this.btnBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBuscar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.btnBuscar.IconChar = FontAwesome.Sharp.IconChar.Search;
             this.btnBuscar.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.btnBuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnBuscar.Location = new System.Drawing.Point(751, 166);
+            this.btnBuscar.Location = new System.Drawing.Point(713, 166);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(32, 32);
             this.btnBuscar.TabIndex = 14;
@@ -198,30 +213,31 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(432, 84);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(21, 13);
+            this.label2.Size = new System.Drawing.Size(72, 13);
             this.label2.TabIndex = 13;
-            this.label2.Text = "Fin";
+            this.label2.Text = "Fecha de Fin:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(432, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(32, 13);
+            this.label1.Size = new System.Drawing.Size(83, 13);
             this.label1.TabIndex = 12;
-            this.label1.Text = "Inicio";
+            this.label1.Text = "Fecha de Inicio:";
             // 
             // lblSemestre
             // 
             this.lblSemestre.AutoSize = true;
             this.lblSemestre.Location = new System.Drawing.Point(30, 87);
             this.lblSemestre.Name = "lblSemestre";
-            this.lblSemestre.Size = new System.Drawing.Size(51, 13);
+            this.lblSemestre.Size = new System.Drawing.Size(54, 13);
             this.lblSemestre.TabIndex = 11;
-            this.lblSemestre.Text = "Semestre";
+            this.lblSemestre.Text = "Semestre:";
             // 
             // dtPickerFin
             // 
+            this.dtPickerFin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dtPickerFin.Location = new System.Drawing.Point(435, 104);
             this.dtPickerFin.Name = "dtPickerFin";
             this.dtPickerFin.Size = new System.Drawing.Size(226, 20);
@@ -229,6 +245,7 @@
             // 
             // dtPickerInicio
             // 
+            this.dtPickerInicio.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dtPickerInicio.Location = new System.Drawing.Point(435, 51);
             this.dtPickerInicio.Name = "dtPickerInicio";
             this.dtPickerInicio.Size = new System.Drawing.Size(226, 20);
@@ -298,23 +315,6 @@
             // 
             this.ingenieriasDataSet.DataSetName = "IngenieriasDataSet";
             this.ingenieriasDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // btnCerrar
-            // 
-            this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCerrar.FlatAppearance.BorderSize = 0;
-            this.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCerrar.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCerrar.ForeColor = System.Drawing.Color.Maroon;
-            this.btnCerrar.Location = new System.Drawing.Point(774, 7);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(23, 26);
-            this.btnCerrar.TabIndex = 5;
-            this.btnCerrar.Text = "X";
-            this.btnCerrar.UseVisualStyleBackColor = true;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // ingenieriasTableAdapter
             // 
@@ -593,21 +593,6 @@
             this.fillToolStripButton.Size = new System.Drawing.Size(26, 19);
             this.fillToolStripButton.Text = "Fill";
             // 
-            // btnPrint
-            // 
-            this.btnPrint.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPrint.BackColor = System.Drawing.Color.Transparent;
-            this.btnPrint.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
-            this.btnPrint.IconChar = FontAwesome.Sharp.IconChar.Print;
-            this.btnPrint.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
-            this.btnPrint.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnPrint.Location = new System.Drawing.Point(713, 166);
-            this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(32, 32);
-            this.btnPrint.TabIndex = 15;
-            this.btnPrint.TabStop = false;
-            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
-            // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "matricula";
@@ -627,7 +612,7 @@
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.DataPropertyName = "asistencias";
-            this.dataGridViewTextBoxColumn3.HeaderText = "asistencias";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Asistencias";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             this.dataGridViewTextBoxColumn3.ReadOnly = true;
             // 
@@ -646,6 +631,7 @@
             this.Load += new System.EventHandler(this.Asistencias_Load);
             this.panelAsistencia.ResumeLayout(false);
             this.panelAsistencia.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnPrint)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnBuscar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaAsistenciasDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaAsistenciasBindingSource)).EndInit();
@@ -661,7 +647,6 @@
             this.fillByIngenieriaToolStrip.PerformLayout();
             this.fillToolStrip.ResumeLayout(false);
             this.fillToolStrip.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnPrint)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -669,7 +654,6 @@
 
         #endregion
         private System.Windows.Forms.Panel panelAsistencia;
-        private System.Windows.Forms.Button btnCerrar;
         private DataSets.IngenieriasDataSet ingenieriasDataSet;
         private System.Windows.Forms.BindingSource ingenieriasBindingSource;
         private DataSets.IngenieriasDataSetTableAdapters.IngenieriasTableAdapter ingenieriasTableAdapter;

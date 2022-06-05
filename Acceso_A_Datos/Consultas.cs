@@ -54,6 +54,7 @@ namespace Acceso_A_Datos
 
         public void ProbarConexion() {
 
+
             try
             {
                 using (SqlConnection conexion = getConnection())
@@ -64,11 +65,11 @@ namespace Acceso_A_Datos
             }
             catch (System.Data.SqlClient.SqlException ex)
             {
+                Console.WriteLine(ex.Message);
                 MessageBox.Show("Porfavor consulte al administrador", "Error con la base de datos", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Environment.Exit(0);
             }
 
-            
         }
 
         public string BuscarCodIngenieria(string text)

@@ -192,6 +192,7 @@
             // btnAdministrar
             // 
             resources.ApplyResources(this.btnAdministrar, "btnAdministrar");
+            this.btnAdministrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAdministrar.FlatAppearance.BorderSize = 0;
             this.btnAdministrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.btnAdministrar.ForeColor = System.Drawing.Color.White;
@@ -217,6 +218,7 @@
             // btnAforo
             // 
             resources.ApplyResources(this.btnAforo, "btnAforo");
+            this.btnAforo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAforo.FlatAppearance.BorderSize = 0;
             this.btnAforo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.btnAforo.ForeColor = System.Drawing.Color.White;
@@ -231,6 +233,7 @@
             // btnAlumnos
             // 
             resources.ApplyResources(this.btnAlumnos, "btnAlumnos");
+            this.btnAlumnos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAlumnos.FlatAppearance.BorderSize = 0;
             this.btnAlumnos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.btnAlumnos.ForeColor = System.Drawing.Color.White;
@@ -244,6 +247,7 @@
             // 
             // btnAsistencia
             // 
+            this.btnAsistencia.Cursor = System.Windows.Forms.Cursors.Hand;
             resources.ApplyResources(this.btnAsistencia, "btnAsistencia");
             this.btnAsistencia.FlatAppearance.BorderSize = 0;
             this.btnAsistencia.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
@@ -259,6 +263,7 @@
             // btnDocentes
             // 
             resources.ApplyResources(this.btnDocentes, "btnDocentes");
+            this.btnDocentes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDocentes.FlatAppearance.BorderSize = 0;
             this.btnDocentes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.btnDocentes.ForeColor = System.Drawing.Color.White;
@@ -273,6 +278,7 @@
             // btnIniciarSesion
             // 
             resources.ApplyResources(this.btnIniciarSesion, "btnIniciarSesion");
+            this.btnIniciarSesion.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnIniciarSesion.FlatAppearance.BorderSize = 0;
             this.btnIniciarSesion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.btnIniciarSesion.ForeColor = System.Drawing.Color.White;
