@@ -53,11 +53,22 @@ namespace Acceso_A_Datos
         }
 
         public void ProbarConexion() {
-            using (SqlConnection conexion = getConnection())
+
+            try
             {
-                conexion.Open();
-                Console.WriteLine("Conexion Realizada con Exito");
+                using (SqlConnection conexion = getConnection())
+                {
+                    conexion.Open();
+                    Console.WriteLine("Conexion Realizada con Exito");
+                }
             }
+            catch (System.Data.SqlClient.SqlException ex)
+            {
+                MessageBox.Show("Error con la base de datos","Porfavor consulte al administrador", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                throw;
+            }
+
+            
         }
 
         public string BuscarCodIngenieria(string text)
