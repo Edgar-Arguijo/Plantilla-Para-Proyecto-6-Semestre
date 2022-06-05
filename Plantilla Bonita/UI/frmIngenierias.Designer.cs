@@ -230,6 +230,9 @@
             // 
             // ingenieriasDataGridView
             // 
+            this.ingenieriasDataGridView.AllowUserToAddRows = false;
+            this.ingenieriasDataGridView.AllowUserToDeleteRows = false;
+            this.ingenieriasDataGridView.AllowUserToOrderColumns = true;
             this.ingenieriasDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ingenieriasDataGridView.AutoGenerateColumns = false;
@@ -238,9 +241,10 @@
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2});
             this.ingenieriasDataGridView.DataSource = this.ingenieriasBindingSource;
-            this.ingenieriasDataGridView.Location = new System.Drawing.Point(39, 145);
+            this.ingenieriasDataGridView.Location = new System.Drawing.Point(12, 157);
             this.ingenieriasDataGridView.Name = "ingenieriasDataGridView";
-            this.ingenieriasDataGridView.Size = new System.Drawing.Size(706, 271);
+            this.ingenieriasDataGridView.ReadOnly = true;
+            this.ingenieriasDataGridView.Size = new System.Drawing.Size(776, 281);
             this.ingenieriasDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1

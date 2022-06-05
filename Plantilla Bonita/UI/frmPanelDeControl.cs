@@ -20,8 +20,11 @@ namespace Plantilla_Bonita
     {
         private ConnectionProtection _operaciones = new ConnectionProtection(Application.ExecutablePath);
         private TipoUsuario.NivelAutorizacion permisos = TipoUsuario.NivelAutorizacion.Invitado;
-            
-        private void Encriptar() {
+        private Usuario interno;
+
+
+        private void Encriptar() 
+        {
             if (!_operaciones.IsProtected()){
                 _operaciones.EncryptFile();
             }
@@ -214,11 +217,10 @@ namespace Plantilla_Bonita
         {
             using (Login fm = new Login())
             {
-                fm.ShowDialog();
-
-                if (fm.DialogResult == DialogResult.OK)
+                if (fm.ShowDialog() == DialogResult.OK)
                 {
                     this.permisos = fm.Result;
+                    this.interno = fm.generated;
                     fm.Close();
                 }
             }
@@ -343,7 +345,13 @@ namespace Plantilla_Bonita
 
         private void btnIngenierias_Click(object sender, EventArgs e)
         {
-            frmIngenierias fm = new frmIngenierias();
+            frmIngenierias fm;
+
+            if (this.interno != null)
+                fm = new frmIngenierias(this.interno);
+            else
+                fm = new frmIngenierias();
+
             fm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
             Abrirformaenelpanel(fm);
         }
