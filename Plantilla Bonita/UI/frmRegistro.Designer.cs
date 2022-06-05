@@ -35,9 +35,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtConfContra = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnRegistrarse = new System.Windows.Forms.Button();
             this.pblEncabezado = new System.Windows.Forms.Panel();
+            this.btnRegistrarse = new System.Windows.Forms.Button();
+            this.btnCerrar = new FontAwesome.Sharp.IconPictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.SuspendLayout();
             // 
             // txtNomUsuario
@@ -100,6 +102,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LemonChiffon;
+            this.panel1.Controls.Add(this.btnCerrar);
             this.panel1.Controls.Add(this.pblEncabezado);
             this.panel1.Controls.Add(this.btnRegistrarse);
             this.panel1.Controls.Add(this.label1);
@@ -113,6 +116,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(291, 369);
             this.panel1.TabIndex = 7;
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+            // 
+            // pblEncabezado
+            // 
+            this.pblEncabezado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.pblEncabezado.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pblEncabezado.Location = new System.Drawing.Point(0, 0);
+            this.pblEncabezado.Name = "pblEncabezado";
+            this.pblEncabezado.Size = new System.Drawing.Size(291, 38);
+            this.pblEncabezado.TabIndex = 8;
+            this.pblEncabezado.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pblEncabezado_MouseDown);
             // 
             // btnRegistrarse
             // 
@@ -129,14 +143,19 @@
             this.btnRegistrarse.UseVisualStyleBackColor = false;
             this.btnRegistrarse.Click += new System.EventHandler(this.btnRegistrarse_Click);
             // 
-            // pblEncabezado
+            // btnCerrar
             // 
-            this.pblEncabezado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
-            this.pblEncabezado.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pblEncabezado.Location = new System.Drawing.Point(0, 0);
-            this.pblEncabezado.Name = "pblEncabezado";
-            this.pblEncabezado.Size = new System.Drawing.Size(291, 38);
-            this.pblEncabezado.TabIndex = 8;
+            this.btnCerrar.BackColor = System.Drawing.Color.LemonChiffon;
+            this.btnCerrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnCerrar.IconChar = FontAwesome.Sharp.IconChar.Times;
+            this.btnCerrar.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnCerrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCerrar.Location = new System.Drawing.Point(252, 43);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(32, 32);
+            this.btnCerrar.TabIndex = 0;
+            this.btnCerrar.TabStop = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // frmRegistro
             // 
@@ -150,6 +169,7 @@
             this.Text = "frmRegistro";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -165,5 +185,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnRegistrarse;
         private System.Windows.Forms.Panel pblEncabezado;
+        private FontAwesome.Sharp.IconPictureBox btnCerrar;
     }
 }
