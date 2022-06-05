@@ -34,14 +34,11 @@ namespace Plantilla_Bonita
             this.panelAlumnos = new System.Windows.Forms.Panel();
             this.txtNombreBusqueda = new System.Windows.Forms.TextBox();
             this.vista_AlumnosDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.vista_AlumnosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.alumnosDataSet = new Plantilla_Bonita.DataSets.AlumnosDataSet();
             this.ingenieriasComboBox = new System.Windows.Forms.ComboBox();
             this.ingenieriasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ingenieriasDataSet = new Plantilla_Bonita.DataSets.IngenieriasDataSet();
-            this.btnCerrar = new System.Windows.Forms.Button();
             this.ingenieriasTableAdapter = new Plantilla_Bonita.DataSets.IngenieriasDataSetTableAdapters.IngenieriasTableAdapter();
             this.tableAdapterManager = new Plantilla_Bonita.DataSets.IngenieriasDataSetTableAdapters.TableAdapterManager();
             this.ingenieriasBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
@@ -59,6 +56,9 @@ namespace Plantilla_Bonita
             this.ingenieriasBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.vista_AlumnosTableAdapter = new Plantilla_Bonita.DataSets.AlumnosDataSetTableAdapters.Vista_AlumnosTableAdapter();
             this.tableAdapterManager1 = new Plantilla_Bonita.DataSets.AlumnosDataSetTableAdapters.TableAdapterManager();
+            this.btnPrint = new FontAwesome.Sharp.IconPictureBox();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelAlumnos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.vista_AlumnosDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vista_AlumnosBindingSource)).BeginInit();
@@ -67,15 +67,16 @@ namespace Plantilla_Bonita
             ((System.ComponentModel.ISupportInitialize)(this.ingenieriasDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ingenieriasBindingNavigator)).BeginInit();
             this.ingenieriasBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnPrint)).BeginInit();
             this.SuspendLayout();
             // 
             // panelAlumnos
             // 
             this.panelAlumnos.BackColor = System.Drawing.Color.White;
+            this.panelAlumnos.Controls.Add(this.btnPrint);
             this.panelAlumnos.Controls.Add(this.txtNombreBusqueda);
             this.panelAlumnos.Controls.Add(this.vista_AlumnosDataGridView);
             this.panelAlumnos.Controls.Add(this.ingenieriasComboBox);
-            this.panelAlumnos.Controls.Add(this.btnCerrar);
             this.panelAlumnos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelAlumnos.Location = new System.Drawing.Point(0, 0);
             this.panelAlumnos.Name = "panelAlumnos";
@@ -103,21 +104,8 @@ namespace Plantilla_Bonita
             this.vista_AlumnosDataGridView.DataSource = this.vista_AlumnosBindingSource;
             this.vista_AlumnosDataGridView.Location = new System.Drawing.Point(23, 112);
             this.vista_AlumnosDataGridView.Name = "vista_AlumnosDataGridView";
-            this.vista_AlumnosDataGridView.Size = new System.Drawing.Size(655, 420);
+            this.vista_AlumnosDataGridView.Size = new System.Drawing.Size(757, 420);
             this.vista_AlumnosDataGridView.TabIndex = 6;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Matricula";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Matricula";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Nombre";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Nombre";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             // 
             // vista_AlumnosBindingSource
             // 
@@ -151,23 +139,6 @@ namespace Plantilla_Bonita
             // 
             this.ingenieriasDataSet.DataSetName = "IngenieriasDataSet";
             this.ingenieriasDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // btnCerrar
-            // 
-            this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCerrar.FlatAppearance.BorderSize = 0;
-            this.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCerrar.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCerrar.ForeColor = System.Drawing.Color.Maroon;
-            this.btnCerrar.Location = new System.Drawing.Point(769, 7);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(23, 26);
-            this.btnCerrar.TabIndex = 6;
-            this.btnCerrar.Text = "X";
-            this.btnCerrar.UseVisualStyleBackColor = true;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // ingenieriasTableAdapter
             // 
@@ -315,6 +286,37 @@ namespace Plantilla_Bonita
             this.tableAdapterManager1.Connection = null;
             this.tableAdapterManager1.UpdateOrder = Plantilla_Bonita.DataSets.AlumnosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
+            // btnPrint
+            // 
+            this.btnPrint.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPrint.BackColor = System.Drawing.Color.Transparent;
+            this.btnPrint.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnPrint.IconChar = FontAwesome.Sharp.IconChar.Print;
+            this.btnPrint.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnPrint.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnPrint.Location = new System.Drawing.Point(748, 66);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(32, 32);
+            this.btnPrint.TabIndex = 17;
+            this.btnPrint.TabStop = false;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Matricula";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Matricula";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Width = 75;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Nombre";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Nombre";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 69;
+            // 
             // Alumnos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -336,6 +338,7 @@ namespace Plantilla_Bonita
             ((System.ComponentModel.ISupportInitialize)(this.ingenieriasBindingNavigator)).EndInit();
             this.ingenieriasBindingNavigator.ResumeLayout(false);
             this.ingenieriasBindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnPrint)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -344,7 +347,6 @@ namespace Plantilla_Bonita
         #endregion
 
         private System.Windows.Forms.Panel panelAlumnos;
-        private System.Windows.Forms.Button btnCerrar;
         private DataSets.IngenieriasDataSet ingenieriaDataSet;
         private DataSets.IngenieriasDataSet ingenieriasDataSet;
         private System.Windows.Forms.BindingSource ingenieriasBindingSource;
@@ -369,8 +371,9 @@ namespace Plantilla_Bonita
         private DataSets.AlumnosDataSetTableAdapters.Vista_AlumnosTableAdapter vista_AlumnosTableAdapter;
         private DataSets.AlumnosDataSetTableAdapters.TableAdapterManager tableAdapterManager1;
         private System.Windows.Forms.DataGridView vista_AlumnosDataGridView;
+        private System.Windows.Forms.TextBox txtNombreBusqueda;
+        private FontAwesome.Sharp.IconPictureBox btnPrint;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.TextBox txtNombreBusqueda;
     }
 }
