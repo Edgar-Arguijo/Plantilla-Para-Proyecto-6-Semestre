@@ -130,7 +130,7 @@ namespace Acceso_A_Datos
                     using (SqlCommand cmd = new SqlCommand("AltaIngenieria", conexion)) 
                     {
                         cmd.CommandType = CommandType.StoredProcedure;
-                        cmd.Parameters.AddWithValue("@usuario@codIngenieria", usuario);
+                        cmd.Parameters.AddWithValue("@usuario", usuario);
                         cmd.Parameters.AddWithValue("@codIngenieria", cod);
                         cmd.Parameters.AddWithValue("@Nombre", desc);
                         cmd.Parameters.AddWithValue("@Fecha", DateTime.Now);

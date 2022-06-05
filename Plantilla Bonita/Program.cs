@@ -14,6 +14,7 @@ namespace Plantilla_Bonita
         [STAThread]
         static void Main()
         {
+            //
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new frmPanelDeControl());
