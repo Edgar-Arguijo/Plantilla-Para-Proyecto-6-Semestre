@@ -64,8 +64,8 @@ namespace Acceso_A_Datos
             }
             catch (System.Data.SqlClient.SqlException ex)
             {
-                MessageBox.Show("Error con la base de datos","Porfavor consulte al administrador", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                throw;
+                MessageBox.Show("Porfavor consulte al administrador", "Error con la base de datos", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Environment.Exit(0);
             }
 
             
