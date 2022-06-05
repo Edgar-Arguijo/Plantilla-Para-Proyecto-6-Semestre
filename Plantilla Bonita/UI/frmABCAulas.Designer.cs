@@ -91,36 +91,40 @@
             // codigoEdificioLabel
             // 
             codigoEdificioLabel.AutoSize = true;
-            codigoEdificioLabel.Location = new System.Drawing.Point(232, 82);
+            codigoEdificioLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
+            codigoEdificioLabel.Location = new System.Drawing.Point(198, 75);
             codigoEdificioLabel.Name = "codigoEdificioLabel";
-            codigoEdificioLabel.Size = new System.Drawing.Size(80, 13);
+            codigoEdificioLabel.Size = new System.Drawing.Size(114, 25);
             codigoEdificioLabel.TabIndex = 2;
             codigoEdificioLabel.Text = "Codigo Edificio:";
             // 
             // descripcionLabel
             // 
             descripcionLabel.AutoSize = true;
+            descripcionLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
             descripcionLabel.Location = new System.Drawing.Point(21, 151);
             descripcionLabel.Name = "descripcionLabel";
-            descripcionLabel.Size = new System.Drawing.Size(66, 13);
+            descripcionLabel.Size = new System.Drawing.Size(97, 25);
             descripcionLabel.TabIndex = 4;
             descripcionLabel.Text = "Descripcion:";
             // 
             // codigoAulaLabel
             // 
             codigoAulaLabel.AutoSize = true;
+            codigoAulaLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
             codigoAulaLabel.Location = new System.Drawing.Point(21, 99);
             codigoAulaLabel.Name = "codigoAulaLabel";
-            codigoAulaLabel.Size = new System.Drawing.Size(67, 13);
+            codigoAulaLabel.Size = new System.Drawing.Size(97, 25);
             codigoAulaLabel.TabIndex = 6;
             codigoAulaLabel.Text = "Codigo Aula:";
             // 
             // codEdificioLabel
             // 
             codEdificioLabel.AutoSize = true;
-            codEdificioLabel.Location = new System.Drawing.Point(260, 127);
+            codEdificioLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
+            codEdificioLabel.Location = new System.Drawing.Point(232, 119);
             codEdificioLabel.Name = "codEdificioLabel";
-            codEdificioLabel.Size = new System.Drawing.Size(65, 13);
+            codEdificioLabel.Size = new System.Drawing.Size(93, 25);
             codEdificioLabel.TabIndex = 13;
             codEdificioLabel.Text = "cod Edificio:";
             codEdificioLabel.Visible = false;
@@ -282,7 +286,7 @@
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3});
             this.aulasDataGridView.DataSource = this.aulasBindingSource;
-            this.aulasDataGridView.Location = new System.Drawing.Point(451, 40);
+            this.aulasDataGridView.Location = new System.Drawing.Point(455, 75);
             this.aulasDataGridView.Name = "aulasDataGridView";
             this.aulasDataGridView.ReadOnly = true;
             this.aulasDataGridView.Size = new System.Drawing.Size(365, 279);
@@ -355,7 +359,7 @@
             // descripcionTextBox
             // 
             this.descripcionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.aulasBindingSource, "Descripcion", true));
-            this.descripcionTextBox.Location = new System.Drawing.Point(24, 173);
+            this.descripcionTextBox.Location = new System.Drawing.Point(24, 179);
             this.descripcionTextBox.Multiline = true;
             this.descripcionTextBox.Name = "descripcionTextBox";
             this.descripcionTextBox.Size = new System.Drawing.Size(415, 82);
@@ -364,7 +368,7 @@
             // codigoAulaTextBox
             // 
             this.codigoAulaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.aulasBindingSource, "CodigoAula", true));
-            this.codigoAulaTextBox.Location = new System.Drawing.Point(24, 124);
+            this.codigoAulaTextBox.Location = new System.Drawing.Point(24, 128);
             this.codigoAulaTextBox.Name = "codigoAulaTextBox";
             this.codigoAulaTextBox.Size = new System.Drawing.Size(192, 20);
             this.codigoAulaTextBox.TabIndex = 7;
@@ -377,7 +381,7 @@
             this.btnDelete.IconChar = FontAwesome.Sharp.IconChar.TrashAlt;
             this.btnDelete.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.btnDelete.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnDelete.Location = new System.Drawing.Point(290, 287);
+            this.btnDelete.Location = new System.Drawing.Point(674, 37);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(32, 32);
             this.btnDelete.TabIndex = 13;
@@ -391,7 +395,7 @@
             this.btnAgregarNuevo.IconChar = FontAwesome.Sharp.IconChar.Plus;
             this.btnAgregarNuevo.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.btnAgregarNuevo.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnAgregarNuevo.Location = new System.Drawing.Point(328, 287);
+            this.btnAgregarNuevo.Location = new System.Drawing.Point(712, 37);
             this.btnAgregarNuevo.Name = "btnAgregarNuevo";
             this.btnAgregarNuevo.Size = new System.Drawing.Size(32, 32);
             this.btnAgregarNuevo.TabIndex = 12;
@@ -406,7 +410,7 @@
             this.btnUpdateData.IconChar = FontAwesome.Sharp.IconChar.Sync;
             this.btnUpdateData.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.btnUpdateData.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnUpdateData.Location = new System.Drawing.Point(366, 287);
+            this.btnUpdateData.Location = new System.Drawing.Point(750, 37);
             this.btnUpdateData.Name = "btnUpdateData";
             this.btnUpdateData.Size = new System.Drawing.Size(32, 32);
             this.btnUpdateData.TabIndex = 11;
@@ -420,7 +424,7 @@
             this.btnGuardarCambios.IconChar = FontAwesome.Sharp.IconChar.Save;
             this.btnGuardarCambios.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.btnGuardarCambios.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnGuardarCambios.Location = new System.Drawing.Point(404, 287);
+            this.btnGuardarCambios.Location = new System.Drawing.Point(788, 37);
             this.btnGuardarCambios.Name = "btnGuardarCambios";
             this.btnGuardarCambios.Size = new System.Drawing.Size(32, 32);
             this.btnGuardarCambios.TabIndex = 10;

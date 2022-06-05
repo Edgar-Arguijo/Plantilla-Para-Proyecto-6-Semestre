@@ -76,18 +76,20 @@
             // cod_IngLabel
             // 
             cod_IngLabel.AutoSize = true;
-            cod_IngLabel.Location = new System.Drawing.Point(36, 32);
+            cod_IngLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
+            cod_IngLabel.Location = new System.Drawing.Point(7, 29);
             cod_IngLabel.Name = "cod_IngLabel";
-            cod_IngLabel.Size = new System.Drawing.Size(47, 13);
+            cod_IngLabel.Size = new System.Drawing.Size(66, 25);
             cod_IngLabel.TabIndex = 2;
             cod_IngLabel.Text = "Cod Ing:";
             // 
             // descripcionLabel
             // 
             descripcionLabel.AutoSize = true;
-            descripcionLabel.Location = new System.Drawing.Point(36, 78);
+            descripcionLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
+            descripcionLabel.Location = new System.Drawing.Point(7, 75);
             descripcionLabel.Name = "descripcionLabel";
-            descripcionLabel.Size = new System.Drawing.Size(66, 13);
+            descripcionLabel.Size = new System.Drawing.Size(97, 25);
             descripcionLabel.TabIndex = 4;
             descripcionLabel.Text = "Descripcion:";
             // 
@@ -252,6 +254,7 @@
             this.dataGridViewTextBoxColumn1.DataPropertyName = "Cod_Ing";
             this.dataGridViewTextBoxColumn1.HeaderText = "Cod_Ing";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn2
             // 
@@ -259,19 +262,20 @@
             this.dataGridViewTextBoxColumn2.DataPropertyName = "Descripcion";
             this.dataGridViewTextBoxColumn2.HeaderText = "Descripcion";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
             // 
             // cod_IngTextBox
             // 
             this.cod_IngTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ingenieriasBindingSource, "Cod_Ing", true));
-            this.cod_IngTextBox.Location = new System.Drawing.Point(89, 29);
+            this.cod_IngTextBox.Location = new System.Drawing.Point(79, 36);
             this.cod_IngTextBox.Name = "cod_IngTextBox";
-            this.cod_IngTextBox.Size = new System.Drawing.Size(312, 20);
+            this.cod_IngTextBox.Size = new System.Drawing.Size(343, 20);
             this.cod_IngTextBox.TabIndex = 3;
             // 
             // descripcionTextBox
             // 
             this.descripcionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ingenieriasBindingSource, "Descripcion", true));
-            this.descripcionTextBox.Location = new System.Drawing.Point(108, 75);
+            this.descripcionTextBox.Location = new System.Drawing.Point(110, 82);
             this.descripcionTextBox.Name = "descripcionTextBox";
             this.descripcionTextBox.Size = new System.Drawing.Size(312, 20);
             this.descripcionTextBox.TabIndex = 5;
@@ -313,7 +317,7 @@
             this.btnDelete.IconChar = FontAwesome.Sharp.IconChar.TrashAlt;
             this.btnDelete.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.btnDelete.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnDelete.Location = new System.Drawing.Point(599, 107);
+            this.btnDelete.Location = new System.Drawing.Point(642, 119);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(32, 32);
             this.btnDelete.TabIndex = 9;
@@ -329,7 +333,7 @@
             this.btnAgregarNuevo.IconChar = FontAwesome.Sharp.IconChar.Plus;
             this.btnAgregarNuevo.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.btnAgregarNuevo.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnAgregarNuevo.Location = new System.Drawing.Point(637, 107);
+            this.btnAgregarNuevo.Location = new System.Drawing.Point(680, 119);
             this.btnAgregarNuevo.Name = "btnAgregarNuevo";
             this.btnAgregarNuevo.Size = new System.Drawing.Size(32, 32);
             this.btnAgregarNuevo.TabIndex = 8;
@@ -345,7 +349,7 @@
             this.btnUpdateData.IconChar = FontAwesome.Sharp.IconChar.Sync;
             this.btnUpdateData.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.btnUpdateData.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnUpdateData.Location = new System.Drawing.Point(675, 107);
+            this.btnUpdateData.Location = new System.Drawing.Point(718, 119);
             this.btnUpdateData.Name = "btnUpdateData";
             this.btnUpdateData.Size = new System.Drawing.Size(32, 32);
             this.btnUpdateData.TabIndex = 7;
@@ -361,7 +365,7 @@
             this.btnGuardarCambios.IconChar = FontAwesome.Sharp.IconChar.Save;
             this.btnGuardarCambios.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.btnGuardarCambios.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnGuardarCambios.Location = new System.Drawing.Point(713, 107);
+            this.btnGuardarCambios.Location = new System.Drawing.Point(756, 119);
             this.btnGuardarCambios.Name = "btnGuardarCambios";
             this.btnGuardarCambios.Size = new System.Drawing.Size(32, 32);
             this.btnGuardarCambios.TabIndex = 6;

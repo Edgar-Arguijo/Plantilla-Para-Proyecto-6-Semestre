@@ -36,6 +36,9 @@
             this.btnPrint = new FontAwesome.Sharp.IconPictureBox();
             this.btnBuscar = new FontAwesome.Sharp.IconPictureBox();
             this.listaAsistenciasDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.listaAsistenciasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.asistenciasDataSet = new Plantilla_Bonita.DataSets.AsistenciasDataSet();
             this.label2 = new System.Windows.Forms.Label();
@@ -85,9 +88,6 @@
             this.cantidadClasesToolStripLabel = new System.Windows.Forms.ToolStripLabel();
             this.cantidadClasesToolStripTextBox = new System.Windows.Forms.ToolStripTextBox();
             this.fillToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             descripcionLabel = new System.Windows.Forms.Label();
             materiaLabel = new System.Windows.Forms.Label();
             this.panelAsistencia.SuspendLayout();
@@ -109,18 +109,21 @@
             // descripcionLabel
             // 
             descripcionLabel.AutoSize = true;
-            descripcionLabel.Location = new System.Drawing.Point(30, 31);
+            descripcionLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
+            descripcionLabel.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
+            descripcionLabel.Location = new System.Drawing.Point(28, 22);
             descripcionLabel.Name = "descripcionLabel";
-            descripcionLabel.Size = new System.Drawing.Size(58, 13);
+            descripcionLabel.Size = new System.Drawing.Size(86, 25);
             descripcionLabel.TabIndex = 5;
             descripcionLabel.Text = "Ingeniería:";
             // 
             // materiaLabel
             // 
             materiaLabel.AutoSize = true;
-            materiaLabel.Location = new System.Drawing.Point(30, 136);
+            materiaLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
+            materiaLabel.Location = new System.Drawing.Point(28, 138);
             materiaLabel.Name = "materiaLabel";
-            materiaLabel.Size = new System.Drawing.Size(45, 13);
+            materiaLabel.Size = new System.Drawing.Size(71, 25);
             materiaLabel.TabIndex = 6;
             materiaLabel.Text = "Materia:";
             // 
@@ -198,6 +201,29 @@
             this.listaAsistenciasDataGridView.Size = new System.Drawing.Size(750, 256);
             this.listaAsistenciasDataGridView.TabIndex = 13;
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "matricula";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Matricula";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "nombre";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Nombre";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Width = 69;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "asistencias";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Asistencias";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
             // listaAsistenciasBindingSource
             // 
             this.listaAsistenciasBindingSource.DataMember = "ListaAsistencias";
@@ -211,34 +237,37 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(432, 84);
+            this.label2.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
+            this.label2.Location = new System.Drawing.Point(429, 75);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 13);
+            this.label2.Size = new System.Drawing.Size(103, 25);
             this.label2.TabIndex = 13;
             this.label2.Text = "Fecha de Fin:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(432, 31);
+            this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
+            this.label1.Location = new System.Drawing.Point(429, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 13);
+            this.label1.Size = new System.Drawing.Size(119, 25);
             this.label1.TabIndex = 12;
             this.label1.Text = "Fecha de Inicio:";
             // 
             // lblSemestre
             // 
             this.lblSemestre.AutoSize = true;
-            this.lblSemestre.Location = new System.Drawing.Point(30, 87);
+            this.lblSemestre.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
+            this.lblSemestre.Location = new System.Drawing.Point(28, 79);
             this.lblSemestre.Name = "lblSemestre";
-            this.lblSemestre.Size = new System.Drawing.Size(54, 13);
+            this.lblSemestre.Size = new System.Drawing.Size(83, 25);
             this.lblSemestre.TabIndex = 11;
             this.lblSemestre.Text = "Semestre:";
             // 
             // dtPickerFin
             // 
             this.dtPickerFin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.dtPickerFin.Location = new System.Drawing.Point(435, 104);
+            this.dtPickerFin.Location = new System.Drawing.Point(432, 103);
             this.dtPickerFin.Name = "dtPickerFin";
             this.dtPickerFin.Size = new System.Drawing.Size(226, 20);
             this.dtPickerFin.TabIndex = 10;
@@ -246,7 +275,7 @@
             // dtPickerInicio
             // 
             this.dtPickerInicio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.dtPickerInicio.Location = new System.Drawing.Point(435, 51);
+            this.dtPickerInicio.Location = new System.Drawing.Point(432, 50);
             this.dtPickerInicio.Name = "dtPickerInicio";
             this.dtPickerInicio.Size = new System.Drawing.Size(226, 20);
             this.dtPickerInicio.TabIndex = 9;
@@ -264,7 +293,7 @@
             "7mo Semestre",
             "8vo Semestre",
             "9no Semestre"});
-            this.cboSemestre.Location = new System.Drawing.Point(33, 103);
+            this.cboSemestre.Location = new System.Drawing.Point(33, 107);
             this.cboSemestre.Name = "cboSemestre";
             this.cboSemestre.Size = new System.Drawing.Size(210, 21);
             this.cboSemestre.TabIndex = 8;
@@ -277,7 +306,7 @@
             this.materiaComboBox.DataSource = this.vista_IngenieriasMateriaBindingSource;
             this.materiaComboBox.DisplayMember = "Materia";
             this.materiaComboBox.FormattingEnabled = true;
-            this.materiaComboBox.Location = new System.Drawing.Point(33, 152);
+            this.materiaComboBox.Location = new System.Drawing.Point(33, 166);
             this.materiaComboBox.Name = "materiaComboBox";
             this.materiaComboBox.Size = new System.Drawing.Size(210, 21);
             this.materiaComboBox.TabIndex = 7;
@@ -592,29 +621,6 @@
             this.fillToolStripButton.Name = "fillToolStripButton";
             this.fillToolStripButton.Size = new System.Drawing.Size(26, 19);
             this.fillToolStripButton.Text = "Fill";
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "matricula";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Matricula";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "nombre";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Nombre";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Width = 69;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "asistencias";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Asistencias";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
             // 
             // Asistencias
             // 
