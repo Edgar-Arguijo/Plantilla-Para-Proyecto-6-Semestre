@@ -11,8 +11,14 @@ namespace Dominio
     {
         private Consultas obj = new Consultas();
 
-        public void ProbarConexion() {
+        public void ProbarConexion() 
+        {
             obj.ProbarConexion();
+        }
+
+        public bool AltaIngenieria(string usuario, string cod, string desc) 
+        {
+            return obj.AltaIngenieria(usuario,cod,desc);
         }
 
         public bool CopiaDeSeguridad() 
