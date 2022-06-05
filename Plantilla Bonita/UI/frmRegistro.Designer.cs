@@ -35,9 +35,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtConfContra = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnCerrar = new FontAwesome.Sharp.IconPictureBox();
             this.pblEncabezado = new System.Windows.Forms.Panel();
             this.btnRegistrarse = new System.Windows.Forms.Button();
-            this.btnCerrar = new FontAwesome.Sharp.IconPictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.SuspendLayout();
@@ -65,9 +65,9 @@
             this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
             this.label1.Location = new System.Drawing.Point(34, 54);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(143, 25);
+            this.label1.Size = new System.Drawing.Size(147, 25);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Nombre de Usuario";
+            this.label1.Text = "Nombre de Usuario:";
             // 
             // label2
             // 
@@ -76,9 +76,9 @@
             this.label2.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
             this.label2.Location = new System.Drawing.Point(34, 129);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(94, 25);
+            this.label2.Size = new System.Drawing.Size(98, 25);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Contraseña";
+            this.label2.Text = "Contraseña:";
             // 
             // label3
             // 
@@ -87,9 +87,9 @@
             this.label3.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
             this.label3.Location = new System.Drawing.Point(34, 204);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(181, 25);
+            this.label3.Size = new System.Drawing.Size(185, 25);
             this.label3.TabIndex = 6;
-            this.label3.Text = "Confirme su contraseña";
+            this.label3.Text = "Confirme su contraseña:";
             // 
             // txtConfContra
             // 
@@ -118,6 +118,21 @@
             this.panel1.TabIndex = 7;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             // 
+            // btnCerrar
+            // 
+            this.btnCerrar.BackColor = System.Drawing.Color.LemonChiffon;
+            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCerrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnCerrar.IconChar = FontAwesome.Sharp.IconChar.Times;
+            this.btnCerrar.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnCerrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCerrar.Location = new System.Drawing.Point(252, 43);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(32, 32);
+            this.btnCerrar.TabIndex = 0;
+            this.btnCerrar.TabStop = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
             // pblEncabezado
             // 
             this.pblEncabezado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
@@ -131,31 +146,18 @@
             // btnRegistrarse
             // 
             this.btnRegistrarse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnRegistrarse.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRegistrarse.FlatAppearance.BorderSize = 0;
             this.btnRegistrarse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistrarse.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
             this.btnRegistrarse.ForeColor = System.Drawing.Color.White;
-            this.btnRegistrarse.Location = new System.Drawing.Point(61, 301);
+            this.btnRegistrarse.Location = new System.Drawing.Point(61, 289);
             this.btnRegistrarse.Name = "btnRegistrarse";
             this.btnRegistrarse.Size = new System.Drawing.Size(167, 45);
             this.btnRegistrarse.TabIndex = 7;
             this.btnRegistrarse.Text = "Registrarse";
             this.btnRegistrarse.UseVisualStyleBackColor = false;
             this.btnRegistrarse.Click += new System.EventHandler(this.btnRegistrarse_Click);
-            // 
-            // btnCerrar
-            // 
-            this.btnCerrar.BackColor = System.Drawing.Color.LemonChiffon;
-            this.btnCerrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
-            this.btnCerrar.IconChar = FontAwesome.Sharp.IconChar.Times;
-            this.btnCerrar.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
-            this.btnCerrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnCerrar.Location = new System.Drawing.Point(252, 43);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(32, 32);
-            this.btnCerrar.TabIndex = 0;
-            this.btnCerrar.TabStop = false;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // frmRegistro
             // 

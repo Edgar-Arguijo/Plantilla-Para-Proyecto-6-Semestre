@@ -76,7 +76,7 @@
             // cod_IngLabel
             // 
             cod_IngLabel.AutoSize = true;
-            cod_IngLabel.Location = new System.Drawing.Point(36, 29);
+            cod_IngLabel.Location = new System.Drawing.Point(36, 32);
             cod_IngLabel.Name = "cod_IngLabel";
             cod_IngLabel.Size = new System.Drawing.Size(47, 13);
             cod_IngLabel.TabIndex = 2;
@@ -263,7 +263,7 @@
             // cod_IngTextBox
             // 
             this.cod_IngTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ingenieriasBindingSource, "Cod_Ing", true));
-            this.cod_IngTextBox.Location = new System.Drawing.Point(108, 22);
+            this.cod_IngTextBox.Location = new System.Drawing.Point(89, 29);
             this.cod_IngTextBox.Name = "cod_IngTextBox";
             this.cod_IngTextBox.Size = new System.Drawing.Size(312, 20);
             this.cod_IngTextBox.TabIndex = 3;
@@ -308,6 +308,7 @@
             // 
             this.btnDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDelete.BackColor = System.Drawing.Color.White;
+            this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.btnDelete.IconChar = FontAwesome.Sharp.IconChar.TrashAlt;
             this.btnDelete.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
@@ -323,6 +324,7 @@
             // 
             this.btnAgregarNuevo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAgregarNuevo.BackColor = System.Drawing.Color.White;
+            this.btnAgregarNuevo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAgregarNuevo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.btnAgregarNuevo.IconChar = FontAwesome.Sharp.IconChar.Plus;
             this.btnAgregarNuevo.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
@@ -338,6 +340,7 @@
             // 
             this.btnUpdateData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnUpdateData.BackColor = System.Drawing.Color.White;
+            this.btnUpdateData.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnUpdateData.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.btnUpdateData.IconChar = FontAwesome.Sharp.IconChar.Sync;
             this.btnUpdateData.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
@@ -353,6 +356,7 @@
             // 
             this.btnGuardarCambios.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnGuardarCambios.BackColor = System.Drawing.Color.White;
+            this.btnGuardarCambios.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGuardarCambios.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.btnGuardarCambios.IconChar = FontAwesome.Sharp.IconChar.Save;
             this.btnGuardarCambios.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
