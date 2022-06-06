@@ -279,7 +279,8 @@
             // 
             this.aulasDataGridView.AllowUserToAddRows = false;
             this.aulasDataGridView.AllowUserToDeleteRows = false;
-            this.aulasDataGridView.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.aulasDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.aulasDataGridView.AutoGenerateColumns = false;
             this.aulasDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.aulasDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -287,10 +288,10 @@
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3});
             this.aulasDataGridView.DataSource = this.aulasBindingSource;
-            this.aulasDataGridView.Location = new System.Drawing.Point(463, 22);
+            this.aulasDataGridView.Location = new System.Drawing.Point(465, 12);
             this.aulasDataGridView.Name = "aulasDataGridView";
             this.aulasDataGridView.ReadOnly = true;
-            this.aulasDataGridView.Size = new System.Drawing.Size(455, 429);
+            this.aulasDataGridView.Size = new System.Drawing.Size(452, 447);
             this.aulasDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -376,7 +377,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDelete.BackColor = System.Drawing.Color.White;
             this.btnDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.btnDelete.IconChar = FontAwesome.Sharp.IconChar.TrashAlt;
@@ -387,10 +388,11 @@
             this.btnDelete.Size = new System.Drawing.Size(32, 32);
             this.btnDelete.TabIndex = 13;
             this.btnDelete.TabStop = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnAgregarNuevo
             // 
-            this.btnAgregarNuevo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAgregarNuevo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAgregarNuevo.BackColor = System.Drawing.Color.White;
             this.btnAgregarNuevo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.btnAgregarNuevo.IconChar = FontAwesome.Sharp.IconChar.Plus;
@@ -405,7 +407,7 @@
             // 
             // btnUpdateData
             // 
-            this.btnUpdateData.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnUpdateData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnUpdateData.BackColor = System.Drawing.Color.White;
             this.btnUpdateData.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.btnUpdateData.IconChar = FontAwesome.Sharp.IconChar.Sync;
@@ -419,7 +421,7 @@
             // 
             // btnGuardarCambios
             // 
-            this.btnGuardarCambios.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnGuardarCambios.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnGuardarCambios.BackColor = System.Drawing.Color.White;
             this.btnGuardarCambios.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.btnGuardarCambios.IconChar = FontAwesome.Sharp.IconChar.Save;
@@ -446,7 +448,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(980, 471);
+            this.ClientSize = new System.Drawing.Size(929, 471);
             this.Controls.Add(codEdificioLabel);
             this.Controls.Add(this.codEdificioTextBox);
             this.Controls.Add(this.btnDelete);

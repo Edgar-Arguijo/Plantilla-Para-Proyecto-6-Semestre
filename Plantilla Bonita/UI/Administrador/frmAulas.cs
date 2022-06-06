@@ -84,5 +84,10 @@ namespace Plantilla_Bonita
             IsEditing = false;
             aulasBindingNavigatorSaveItem.PerformClick();
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
