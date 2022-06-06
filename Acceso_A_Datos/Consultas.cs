@@ -313,7 +313,7 @@ namespace Acceso_A_Datos
                         cmd.CommandType = CommandType.StoredProcedure;
                         //Se definene los parametros
                         cmd.Parameters.AddWithValue("@usuario", usuario);
-                        cmd.Parameters.AddWithValue("@contraseña", Encriptado_Desencriptado.Encriptado_Desencriptado.Desencriptar(contraseña));
+                        cmd.Parameters.AddWithValue("@contraseña", Encriptado_Desencriptado.Encriptado_Desencriptado.Encriptar(contraseña));
                         cmd.Parameters.AddWithValue("@fecha", DateTime.Now);
                         //Parametro de salida del nivel
                         cmd.Parameters.Add("@level", SqlDbType.VarChar, Int32.MaxValue).Direction = ParameterDirection.Output;
