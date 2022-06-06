@@ -118,6 +118,7 @@
             // 
             this.btnMostrarContraseña.BackColor = System.Drawing.Color.LemonChiffon;
             this.btnMostrarContraseña.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMostrarContraseña.ErrorImage = null;
             this.btnMostrarContraseña.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnMostrarContraseña.IconChar = FontAwesome.Sharp.IconChar.Eye;
             this.btnMostrarContraseña.IconColor = System.Drawing.SystemColors.ControlText;

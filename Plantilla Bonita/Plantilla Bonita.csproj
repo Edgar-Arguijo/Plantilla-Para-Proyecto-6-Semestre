@@ -706,6 +706,10 @@
       <Project>{9274cdfb-74bb-4593-bafb-4bd44810d8f6}</Project>
       <Name>Dominio</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Encriptado_Deesencriptado\Encriptado_Desencriptado.csproj">
+      <Project>{7849c279-1c27-45c6-ae8e-e5ee37f91e7a}</Project>
+      <Name>Encriptado_Desencriptado</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Imagen1.png" />

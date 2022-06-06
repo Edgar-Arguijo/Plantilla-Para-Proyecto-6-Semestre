@@ -28,6 +28,7 @@ namespace Plantilla_Bonita
         {
             // TODO: esta línea de código carga datos en la tabla 'usuariosDataSet.Usuarios' Puede moverla o quitarla según sea necesario.
             this.usuariosTableAdapter.Fill(this.usuariosDataSet.Usuarios);
+            contraseñaTextBox.UseSystemPasswordChar = true;
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
@@ -49,6 +50,18 @@ namespace Plantilla_Bonita
         private void btnUpdateData_Click(object sender, EventArgs e)
         {
             this.usuariosTableAdapter.Fill(this.usuariosDataSet.Usuarios);
+        }
+
+        private void btnMostrarContra_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.contraseñaTextBox.Text = Encriptado_Desencriptado.Encriptado_Desencriptado.Desencriptar(contraseñaTextBox.Text);
+            contraseñaTextBox.UseSystemPasswordChar = false;
+        }
+
+        private void btnMostrarContra_MouseUp(object sender, MouseEventArgs e)
+        {
+            this.contraseñaTextBox.Text = Encriptado_Desencriptado.Encriptado_Desencriptado.Encriptar(contraseñaTextBox.Text);
+            contraseñaTextBox.UseSystemPasswordChar = true;
         }
     }
 }

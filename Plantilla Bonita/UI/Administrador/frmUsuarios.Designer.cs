@@ -36,6 +36,7 @@
             System.Windows.Forms.Label rolLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmUsuarios));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnMostrarContra = new FontAwesome.Sharp.IconPictureBox();
             this.btnUpdateData = new FontAwesome.Sharp.IconPictureBox();
             this.btnDelete = new FontAwesome.Sharp.IconPictureBox();
             this.btnGuardar = new FontAwesome.Sharp.IconPictureBox();
@@ -68,6 +69,7 @@
             contraseñaLabel = new System.Windows.Forms.Label();
             rolLabel = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMostrarContra)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnUpdateData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDelete)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnGuardar)).BeginInit();
@@ -112,6 +114,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.btnMostrarContra);
             this.panel1.Controls.Add(this.btnUpdateData);
             this.panel1.Controls.Add(this.btnDelete);
             this.panel1.Controls.Add(this.btnGuardar);
@@ -128,6 +131,22 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(758, 450);
             this.panel1.TabIndex = 0;
+            // 
+            // btnMostrarContra
+            // 
+            this.btnMostrarContra.BackColor = System.Drawing.Color.White;
+            this.btnMostrarContra.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnMostrarContra.IconChar = FontAwesome.Sharp.IconChar.Eye;
+            this.btnMostrarContra.IconColor = System.Drawing.SystemColors.ControlText;
+            this.btnMostrarContra.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnMostrarContra.IconSize = 28;
+            this.btnMostrarContra.Location = new System.Drawing.Point(294, 104);
+            this.btnMostrarContra.Name = "btnMostrarContra";
+            this.btnMostrarContra.Size = new System.Drawing.Size(28, 32);
+            this.btnMostrarContra.TabIndex = 12;
+            this.btnMostrarContra.TabStop = false;
+            this.btnMostrarContra.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnMostrarContra_MouseDown);
+            this.btnMostrarContra.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnMostrarContra_MouseUp);
             // 
             // btnUpdateData
             // 
@@ -418,6 +437,7 @@
             this.Load += new System.EventHandler(this.frmUsuarios_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMostrarContra)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnUpdateData)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDelete)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnGuardar)).EndInit();
@@ -464,5 +484,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private FontAwesome.Sharp.IconPictureBox btnDelete;
         private FontAwesome.Sharp.IconPictureBox btnUpdateData;
+        private FontAwesome.Sharp.IconPictureBox btnMostrarContra;
     }
 }
