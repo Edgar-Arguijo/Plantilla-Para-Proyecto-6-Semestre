@@ -652,9 +652,6 @@
     <None Include="Materiales_Iconos\Mobile-Menu-Icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Materiales_Iconos\IMO2.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Materiales_Iconos\new iconos\icon cerrar2.png" />
   </ItemGroup>
   <ItemGroup>
@@ -667,22 +664,7 @@
     <None Include="Materiales_Iconos\new iconos\icon restaurar.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Materiales_Iconos\producto.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Materiales_Iconos\ventas.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Materiales_Iconos\new iconos\ventas.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Materiales_Iconos\venta.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Materiales_Iconos\clientes.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Materiales_Iconos\compras.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Imagen8.png" />
@@ -704,18 +686,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Imagen9.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\docente.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\docente1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\docente2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\docente3.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\lista1.png" />
