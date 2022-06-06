@@ -91,7 +91,7 @@
             // 
             contraseñaLabel.AutoSize = true;
             contraseñaLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
-            contraseñaLabel.Location = new System.Drawing.Point(25, 79);
+            contraseñaLabel.Location = new System.Drawing.Point(25, 73);
             contraseñaLabel.Name = "contraseñaLabel";
             contraseñaLabel.Size = new System.Drawing.Size(98, 25);
             contraseñaLabel.TabIndex = 3;
@@ -101,7 +101,7 @@
             // 
             rolLabel.AutoSize = true;
             rolLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
-            rolLabel.Location = new System.Drawing.Point(313, 39);
+            rolLabel.Location = new System.Drawing.Point(313, 16);
             rolLabel.Name = "rolLabel";
             rolLabel.Size = new System.Drawing.Size(38, 25);
             rolLabel.TabIndex = 5;
@@ -136,7 +136,7 @@
             this.btnUpdateData.IconChar = FontAwesome.Sharp.IconChar.Sync;
             this.btnUpdateData.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.btnUpdateData.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnUpdateData.Location = new System.Drawing.Point(703, 123);
+            this.btnUpdateData.Location = new System.Drawing.Point(703, 104);
             this.btnUpdateData.Name = "btnUpdateData";
             this.btnUpdateData.Size = new System.Drawing.Size(32, 32);
             this.btnUpdateData.TabIndex = 11;
@@ -152,7 +152,7 @@
             this.btnDelete.IconChar = FontAwesome.Sharp.IconChar.TrashAlt;
             this.btnDelete.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.btnDelete.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnDelete.Location = new System.Drawing.Point(589, 123);
+            this.btnDelete.Location = new System.Drawing.Point(589, 104);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(32, 32);
             this.btnDelete.TabIndex = 10;
@@ -168,7 +168,7 @@
             this.btnGuardar.IconChar = FontAwesome.Sharp.IconChar.Save;
             this.btnGuardar.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.btnGuardar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnGuardar.Location = new System.Drawing.Point(665, 123);
+            this.btnGuardar.Location = new System.Drawing.Point(665, 104);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(32, 32);
             this.btnGuardar.TabIndex = 9;
@@ -184,7 +184,7 @@
             this.btnNuevo.IconChar = FontAwesome.Sharp.IconChar.Plus;
             this.btnNuevo.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.btnNuevo.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnNuevo.Location = new System.Drawing.Point(627, 123);
+            this.btnNuevo.Location = new System.Drawing.Point(627, 104);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(32, 32);
             this.btnNuevo.TabIndex = 7;
@@ -199,7 +199,7 @@
             "Administrador",
             "Docente",
             "Administrativo"});
-            this.rolComboBox.Location = new System.Drawing.Point(357, 43);
+            this.rolComboBox.Location = new System.Drawing.Point(318, 43);
             this.rolComboBox.Name = "rolComboBox";
             this.rolComboBox.Size = new System.Drawing.Size(161, 21);
             this.rolComboBox.TabIndex = 6;
@@ -217,7 +217,7 @@
             // contraseñaTextBox
             // 
             this.contraseñaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usuariosBindingSource, "Contraseña", true));
-            this.contraseñaTextBox.Location = new System.Drawing.Point(30, 108);
+            this.contraseñaTextBox.Location = new System.Drawing.Point(30, 102);
             this.contraseñaTextBox.Name = "contraseñaTextBox";
             this.contraseñaTextBox.Size = new System.Drawing.Size(256, 20);
             this.contraseñaTextBox.TabIndex = 4;
@@ -241,9 +241,9 @@
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3});
             this.usuariosDataGridView.DataSource = this.usuariosBindingSource;
-            this.usuariosDataGridView.Location = new System.Drawing.Point(30, 161);
+            this.usuariosDataGridView.Location = new System.Drawing.Point(30, 142);
             this.usuariosDataGridView.Name = "usuariosDataGridView";
-            this.usuariosDataGridView.Size = new System.Drawing.Size(705, 259);
+            this.usuariosDataGridView.Size = new System.Drawing.Size(705, 278);
             this.usuariosDataGridView.TabIndex = 0;
             // 
             // dataGridViewTextBoxColumn1

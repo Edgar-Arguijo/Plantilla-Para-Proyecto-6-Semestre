@@ -78,7 +78,7 @@
             // 
             codigoEdificioLabel.AutoSize = true;
             codigoEdificioLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
-            codigoEdificioLabel.Location = new System.Drawing.Point(19, 27);
+            codigoEdificioLabel.Location = new System.Drawing.Point(18, 24);
             codigoEdificioLabel.Name = "codigoEdificioLabel";
             codigoEdificioLabel.Size = new System.Drawing.Size(114, 25);
             codigoEdificioLabel.TabIndex = 0;
@@ -87,7 +87,8 @@
             // codigoAulaLabel
             // 
             codigoAulaLabel.AutoSize = true;
-            codigoAulaLabel.Location = new System.Drawing.Point(19, 70);
+            codigoAulaLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
+            codigoAulaLabel.Location = new System.Drawing.Point(18, 63);
             codigoAulaLabel.Name = "codigoAulaLabel";
             codigoAulaLabel.Size = new System.Drawing.Size(122, 25);
             codigoAulaLabel.TabIndex = 2;
@@ -122,7 +123,7 @@
             this.btnPrint.IconChar = FontAwesome.Sharp.IconChar.Print;
             this.btnPrint.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.btnPrint.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnPrint.Location = new System.Drawing.Point(833, 162);
+            this.btnPrint.Location = new System.Drawing.Point(833, 145);
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.Size = new System.Drawing.Size(32, 32);
             this.btnPrint.TabIndex = 16;
@@ -145,10 +146,10 @@
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn3});
             this.vista_AforosGeneralDataGridView.DataSource = this.vista_AforosGeneralBindingSource;
-            this.vista_AforosGeneralDataGridView.Location = new System.Drawing.Point(21, 200);
+            this.vista_AforosGeneralDataGridView.Location = new System.Drawing.Point(21, 183);
             this.vista_AforosGeneralDataGridView.Name = "vista_AforosGeneralDataGridView";
             this.vista_AforosGeneralDataGridView.ReadOnly = true;
-            this.vista_AforosGeneralDataGridView.Size = new System.Drawing.Size(844, 287);
+            this.vista_AforosGeneralDataGridView.Size = new System.Drawing.Size(844, 304);
             this.vista_AforosGeneralDataGridView.TabIndex = 9;
             // 
             // dataGridViewTextBoxColumn1
@@ -206,7 +207,8 @@
             this.chkFecha.AutoSize = true;
             this.chkFecha.Checked = true;
             this.chkFecha.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkFecha.Location = new System.Drawing.Point(266, 47);
+            this.chkFecha.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
+            this.chkFecha.Location = new System.Drawing.Point(287, 39);
             this.chkFecha.Name = "chkFecha";
             this.chkFecha.Size = new System.Drawing.Size(172, 29);
             this.chkFecha.TabIndex = 8;
@@ -217,9 +219,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(237, 151);
+            this.label2.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
+            this.label2.Location = new System.Drawing.Point(235, 116);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 13);
+            this.label2.Size = new System.Drawing.Size(117, 25);
             this.label2.TabIndex = 7;
             this.label2.Text = "Fin del Periodo:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -227,16 +230,17 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 151);
+            this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
+            this.label1.Location = new System.Drawing.Point(18, 116);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 13);
+            this.label1.Size = new System.Drawing.Size(105, 25);
             this.label1.TabIndex = 6;
             this.label1.Text = "Fecha Inicial:";
             // 
             // dtTPckInicio
             // 
             this.dtTPckInicio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.dtTPckInicio.Location = new System.Drawing.Point(23, 167);
+            this.dtTPckInicio.Location = new System.Drawing.Point(23, 144);
             this.dtTPckInicio.Name = "dtTPckInicio";
             this.dtTPckInicio.Size = new System.Drawing.Size(200, 20);
             this.dtTPckInicio.TabIndex = 5;
@@ -245,7 +249,7 @@
             // dtTPckFin
             // 
             this.dtTPckFin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.dtTPckFin.Location = new System.Drawing.Point(240, 167);
+            this.dtTPckFin.Location = new System.Drawing.Point(240, 144);
             this.dtTPckFin.Name = "dtTPckFin";
             this.dtTPckFin.Size = new System.Drawing.Size(200, 20);
             this.dtTPckFin.TabIndex = 4;
@@ -253,11 +257,12 @@
             // 
             // codigoAulaComboBox
             // 
+            this.codigoAulaComboBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.codigoAulaComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.aulasBindingSource, "CodigoAula", true));
             this.codigoAulaComboBox.DataSource = this.aulasBindingSource1;
             this.codigoAulaComboBox.DisplayMember = "CodigoAula";
             this.codigoAulaComboBox.FormattingEnabled = true;
-            this.codigoAulaComboBox.Location = new System.Drawing.Point(105, 67);
+            this.codigoAulaComboBox.Location = new System.Drawing.Point(141, 66);
             this.codigoAulaComboBox.Name = "codigoAulaComboBox";
             this.codigoAulaComboBox.Size = new System.Drawing.Size(121, 21);
             this.codigoAulaComboBox.TabIndex = 3;
@@ -280,11 +285,12 @@
             // 
             // codigoEdificioComboBox
             // 
+            this.codigoEdificioComboBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.codigoEdificioComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.edificiosBindingSource, "CodigoEdificio", true));
             this.codigoEdificioComboBox.DataSource = this.edificiosBindingSource1;
             this.codigoEdificioComboBox.DisplayMember = "CodigoEdificio";
             this.codigoEdificioComboBox.FormattingEnabled = true;
-            this.codigoEdificioComboBox.Location = new System.Drawing.Point(105, 24);
+            this.codigoEdificioComboBox.Location = new System.Drawing.Point(141, 28);
             this.codigoEdificioComboBox.Name = "codigoEdificioComboBox";
             this.codigoEdificioComboBox.Size = new System.Drawing.Size(121, 21);
             this.codigoEdificioComboBox.TabIndex = 1;

@@ -92,7 +92,7 @@
             // 
             codigoEdificioLabel.AutoSize = true;
             codigoEdificioLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
-            codigoEdificioLabel.Location = new System.Drawing.Point(198, 75);
+            codigoEdificioLabel.Location = new System.Drawing.Point(204, 74);
             codigoEdificioLabel.Name = "codigoEdificioLabel";
             codigoEdificioLabel.Size = new System.Drawing.Size(114, 25);
             codigoEdificioLabel.TabIndex = 2;
@@ -122,7 +122,7 @@
             // 
             codEdificioLabel.AutoSize = true;
             codEdificioLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
-            codEdificioLabel.Location = new System.Drawing.Point(232, 119);
+            codEdificioLabel.Location = new System.Drawing.Point(232, 122);
             codEdificioLabel.Name = "codEdificioLabel";
             codEdificioLabel.Size = new System.Drawing.Size(93, 25);
             codEdificioLabel.TabIndex = 13;
@@ -434,7 +434,7 @@
             // codEdificioTextBox
             // 
             this.codEdificioTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.aulasBindingSource, "codEdificio", true));
-            this.codEdificioTextBox.Location = new System.Drawing.Point(331, 124);
+            this.codEdificioTextBox.Location = new System.Drawing.Point(331, 127);
             this.codEdificioTextBox.Name = "codEdificioTextBox";
             this.codEdificioTextBox.Size = new System.Drawing.Size(100, 20);
             this.codEdificioTextBox.TabIndex = 14;
