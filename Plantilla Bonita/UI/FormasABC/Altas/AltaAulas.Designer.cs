@@ -35,7 +35,7 @@
             this.btnCerrar = new FontAwesome.Sharp.IconPictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.edificiosDataSet = new Plantilla_Bonita.DataSets.EdificiosDataSet();
@@ -128,12 +128,12 @@
             this.label2.TabIndex = 18;
             this.label2.Text = "Descripcion:";
             // 
-            // txtNombre
+            // txtDescripcion
             // 
-            this.txtNombre.Location = new System.Drawing.Point(18, 145);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(249, 20);
-            this.txtNombre.TabIndex = 16;
+            this.txtDescripcion.Location = new System.Drawing.Point(18, 145);
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new System.Drawing.Size(249, 20);
+            this.txtDescripcion.TabIndex = 16;
             // 
             // label1
             // 
@@ -324,7 +324,7 @@
             this.panel1.Controls.Add(codigoEdificioLabel);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.txtNombre);
+            this.panel1.Controls.Add(this.txtDescripcion);
             this.panel1.Controls.Add(this.txtCodigo);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -365,7 +365,7 @@
         private FontAwesome.Sharp.IconPictureBox btnCerrar;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtCodigo;
         private DataSets.EdificiosDataSet edificiosDataSet;
