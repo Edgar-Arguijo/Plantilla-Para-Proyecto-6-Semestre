@@ -91,7 +91,7 @@
             // 
             contraseñaLabel.AutoSize = true;
             contraseñaLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
-            contraseñaLabel.Location = new System.Drawing.Point(25, 65);
+            contraseñaLabel.Location = new System.Drawing.Point(25, 79);
             contraseñaLabel.Name = "contraseñaLabel";
             contraseñaLabel.Size = new System.Drawing.Size(98, 25);
             contraseñaLabel.TabIndex = 3;
@@ -217,7 +217,7 @@
             // contraseñaTextBox
             // 
             this.contraseñaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usuariosBindingSource, "Contraseña", true));
-            this.contraseñaTextBox.Location = new System.Drawing.Point(30, 94);
+            this.contraseñaTextBox.Location = new System.Drawing.Point(30, 108);
             this.contraseñaTextBox.Name = "contraseñaTextBox";
             this.contraseñaTextBox.Size = new System.Drawing.Size(256, 20);
             this.contraseñaTextBox.TabIndex = 4;

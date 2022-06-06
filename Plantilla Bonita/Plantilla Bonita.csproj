@@ -256,6 +256,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ABC_IngenieriasDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="MateriasDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MateriasDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="UI\Alumnos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -303,6 +308,12 @@
     </Compile>
     <Compile Include="UI\FormasABC\Altas\AltaIngenieria.Designer.cs">
       <DependentUpon>AltaIngenieria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormasABC\Altas\AltaMateria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormasABC\Altas\AltaMateria.Designer.cs">
+      <DependentUpon>AltaMateria.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\frmABCAulas.cs">
       <SubType>Form</SubType>
@@ -402,6 +413,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\FormasABC\Altas\AltaIngenieria.resx">
       <DependentUpon>AltaIngenieria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormasABC\Altas\AltaMateria.resx">
+      <DependentUpon>AltaMateria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\frmABCAulas.resx">
       <DependentUpon>frmABCAulas.cs</DependentUpon>
@@ -563,6 +577,17 @@
     <None Include="DataSets\EdificiosDataSet.xss">
       <DependentUpon>EdificiosDataSet.xsd</DependentUpon>
     </None>
+    <None Include="MateriasDataSet.xsc">
+      <DependentUpon>MateriasDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MateriasDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MateriasDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MateriasDataSet.xss">
+      <DependentUpon>MateriasDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -675,6 +700,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Imagen21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="UI\FormasABC\Cambios\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Data.SqlClient.SNI.3.0.0\build\net46\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('..\packages\Microsoft.Data.SqlClient.SNI.3.0.0\build\net46\Microsoft.Data.SqlClient.SNI.targets')" />

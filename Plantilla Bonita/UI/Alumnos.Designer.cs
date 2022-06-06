@@ -133,6 +133,8 @@ namespace Plantilla_Bonita
             // 
             // vista_AlumnosDataGridView
             // 
+            this.vista_AlumnosDataGridView.AllowUserToAddRows = false;
+            this.vista_AlumnosDataGridView.AllowUserToDeleteRows = false;
             this.vista_AlumnosDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -144,6 +146,7 @@ namespace Plantilla_Bonita
             this.vista_AlumnosDataGridView.DataSource = this.vista_AlumnosBindingSource;
             this.vista_AlumnosDataGridView.Location = new System.Drawing.Point(23, 137);
             this.vista_AlumnosDataGridView.Name = "vista_AlumnosDataGridView";
+            this.vista_AlumnosDataGridView.ReadOnly = true;
             this.vista_AlumnosDataGridView.Size = new System.Drawing.Size(757, 395);
             this.vista_AlumnosDataGridView.TabIndex = 6;
             // 
@@ -153,6 +156,7 @@ namespace Plantilla_Bonita
             this.dataGridViewTextBoxColumn1.DataPropertyName = "Matricula";
             this.dataGridViewTextBoxColumn1.HeaderText = "Matricula";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
             this.dataGridViewTextBoxColumn1.Width = 75;
             // 
             // dataGridViewTextBoxColumn2
@@ -161,6 +165,7 @@ namespace Plantilla_Bonita
             this.dataGridViewTextBoxColumn2.DataPropertyName = "Nombre";
             this.dataGridViewTextBoxColumn2.HeaderText = "Nombre";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
             this.dataGridViewTextBoxColumn2.Width = 69;
             // 
             // vista_AlumnosBindingSource
