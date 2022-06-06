@@ -269,6 +269,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>MateriasDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="TablaBitacoraDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TablaBitacoraDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="UI\Administrador\frmBitacora.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -628,6 +633,17 @@
     </None>
     <None Include="DataSets\UsuariosDataSet.xss">
       <DependentUpon>UsuariosDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TablaBitacoraDataSet.xsc">
+      <DependentUpon>TablaBitacoraDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TablaBitacoraDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TablaBitacoraDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TablaBitacoraDataSet.xss">
+      <DependentUpon>TablaBitacoraDataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

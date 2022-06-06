@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.Label actuarioLabel;
+            System.Windows.Forms.Label tablaLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBitacora));
             this.bitacoraDataSet = new Plantilla_Bonita.BitacoraDataSet();
             this.bitacoraBaseDeDatos_VistaBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -63,7 +64,16 @@
             this.actuarioDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.fillByToolStrip = new System.Windows.Forms.ToolStrip();
             this.fillByToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.tablaBitacoraDataSet = new Plantilla_Bonita.TablaBitacoraDataSet();
+            this.bitacoraBaseDeDatosBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.bitacoraBaseDeDatosTableAdapter1 = new Plantilla_Bonita.TablaBitacoraDataSetTableAdapters.BitacoraBaseDeDatosTableAdapter();
+            this.tableAdapterManager2 = new Plantilla_Bonita.TablaBitacoraDataSetTableAdapters.TableAdapterManager();
+            this.tablaComboBox = new System.Windows.Forms.ComboBox();
+            this.bitacoraBaseDeDatosBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
+            this.fillByToolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.fillByToolStripButton1 = new System.Windows.Forms.ToolStripButton();
             actuarioLabel = new System.Windows.Forms.Label();
+            tablaLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.bitacoraDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bitacoraBaseDeDatos_VistaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bitacoraBaseDeDatos_VistaBindingNavigator)).BeginInit();
@@ -75,6 +85,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.bitacoraBaseDeDatosBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.actuarioDataSetBindingSource)).BeginInit();
             this.fillByToolStrip.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tablaBitacoraDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bitacoraBaseDeDatosBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bitacoraBaseDeDatosBindingSource4)).BeginInit();
+            this.fillByToolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // actuarioLabel
@@ -85,6 +99,15 @@
             actuarioLabel.Size = new System.Drawing.Size(49, 13);
             actuarioLabel.TabIndex = 2;
             actuarioLabel.Text = "Actuario:";
+            // 
+            // tablaLabel
+            // 
+            tablaLabel.AutoSize = true;
+            tablaLabel.Location = new System.Drawing.Point(29, 79);
+            tablaLabel.Name = "tablaLabel";
+            tablaLabel.Size = new System.Drawing.Size(37, 13);
+            tablaLabel.TabIndex = 5;
+            tablaLabel.Text = "Tabla:";
             // 
             // bitacoraDataSet
             // 
@@ -353,11 +376,69 @@
             this.fillByToolStripButton.Size = new System.Drawing.Size(39, 22);
             this.fillByToolStripButton.Text = "FillBy";
             // 
+            // tablaBitacoraDataSet
+            // 
+            this.tablaBitacoraDataSet.DataSetName = "TablaBitacoraDataSet";
+            this.tablaBitacoraDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // bitacoraBaseDeDatosBindingSource3
+            // 
+            this.bitacoraBaseDeDatosBindingSource3.DataMember = "BitacoraBaseDeDatos";
+            this.bitacoraBaseDeDatosBindingSource3.DataSource = this.tablaBitacoraDataSet;
+            // 
+            // bitacoraBaseDeDatosTableAdapter1
+            // 
+            this.bitacoraBaseDeDatosTableAdapter1.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager2
+            // 
+            this.tableAdapterManager2.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager2.BitacoraBaseDeDatosTableAdapter = this.bitacoraBaseDeDatosTableAdapter1;
+            this.tableAdapterManager2.UpdateOrder = Plantilla_Bonita.TablaBitacoraDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // tablaComboBox
+            // 
+            this.tablaComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bitacoraBaseDeDatosBindingSource3, "Tabla", true));
+            this.tablaComboBox.DataSource = this.bitacoraBaseDeDatosBindingSource4;
+            this.tablaComboBox.DisplayMember = "Tabla";
+            this.tablaComboBox.FormattingEnabled = true;
+            this.tablaComboBox.Location = new System.Drawing.Point(32, 108);
+            this.tablaComboBox.Name = "tablaComboBox";
+            this.tablaComboBox.Size = new System.Drawing.Size(121, 21);
+            this.tablaComboBox.TabIndex = 6;
+            this.tablaComboBox.ValueMember = "Tabla";
+            // 
+            // bitacoraBaseDeDatosBindingSource4
+            // 
+            this.bitacoraBaseDeDatosBindingSource4.DataMember = "BitacoraBaseDeDatos";
+            this.bitacoraBaseDeDatosBindingSource4.DataSource = this.tablaBitacoraDataSet;
+            // 
+            // fillByToolStrip1
+            // 
+            this.fillByToolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fillByToolStripButton1});
+            this.fillByToolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.fillByToolStrip1.Name = "fillByToolStrip1";
+            this.fillByToolStrip1.Size = new System.Drawing.Size(957, 25);
+            this.fillByToolStrip1.TabIndex = 7;
+            this.fillByToolStrip1.Text = "fillByToolStrip1";
+            this.fillByToolStrip1.Visible = false;
+            // 
+            // fillByToolStripButton1
+            // 
+            this.fillByToolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.fillByToolStripButton1.Name = "fillByToolStripButton1";
+            this.fillByToolStripButton1.Size = new System.Drawing.Size(39, 22);
+            this.fillByToolStripButton1.Text = "FillBy";
+            // 
             // frmBitacora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(957, 501);
+            this.Controls.Add(this.fillByToolStrip1);
+            this.Controls.Add(tablaLabel);
+            this.Controls.Add(this.tablaComboBox);
             this.Controls.Add(this.fillByToolStrip);
             this.Controls.Add(actuarioLabel);
             this.Controls.Add(this.actuarioComboBox);
@@ -380,6 +461,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.actuarioDataSetBindingSource)).EndInit();
             this.fillByToolStrip.ResumeLayout(false);
             this.fillByToolStrip.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tablaBitacoraDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bitacoraBaseDeDatosBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bitacoraBaseDeDatosBindingSource4)).EndInit();
+            this.fillByToolStrip1.ResumeLayout(false);
+            this.fillByToolStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -419,5 +505,13 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private TablaBitacoraDataSet tablaBitacoraDataSet;
+        private System.Windows.Forms.BindingSource bitacoraBaseDeDatosBindingSource3;
+        private TablaBitacoraDataSetTableAdapters.BitacoraBaseDeDatosTableAdapter bitacoraBaseDeDatosTableAdapter1;
+        private TablaBitacoraDataSetTableAdapters.TableAdapterManager tableAdapterManager2;
+        private System.Windows.Forms.ComboBox tablaComboBox;
+        private System.Windows.Forms.BindingSource bitacoraBaseDeDatosBindingSource4;
+        private System.Windows.Forms.ToolStrip fillByToolStrip1;
+        private System.Windows.Forms.ToolStripButton fillByToolStripButton1;
     }
 }
