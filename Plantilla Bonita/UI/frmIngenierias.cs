@@ -65,11 +65,6 @@ namespace Plantilla_Bonita
 
                 }
             }
-
-            
-
-            bindingNavigatorAddNewItem.PerformClick();
-            cod_IngTextBox.Focus();
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
