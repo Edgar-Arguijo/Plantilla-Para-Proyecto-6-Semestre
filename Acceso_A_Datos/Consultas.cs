@@ -156,6 +156,42 @@ namespace Acceso_A_Datos
             }
         }
 
+        public bool AltaMateria(string codIng, string codMateria, string desc, int semestre, string usuario)
+        {
+            try
+            {
+                using (SqlConnection conexion = getConnection())
+                {
+                    conexion.Open();
+                    using (SqlCommand cmd = new SqlCommand("AltaMateria", conexion))
+                    {
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.AddWithValue("@Cod_Ingenieria", codIng);
+                        cmd.Parameters.AddWithValue("@Cod_Materia", codMateria);
+                        cmd.Parameters.AddWithValue("@Descripcion", desc);
+                        cmd.Parameters.AddWithValue("@semestre", semestre);
+                        cmd.Parameters.AddWithValue("@usuario", usuario);
+                        cmd.Parameters.AddWithValue("@fecha", DateTime.Now);
+                        cmd.Parameters.Add("@flag", SqlDbType.Bit).Direction = ParameterDirection.ReturnValue;
+                        cmd.ExecuteNonQuery();
+
+                        if (cmd.Parameters["@flag"].Value.ToString() == "0")
+                            return false;
+
+                        if (cmd.Parameters["@flag"].Value.ToString() == "1")
+                            return true;
+
+                        return false;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return false;
+            }
+        }
+
         public bool CopiaDeSeguridad()
         {
             try
