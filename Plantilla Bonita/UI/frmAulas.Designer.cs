@@ -92,7 +92,7 @@
             // 
             codigoEdificioLabel.AutoSize = true;
             codigoEdificioLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
-            codigoEdificioLabel.Location = new System.Drawing.Point(198, 75);
+            codigoEdificioLabel.Location = new System.Drawing.Point(192, 95);
             codigoEdificioLabel.Name = "codigoEdificioLabel";
             codigoEdificioLabel.Size = new System.Drawing.Size(114, 25);
             codigoEdificioLabel.TabIndex = 2;
@@ -122,7 +122,7 @@
             // 
             codEdificioLabel.AutoSize = true;
             codEdificioLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
-            codEdificioLabel.Location = new System.Drawing.Point(232, 119);
+            codEdificioLabel.Location = new System.Drawing.Point(234, 128);
             codEdificioLabel.Name = "codEdificioLabel";
             codEdificioLabel.Size = new System.Drawing.Size(93, 25);
             codEdificioLabel.TabIndex = 13;
@@ -339,7 +339,7 @@
             this.codigoEdificioComboBox.DataSource = this.edificiosBindingSource1;
             this.codigoEdificioComboBox.DisplayMember = "CodigoEdificio";
             this.codigoEdificioComboBox.FormattingEnabled = true;
-            this.codigoEdificioComboBox.Location = new System.Drawing.Point(318, 79);
+            this.codigoEdificioComboBox.Location = new System.Drawing.Point(312, 99);
             this.codigoEdificioComboBox.Name = "codigoEdificioComboBox";
             this.codigoEdificioComboBox.Size = new System.Drawing.Size(121, 21);
             this.codigoEdificioComboBox.TabIndex = 3;
@@ -434,13 +434,13 @@
             // codEdificioTextBox
             // 
             this.codEdificioTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.aulasBindingSource, "codEdificio", true));
-            this.codEdificioTextBox.Location = new System.Drawing.Point(331, 124);
+            this.codEdificioTextBox.Location = new System.Drawing.Point(333, 133);
             this.codEdificioTextBox.Name = "codEdificioTextBox";
             this.codEdificioTextBox.Size = new System.Drawing.Size(100, 20);
             this.codEdificioTextBox.TabIndex = 14;
             this.codEdificioTextBox.Visible = false;
             // 
-            // frmABCAulas
+            // frmAulas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -461,7 +461,7 @@
             this.Controls.Add(this.aulasDataGridView);
             this.Controls.Add(this.aulasBindingNavigator);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frmABCAulas";
+            this.Name = "frmAulas";
             this.Text = "frmABCAulas";
             this.Load += new System.EventHandler(this.frmABCAulas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.aulasDataSet)).EndInit();
