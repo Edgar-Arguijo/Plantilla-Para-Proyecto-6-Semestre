@@ -111,7 +111,7 @@
             descripcionLabel.AutoSize = true;
             descripcionLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
             descripcionLabel.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            descripcionLabel.Location = new System.Drawing.Point(28, 22);
+            descripcionLabel.Location = new System.Drawing.Point(28, 16);
             descripcionLabel.Name = "descripcionLabel";
             descripcionLabel.Size = new System.Drawing.Size(86, 25);
             descripcionLabel.TabIndex = 5;
@@ -121,7 +121,7 @@
             // 
             materiaLabel.AutoSize = true;
             materiaLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
-            materiaLabel.Location = new System.Drawing.Point(28, 138);
+            materiaLabel.Location = new System.Drawing.Point(28, 128);
             materiaLabel.Name = "materiaLabel";
             materiaLabel.Size = new System.Drawing.Size(71, 25);
             materiaLabel.TabIndex = 6;
@@ -238,7 +238,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
-            this.label2.Location = new System.Drawing.Point(429, 75);
+            this.label2.Location = new System.Drawing.Point(429, 71);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(103, 25);
             this.label2.TabIndex = 13;
@@ -248,7 +248,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
-            this.label1.Location = new System.Drawing.Point(429, 22);
+            this.label1.Location = new System.Drawing.Point(429, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(119, 25);
             this.label1.TabIndex = 12;
@@ -258,7 +258,7 @@
             // 
             this.lblSemestre.AutoSize = true;
             this.lblSemestre.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
-            this.lblSemestre.Location = new System.Drawing.Point(28, 79);
+            this.lblSemestre.Location = new System.Drawing.Point(28, 72);
             this.lblSemestre.Name = "lblSemestre";
             this.lblSemestre.Size = new System.Drawing.Size(83, 25);
             this.lblSemestre.TabIndex = 11;
@@ -267,7 +267,7 @@
             // dtPickerFin
             // 
             this.dtPickerFin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.dtPickerFin.Location = new System.Drawing.Point(432, 103);
+            this.dtPickerFin.Location = new System.Drawing.Point(432, 99);
             this.dtPickerFin.Name = "dtPickerFin";
             this.dtPickerFin.Size = new System.Drawing.Size(226, 20);
             this.dtPickerFin.TabIndex = 10;
@@ -275,7 +275,7 @@
             // dtPickerInicio
             // 
             this.dtPickerInicio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.dtPickerInicio.Location = new System.Drawing.Point(432, 50);
+            this.dtPickerInicio.Location = new System.Drawing.Point(432, 48);
             this.dtPickerInicio.Name = "dtPickerInicio";
             this.dtPickerInicio.Size = new System.Drawing.Size(226, 20);
             this.dtPickerInicio.TabIndex = 9;
@@ -293,7 +293,7 @@
             "7mo Semestre",
             "8vo Semestre",
             "9no Semestre"});
-            this.cboSemestre.Location = new System.Drawing.Point(33, 107);
+            this.cboSemestre.Location = new System.Drawing.Point(33, 102);
             this.cboSemestre.Name = "cboSemestre";
             this.cboSemestre.Size = new System.Drawing.Size(210, 21);
             this.cboSemestre.TabIndex = 8;
@@ -306,7 +306,7 @@
             this.materiaComboBox.DataSource = this.vista_IngenieriasMateriaBindingSource;
             this.materiaComboBox.DisplayMember = "Materia";
             this.materiaComboBox.FormattingEnabled = true;
-            this.materiaComboBox.Location = new System.Drawing.Point(33, 166);
+            this.materiaComboBox.Location = new System.Drawing.Point(33, 158);
             this.materiaComboBox.Name = "materiaComboBox";
             this.materiaComboBox.Size = new System.Drawing.Size(210, 21);
             this.materiaComboBox.TabIndex = 7;
@@ -329,7 +329,7 @@
             this.descripcionComboBox.DataSource = this.ingenieriasBindingSource;
             this.descripcionComboBox.DisplayMember = "Descripcion";
             this.descripcionComboBox.FormattingEnabled = true;
-            this.descripcionComboBox.Location = new System.Drawing.Point(33, 50);
+            this.descripcionComboBox.Location = new System.Drawing.Point(33, 46);
             this.descripcionComboBox.Name = "descripcionComboBox";
             this.descripcionComboBox.Size = new System.Drawing.Size(315, 21);
             this.descripcionComboBox.TabIndex = 6;

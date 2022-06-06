@@ -91,7 +91,7 @@ namespace Plantilla_Bonita
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
-            this.label2.Location = new System.Drawing.Point(18, 68);
+            this.label2.Location = new System.Drawing.Point(18, 64);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(86, 25);
             this.label2.TabIndex = 19;
@@ -185,7 +185,7 @@ namespace Plantilla_Bonita
             this.ingenieriasComboBox.DataSource = this.ingenieriasBindingSource;
             this.ingenieriasComboBox.DisplayMember = "Descripcion";
             this.ingenieriasComboBox.FormattingEnabled = true;
-            this.ingenieriasComboBox.Location = new System.Drawing.Point(23, 96);
+            this.ingenieriasComboBox.Location = new System.Drawing.Point(23, 94);
             this.ingenieriasComboBox.Name = "ingenieriasComboBox";
             this.ingenieriasComboBox.Size = new System.Drawing.Size(451, 21);
             this.ingenieriasComboBox.TabIndex = 6;

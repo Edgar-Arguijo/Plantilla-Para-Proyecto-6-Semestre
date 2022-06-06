@@ -243,10 +243,10 @@
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2});
             this.ingenieriasDataGridView.DataSource = this.ingenieriasBindingSource;
-            this.ingenieriasDataGridView.Location = new System.Drawing.Point(12, 157);
+            this.ingenieriasDataGridView.Location = new System.Drawing.Point(12, 131);
             this.ingenieriasDataGridView.Name = "ingenieriasDataGridView";
             this.ingenieriasDataGridView.ReadOnly = true;
-            this.ingenieriasDataGridView.Size = new System.Drawing.Size(776, 281);
+            this.ingenieriasDataGridView.Size = new System.Drawing.Size(776, 307);
             this.ingenieriasDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -317,7 +317,7 @@
             this.btnDelete.IconChar = FontAwesome.Sharp.IconChar.TrashAlt;
             this.btnDelete.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.btnDelete.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnDelete.Location = new System.Drawing.Point(642, 119);
+            this.btnDelete.Location = new System.Drawing.Point(642, 93);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(32, 32);
             this.btnDelete.TabIndex = 9;
@@ -333,7 +333,7 @@
             this.btnAgregarNuevo.IconChar = FontAwesome.Sharp.IconChar.Plus;
             this.btnAgregarNuevo.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.btnAgregarNuevo.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnAgregarNuevo.Location = new System.Drawing.Point(680, 119);
+            this.btnAgregarNuevo.Location = new System.Drawing.Point(680, 93);
             this.btnAgregarNuevo.Name = "btnAgregarNuevo";
             this.btnAgregarNuevo.Size = new System.Drawing.Size(32, 32);
             this.btnAgregarNuevo.TabIndex = 8;
@@ -349,7 +349,7 @@
             this.btnUpdateData.IconChar = FontAwesome.Sharp.IconChar.Sync;
             this.btnUpdateData.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.btnUpdateData.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnUpdateData.Location = new System.Drawing.Point(718, 119);
+            this.btnUpdateData.Location = new System.Drawing.Point(718, 93);
             this.btnUpdateData.Name = "btnUpdateData";
             this.btnUpdateData.Size = new System.Drawing.Size(32, 32);
             this.btnUpdateData.TabIndex = 7;
@@ -365,7 +365,7 @@
             this.btnGuardarCambios.IconChar = FontAwesome.Sharp.IconChar.Save;
             this.btnGuardarCambios.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.btnGuardarCambios.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnGuardarCambios.Location = new System.Drawing.Point(756, 119);
+            this.btnGuardarCambios.Location = new System.Drawing.Point(756, 93);
             this.btnGuardarCambios.Name = "btnGuardarCambios";
             this.btnGuardarCambios.Size = new System.Drawing.Size(32, 32);
             this.btnGuardarCambios.TabIndex = 6;
