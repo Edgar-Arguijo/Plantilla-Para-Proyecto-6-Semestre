@@ -363,6 +363,7 @@
             // 
             // actuarioComboBox
             // 
+            this.actuarioComboBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actuarioComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bitacoraBaseDeDatosBindingSource, "Actuario", true));
             this.actuarioComboBox.DataSource = this.bitacoraBaseDeDatosBindingSource2;
             this.actuarioComboBox.DisplayMember = "Actuario";
@@ -429,6 +430,7 @@
             // 
             // tablaComboBox
             // 
+            this.tablaComboBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.tablaComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bitacoraBaseDeDatosBindingSource3, "Tabla", true));
             this.tablaComboBox.DataSource = this.bitacoraBaseDeDatosBindingSource4;
             this.tablaComboBox.DisplayMember = "Tabla";
@@ -464,6 +466,7 @@
             // 
             // dtPckrInicio
             // 
+            this.dtPckrInicio.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dtPckrInicio.Location = new System.Drawing.Point(127, 68);
             this.dtPckrInicio.Name = "dtPckrInicio";
             this.dtPckrInicio.Size = new System.Drawing.Size(200, 20);
@@ -471,6 +474,7 @@
             // 
             // dtPckrFin
             // 
+            this.dtPckrFin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dtPckrFin.Location = new System.Drawing.Point(457, 68);
             this.dtPckrFin.Name = "dtPckrFin";
             this.dtPckrFin.Size = new System.Drawing.Size(200, 20);
@@ -481,6 +485,7 @@
             this.chkFecha.AutoSize = true;
             this.chkFecha.Checked = true;
             this.chkFecha.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkFecha.Cursor = System.Windows.Forms.Cursors.Hand;
             this.chkFecha.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
             this.chkFecha.Location = new System.Drawing.Point(768, 79);
             this.chkFecha.Name = "chkFecha";
