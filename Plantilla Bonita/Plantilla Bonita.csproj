@@ -303,6 +303,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>EdificiosDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="UI\FormasABC\Altas\AltaAulas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormasABC\Altas\AltaAulas.Designer.cs">
+      <DependentUpon>AltaAulas.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\FormasABC\Altas\AltaIngenieria.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -315,23 +321,17 @@
     <Compile Include="UI\FormasABC\Altas\AltaMateria.Designer.cs">
       <DependentUpon>AltaMateria.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\frmABCAulas.cs">
+    <Compile Include="UI\frmAulas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\frmABCAulas.Designer.cs">
-      <DependentUpon>frmABCAulas.cs</DependentUpon>
+    <Compile Include="UI\frmAulas.Designer.cs">
+      <DependentUpon>frmAulas.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\frmAforos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UI\frmAforos.Designer.cs">
       <DependentUpon>frmAforos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UI\frmAulas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\frmAulas.Designer.cs">
-      <DependentUpon>frmAulas.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\frmBitacora.cs">
       <SubType>Form</SubType>
@@ -411,20 +411,20 @@
     <EmbeddedResource Include="UI\Docentes.resx">
       <DependentUpon>Docentes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormasABC\Altas\AltaAulas.resx">
+      <DependentUpon>AltaAulas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\FormasABC\Altas\AltaIngenieria.resx">
       <DependentUpon>AltaIngenieria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\FormasABC\Altas\AltaMateria.resx">
       <DependentUpon>AltaMateria.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\frmABCAulas.resx">
-      <DependentUpon>frmABCAulas.cs</DependentUpon>
+    <EmbeddedResource Include="UI\frmAulas.resx">
+      <DependentUpon>frmAulas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\frmAforos.resx">
       <DependentUpon>frmAforos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UI\frmAulas.resx">
-      <DependentUpon>frmAulas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\frmBitacora.resx">
       <DependentUpon>frmBitacora.cs</DependentUpon>
