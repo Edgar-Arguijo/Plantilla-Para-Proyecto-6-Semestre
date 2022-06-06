@@ -54,14 +54,17 @@ namespace Plantilla_Bonita.UI.FormasABC.Altas
         {
             if (txtCodigo.Text==null)
             {
+                MessageBox.Show("El campo Codigo no puede ir vacio");
                 return false;
             }
             if (txtDescripcion.Text == null)
             {
+                MessageBox.Show("El campo Descripcion no puede ir vacio");
                 return false;
             }
             if (descripcionComboBox.SelectedValue==null)
             {
+                MessageBox.Show("Porfavor seleccione una ingenieria");
                 return false;
             }
 
