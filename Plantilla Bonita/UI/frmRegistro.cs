@@ -25,6 +25,8 @@ namespace Plantilla_Bonita
         public frmRegistro()
         {
             InitializeComponent();
+            txtConfContra.UseSystemPasswordChar = true;
+            txtContra.UseSystemPasswordChar = true;
         }
 
         private bool VerificarCampos() 
