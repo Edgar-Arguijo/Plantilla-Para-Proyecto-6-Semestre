@@ -72,7 +72,7 @@
             // 
             codigoEdificioLabel.AutoSize = true;
             codigoEdificioLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
-            codigoEdificioLabel.Location = new System.Drawing.Point(449, 132);
+            codigoEdificioLabel.Location = new System.Drawing.Point(14, 168);
             codigoEdificioLabel.Name = "codigoEdificioLabel";
             codigoEdificioLabel.Size = new System.Drawing.Size(65, 25);
             codigoEdificioLabel.TabIndex = 22;
@@ -86,7 +86,7 @@
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregar.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
             this.btnAgregar.ForeColor = System.Drawing.Color.White;
-            this.btnAgregar.Location = new System.Drawing.Point(74, 285);
+            this.btnAgregar.Location = new System.Drawing.Point(183, 186);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(84, 38);
             this.btnAgregar.TabIndex = 21;
@@ -103,7 +103,7 @@
             this.btnCerrar.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.btnCerrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnCerrar.IconSize = 26;
-            this.btnCerrar.Location = new System.Drawing.Point(717, 46);
+            this.btnCerrar.Location = new System.Drawing.Point(266, 41);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(27, 26);
             this.btnCerrar.TabIndex = 20;
@@ -115,41 +115,41 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(753, 40);
+            this.panel2.Size = new System.Drawing.Size(294, 40);
             this.panel2.TabIndex = 19;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
-            this.label2.Location = new System.Drawing.Point(19, 221);
+            this.label2.Location = new System.Drawing.Point(14, 113);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 25);
+            this.label2.Size = new System.Drawing.Size(97, 25);
             this.label2.TabIndex = 18;
-            this.label2.Text = "Descripcion";
+            this.label2.Text = "Descripcion:";
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(25, 249);
+            this.txtNombre.Location = new System.Drawing.Point(18, 145);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(181, 20);
+            this.txtNombre.Size = new System.Drawing.Size(249, 20);
             this.txtNombre.TabIndex = 16;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
-            this.label1.Location = new System.Drawing.Point(20, 84);
+            this.label1.Location = new System.Drawing.Point(14, 47);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(118, 25);
+            this.label1.Size = new System.Drawing.Size(122, 25);
             this.label1.TabIndex = 17;
-            this.label1.Text = "Codigo del Aula";
+            this.label1.Text = "Codigo del Aula:";
             // 
             // txtCodigo
             // 
-            this.txtCodigo.Location = new System.Drawing.Point(24, 179);
+            this.txtCodigo.Location = new System.Drawing.Point(19, 79);
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(182, 20);
+            this.txtCodigo.Size = new System.Drawing.Size(248, 20);
             this.txtCodigo.TabIndex = 15;
             // 
             // edificiosDataSet
@@ -304,7 +304,7 @@
             this.codigoEdificioComboBox.DataSource = this.edificiosBindingSource1;
             this.codigoEdificioComboBox.DisplayMember = "CodigoEdificio";
             this.codigoEdificioComboBox.FormattingEnabled = true;
-            this.codigoEdificioComboBox.Location = new System.Drawing.Point(454, 179);
+            this.codigoEdificioComboBox.Location = new System.Drawing.Point(18, 200);
             this.codigoEdificioComboBox.Name = "codigoEdificioComboBox";
             this.codigoEdificioComboBox.Size = new System.Drawing.Size(121, 21);
             this.codigoEdificioComboBox.TabIndex = 23;
@@ -318,30 +318,31 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LemonChiffon;
+            this.panel1.Controls.Add(this.codigoEdificioComboBox);
+            this.panel1.Controls.Add(this.btnCerrar);
+            this.panel1.Controls.Add(this.btnAgregar);
             this.panel1.Controls.Add(codigoEdificioLabel);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.txtNombre);
+            this.panel1.Controls.Add(this.txtCodigo);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(753, 414);
+            this.panel1.Size = new System.Drawing.Size(294, 245);
             this.panel1.TabIndex = 20;
             // 
             // AltaAulas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(753, 414);
-            this.Controls.Add(this.codigoEdificioComboBox);
+            this.ClientSize = new System.Drawing.Size(294, 245);
             this.Controls.Add(this.edificiosBindingNavigator);
-            this.Controls.Add(this.btnAgregar);
-            this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.txtNombre);
-            this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AltaAulas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "AltaAulas";
             this.Load += new System.EventHandler(this.AltaAulas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
