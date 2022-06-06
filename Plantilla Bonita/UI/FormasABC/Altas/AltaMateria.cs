@@ -45,7 +45,6 @@ namespace Plantilla_Bonita.UI.FormasABC.Altas
                     MessageBox.Show("El registro no se ha realizado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     this.DialogResult = DialogResult.Cancel;
                 }
-
                 this.Close();
             }
         }
@@ -73,6 +72,7 @@ namespace Plantilla_Bonita.UI.FormasABC.Altas
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
+            this.DialogResult = DialogResult.Cancel;
             this.Close();
         }
     }
