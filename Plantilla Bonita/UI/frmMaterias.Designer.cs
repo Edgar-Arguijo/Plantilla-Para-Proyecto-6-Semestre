@@ -32,6 +32,7 @@
             System.Windows.Forms.Label descripcionLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMaterias));
             this.pnlContenedor = new System.Windows.Forms.Panel();
+            this.btnAgregar = new FontAwesome.Sharp.IconPictureBox();
             this.vista_MateriasDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -61,6 +62,7 @@
             this.btnAgregarNuevo = new FontAwesome.Sharp.IconPictureBox();
             descripcionLabel = new System.Windows.Forms.Label();
             this.pnlContenedor.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAgregar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vista_MateriasDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vista_MateriasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.materiasDataSet)).BeginInit();
@@ -85,6 +87,7 @@
             // pnlContenedor
             // 
             this.pnlContenedor.BackColor = System.Drawing.Color.White;
+            this.pnlContenedor.Controls.Add(this.btnAgregar);
             this.pnlContenedor.Controls.Add(this.vista_MateriasDataGridView);
             this.pnlContenedor.Controls.Add(descripcionLabel);
             this.pnlContenedor.Controls.Add(this.descripcionComboBox);
@@ -93,6 +96,22 @@
             this.pnlContenedor.Name = "pnlContenedor";
             this.pnlContenedor.Size = new System.Drawing.Size(955, 488);
             this.pnlContenedor.TabIndex = 0;
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAgregar.BackColor = System.Drawing.Color.White;
+            this.btnAgregar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAgregar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnAgregar.IconChar = FontAwesome.Sharp.IconChar.Plus;
+            this.btnAgregar.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnAgregar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnAgregar.Location = new System.Drawing.Point(898, 51);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(32, 32);
+            this.btnAgregar.TabIndex = 9;
+            this.btnAgregar.TabStop = false;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // vista_MateriasDataGridView
             // 
@@ -326,7 +345,6 @@
             this.btnAgregarNuevo.Size = new System.Drawing.Size(32, 32);
             this.btnAgregarNuevo.TabIndex = 13;
             this.btnAgregarNuevo.TabStop = false;
-            this.btnAgregarNuevo.Click += new System.EventHandler(this.btnAgregarNuevo_Click);
             // 
             // frmMaterias
             // 
@@ -341,6 +359,7 @@
             this.Load += new System.EventHandler(this.frmMaterias_Load);
             this.pnlContenedor.ResumeLayout(false);
             this.pnlContenedor.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAgregar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vista_MateriasDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vista_MateriasBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.materiasDataSet)).EndInit();
@@ -386,5 +405,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private FontAwesome.Sharp.IconPictureBox btnAgregarNuevo;
+        private FontAwesome.Sharp.IconPictureBox btnAgregar;
     }
 }
