@@ -10,8 +10,18 @@ using System.Windows.Forms;
 
 namespace Plantilla_Bonita.UI.Administrador
 {
+    enum Busqueda
+    {
+        Ninguno,
+        Acturaio,
+        Tabla,
+        Actuario_Tabla,
+        Actuario_Tabla_Fecha
+    }
     public partial class frmBitacora : Form
     {
+        private Busqueda busqueda = Busqueda.Ninguno;
+
         public frmBitacora()
         {
             InitializeComponent();
@@ -29,7 +39,26 @@ namespace Plantilla_Bonita.UI.Administrador
 
         private void actuarioComboBox_SelectedValueChanged(object sender, EventArgs e)
         {
+            if (actuarioComboBox.SelectedValue == null)
+            {
+                MessageBox.Show("");
+            }
+        }
 
+        private void chkFecha_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkFecha.CheckState == CheckState.Unchecked)
+            {
+                this.busqueda = Busqueda.Actuario_Tabla;
+                dtPckrInicio.Enabled = false;
+                dtPckrFin.Enabled = false;
+            }
+            else if (chkFecha.CheckState == CheckState.Checked) 
+            {
+                this.busqueda = Busqueda.Actuario_Tabla_Fecha;
+                dtPckrInicio.Enabled = true;
+                dtPckrFin.Enabled = true;
+            }
         }
     }
 }
