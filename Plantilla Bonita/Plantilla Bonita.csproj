@@ -413,6 +413,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\FormasABC\Altas\AltaAulas.resx">
       <DependentUpon>AltaAulas.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\FormasABC\Altas\AltaIngenieria.resx">
       <DependentUpon>AltaIngenieria.cs</DependentUpon>
@@ -702,6 +703,7 @@
     <None Include="Resources\Imagen21.png" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="UI\Administrador\" />
     <Folder Include="UI\FormasABC\Cambios\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
