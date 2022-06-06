@@ -156,6 +156,44 @@ namespace Acceso_A_Datos
             }
         }
 
+
+        public bool AltaAula(string usuario, string codEdificio, string codAula, string desc)
+        {
+            try
+            {
+                using (SqlConnection conexion = getConnection())
+                {
+                    conexion.Open();
+                    using (SqlCommand cmd = new SqlCommand("AltaAulas", conexion))
+                    {
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.AddWithValue("@codAula", codAula);
+                        cmd.Parameters.AddWithValue("@codEficio", codEdificio);
+                        cmd.Parameters.AddWithValue("@descripcion", desc);
+                        cmd.Parameters.AddWithValue("@usuario", usuario);
+                        cmd.Parameters.AddWithValue("@Fecha", DateTime.Now);
+                        cmd.Parameters.Add("@flag", SqlDbType.Bit).Direction = ParameterDirection.ReturnValue;
+                        cmd.ExecuteNonQuery();
+
+                        if (cmd.Parameters["@flag"].Value.ToString() == "0")
+                            return false;
+
+                        if (cmd.Parameters["@flag"].Value.ToString() == "1")
+                            return true;
+
+                        //
+
+                        return false;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return false;
+            }
+        }
+
         public bool AltaMateria(string codIng, string codMateria, string desc, int semestre, string usuario)
         {
             try
