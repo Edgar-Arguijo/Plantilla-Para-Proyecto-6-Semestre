@@ -234,6 +234,16 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActuarioDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ActuarioDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BitacoraDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BitacoraDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ClasesAuxiliares\Usuario.cs" />
     <Compile Include="DataSets\AforosDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -245,21 +255,30 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AulasDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="DataSets\BitacoraDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BitacoraDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="ClasesAuxiliares\DGVPrinter.cs" />
     <Compile Include="DataSets\ABC_IngenieriasDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ABC_IngenieriasDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="MateriasDataSet.cs">
+      <DependentUpon>MateriasDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="MateriasDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>MateriasDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TablaBitacoraDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TablaBitacoraDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrador\frmBitacora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Administrador\frmBitacora.Designer.cs">
+      <DependentUpon>frmBitacora.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\Alumnos.cs">
       <SubType>Form</SubType>
@@ -333,12 +352,6 @@
     <Compile Include="UI\frmAforos.Designer.cs">
       <DependentUpon>frmAforos.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\frmBitacora.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\frmBitacora.Designer.cs">
-      <DependentUpon>frmBitacora.cs</DependentUpon>
-    </Compile>
     <Compile Include="UI\Administrador\frmIngenierias.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -405,6 +418,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>UsuariosDataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UI\Administrador\frmBitacora.resx">
+      <DependentUpon>frmBitacora.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\Alumnos.resx">
       <DependentUpon>Alumnos.cs</DependentUpon>
     </EmbeddedResource>
@@ -426,9 +442,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\frmAforos.resx">
       <DependentUpon>frmAforos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UI\frmBitacora.resx">
-      <DependentUpon>frmBitacora.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Administrador\frmIngenierias.resx">
       <DependentUpon>frmIngenierias.cs</DependentUpon>
@@ -468,6 +481,28 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="ActuarioDataSet.xsc">
+      <DependentUpon>ActuarioDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ActuarioDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ActuarioDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ActuarioDataSet.xss">
+      <DependentUpon>ActuarioDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BitacoraDataSet.xsc">
+      <DependentUpon>BitacoraDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BitacoraDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BitacoraDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BitacoraDataSet.xss">
+      <DependentUpon>BitacoraDataSet.xsd</DependentUpon>
+    </None>
     <None Include="DataSets\AforosDataSet.xsc">
       <DependentUpon>AforosDataSet.xsd</DependentUpon>
     </None>
@@ -489,17 +524,6 @@
     </None>
     <None Include="DataSets\AulasDataSet.xss">
       <DependentUpon>AulasDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="DataSets\BitacoraDataSet.xsc">
-      <DependentUpon>BitacoraDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="DataSets\BitacoraDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>BitacoraDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DataSets\BitacoraDataSet.xss">
-      <DependentUpon>BitacoraDataSet.xsd</DependentUpon>
     </None>
     <None Include="DataSets\ABC_IngenieriasDataSet.xsc">
       <DependentUpon>ABC_IngenieriasDataSet.xsd</DependentUpon>
@@ -609,6 +633,17 @@
     </None>
     <None Include="DataSets\UsuariosDataSet.xss">
       <DependentUpon>UsuariosDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TablaBitacoraDataSet.xsc">
+      <DependentUpon>TablaBitacoraDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TablaBitacoraDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TablaBitacoraDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TablaBitacoraDataSet.xss">
+      <DependentUpon>TablaBitacoraDataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

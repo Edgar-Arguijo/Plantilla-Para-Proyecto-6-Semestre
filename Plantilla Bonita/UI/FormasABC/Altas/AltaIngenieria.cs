@@ -62,6 +62,7 @@ namespace Plantilla_Bonita.UI.FormasABC.Altas
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
+            this.DialogResult = DialogResult.Cancel;
             this.Close();
         }
     }

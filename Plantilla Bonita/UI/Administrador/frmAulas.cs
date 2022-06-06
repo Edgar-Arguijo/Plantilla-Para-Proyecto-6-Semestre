@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Plantilla_Bonita.ClasesAuxiliares;
+using Plantilla_Bonita.UI.FormasABC.Altas;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,9 +17,12 @@ namespace Plantilla_Bonita
         private bool IsAdding = false;
         private bool IsEditing = false;
 
-        public frmAulas()
+        private Usuario intern;
+
+        public frmAulas(Usuario usuario)
         {
             InitializeComponent();
+            this.intern = usuario;
         }
 
         private void edificiosBindingNavigatorSaveItem_Click(object sender, EventArgs e)
@@ -64,11 +69,13 @@ namespace Plantilla_Bonita
 
         private void btnAgregarNuevo_Click(object sender, EventArgs e)
         {
-
-
-
-            IsAdding = true;
-            bindingNavigatorAddNewItem.PerformClick();
+            using (AltaAulas obj = new AltaAulas(this.intern))
+            {
+                if (obj.ShowDialog() == DialogResult.OK)
+                {
+                    this.aulasTableAdapter.FillByEdificio(this.aulasDataSet.Aulas, codigoEdificioComboBox.Text);
+                }
+            }
         }
 
         private void btnGuardarCambios_Click(object sender, EventArgs e)
@@ -76,6 +83,11 @@ namespace Plantilla_Bonita
             IsAdding = false;
             IsEditing = false;
             aulasBindingNavigatorSaveItem.PerformClick();
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

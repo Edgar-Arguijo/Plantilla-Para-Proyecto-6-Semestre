@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Plantilla_Bonita
+namespace Plantilla_Bonita.UI.Administrador
 {
     public partial class frmBitacora : Form
     {
@@ -17,26 +17,18 @@ namespace Plantilla_Bonita
             InitializeComponent();
         }
 
-        private void bitacoraClasesBindingNavigatorSaveItem_Click(object sender, EventArgs e)
-        {
-            this.Validate();
-            this.bitacoraClasesBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.bitacoraDataSet);
-
-        }
-
-        private void bitacoraClasesBindingNavigatorSaveItem_Click_1(object sender, EventArgs e)
-        {
-            this.Validate();
-            this.bitacoraClasesBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.bitacoraDataSet);
-
-        }
-
         private void frmBitacora_Load(object sender, EventArgs e)
         {
-            // TODO: esta línea de código carga datos en la tabla 'bitacoraDataSet.BitacoraClases' Puede moverla o quitarla según sea necesario.
-            this.bitacoraClasesTableAdapter.Fill(this.bitacoraDataSet.BitacoraClases);
+            // TODO: esta línea de código carga datos en la tabla 'tablaBitacoraDataSet.BitacoraBaseDeDatos' Puede moverla o quitarla según sea necesario.
+            this.bitacoraBaseDeDatosTableAdapter1.FillBy(this.tablaBitacoraDataSet.BitacoraBaseDeDatos);
+            // TODO: esta línea de código carga datos en la tabla 'actuarioDataSet.BitacoraBaseDeDatos' Puede moverla o quitarla según sea necesario.
+            this.bitacoraBaseDeDatosTableAdapter.FillBy(this.actuarioDataSet.BitacoraBaseDeDatos);
+            // TODO: esta línea de código carga datos en la tabla 'bitacoraDataSet.BitacoraBaseDeDatos_Vista' Puede moverla o quitarla según sea necesario.
+            this.bitacoraBaseDeDatos_VistaTableAdapter.Fill(this.bitacoraDataSet.BitacoraBaseDeDatos_Vista);
+        }
+
+        private void actuarioComboBox_SelectedValueChanged(object sender, EventArgs e)
+        {
 
         }
     }

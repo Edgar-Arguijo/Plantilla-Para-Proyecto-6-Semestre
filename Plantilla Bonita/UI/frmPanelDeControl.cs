@@ -13,6 +13,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using Plantilla_Bonita.ClasesAuxiliares;
+using Plantilla_Bonita.UI.Administrador;
 
 namespace Plantilla_Bonita
 {
@@ -372,7 +373,7 @@ namespace Plantilla_Bonita
 
         private void btnAulas_Click(object sender, EventArgs e)
         {
-            frmAulas fm = new frmAulas();
+            frmAulas fm = new frmAulas(this.interno);
             fm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
             Abrirformaenelpanel(fm);
         }
