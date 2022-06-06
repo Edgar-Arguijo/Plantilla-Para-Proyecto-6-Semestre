@@ -280,6 +280,11 @@
     <Compile Include="UI\Administrador\frmBitacora.Designer.cs">
       <DependentUpon>frmBitacora.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\Administrador\frmUsuarios1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>frmUsuarios.resx</DependentUpon>
+    </Compile>
     <Compile Include="UI\Alumnos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -466,6 +471,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Administrador\frmUsuarios.resx">
       <DependentUpon>frmUsuarios.cs</DependentUpon>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>frmUsuarios1.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

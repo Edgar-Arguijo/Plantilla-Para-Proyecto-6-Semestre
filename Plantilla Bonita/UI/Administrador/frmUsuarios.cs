@@ -22,7 +22,6 @@ namespace Plantilla_Bonita
             this.Validate();
             this.usuariosBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.usuariosDataSet);
-
         }
 
         private void frmUsuarios_Load(object sender, EventArgs e)
