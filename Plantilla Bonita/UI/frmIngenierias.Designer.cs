@@ -77,7 +77,7 @@
             // 
             cod_IngLabel.AutoSize = true;
             cod_IngLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
-            cod_IngLabel.Location = new System.Drawing.Point(7, 29);
+            cod_IngLabel.Location = new System.Drawing.Point(7, 32);
             cod_IngLabel.Name = "cod_IngLabel";
             cod_IngLabel.Size = new System.Drawing.Size(66, 25);
             cod_IngLabel.TabIndex = 2;
@@ -87,7 +87,7 @@
             // 
             descripcionLabel.AutoSize = true;
             descripcionLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
-            descripcionLabel.Location = new System.Drawing.Point(7, 75);
+            descripcionLabel.Location = new System.Drawing.Point(7, 78);
             descripcionLabel.Name = "descripcionLabel";
             descripcionLabel.Size = new System.Drawing.Size(97, 25);
             descripcionLabel.TabIndex = 4;

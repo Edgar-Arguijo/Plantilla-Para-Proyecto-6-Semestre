@@ -73,14 +73,16 @@
             // descripcionLabel
             // 
             descripcionLabel.AutoSize = true;
-            descripcionLabel.Location = new System.Drawing.Point(21, 48);
+            descripcionLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
+            descripcionLabel.Location = new System.Drawing.Point(19, 26);
             descripcionLabel.Name = "descripcionLabel";
-            descripcionLabel.Size = new System.Drawing.Size(56, 13);
+            descripcionLabel.Size = new System.Drawing.Size(86, 25);
             descripcionLabel.TabIndex = 0;
             descripcionLabel.Text = "Ingenieria:";
             // 
             // pnlContenedor
             // 
+            this.pnlContenedor.BackColor = System.Drawing.Color.White;
             this.pnlContenedor.Controls.Add(this.vista_MateriasDataGridView);
             this.pnlContenedor.Controls.Add(descripcionLabel);
             this.pnlContenedor.Controls.Add(this.descripcionComboBox);
@@ -103,10 +105,10 @@
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3});
             this.vista_MateriasDataGridView.DataSource = this.vista_MateriasBindingSource;
-            this.vista_MateriasDataGridView.Location = new System.Drawing.Point(24, 167);
+            this.vista_MateriasDataGridView.Location = new System.Drawing.Point(24, 89);
             this.vista_MateriasDataGridView.Name = "vista_MateriasDataGridView";
             this.vista_MateriasDataGridView.ReadOnly = true;
-            this.vista_MateriasDataGridView.Size = new System.Drawing.Size(906, 299);
+            this.vista_MateriasDataGridView.Size = new System.Drawing.Size(906, 377);
             this.vista_MateriasDataGridView.TabIndex = 2;
             // 
             // dataGridViewTextBoxColumn2
@@ -136,11 +138,12 @@
             // 
             // descripcionComboBox
             // 
+            this.descripcionComboBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.descripcionComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ingenieriasBindingSource, "Descripcion", true));
             this.descripcionComboBox.DataSource = this.ingenieriasBindingSource1;
             this.descripcionComboBox.DisplayMember = "Descripcion";
             this.descripcionComboBox.FormattingEnabled = true;
-            this.descripcionComboBox.Location = new System.Drawing.Point(24, 75);
+            this.descripcionComboBox.Location = new System.Drawing.Point(108, 30);
             this.descripcionComboBox.Name = "descripcionComboBox";
             this.descripcionComboBox.Size = new System.Drawing.Size(121, 21);
             this.descripcionComboBox.TabIndex = 1;
