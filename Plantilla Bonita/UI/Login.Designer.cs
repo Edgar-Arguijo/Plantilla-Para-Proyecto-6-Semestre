@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.pnlContenedor = new System.Windows.Forms.Panel();
             this.btnCerrar = new FontAwesome.Sharp.IconPictureBox();
             this.lnkRegistro = new System.Windows.Forms.LinkLabel();
@@ -253,9 +254,10 @@
             this.ClientSize = new System.Drawing.Size(350, 303);
             this.Controls.Add(this.pnlContenedor);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Login";
+            this.Text = "Inicie Sesion";
             this.pnlContenedor.ResumeLayout(false);
             this.pnlContenedor.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();

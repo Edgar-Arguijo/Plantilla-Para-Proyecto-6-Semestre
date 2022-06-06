@@ -375,9 +375,10 @@
             this.Controls.Add(this.ingenieriasBindingNavigator);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AltaMateria";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "AltaMateria";
+            this.Text = "Registrar Materia";
             this.Load += new System.EventHandler(this.AltaMateria_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ingenieriasDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ingenieriasBindingSource)).EndInit();
