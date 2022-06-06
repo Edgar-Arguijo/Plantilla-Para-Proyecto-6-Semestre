@@ -372,7 +372,7 @@ namespace Plantilla_Bonita
 
         private void btnAulas_Click(object sender, EventArgs e)
         {
-            frmABCAulas fm = new frmABCAulas();
+            frmAulas fm = new frmAulas();
             fm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
             Abrirformaenelpanel(fm);
         }
