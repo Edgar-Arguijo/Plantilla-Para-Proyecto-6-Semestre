@@ -31,9 +31,9 @@
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.Label actuarioLabel;
             System.Windows.Forms.Label tablaLabel;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBitacora));
             System.Windows.Forms.Label label1;
             System.Windows.Forms.Label label2;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBitacora));
             this.bitacoraDataSet = new Plantilla_Bonita.DataSets.DataSets_Bitacora.BitacoraDataSet();
             this.bitacoraBaseDeDatos_VistaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bitacoraBaseDeDatos_VistaTableAdapter = new Plantilla_Bonita.DataSets.DataSets_Bitacora.BitacoraDataSetTableAdapters.BitacoraBaseDeDatos_VistaTableAdapter();
@@ -101,20 +101,42 @@
             // actuarioLabel
             // 
             actuarioLabel.AutoSize = true;
-            actuarioLabel.Location = new System.Drawing.Point(29, 20);
+            actuarioLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
+            actuarioLabel.Location = new System.Drawing.Point(17, 23);
             actuarioLabel.Name = "actuarioLabel";
-            actuarioLabel.Size = new System.Drawing.Size(49, 13);
+            actuarioLabel.Size = new System.Drawing.Size(70, 25);
             actuarioLabel.TabIndex = 2;
-            actuarioLabel.Text = "Actuario:";
+            actuarioLabel.Text = "Usuario:";
             // 
             // tablaLabel
             // 
             tablaLabel.AutoSize = true;
-            tablaLabel.Location = new System.Drawing.Point(29, 79);
+            tablaLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
+            tablaLabel.Location = new System.Drawing.Point(339, 30);
             tablaLabel.Name = "tablaLabel";
-            tablaLabel.Size = new System.Drawing.Size(37, 13);
+            tablaLabel.Size = new System.Drawing.Size(53, 25);
             tablaLabel.TabIndex = 5;
             tablaLabel.Text = "Tabla:";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
+            label1.Location = new System.Drawing.Point(16, 63);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(105, 25);
+            label1.TabIndex = 11;
+            label1.Text = "Fecha Inicial:";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
+            label2.Location = new System.Drawing.Point(339, 63);
+            label2.Name = "label2";
+            label2.Size = new System.Drawing.Size(112, 25);
+            label2.TabIndex = 12;
+            label2.Text = "Fin de Periodo:";
             // 
             // bitacoraDataSet
             // 
@@ -277,10 +299,10 @@
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4});
             this.bitacoraBaseDeDatos_VistaDataGridView.DataSource = this.bitacoraBaseDeDatos_VistaBindingSource;
-            this.bitacoraBaseDeDatos_VistaDataGridView.Location = new System.Drawing.Point(22, 172);
+            this.bitacoraBaseDeDatos_VistaDataGridView.Location = new System.Drawing.Point(22, 114);
             this.bitacoraBaseDeDatos_VistaDataGridView.Name = "bitacoraBaseDeDatos_VistaDataGridView";
             this.bitacoraBaseDeDatos_VistaDataGridView.ReadOnly = true;
-            this.bitacoraBaseDeDatos_VistaDataGridView.Size = new System.Drawing.Size(915, 309);
+            this.bitacoraBaseDeDatos_VistaDataGridView.Size = new System.Drawing.Size(915, 367);
             this.bitacoraBaseDeDatos_VistaDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -345,9 +367,9 @@
             this.actuarioComboBox.DataSource = this.bitacoraBaseDeDatosBindingSource2;
             this.actuarioComboBox.DisplayMember = "Actuario";
             this.actuarioComboBox.FormattingEnabled = true;
-            this.actuarioComboBox.Location = new System.Drawing.Point(32, 45);
+            this.actuarioComboBox.Location = new System.Drawing.Point(93, 30);
             this.actuarioComboBox.Name = "actuarioComboBox";
-            this.actuarioComboBox.Size = new System.Drawing.Size(121, 21);
+            this.actuarioComboBox.Size = new System.Drawing.Size(234, 21);
             this.actuarioComboBox.TabIndex = 3;
             this.actuarioComboBox.ValueMember = "Actuario";
             this.actuarioComboBox.SelectedValueChanged += new System.EventHandler(this.actuarioComboBox_SelectedValueChanged);
@@ -411,9 +433,9 @@
             this.tablaComboBox.DataSource = this.bitacoraBaseDeDatosBindingSource4;
             this.tablaComboBox.DisplayMember = "Tabla";
             this.tablaComboBox.FormattingEnabled = true;
-            this.tablaComboBox.Location = new System.Drawing.Point(32, 108);
+            this.tablaComboBox.Location = new System.Drawing.Point(398, 33);
             this.tablaComboBox.Name = "tablaComboBox";
-            this.tablaComboBox.Size = new System.Drawing.Size(121, 21);
+            this.tablaComboBox.Size = new System.Drawing.Size(259, 21);
             this.tablaComboBox.TabIndex = 6;
             this.tablaComboBox.ValueMember = "Tabla";
             // 
@@ -442,14 +464,14 @@
             // 
             // dtPckrInicio
             // 
-            this.dtPckrInicio.Location = new System.Drawing.Point(222, 59);
+            this.dtPckrInicio.Location = new System.Drawing.Point(127, 68);
             this.dtPckrInicio.Name = "dtPckrInicio";
             this.dtPckrInicio.Size = new System.Drawing.Size(200, 20);
             this.dtPckrInicio.TabIndex = 8;
             // 
             // dtPckrFin
             // 
-            this.dtPckrFin.Location = new System.Drawing.Point(222, 106);
+            this.dtPckrFin.Location = new System.Drawing.Point(457, 68);
             this.dtPckrFin.Name = "dtPckrFin";
             this.dtPckrFin.Size = new System.Drawing.Size(200, 20);
             this.dtPckrFin.TabIndex = 9;
@@ -459,36 +481,20 @@
             this.chkFecha.AutoSize = true;
             this.chkFecha.Checked = true;
             this.chkFecha.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkFecha.Location = new System.Drawing.Point(815, 133);
+            this.chkFecha.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
+            this.chkFecha.Location = new System.Drawing.Point(768, 79);
             this.chkFecha.Name = "chkFecha";
-            this.chkFecha.Size = new System.Drawing.Size(122, 17);
+            this.chkFecha.Size = new System.Drawing.Size(169, 29);
             this.chkFecha.TabIndex = 10;
             this.chkFecha.Text = "Busqueda por fecha";
             this.chkFecha.UseVisualStyleBackColor = true;
             this.chkFecha.CheckedChanged += new System.EventHandler(this.chkFecha_CheckedChanged);
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new System.Drawing.Point(219, 39);
-            label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(70, 13);
-            label1.TabIndex = 11;
-            label1.Text = "Fecha Inicial:";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new System.Drawing.Point(219, 86);
-            label2.Name = "label2";
-            label2.Size = new System.Drawing.Size(78, 13);
-            label2.TabIndex = 12;
-            label2.Text = "Fin de Periodo:";
-            // 
             // frmBitacora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(957, 501);
             this.Controls.Add(label2);
             this.Controls.Add(label1);
