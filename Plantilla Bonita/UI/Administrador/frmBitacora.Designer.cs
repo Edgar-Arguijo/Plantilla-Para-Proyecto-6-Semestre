@@ -77,6 +77,8 @@
             this.dtPckrInicio = new System.Windows.Forms.DateTimePicker();
             this.dtPckrFin = new System.Windows.Forms.DateTimePicker();
             this.chkFecha = new System.Windows.Forms.CheckBox();
+            this.btnPrint = new FontAwesome.Sharp.IconPictureBox();
+            this.btnBuscar = new FontAwesome.Sharp.IconPictureBox();
             actuarioLabel = new System.Windows.Forms.Label();
             tablaLabel = new System.Windows.Forms.Label();
             label1 = new System.Windows.Forms.Label();
@@ -96,6 +98,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.bitacoraBaseDeDatosBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bitacoraBaseDeDatosBindingSource4)).BeginInit();
             this.fillByToolStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnPrint)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnBuscar)).BeginInit();
             this.SuspendLayout();
             // 
             // actuarioLabel
@@ -440,6 +444,7 @@
             this.tablaComboBox.Size = new System.Drawing.Size(259, 21);
             this.tablaComboBox.TabIndex = 6;
             this.tablaComboBox.ValueMember = "Tabla";
+            this.tablaComboBox.SelectedValueChanged += new System.EventHandler(this.tablaComboBox_SelectedValueChanged);
             // 
             // bitacoraBaseDeDatosBindingSource4
             // 
@@ -467,6 +472,7 @@
             // dtPckrInicio
             // 
             this.dtPckrInicio.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dtPckrInicio.Enabled = false;
             this.dtPckrInicio.Location = new System.Drawing.Point(127, 68);
             this.dtPckrInicio.Name = "dtPckrInicio";
             this.dtPckrInicio.Size = new System.Drawing.Size(200, 20);
@@ -475,6 +481,7 @@
             // dtPckrFin
             // 
             this.dtPckrFin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dtPckrFin.Enabled = false;
             this.dtPckrFin.Location = new System.Drawing.Point(457, 68);
             this.dtPckrFin.Name = "dtPckrFin";
             this.dtPckrFin.Size = new System.Drawing.Size(200, 20);
@@ -483,11 +490,9 @@
             // chkFecha
             // 
             this.chkFecha.AutoSize = true;
-            this.chkFecha.Checked = true;
-            this.chkFecha.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkFecha.Cursor = System.Windows.Forms.Cursors.Hand;
             this.chkFecha.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
-            this.chkFecha.Location = new System.Drawing.Point(768, 79);
+            this.chkFecha.Location = new System.Drawing.Point(698, 33);
             this.chkFecha.Name = "chkFecha";
             this.chkFecha.Size = new System.Drawing.Size(169, 29);
             this.chkFecha.TabIndex = 10;
@@ -495,12 +500,46 @@
             this.chkFecha.UseVisualStyleBackColor = true;
             this.chkFecha.CheckedChanged += new System.EventHandler(this.chkFecha_CheckedChanged);
             // 
+            // btnPrint
+            // 
+            this.btnPrint.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPrint.BackColor = System.Drawing.Color.Transparent;
+            this.btnPrint.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPrint.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnPrint.IconChar = FontAwesome.Sharp.IconChar.Print;
+            this.btnPrint.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnPrint.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnPrint.Location = new System.Drawing.Point(905, 70);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(32, 32);
+            this.btnPrint.TabIndex = 17;
+            this.btnPrint.TabStop = false;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnBuscar.BackColor = System.Drawing.Color.Transparent;
+            this.btnBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBuscar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnBuscar.IconChar = FontAwesome.Sharp.IconChar.Search;
+            this.btnBuscar.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnBuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnBuscar.Location = new System.Drawing.Point(867, 70);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(32, 32);
+            this.btnBuscar.TabIndex = 16;
+            this.btnBuscar.TabStop = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
             // frmBitacora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(957, 501);
+            this.Controls.Add(this.btnPrint);
+            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(label2);
             this.Controls.Add(label1);
             this.Controls.Add(this.chkFecha);
@@ -536,6 +575,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.bitacoraBaseDeDatosBindingSource4)).EndInit();
             this.fillByToolStrip1.ResumeLayout(false);
             this.fillByToolStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnPrint)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnBuscar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -586,5 +627,7 @@
         private System.Windows.Forms.DateTimePicker dtPckrInicio;
         private System.Windows.Forms.DateTimePicker dtPckrFin;
         private System.Windows.Forms.CheckBox chkFecha;
+        private FontAwesome.Sharp.IconPictureBox btnPrint;
+        private FontAwesome.Sharp.IconPictureBox btnBuscar;
     }
 }
