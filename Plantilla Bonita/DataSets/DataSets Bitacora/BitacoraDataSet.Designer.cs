@@ -871,7 +871,7 @@ namespace Plantilla_Bonita.DataSets.DataSets_Bitacora.BitacoraDataSetTableAdapte
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[4];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[3];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT Actuario, Tabla, Descripcion, Fecha FROM dbo.BitacoraBaseDeDatos_Vista";
@@ -879,22 +879,19 @@ namespace Plantilla_Bonita.DataSets.DataSets_Bitacora.BitacoraDataSetTableAdapte
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
             this._commandCollection[1].CommandText = "SELECT Actuario, Tabla, Descripcion, Fecha FROM dbo.BitacoraBaseDeDatos_Vista\r\nWh" +
-                "ere Actuario = @actuario";
+                "ere Actuario = @actuario And Tabla  = @tabla";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@actuario", global::System.Data.SqlDbType.VarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "Actuario", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@tabla", global::System.Data.SqlDbType.VarChar, 25, global::System.Data.ParameterDirection.Input, 0, 0, "Tabla", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[2].Connection = this.Connection;
             this._commandCollection[2].CommandText = "SELECT Actuario, Tabla, Descripcion, Fecha FROM dbo.BitacoraBaseDeDatos_Vista\r\nWh" +
-                "ere Actuario = @actuario And Tabla  = @tabla";
+                "ere Actuario = @act And Tabla = @tabla And Fecha Between @inicio and @fin";
             this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@actuario", global::System.Data.SqlDbType.VarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "Actuario", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@act", global::System.Data.SqlDbType.VarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "Actuario", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@tabla", global::System.Data.SqlDbType.VarChar, 25, global::System.Data.ParameterDirection.Input, 0, 0, "Tabla", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[3] = new global::System.Data.SqlClient.SqlCommand();
-            this._commandCollection[3].Connection = this.Connection;
-            this._commandCollection[3].CommandText = "SELECT Actuario, Tabla, Descripcion, Fecha FROM dbo.BitacoraBaseDeDatos_Vista\r\nWh" +
-                "ere Tabla = @tabla";
-            this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@tabla", global::System.Data.SqlDbType.VarChar, 25, global::System.Data.ParameterDirection.Input, 0, 0, "Tabla", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@inicio", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 0, 0, "Fecha", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@fin", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 0, 0, "Fecha", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -925,44 +922,8 @@ namespace Plantilla_Bonita.DataSets.DataSets_Bitacora.BitacoraDataSetTableAdapte
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
-        public virtual int FillByActuario(BitacoraDataSet.BitacoraBaseDeDatos_VistaDataTable dataTable, string actuario) {
-            this.Adapter.SelectCommand = this.CommandCollection[1];
-            if ((actuario == null)) {
-                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(actuario));
-            }
-            if ((this.ClearBeforeFill == true)) {
-                dataTable.Clear();
-            }
-            int returnValue = this.Adapter.Fill(dataTable);
-            return returnValue;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual BitacoraDataSet.BitacoraBaseDeDatos_VistaDataTable GetDataByActuario(string actuario) {
-            this.Adapter.SelectCommand = this.CommandCollection[1];
-            if ((actuario == null)) {
-                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(actuario));
-            }
-            BitacoraDataSet.BitacoraBaseDeDatos_VistaDataTable dataTable = new BitacoraDataSet.BitacoraBaseDeDatos_VistaDataTable();
-            this.Adapter.Fill(dataTable);
-            return dataTable;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
         public virtual int FillByActuarioTabla(BitacoraDataSet.BitacoraBaseDeDatos_VistaDataTable dataTable, string actuario, string tabla) {
-            this.Adapter.SelectCommand = this.CommandCollection[2];
+            this.Adapter.SelectCommand = this.CommandCollection[1];
             if ((actuario == null)) {
                 this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -987,7 +948,7 @@ namespace Plantilla_Bonita.DataSets.DataSets_Bitacora.BitacoraDataSetTableAdapte
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
         public virtual BitacoraDataSet.BitacoraBaseDeDatos_VistaDataTable GetDataByActuarioTabla(string actuario, string tabla) {
-            this.Adapter.SelectCommand = this.CommandCollection[2];
+            this.Adapter.SelectCommand = this.CommandCollection[1];
             if ((actuario == null)) {
                 this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -1009,13 +970,31 @@ namespace Plantilla_Bonita.DataSets.DataSets_Bitacora.BitacoraDataSetTableAdapte
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
-        public virtual int FillByTabla(BitacoraDataSet.BitacoraBaseDeDatos_VistaDataTable dataTable, string tabla) {
-            this.Adapter.SelectCommand = this.CommandCollection[3];
-            if ((tabla == null)) {
+        public virtual int FillByFecha(BitacoraDataSet.BitacoraBaseDeDatos_VistaDataTable dataTable, string act, string tabla, global::System.Nullable<global::System.DateTime> inicio, global::System.Nullable<global::System.DateTime> fin) {
+            this.Adapter.SelectCommand = this.CommandCollection[2];
+            if ((act == null)) {
                 this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(tabla));
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(act));
+            }
+            if ((tabla == null)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(tabla));
+            }
+            if ((inicio.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[2].Value = ((System.DateTime)(inicio.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            if ((fin.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[3].Value = ((System.DateTime)(fin.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1028,13 +1007,31 @@ namespace Plantilla_Bonita.DataSets.DataSets_Bitacora.BitacoraDataSetTableAdapte
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual BitacoraDataSet.BitacoraBaseDeDatos_VistaDataTable GetDataByTabla(string tabla) {
-            this.Adapter.SelectCommand = this.CommandCollection[3];
-            if ((tabla == null)) {
+        public virtual BitacoraDataSet.BitacoraBaseDeDatos_VistaDataTable GetDataByFecha(string act, string tabla, global::System.Nullable<global::System.DateTime> inicio, global::System.Nullable<global::System.DateTime> fin) {
+            this.Adapter.SelectCommand = this.CommandCollection[2];
+            if ((act == null)) {
                 this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(tabla));
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(act));
+            }
+            if ((tabla == null)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(tabla));
+            }
+            if ((inicio.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[2].Value = ((System.DateTime)(inicio.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            if ((fin.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[3].Value = ((System.DateTime)(fin.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
             BitacoraDataSet.BitacoraBaseDeDatos_VistaDataTable dataTable = new BitacoraDataSet.BitacoraBaseDeDatos_VistaDataTable();
             this.Adapter.Fill(dataTable);

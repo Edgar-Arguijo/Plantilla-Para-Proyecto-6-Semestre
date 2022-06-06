@@ -3,7 +3,10 @@ using System.IO;
 using System.Configuration;
 
 namespace Plantilla_Bonita
-{
+{   
+    /// <summary>
+    /// Clase de proteccion / encriptacion de la cadena de conexion
+    /// </summary>
     public class ConnectionProtection
     {
         public string FileName { get; set; }
@@ -21,11 +24,11 @@ namespace Plantilla_Bonita
             this.FileName = FileName;
         }
         /// <summary>
-        /// Encrypt ConnectionString
+        /// Encriptar ConnectionString
         /// </summary>
         /// <param name="encrypt"></param>
         /// <param name="fileName"></param>
-        /// <returns></returns>
+        /// <returns>Si se realizo correctamente</returns>
         private bool EncryptConnectionString(bool encrypt, string fileName)
         {
             bool success = true;
@@ -40,13 +43,13 @@ namespace Plantilla_Bonita
                 {
                     if (encrypt && (!configSection.SectionInformation.IsProtected))
                     {
-                        // encrypt the file
+                        //Se encripta el archivo
                         configSection.SectionInformation.ProtectSection("DataProtectionConfigurationProvider");
                     }
 
                     if ((!encrypt) && configSection.SectionInformation.IsProtected) //encrypt is true so encrypt
                     {
-                        // decrypt the file. 
+                        //Se desencripta el archivo
                         configSection.SectionInformation.UnprotectSection();
                     }
 
@@ -82,6 +85,7 @@ namespace Plantilla_Bonita
                 return false;
             }
         }
+
         public bool DecryptFile()
         {
             if (File.Exists(FileName))
