@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Data;
 using System.Data.SqlClient;
-using System.Security.Cryptography;
-using System.Text;
 using System.Windows.Forms;
 
 namespace Acceso_A_Datos
@@ -12,62 +10,6 @@ namespace Acceso_A_Datos
     /// </summary>
     public class Consultas : SQLConection
     {
-        /// <summary>
-        /// Clase para el encriptado de las contraseñas
-        /// </summary>
-        internal class Encriptado_Desencriptado
-        {
-            private static string hash = "clave:0";
-
-            /// <summary>
-            /// Encripta el texto deseado
-            /// </summary>
-            /// <param name="cadena">Texto a encriptar</param>
-            /// <returns>El texto ya encriptado</returns>
-            public static string Encriptar(string cadena)
-            {
-                //Obtiene los bytes de la cadena
-                byte[] data = UTF8Encoding.UTF8.GetBytes(cadena);
-                //Utiliza libreria de encriptacion
-                using (MD5CryptoServiceProvider md5 = new MD5CryptoServiceProvider())
-                {
-                    //Obtiene los bytes con el hash definido por la clase
-                    byte[] keys = md5.ComputeHash(UTF8Encoding.UTF8.GetBytes(hash));
-                    using (TripleDESCryptoServiceProvider tripOes = new TripleDESCryptoServiceProvider()
-                    { Key = keys, Mode = CipherMode.ECB, Padding = PaddingMode.PKCS7 })
-                    {
-                        ICryptoTransform transform = tripOes.CreateEncryptor();
-                        byte[] result = transform.TransformFinalBlock(data, 0, data.Length);
-                        return Convert.ToBase64String(result, 0, result.Length);
-                    }
-                }
-            }
-
-            /// <summary>
-            /// Desencripta la cadena deseada
-            /// </summary>
-            /// <param name="cadena">Cadena a desencriptar</param>
-            /// <returns>La cadena desencriptada</returns>
-            public static string Desencriptar(string cadena)
-            {
-                //Obtiene los bytes de la cadena
-                byte[] data = Convert.FromBase64String(cadena);
-                //Utiliza libreria de encriptacion
-                using (MD5CryptoServiceProvider md5 = new MD5CryptoServiceProvider())
-                {
-                    //Obtiene los bytes con el hash definido por la clase
-                    byte[] keys = md5.ComputeHash(UTF8Encoding.UTF8.GetBytes(hash));
-                    using (TripleDESCryptoServiceProvider tripOes = new TripleDESCryptoServiceProvider()
-                    { Key = keys, Mode = CipherMode.ECB, Padding = PaddingMode.PKCS7 })
-                    {
-                        ICryptoTransform transform = tripOes.CreateDecryptor();
-                        byte[] result = transform.TransformFinalBlock(data, 0, data.Length);
-                        return UTF8Encoding.UTF8.GetString(result, 0, result.Length);
-                    }
-                }
-            }
-        }
-
         /// <summary>
         /// Clase para probar la conexion
         /// </summary>
@@ -148,7 +90,7 @@ namespace Acceso_A_Datos
                         cmd.CommandType = CommandType.StoredProcedure;
                         //Pasamos los parametros del procedimiento almacenado
                         cmd.Parameters.AddWithValue("@usuario", usuario);
-                        cmd.Parameters.AddWithValue("@contraseña", Encriptado_Desencriptado.Encriptar(contra));
+                        cmd.Parameters.AddWithValue("@contraseña", Encriptado_Desencriptado.Encriptado_Desencriptado.Encriptar(contra));
                         cmd.Parameters.AddWithValue("@fecha", DateTime.Now);
                         //Ejecutamos
                         return (cmd.ExecuteNonQuery()>0);
@@ -371,7 +313,7 @@ namespace Acceso_A_Datos
                         cmd.CommandType = CommandType.StoredProcedure;
                         //Se definene los parametros
                         cmd.Parameters.AddWithValue("@usuario", usuario);
-                        cmd.Parameters.AddWithValue("@contraseña", Encriptado_Desencriptado.Encriptar(contraseña));
+                        cmd.Parameters.AddWithValue("@contraseña", Encriptado_Desencriptado.Encriptado_Desencriptado.Encriptar(contraseña));
                         cmd.Parameters.AddWithValue("@fecha", DateTime.Now);
                         //Parametro de salida del nivel
                         cmd.Parameters.Add("@level", SqlDbType.VarChar, Int32.MaxValue).Direction = ParameterDirection.Output;

@@ -280,6 +280,11 @@
     <Compile Include="UI\Administrador\frmBitacora.Designer.cs">
       <DependentUpon>frmBitacora.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\Administrador\frmUsuarios1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>frmUsuarios.resx</DependentUpon>
+    </Compile>
     <Compile Include="UI\Alumnos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -466,6 +471,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Administrador\frmUsuarios.resx">
       <DependentUpon>frmUsuarios.cs</DependentUpon>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>frmUsuarios1.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -698,6 +705,10 @@
     <ProjectReference Include="..\Dominio\Dominio.csproj">
       <Project>{9274cdfb-74bb-4593-bafb-4bd44810d8f6}</Project>
       <Name>Dominio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Encriptado_Deesencriptado\Encriptado_Desencriptado.csproj">
+      <Project>{7849c279-1c27-45c6-ae8e-e5ee37f91e7a}</Project>
+      <Name>Encriptado_Desencriptado</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
