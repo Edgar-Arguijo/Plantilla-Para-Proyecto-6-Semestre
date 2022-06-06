@@ -358,7 +358,7 @@ namespace Plantilla_Bonita
 
         private void btnMaterias_Click(object sender, EventArgs e)
         {
-            frmMaterias fm = new frmMaterias();
+            frmMaterias fm = new frmMaterias(this.interno);
             fm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
             Abrirformaenelpanel(fm);
         }

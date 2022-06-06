@@ -58,6 +58,7 @@
             this.ingenieriasBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.vista_MateriasTableAdapter = new Plantilla_Bonita.MateriasDataSetTableAdapters.Vista_MateriasTableAdapter();
             this.tableAdapterManager1 = new Plantilla_Bonita.MateriasDataSetTableAdapters.TableAdapterManager();
+            this.btnAgregarNuevo = new FontAwesome.Sharp.IconPictureBox();
             descripcionLabel = new System.Windows.Forms.Label();
             this.pnlContenedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.vista_MateriasDataGridView)).BeginInit();
@@ -68,6 +69,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ingenieriasBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ingenieriasBindingNavigator)).BeginInit();
             this.ingenieriasBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAgregarNuevo)).BeginInit();
             this.SuspendLayout();
             // 
             // descripcionLabel
@@ -311,6 +313,21 @@
             this.tableAdapterManager1.Connection = null;
             this.tableAdapterManager1.UpdateOrder = Plantilla_Bonita.MateriasDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
+            // btnAgregarNuevo
+            // 
+            this.btnAgregarNuevo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAgregarNuevo.BackColor = System.Drawing.Color.White;
+            this.btnAgregarNuevo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnAgregarNuevo.IconChar = FontAwesome.Sharp.IconChar.Plus;
+            this.btnAgregarNuevo.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnAgregarNuevo.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnAgregarNuevo.Location = new System.Drawing.Point(898, 129);
+            this.btnAgregarNuevo.Name = "btnAgregarNuevo";
+            this.btnAgregarNuevo.Size = new System.Drawing.Size(32, 32);
+            this.btnAgregarNuevo.TabIndex = 13;
+            this.btnAgregarNuevo.TabStop = false;
+            this.btnAgregarNuevo.Click += new System.EventHandler(this.btnAgregarNuevo_Click);
+            // 
             // frmMaterias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -333,6 +350,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ingenieriasBindingNavigator)).EndInit();
             this.ingenieriasBindingNavigator.ResumeLayout(false);
             this.ingenieriasBindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAgregarNuevo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -367,5 +385,6 @@
         private System.Windows.Forms.DataGridView vista_MateriasDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private FontAwesome.Sharp.IconPictureBox btnAgregarNuevo;
     }
 }

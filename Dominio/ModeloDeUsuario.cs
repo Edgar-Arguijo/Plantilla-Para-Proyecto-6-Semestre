@@ -16,6 +16,12 @@ namespace Dominio
             obj.ProbarConexion();
         }
 
+        public bool AltaMateria(string codIng, string codMateria, string desc, int semestre, string usuario)
+        {
+            return obj.AltaMateria(codIng, codMateria, desc, semestre, usuario);
+        
+        }
+
         public bool AltaIngenieria(string usuario, string cod, string desc) 
         {
             return obj.AltaIngenieria(usuario,cod,desc);

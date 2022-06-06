@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Plantilla_Bonita.ClasesAuxiliares;
+using Plantilla_Bonita.UI.FormasABC.Altas;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +14,12 @@ namespace Plantilla_Bonita
 {
     public partial class frmMaterias : Form
     {
-        public frmMaterias()
+        private Usuario intern;
+
+        public frmMaterias(Usuario usuario)
         {
             InitializeComponent();
+            this.intern = usuario;
         }
 
         private void frmMaterias_Load(object sender, EventArgs e)
@@ -32,6 +37,17 @@ namespace Plantilla_Bonita
                 this.vista_MateriasTableAdapter.FillByIngenieria(this.materiasDataSet.Vista_Materias, descripcionComboBox.SelectedValue.ToString());
             else
                 return;
+        }
+
+        private void btnAgregarNuevo_Click(object sender, EventArgs e)
+        {
+            using (AltaMateria obj = new AltaMateria(this.intern))
+            {
+                if (obj.ShowDialog() == DialogResult.OK)
+                {
+
+                }
+            }
         }
     }
 }
