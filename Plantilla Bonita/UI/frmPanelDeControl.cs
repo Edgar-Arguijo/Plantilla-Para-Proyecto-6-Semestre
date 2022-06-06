@@ -13,6 +13,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using Plantilla_Bonita.ClasesAuxiliares;
+using Plantilla_Bonita.UI.Administrador;
 
 namespace Plantilla_Bonita
 {
