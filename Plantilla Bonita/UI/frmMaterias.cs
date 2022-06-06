@@ -39,7 +39,7 @@ namespace Plantilla_Bonita
                 return;
         }
 
-        private void btnAgregarNuevo_Click(object sender, EventArgs e)
+        private void btnAgregar_Click(object sender, EventArgs e)
         {
             using (AltaMateria obj = new AltaMateria(this.intern))
             {

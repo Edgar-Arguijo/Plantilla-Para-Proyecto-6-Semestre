@@ -56,6 +56,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.numSemestre = new System.Windows.Forms.NumericUpDown();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             descripcionLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ingenieriasDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ingenieriasBindingSource)).BeginInit();
@@ -63,6 +65,7 @@
             this.ingenieriasBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ingenieriasBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numSemestre)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // descripcionLabel
@@ -221,13 +224,22 @@
             this.ingenieriasBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
             this.ingenieriasBindingNavigatorSaveItem.Text = "Guardar datos";
             // 
+            // descripcionLabel
+            // 
+            descripcionLabel.AutoSize = true;
+            descripcionLabel.Location = new System.Drawing.Point(375, 73);
+            descripcionLabel.Name = "descripcionLabel";
+            descripcionLabel.Size = new System.Drawing.Size(56, 13);
+            descripcionLabel.TabIndex = 1;
+            descripcionLabel.Text = "Ingenieria:";
+            // 
             // descripcionComboBox
             // 
             this.descripcionComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ingenieriasBindingSource, "Descripcion", true));
             this.descripcionComboBox.DataSource = this.ingenieriasBindingSource1;
             this.descripcionComboBox.DisplayMember = "Descripcion";
             this.descripcionComboBox.FormattingEnabled = true;
-            this.descripcionComboBox.Location = new System.Drawing.Point(32, 55);
+            this.descripcionComboBox.Location = new System.Drawing.Point(32, 52);
             this.descripcionComboBox.Name = "descripcionComboBox";
             this.descripcionComboBox.Size = new System.Drawing.Size(311, 21);
             this.descripcionComboBox.TabIndex = 2;
@@ -240,14 +252,14 @@
             // 
             // txtCodigo
             // 
-            this.txtCodigo.Location = new System.Drawing.Point(32, 116);
+            this.txtCodigo.Location = new System.Drawing.Point(62, 143);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(215, 20);
             this.txtCodigo.TabIndex = 3;
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(32, 182);
+            this.txtDescripcion.Location = new System.Drawing.Point(61, 223);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(308, 20);
             this.txtDescripcion.TabIndex = 4;
@@ -255,8 +267,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
-            this.label1.Location = new System.Drawing.Point(28, 89);
+            this.label1.Location = new System.Drawing.Point(58, 116);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(154, 25);
             this.label1.TabIndex = 5;
@@ -265,8 +276,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
-            this.label2.Location = new System.Drawing.Point(27, 148);
+            this.label2.Location = new System.Drawing.Point(59, 188);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(93, 25);
             this.label2.TabIndex = 6;
@@ -274,7 +284,7 @@
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(286, 224);
+            this.btnAgregar.Location = new System.Drawing.Point(245, 278);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(75, 23);
             this.btnAgregar.TabIndex = 7;
@@ -284,7 +294,7 @@
             // 
             // numSemestre
             // 
-            this.numSemestre.Location = new System.Drawing.Point(275, 116);
+            this.numSemestre.Location = new System.Drawing.Point(482, 172);
             this.numSemestre.Minimum = new decimal(new int[] {
             1,
             0,
@@ -299,21 +309,41 @@
             0,
             0});
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.LemonChiffon;
+            this.panel1.Controls.Add(this.btnAgregar);
+            this.panel1.Controls.Add(this.numSemestre);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.descripcionComboBox);
+            this.panel1.Controls.Add(this.txtDescripcion);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(descripcionLabel);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.txtCodigo);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(762, 472);
+            this.panel1.TabIndex = 9;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(762, 40);
+            this.panel2.TabIndex = 0;
+            // 
             // AltaMateria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(762, 472);
-            this.Controls.Add(this.numSemestre);
-            this.Controls.Add(this.btnAgregar);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtDescripcion);
-            this.Controls.Add(this.txtCodigo);
-            this.Controls.Add(descripcionLabel);
-            this.Controls.Add(this.descripcionComboBox);
             this.Controls.Add(this.ingenieriasBindingNavigator);
+            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AltaMateria";
             this.Text = "AltaMateria";
@@ -325,6 +355,8 @@
             this.ingenieriasBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ingenieriasBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numSemestre)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -357,5 +389,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.NumericUpDown numSemestre;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
     }
 }
