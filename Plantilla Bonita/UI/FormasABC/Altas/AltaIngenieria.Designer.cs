@@ -1,4 +1,4 @@
-﻿namespace Plantilla_Bonita.UI.FormasABC.Altas
+﻿namespace SGA_ITSL.UI.FormasABC.Altas
 {
     partial class AltaIngenieria
     {

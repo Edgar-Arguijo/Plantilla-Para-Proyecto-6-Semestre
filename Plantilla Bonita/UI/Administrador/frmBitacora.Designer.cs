@@ -1,4 +1,4 @@
-﻿namespace Plantilla_Bonita.UI.Administrador
+﻿namespace SGA_ITSL.UI.Administrador
 {
     partial class frmBitacora
     {
@@ -34,10 +34,10 @@
             System.Windows.Forms.Label label1;
             System.Windows.Forms.Label label2;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBitacora));
-            this.bitacoraDataSet = new Plantilla_Bonita.DataSets.DataSets_Bitacora.BitacoraDataSet();
+            this.bitacoraDataSet = new SGA_ITSL.DataSets.DataSets_Bitacora.BitacoraDataSet();
             this.bitacoraBaseDeDatos_VistaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.bitacoraBaseDeDatos_VistaTableAdapter = new Plantilla_Bonita.DataSets.DataSets_Bitacora.BitacoraDataSetTableAdapters.BitacoraBaseDeDatos_VistaTableAdapter();
-            this.tableAdapterManager = new Plantilla_Bonita.DataSets.DataSets_Bitacora.BitacoraDataSetTableAdapters.TableAdapterManager();
+            this.bitacoraBaseDeDatos_VistaTableAdapter = new SGA_ITSL.DataSets.DataSets_Bitacora.BitacoraDataSetTableAdapters.BitacoraBaseDeDatos_VistaTableAdapter();
+            this.tableAdapterManager = new SGA_ITSL.DataSets.DataSets_Bitacora.BitacoraDataSetTableAdapters.TableAdapterManager();
             this.bitacoraBaseDeDatos_VistaBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
@@ -56,20 +56,20 @@
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.actuarioDataSet = new Plantilla_Bonita.DataSets.DataSets_Bitacora.ActuarioDataSet();
+            this.actuarioDataSet = new SGA_ITSL.DataSets.DataSets_Bitacora.ActuarioDataSet();
             this.bitacoraBaseDeDatosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.bitacoraBaseDeDatosTableAdapter = new Plantilla_Bonita.DataSets.DataSets_Bitacora.ActuarioDataSetTableAdapters.BitacoraBaseDeDatosTableAdapter();
-            this.tableAdapterManager1 = new Plantilla_Bonita.DataSets.DataSets_Bitacora.ActuarioDataSetTableAdapters.TableAdapterManager();
+            this.bitacoraBaseDeDatosTableAdapter = new SGA_ITSL.DataSets.DataSets_Bitacora.ActuarioDataSetTableAdapters.BitacoraBaseDeDatosTableAdapter();
+            this.tableAdapterManager1 = new SGA_ITSL.DataSets.DataSets_Bitacora.ActuarioDataSetTableAdapters.TableAdapterManager();
             this.actuarioComboBox = new System.Windows.Forms.ComboBox();
             this.bitacoraBaseDeDatosBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.bitacoraBaseDeDatosBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.actuarioDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.fillByToolStrip = new System.Windows.Forms.ToolStrip();
             this.fillByToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.tablaBitacoraDataSet = new Plantilla_Bonita.DataSets.DataSets_Bitacora.TablaBitacoraDataSet();
+            this.tablaBitacoraDataSet = new SGA_ITSL.DataSets.DataSets_Bitacora.TablaBitacoraDataSet();
             this.bitacoraBaseDeDatosBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
-            this.bitacoraBaseDeDatosTableAdapter1 = new Plantilla_Bonita.DataSets.DataSets_Bitacora.TablaBitacoraDataSetTableAdapters.BitacoraBaseDeDatosTableAdapter();
-            this.tableAdapterManager2 = new Plantilla_Bonita.DataSets.DataSets_Bitacora.TablaBitacoraDataSetTableAdapters.TableAdapterManager();
+            this.bitacoraBaseDeDatosTableAdapter1 = new SGA_ITSL.DataSets.DataSets_Bitacora.TablaBitacoraDataSetTableAdapters.BitacoraBaseDeDatosTableAdapter();
+            this.tableAdapterManager2 = new SGA_ITSL.DataSets.DataSets_Bitacora.TablaBitacoraDataSetTableAdapters.TableAdapterManager();
             this.tablaComboBox = new System.Windows.Forms.ComboBox();
             this.bitacoraBaseDeDatosBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
             this.fillByToolStrip1 = new System.Windows.Forms.ToolStrip();
@@ -160,7 +160,7 @@
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.Connection = null;
-            this.tableAdapterManager.UpdateOrder = Plantilla_Bonita.DataSets.DataSets_Bitacora.BitacoraDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UpdateOrder = SGA_ITSL.DataSets.DataSets_Bitacora.BitacoraDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // bitacoraBaseDeDatos_VistaBindingNavigator
             // 
@@ -363,7 +363,7 @@
             // 
             this.tableAdapterManager1.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager1.BitacoraBaseDeDatosTableAdapter = this.bitacoraBaseDeDatosTableAdapter;
-            this.tableAdapterManager1.UpdateOrder = Plantilla_Bonita.DataSets.DataSets_Bitacora.ActuarioDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager1.UpdateOrder = SGA_ITSL.DataSets.DataSets_Bitacora.ActuarioDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // actuarioComboBox
             // 
@@ -430,7 +430,7 @@
             // 
             this.tableAdapterManager2.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager2.BitacoraBaseDeDatosTableAdapter = this.bitacoraBaseDeDatosTableAdapter1;
-            this.tableAdapterManager2.UpdateOrder = Plantilla_Bonita.DataSets.DataSets_Bitacora.TablaBitacoraDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager2.UpdateOrder = SGA_ITSL.DataSets.DataSets_Bitacora.TablaBitacoraDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // tablaComboBox
             // 

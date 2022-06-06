@@ -5,7 +5,7 @@
       <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
           <Connection ConnectionStringObject="Data Source=DESKTOP-J06FE2O;Initial Catalog=Asistencias;Integrated Security=True" IsAppSettingsProperty="false" Modifier="Assembly" Name="desktop-j06fe2o.Asistencias.dbo" ParameterPrefix="@" Provider="System.Data.SqlClient" />
-          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="AsistenciaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="AsistenciaConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Plantilla_Bonita.Properties.Settings.GlobalReference.Default.AsistenciaConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="AsistenciaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="AsistenciaConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SGA_ITSL.Properties.Settings.GlobalReference.Default.AsistenciaConnectionString" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Vista_DocentesTableAdapter" GeneratorDataComponentClassName="Vista_DocentesTableAdapter" Name="Vista_Docentes" UserDataComponentName="Vista_DocentesTableAdapter">
@@ -33,17 +33,17 @@
   <xs:element name="DocentesDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DocentesDataSet" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DocentesDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Vista_Docentes" msprop:Generator_RowClassName="Vista_DocentesRow" msprop:Generator_RowEvHandlerName="Vista_DocentesRowChangeEventHandler" msprop:Generator_RowDeletedName="Vista_DocentesRowDeleted" msprop:Generator_RowDeletingName="Vista_DocentesRowDeleting" msprop:Generator_RowEvArgName="Vista_DocentesRowChangeEvent" msprop:Generator_TablePropName="Vista_Docentes" msprop:Generator_RowChangedName="Vista_DocentesRowChanged" msprop:Generator_UserTableName="Vista_Docentes" msprop:Generator_RowChangingName="Vista_DocentesRowChanging" msprop:Generator_TableClassName="Vista_DocentesDataTable" msprop:Generator_TableVarName="tableVista_Docentes">
+        <xs:element name="Vista_Docentes" msprop:Generator_RowEvHandlerName="Vista_DocentesRowChangeEventHandler" msprop:Generator_RowDeletedName="Vista_DocentesRowDeleted" msprop:Generator_RowDeletingName="Vista_DocentesRowDeleting" msprop:Generator_RowEvArgName="Vista_DocentesRowChangeEvent" msprop:Generator_TablePropName="Vista_Docentes" msprop:Generator_RowChangedName="Vista_DocentesRowChanged" msprop:Generator_UserTableName="Vista_Docentes" msprop:Generator_RowChangingName="Vista_DocentesRowChanging" msprop:Generator_RowClassName="Vista_DocentesRow" msprop:Generator_TableClassName="Vista_DocentesDataTable" msprop:Generator_TableVarName="tableVista_Docentes">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="Identificador" msprop:Generator_UserColumnName="Identificador" msprop:Generator_ColumnPropNameInTable="IdentificadorColumn" msprop:Generator_ColumnPropNameInRow="Identificador" msprop:Generator_ColumnVarNameInTable="columnIdentificador">
+              <xs:element name="Identificador" msprop:Generator_ColumnPropNameInTable="IdentificadorColumn" msprop:Generator_ColumnPropNameInRow="Identificador" msprop:Generator_UserColumnName="Identificador" msprop:Generator_ColumnVarNameInTable="columnIdentificador">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Nombre" msprop:Generator_UserColumnName="Nombre" msprop:Generator_ColumnPropNameInTable="NombreColumn" msprop:Generator_ColumnPropNameInRow="Nombre" msprop:Generator_ColumnVarNameInTable="columnNombre" minOccurs="0">
+              <xs:element name="Nombre" msprop:Generator_ColumnPropNameInTable="NombreColumn" msprop:Generator_ColumnPropNameInRow="Nombre" msprop:Generator_UserColumnName="Nombre" msprop:Generator_ColumnVarNameInTable="columnNombre" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="2147483647" />

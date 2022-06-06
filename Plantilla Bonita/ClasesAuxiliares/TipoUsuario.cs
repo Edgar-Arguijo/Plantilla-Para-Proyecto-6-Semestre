@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Plantilla_Bonita.ClasesAuxiliares
+namespace SGA_ITSL.ClasesAuxiliares
 {
     /// <summary>
     /// Clase para la definicio de controles en base a el tipo de usuario

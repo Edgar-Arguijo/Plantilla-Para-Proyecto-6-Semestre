@@ -1,5 +1,5 @@
 ﻿using Dominio;
-using Plantilla_Bonita.ClasesAuxiliares;
+using SGA_ITSL.ClasesAuxiliares;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Plantilla_Bonita.UI.FormasABC.Altas
+namespace SGA_ITSL.UI.FormasABC.Altas
 {
     public partial class AltaMateria : Form
     {

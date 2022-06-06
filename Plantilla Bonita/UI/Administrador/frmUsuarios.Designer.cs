@@ -1,4 +1,4 @@
-﻿namespace Plantilla_Bonita
+﻿namespace SGA_ITSL
 {
     partial class frmUsuarios
     {
@@ -43,15 +43,15 @@
             this.btnNuevo = new FontAwesome.Sharp.IconPictureBox();
             this.rolComboBox = new System.Windows.Forms.ComboBox();
             this.usuariosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.usuariosDataSet = new Plantilla_Bonita.DataSets.UsuariosDataSet();
+            this.usuariosDataSet = new SGA_ITSL.DataSets.UsuariosDataSet();
             this.contraseñaTextBox = new System.Windows.Forms.TextBox();
             this.nombreDeUsuarioTextBox = new System.Windows.Forms.TextBox();
             this.usuariosDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.usuariosTableAdapter = new Plantilla_Bonita.DataSets.UsuariosDataSetTableAdapters.UsuariosTableAdapter();
-            this.tableAdapterManager = new Plantilla_Bonita.DataSets.UsuariosDataSetTableAdapters.TableAdapterManager();
+            this.usuariosTableAdapter = new SGA_ITSL.DataSets.UsuariosDataSetTableAdapters.UsuariosTableAdapter();
+            this.tableAdapterManager = new SGA_ITSL.DataSets.UsuariosDataSetTableAdapters.TableAdapterManager();
             this.usuariosBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
@@ -295,7 +295,7 @@
             // tableAdapterManager
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.UpdateOrder = Plantilla_Bonita.DataSets.UsuariosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UpdateOrder = SGA_ITSL.DataSets.UsuariosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.UsuariosTableAdapter = this.usuariosTableAdapter;
             // 
             // usuariosBindingNavigator

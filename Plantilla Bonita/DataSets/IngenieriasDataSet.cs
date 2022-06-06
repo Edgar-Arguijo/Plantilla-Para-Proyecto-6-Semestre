@@ -1,4 +1,4 @@
-﻿namespace Plantilla_Bonita.DataSets
+﻿namespace SGA_ITSL.DataSets
 {
 
 
@@ -7,7 +7,7 @@
     }
 }
 
-namespace Plantilla_Bonita.DataSets.IngenieriasDataSetTableAdapters
+namespace SGA_ITSL.DataSets.IngenieriasDataSetTableAdapters
 {
 
 

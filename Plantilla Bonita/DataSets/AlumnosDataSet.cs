@@ -1,4 +1,4 @@
-﻿namespace Plantilla_Bonita.DataSets
+﻿namespace SGA_ITSL.DataSets
 {
 
 
@@ -7,9 +7,11 @@
     }
 }
 
-namespace Plantilla_Bonita.DataSets.AlumnosDataSetTableAdapters {
-    
-    
-    public partial class Vista_AlumnosTableAdapter {
+namespace SGA_ITSL.DataSets.AlumnosDataSetTableAdapters
+{
+
+
+    public partial class Vista_AlumnosTableAdapter
+    {
     }
 }

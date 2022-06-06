@@ -4,7 +4,7 @@
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="AsistenciaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="AsistenciaConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Plantilla_Bonita.Properties.Settings.GlobalReference.Default.AsistenciaConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="AsistenciaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="AsistenciaConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SGA_ITSL.Properties.Settings.GlobalReference.Default.AsistenciaConnectionString" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="EdificiosTableAdapter" GeneratorDataComponentClassName="EdificiosTableAdapter" Name="Edificios" UserDataComponentName="EdificiosTableAdapter">
@@ -58,20 +58,20 @@ SELECT CodigoEdificio, Descripcion FROM Edificios WHERE (CodigoEdificio = @Codig
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="EdificiosDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="EdificiosDataSet" msprop:Generator_DataSetName="EdificiosDataSet">
+  <xs:element name="EdificiosDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="EdificiosDataSet" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="EdificiosDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Edificios" msprop:Generator_RowEvHandlerName="EdificiosRowChangeEventHandler" msprop:Generator_RowDeletedName="EdificiosRowDeleted" msprop:Generator_RowDeletingName="EdificiosRowDeleting" msprop:Generator_RowEvArgName="EdificiosRowChangeEvent" msprop:Generator_TablePropName="Edificios" msprop:Generator_RowChangedName="EdificiosRowChanged" msprop:Generator_RowChangingName="EdificiosRowChanging" msprop:Generator_TableClassName="EdificiosDataTable" msprop:Generator_RowClassName="EdificiosRow" msprop:Generator_TableVarName="tableEdificios" msprop:Generator_UserTableName="Edificios">
+        <xs:element name="Edificios" msprop:Generator_RowClassName="EdificiosRow" msprop:Generator_RowEvHandlerName="EdificiosRowChangeEventHandler" msprop:Generator_RowDeletedName="EdificiosRowDeleted" msprop:Generator_RowDeletingName="EdificiosRowDeleting" msprop:Generator_RowEvArgName="EdificiosRowChangeEvent" msprop:Generator_TablePropName="Edificios" msprop:Generator_RowChangedName="EdificiosRowChanged" msprop:Generator_UserTableName="Edificios" msprop:Generator_RowChangingName="EdificiosRowChanging" msprop:Generator_TableClassName="EdificiosDataTable" msprop:Generator_TableVarName="tableEdificios">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="CodigoEdificio" msprop:Generator_ColumnPropNameInRow="CodigoEdificio" msprop:Generator_ColumnPropNameInTable="CodigoEdificioColumn" msprop:Generator_ColumnVarNameInTable="columnCodigoEdificio" msprop:Generator_UserColumnName="CodigoEdificio">
+              <xs:element name="CodigoEdificio" msprop:Generator_UserColumnName="CodigoEdificio" msprop:Generator_ColumnPropNameInTable="CodigoEdificioColumn" msprop:Generator_ColumnPropNameInRow="CodigoEdificio" msprop:Generator_ColumnVarNameInTable="columnCodigoEdificio">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="3" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Descripcion" msprop:Generator_ColumnPropNameInRow="Descripcion" msprop:Generator_ColumnPropNameInTable="DescripcionColumn" msprop:Generator_ColumnVarNameInTable="columnDescripcion" msprop:Generator_UserColumnName="Descripcion" minOccurs="0">
+              <xs:element name="Descripcion" msprop:Generator_UserColumnName="Descripcion" msprop:Generator_ColumnPropNameInTable="DescripcionColumn" msprop:Generator_ColumnPropNameInRow="Descripcion" msprop:Generator_ColumnVarNameInTable="columnDescripcion" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="2147483647" />

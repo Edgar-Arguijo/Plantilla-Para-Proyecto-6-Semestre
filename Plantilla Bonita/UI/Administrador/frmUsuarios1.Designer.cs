@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Plantilla_Bonita.UI.Administrador {
+namespace SGA_ITSL.UI.Administrador {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Plantilla_Bonita.UI.Administrador {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Plantilla_Bonita.UI.Administrador.frmUsuarios", typeof(frmUsuarios).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SGA_ITSL.UI.Administrador.frmUsuarios", typeof(frmUsuarios).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

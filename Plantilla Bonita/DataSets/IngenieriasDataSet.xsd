@@ -5,7 +5,7 @@
       <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
           <Connection ConnectionStringObject="Data Source=DESKTOP-J06FE2O;Initial Catalog=Asistencias;Integrated Security=True" IsAppSettingsProperty="false" Modifier="Assembly" Name="desktop-j06fe2o.Asistencias.dbo" ParameterPrefix="@" Provider="System.Data.SqlClient" />
-          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="AsistenciaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="AsistenciaConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Plantilla_Bonita.Properties.Settings.GlobalReference.Default.AsistenciaConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="AsistenciaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="AsistenciaConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SGA_ITSL.Properties.Settings.GlobalReference.Default.AsistenciaConnectionString" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="IngenieriasTableAdapter" GeneratorDataComponentClassName="IngenieriasTableAdapter" Name="Ingenierias" UserDataComponentName="IngenieriasTableAdapter">
@@ -53,7 +53,7 @@ FROM            Ingenierias</CommandText>
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Cod_Ing" msprop:Generator_UserColumnName="Cod_Ing" msprop:Generator_ColumnPropNameInTable="Cod_IngColumn" msprop:Generator_ColumnPropNameInRow="Cod_Ing" msprop:Generator_ColumnVarNameInTable="columnCod_Ing">
+              <xs:element name="Cod_Ing" msprop:Generator_ColumnPropNameInTable="Cod_IngColumn" msprop:Generator_ColumnPropNameInRow="Cod_Ing" msprop:Generator_UserColumnName="Cod_Ing" msprop:Generator_ColumnVarNameInTable="columnCod_Ing">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="20" />

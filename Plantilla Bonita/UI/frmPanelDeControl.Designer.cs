@@ -1,4 +1,4 @@
-﻿namespace Plantilla_Bonita
+﻿namespace SGA_ITSL
 {
     partial class frmPanelDeControl
     {
@@ -300,14 +300,14 @@
             // pictureBox3
             // 
             resources.ApplyResources(this.pictureBox3, "pictureBox3");
-            this.pictureBox3.Image = global::Plantilla_Bonita.Properties.Resources.Imagen21;
+            this.pictureBox3.Image = global::SGA_ITSL.Properties.Resources.Imagen21;
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.TabStop = false;
             // 
             // pictureBox2
             // 
             resources.ApplyResources(this.pictureBox2, "pictureBox2");
-            this.pictureBox2.Image = global::Plantilla_Bonita.Properties.Resources.Imagen1;
+            this.pictureBox2.Image = global::SGA_ITSL.Properties.Resources.Imagen1;
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.TabStop = false;
             // 
@@ -341,7 +341,7 @@
             // 
             resources.ApplyResources(this.btnRestaurar, "btnRestaurar");
             this.btnRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRestaurar.Image = global::Plantilla_Bonita.Properties.Resources.Imagen5;
+            this.btnRestaurar.Image = global::SGA_ITSL.Properties.Resources.Imagen5;
             this.btnRestaurar.Name = "btnRestaurar";
             this.btnRestaurar.TabStop = false;
             this.btnRestaurar.Click += new System.EventHandler(this.btnRestaurar_Click);
@@ -350,7 +350,7 @@
             // 
             resources.ApplyResources(this.btnMinimizar, "btnMinimizar");
             this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMinimizar.Image = global::Plantilla_Bonita.Properties.Resources.Imagen4;
+            this.btnMinimizar.Image = global::SGA_ITSL.Properties.Resources.Imagen4;
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.TabStop = false;
             this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
@@ -359,7 +359,7 @@
             // 
             resources.ApplyResources(this.btnMaximizar, "btnMaximizar");
             this.btnMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMaximizar.Image = global::Plantilla_Bonita.Properties.Resources.Imagen2;
+            this.btnMaximizar.Image = global::SGA_ITSL.Properties.Resources.Imagen2;
             this.btnMaximizar.Name = "btnMaximizar";
             this.btnMaximizar.TabStop = false;
             this.btnMaximizar.Click += new System.EventHandler(this.btnMaximizar_Click);
@@ -368,7 +368,7 @@
             // 
             resources.ApplyResources(this.btnSalir, "btnSalir");
             this.btnSalir.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSalir.Image = global::Plantilla_Bonita.Properties.Resources.Imagen3;
+            this.btnSalir.Image = global::SGA_ITSL.Properties.Resources.Imagen3;
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.TabStop = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
@@ -376,7 +376,7 @@
             // btnslider
             // 
             this.btnslider.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnslider.Image = global::Plantilla_Bonita.Properties.Resources.Imagen6;
+            this.btnslider.Image = global::SGA_ITSL.Properties.Resources.Imagen6;
             resources.ApplyResources(this.btnslider, "btnslider");
             this.btnslider.Name = "btnslider";
             this.btnslider.TabStop = false;

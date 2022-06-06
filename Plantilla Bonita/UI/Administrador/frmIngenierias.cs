@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Windows.Forms;
-using Plantilla_Bonita.ClasesAuxiliares;
-using Plantilla_Bonita.UI.FormasABC.Altas;
+using SGA_ITSL.ClasesAuxiliares;
+using SGA_ITSL.UI.FormasABC.Altas;
 
-namespace Plantilla_Bonita
+namespace SGA_ITSL
 {
     public partial class frmIngenierias : Form
     {

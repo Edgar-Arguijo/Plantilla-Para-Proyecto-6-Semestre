@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace Plantilla_Bonita.DataSets {
+namespace SGA_ITSL.DataSets {
     
     
     /// <summary>
@@ -683,7 +683,7 @@ namespace Plantilla_Bonita.DataSets {
         }
     }
 }
-namespace Plantilla_Bonita.DataSets.AsistenciasDataSetTableAdapters {
+namespace SGA_ITSL.DataSets.AsistenciasDataSetTableAdapters {
     
     
     /// <summary>
@@ -817,7 +817,7 @@ namespace Plantilla_Bonita.DataSets.AsistenciasDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Plantilla_Bonita.Properties.Settings.Default.AsistenciaConnectionString;
+            this._connection.ConnectionString = global::SGA_ITSL.Properties.Settings.Default.AsistenciaConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace Plantilla_Bonita.DataSets.DataSets_Bitacora {
+namespace SGA_ITSL.DataSets.DataSets_Bitacora {
     
     
     /// <summary>
@@ -678,7 +678,7 @@ namespace Plantilla_Bonita.DataSets.DataSets_Bitacora {
         }
     }
 }
-namespace Plantilla_Bonita.DataSets.DataSets_Bitacora.MateriasDataSetTableAdapters {
+namespace SGA_ITSL.DataSets.DataSets_Bitacora.MateriasDataSetTableAdapters {
     
     
     /// <summary>
@@ -812,7 +812,7 @@ namespace Plantilla_Bonita.DataSets.DataSets_Bitacora.MateriasDataSetTableAdapte
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Plantilla_Bonita.Properties.Settings.Default.AsistenciaConnectionString;
+            this._connection.ConnectionString = global::SGA_ITSL.Properties.Settings.Default.AsistenciaConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

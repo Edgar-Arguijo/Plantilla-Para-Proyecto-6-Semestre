@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Plantilla_Bonita
+namespace SGA_ITSL
 {
     public partial class Alumnos : Form
     {

@@ -1,4 +1,4 @@
-﻿namespace Plantilla_Bonita
+﻿namespace SGA_ITSL
 {
     partial class frmIngenierias
     {
@@ -35,7 +35,7 @@
             this.ingenieriasBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.ingenieriasBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.aBC_IngenieriasDataSet = new Plantilla_Bonita.DataSets.ABC_IngenieriasDataSet();
+            this.aBC_IngenieriasDataSet = new SGA_ITSL.DataSets.ABC_IngenieriasDataSet();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -52,8 +52,8 @@
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cod_IngTextBox = new System.Windows.Forms.TextBox();
             this.descripcionTextBox = new System.Windows.Forms.TextBox();
-            this.ingenieriasTableAdapter = new Plantilla_Bonita.DataSets.ABC_IngenieriasDataSetTableAdapters.IngenieriasTableAdapter();
-            this.tableAdapterManager = new Plantilla_Bonita.DataSets.ABC_IngenieriasDataSetTableAdapters.TableAdapterManager();
+            this.ingenieriasTableAdapter = new SGA_ITSL.DataSets.ABC_IngenieriasDataSetTableAdapters.IngenieriasTableAdapter();
+            this.tableAdapterManager = new SGA_ITSL.DataSets.ABC_IngenieriasDataSetTableAdapters.TableAdapterManager();
             this.pnlPrincipal = new System.Windows.Forms.Panel();
             this.btnDelete = new FontAwesome.Sharp.IconPictureBox();
             this.btnAgregarNuevo = new FontAwesome.Sharp.IconPictureBox();
@@ -288,7 +288,7 @@
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.IngenieriasTableAdapter = this.ingenieriasTableAdapter;
-            this.tableAdapterManager.UpdateOrder = Plantilla_Bonita.DataSets.ABC_IngenieriasDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UpdateOrder = SGA_ITSL.DataSets.ABC_IngenieriasDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // pnlPrincipal
             // 

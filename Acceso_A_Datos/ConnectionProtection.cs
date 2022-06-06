@@ -2,7 +2,7 @@
 using System.IO;
 using System.Configuration;
 
-namespace Plantilla_Bonita
+namespace SGA_ITSL
 {   
     /// <summary>
     /// Clase de proteccion / encriptacion de la cadena de conexion

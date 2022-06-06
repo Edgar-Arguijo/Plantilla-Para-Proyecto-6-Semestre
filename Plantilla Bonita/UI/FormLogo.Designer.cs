@@ -1,5 +1,5 @@
 ﻿
-namespace Plantilla_Bonita
+namespace SGA_ITSL
 {
     partial class FormLogo
     {
@@ -50,7 +50,7 @@ namespace Plantilla_Bonita
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.Image = global::Plantilla_Bonita.Properties.Resources.Imagen9;
+            this.pictureBox1.Image = global::SGA_ITSL.Properties.Resources.Imagen9;
             this.pictureBox1.Location = new System.Drawing.Point(12, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1035, 519);

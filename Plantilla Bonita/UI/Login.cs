@@ -6,12 +6,12 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Plantilla_Bonita.ClasesAuxiliares;
+using SGA_ITSL.ClasesAuxiliares;
 using Dominio;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 
-namespace Plantilla_Bonita
+namespace SGA_ITSL
 {
     public partial class Login : Form
     {

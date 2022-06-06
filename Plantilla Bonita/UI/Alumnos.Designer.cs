@@ -1,5 +1,5 @@
 ﻿
-namespace Plantilla_Bonita
+namespace SGA_ITSL
 {
     partial class Alumnos
     {
@@ -40,12 +40,12 @@ namespace Plantilla_Bonita
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.vista_AlumnosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.alumnosDataSet = new Plantilla_Bonita.DataSets.AlumnosDataSet();
+            this.alumnosDataSet = new SGA_ITSL.DataSets.AlumnosDataSet();
             this.ingenieriasComboBox = new System.Windows.Forms.ComboBox();
             this.ingenieriasBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.ingenieriasDataSet = new Plantilla_Bonita.DataSets.IngenieriasDataSet();
-            this.ingenieriasTableAdapter = new Plantilla_Bonita.DataSets.IngenieriasDataSetTableAdapters.IngenieriasTableAdapter();
-            this.tableAdapterManager = new Plantilla_Bonita.DataSets.IngenieriasDataSetTableAdapters.TableAdapterManager();
+            this.ingenieriasDataSet = new SGA_ITSL.DataSets.IngenieriasDataSet();
+            this.ingenieriasTableAdapter = new SGA_ITSL.DataSets.IngenieriasDataSetTableAdapters.IngenieriasTableAdapter();
+            this.tableAdapterManager = new SGA_ITSL.DataSets.IngenieriasDataSetTableAdapters.TableAdapterManager();
             this.ingenieriasBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
@@ -59,8 +59,8 @@ namespace Plantilla_Bonita
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.ingenieriasBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.vista_AlumnosTableAdapter = new Plantilla_Bonita.DataSets.AlumnosDataSetTableAdapters.Vista_AlumnosTableAdapter();
-            this.tableAdapterManager1 = new Plantilla_Bonita.DataSets.AlumnosDataSetTableAdapters.TableAdapterManager();
+            this.vista_AlumnosTableAdapter = new SGA_ITSL.DataSets.AlumnosDataSetTableAdapters.Vista_AlumnosTableAdapter();
+            this.tableAdapterManager1 = new SGA_ITSL.DataSets.AlumnosDataSetTableAdapters.TableAdapterManager();
             this.panelAlumnos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnPrint)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vista_AlumnosDataGridView)).BeginInit();
@@ -210,7 +210,7 @@ namespace Plantilla_Bonita
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.Connection = null;
-            this.tableAdapterManager.UpdateOrder = Plantilla_Bonita.DataSets.IngenieriasDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UpdateOrder = SGA_ITSL.DataSets.IngenieriasDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // ingenieriasBindingNavigator
             // 
@@ -346,7 +346,7 @@ namespace Plantilla_Bonita
             // 
             this.tableAdapterManager1.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager1.Connection = null;
-            this.tableAdapterManager1.UpdateOrder = Plantilla_Bonita.DataSets.AlumnosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager1.UpdateOrder = SGA_ITSL.DataSets.AlumnosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // Alumnos
             // 

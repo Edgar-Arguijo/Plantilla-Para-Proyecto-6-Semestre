@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32407.343
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plantilla Bonita", "Plantilla Bonita\Plantilla Bonita.csproj", "{FDFB2EDB-85E6-4690-BF3B-FD9F833AAB60}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SGA ITSL", "Plantilla Bonita\SGA ITSL.csproj", "{FDFB2EDB-85E6-4690-BF3B-FD9F833AAB60}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acceso_A_Datos", "Acceso_A_Datos\Acceso_A_Datos.csproj", "{D1736965-2380-4783-AFCE-027110EE260A}"
 EndProject
