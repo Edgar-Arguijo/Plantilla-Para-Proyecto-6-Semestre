@@ -181,8 +181,6 @@ namespace Acceso_A_Datos
                         if (cmd.Parameters["@flag"].Value.ToString() == "1")
                             return true;
 
-                        //
-
                         return false;
                     }
                 }

@@ -19,7 +19,11 @@ namespace Dominio
         public bool AltaMateria(string codIng, string codMateria, string desc, int semestre, string usuario)
         {
             return obj.AltaMateria(codIng, codMateria, desc, semestre, usuario);
-        
+        }
+
+        public bool AltaAula(string usuario, string codEdificio, string codAula, string desc)
+        {
+            return obj.AltaAula(usuario,codEdificio,codAula,desc);
         }
 
         public bool AltaIngenieria(string usuario, string cod, string desc) 
