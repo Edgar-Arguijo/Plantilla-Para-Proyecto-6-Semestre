@@ -56,10 +56,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.numSemestre = new System.Windows.Forms.NumericUpDown();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.btnAgregar = new System.Windows.Forms.Button();
             this.btnCerrar = new FontAwesome.Sharp.IconPictureBox();
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             descripcionLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ingenieriasDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ingenieriasBindingSource)).BeginInit();
@@ -315,24 +315,21 @@
             this.panel1.Size = new System.Drawing.Size(352, 289);
             this.panel1.TabIndex = 9;
             // 
-            // panel2
+            // btnCerrar
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(352, 40);
-            this.panel2.TabIndex = 0;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
-            this.label3.Location = new System.Drawing.Point(16, 221);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 25);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Semestre:";
+            this.btnCerrar.BackColor = System.Drawing.Color.LemonChiffon;
+            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCerrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnCerrar.IconChar = FontAwesome.Sharp.IconChar.Times;
+            this.btnCerrar.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnCerrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCerrar.IconSize = 26;
+            this.btnCerrar.Location = new System.Drawing.Point(325, 41);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(26, 28);
+            this.btnCerrar.TabIndex = 16;
+            this.btnCerrar.TabStop = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // btnAgregar
             // 
@@ -350,21 +347,24 @@
             this.btnAgregar.UseVisualStyleBackColor = false;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
-            // btnCerrar
+            // label3
             // 
-            this.btnCerrar.BackColor = System.Drawing.Color.LemonChiffon;
-            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCerrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
-            this.btnCerrar.IconChar = FontAwesome.Sharp.IconChar.Times;
-            this.btnCerrar.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
-            this.btnCerrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnCerrar.IconSize = 26;
-            this.btnCerrar.Location = new System.Drawing.Point(325, 41);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(26, 28);
-            this.btnCerrar.TabIndex = 16;
-            this.btnCerrar.TabStop = false;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
+            this.label3.Location = new System.Drawing.Point(16, 221);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(83, 25);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Semestre:";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(352, 40);
+            this.panel2.TabIndex = 0;
             // 
             // AltaMateria
             // 
@@ -376,6 +376,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AltaMateria";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "AltaMateria";
             this.Load += new System.EventHandler(this.AltaMateria_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ingenieriasDataSet)).EndInit();
