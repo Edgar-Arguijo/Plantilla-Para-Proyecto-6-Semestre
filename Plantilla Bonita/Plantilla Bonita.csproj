@@ -234,12 +234,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ActuarioDataSet.Designer.cs">
+    <Compile Include="DataSets\DataSets Bitacora\ActuarioDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ActuarioDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="BitacoraDataSet.Designer.cs">
+    <Compile Include="DataSets\DataSets Bitacora\BitacoraDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>BitacoraDataSet.xsd</DependentUpon>
@@ -261,15 +261,15 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ABC_IngenieriasDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="MateriasDataSet.cs">
+    <Compile Include="DataSets\DataSets Bitacora\MateriasDataSet.cs">
       <DependentUpon>MateriasDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="MateriasDataSet.Designer.cs">
+    <Compile Include="DataSets\DataSets Bitacora\MateriasDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>MateriasDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="TablaBitacoraDataSet.Designer.cs">
+    <Compile Include="DataSets\DataSets Bitacora\TablaBitacoraDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>TablaBitacoraDataSet.xsd</DependentUpon>
@@ -481,26 +481,26 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="ActuarioDataSet.xsc">
+    <None Include="DataSets\DataSets Bitacora\ActuarioDataSet.xsc">
       <DependentUpon>ActuarioDataSet.xsd</DependentUpon>
     </None>
-    <None Include="ActuarioDataSet.xsd">
+    <None Include="DataSets\DataSets Bitacora\ActuarioDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>ActuarioDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="ActuarioDataSet.xss">
+    <None Include="DataSets\DataSets Bitacora\ActuarioDataSet.xss">
       <DependentUpon>ActuarioDataSet.xsd</DependentUpon>
     </None>
-    <None Include="BitacoraDataSet.xsc">
+    <None Include="DataSets\DataSets Bitacora\BitacoraDataSet.xsc">
       <DependentUpon>BitacoraDataSet.xsd</DependentUpon>
     </None>
-    <None Include="BitacoraDataSet.xsd">
+    <None Include="DataSets\DataSets Bitacora\BitacoraDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>BitacoraDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="BitacoraDataSet.xss">
+    <None Include="DataSets\DataSets Bitacora\BitacoraDataSet.xss">
       <DependentUpon>BitacoraDataSet.xsd</DependentUpon>
     </None>
     <None Include="DataSets\AforosDataSet.xsc">
@@ -602,15 +602,15 @@
     <None Include="DataSets\EdificiosDataSet.xss">
       <DependentUpon>EdificiosDataSet.xsd</DependentUpon>
     </None>
-    <None Include="MateriasDataSet.xsc">
+    <None Include="DataSets\DataSets Bitacora\MateriasDataSet.xsc">
       <DependentUpon>MateriasDataSet.xsd</DependentUpon>
     </None>
-    <None Include="MateriasDataSet.xsd">
+    <None Include="DataSets\DataSets Bitacora\MateriasDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>MateriasDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="MateriasDataSet.xss">
+    <None Include="DataSets\DataSets Bitacora\MateriasDataSet.xss">
       <DependentUpon>MateriasDataSet.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
@@ -634,15 +634,15 @@
     <None Include="DataSets\UsuariosDataSet.xss">
       <DependentUpon>UsuariosDataSet.xsd</DependentUpon>
     </None>
-    <None Include="TablaBitacoraDataSet.xsc">
+    <None Include="DataSets\DataSets Bitacora\TablaBitacoraDataSet.xsc">
       <DependentUpon>TablaBitacoraDataSet.xsd</DependentUpon>
     </None>
-    <None Include="TablaBitacoraDataSet.xsd">
+    <None Include="DataSets\DataSets Bitacora\TablaBitacoraDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>TablaBitacoraDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="TablaBitacoraDataSet.xss">
+    <None Include="DataSets\DataSets Bitacora\TablaBitacoraDataSet.xss">
       <DependentUpon>TablaBitacoraDataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>

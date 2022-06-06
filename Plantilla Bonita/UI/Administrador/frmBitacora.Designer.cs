@@ -32,10 +32,12 @@
             System.Windows.Forms.Label actuarioLabel;
             System.Windows.Forms.Label tablaLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBitacora));
-            this.bitacoraDataSet = new Plantilla_Bonita.BitacoraDataSet();
+            System.Windows.Forms.Label label1;
+            System.Windows.Forms.Label label2;
+            this.bitacoraDataSet = new Plantilla_Bonita.DataSets.DataSets_Bitacora.BitacoraDataSet();
             this.bitacoraBaseDeDatos_VistaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.bitacoraBaseDeDatos_VistaTableAdapter = new Plantilla_Bonita.BitacoraDataSetTableAdapters.BitacoraBaseDeDatos_VistaTableAdapter();
-            this.tableAdapterManager = new Plantilla_Bonita.BitacoraDataSetTableAdapters.TableAdapterManager();
+            this.bitacoraBaseDeDatos_VistaTableAdapter = new Plantilla_Bonita.DataSets.DataSets_Bitacora.BitacoraDataSetTableAdapters.BitacoraBaseDeDatos_VistaTableAdapter();
+            this.tableAdapterManager = new Plantilla_Bonita.DataSets.DataSets_Bitacora.BitacoraDataSetTableAdapters.TableAdapterManager();
             this.bitacoraBaseDeDatos_VistaBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
@@ -54,26 +56,31 @@
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.actuarioDataSet = new Plantilla_Bonita.ActuarioDataSet();
+            this.actuarioDataSet = new Plantilla_Bonita.DataSets.DataSets_Bitacora.ActuarioDataSet();
             this.bitacoraBaseDeDatosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.bitacoraBaseDeDatosTableAdapter = new Plantilla_Bonita.ActuarioDataSetTableAdapters.BitacoraBaseDeDatosTableAdapter();
-            this.tableAdapterManager1 = new Plantilla_Bonita.ActuarioDataSetTableAdapters.TableAdapterManager();
+            this.bitacoraBaseDeDatosTableAdapter = new Plantilla_Bonita.DataSets.DataSets_Bitacora.ActuarioDataSetTableAdapters.BitacoraBaseDeDatosTableAdapter();
+            this.tableAdapterManager1 = new Plantilla_Bonita.DataSets.DataSets_Bitacora.ActuarioDataSetTableAdapters.TableAdapterManager();
             this.actuarioComboBox = new System.Windows.Forms.ComboBox();
             this.bitacoraBaseDeDatosBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.bitacoraBaseDeDatosBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.actuarioDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.fillByToolStrip = new System.Windows.Forms.ToolStrip();
             this.fillByToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.tablaBitacoraDataSet = new Plantilla_Bonita.TablaBitacoraDataSet();
+            this.tablaBitacoraDataSet = new Plantilla_Bonita.DataSets.DataSets_Bitacora.TablaBitacoraDataSet();
             this.bitacoraBaseDeDatosBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
-            this.bitacoraBaseDeDatosTableAdapter1 = new Plantilla_Bonita.TablaBitacoraDataSetTableAdapters.BitacoraBaseDeDatosTableAdapter();
-            this.tableAdapterManager2 = new Plantilla_Bonita.TablaBitacoraDataSetTableAdapters.TableAdapterManager();
+            this.bitacoraBaseDeDatosTableAdapter1 = new Plantilla_Bonita.DataSets.DataSets_Bitacora.TablaBitacoraDataSetTableAdapters.BitacoraBaseDeDatosTableAdapter();
+            this.tableAdapterManager2 = new Plantilla_Bonita.DataSets.DataSets_Bitacora.TablaBitacoraDataSetTableAdapters.TableAdapterManager();
             this.tablaComboBox = new System.Windows.Forms.ComboBox();
             this.bitacoraBaseDeDatosBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
             this.fillByToolStrip1 = new System.Windows.Forms.ToolStrip();
             this.fillByToolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.dtPckrInicio = new System.Windows.Forms.DateTimePicker();
+            this.dtPckrFin = new System.Windows.Forms.DateTimePicker();
+            this.chkFecha = new System.Windows.Forms.CheckBox();
             actuarioLabel = new System.Windows.Forms.Label();
             tablaLabel = new System.Windows.Forms.Label();
+            label1 = new System.Windows.Forms.Label();
+            label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.bitacoraDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bitacoraBaseDeDatos_VistaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bitacoraBaseDeDatos_VistaBindingNavigator)).BeginInit();
@@ -127,7 +134,7 @@
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.Connection = null;
-            this.tableAdapterManager.UpdateOrder = Plantilla_Bonita.BitacoraDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UpdateOrder = Plantilla_Bonita.DataSets.DataSets_Bitacora.BitacoraDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // bitacoraBaseDeDatos_VistaBindingNavigator
             // 
@@ -260,6 +267,8 @@
             this.bitacoraBaseDeDatos_VistaDataGridView.AllowUserToAddRows = false;
             this.bitacoraBaseDeDatos_VistaDataGridView.AllowUserToDeleteRows = false;
             this.bitacoraBaseDeDatos_VistaDataGridView.AllowUserToOrderColumns = true;
+            this.bitacoraBaseDeDatos_VistaDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.bitacoraBaseDeDatos_VistaDataGridView.AutoGenerateColumns = false;
             this.bitacoraBaseDeDatos_VistaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.bitacoraBaseDeDatos_VistaDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -328,7 +337,7 @@
             // 
             this.tableAdapterManager1.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager1.BitacoraBaseDeDatosTableAdapter = this.bitacoraBaseDeDatosTableAdapter;
-            this.tableAdapterManager1.UpdateOrder = Plantilla_Bonita.ActuarioDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager1.UpdateOrder = Plantilla_Bonita.DataSets.DataSets_Bitacora.ActuarioDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // actuarioComboBox
             // 
@@ -394,7 +403,7 @@
             // 
             this.tableAdapterManager2.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager2.BitacoraBaseDeDatosTableAdapter = this.bitacoraBaseDeDatosTableAdapter1;
-            this.tableAdapterManager2.UpdateOrder = Plantilla_Bonita.TablaBitacoraDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager2.UpdateOrder = Plantilla_Bonita.DataSets.DataSets_Bitacora.TablaBitacoraDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // tablaComboBox
             // 
@@ -431,11 +440,61 @@
             this.fillByToolStripButton1.Size = new System.Drawing.Size(39, 22);
             this.fillByToolStripButton1.Text = "FillBy";
             // 
+            // dtPckrInicio
+            // 
+            this.dtPckrInicio.Location = new System.Drawing.Point(222, 59);
+            this.dtPckrInicio.Name = "dtPckrInicio";
+            this.dtPckrInicio.Size = new System.Drawing.Size(200, 20);
+            this.dtPckrInicio.TabIndex = 8;
+            // 
+            // dtPckrFin
+            // 
+            this.dtPckrFin.Location = new System.Drawing.Point(222, 106);
+            this.dtPckrFin.Name = "dtPckrFin";
+            this.dtPckrFin.Size = new System.Drawing.Size(200, 20);
+            this.dtPckrFin.TabIndex = 9;
+            // 
+            // chkFecha
+            // 
+            this.chkFecha.AutoSize = true;
+            this.chkFecha.Checked = true;
+            this.chkFecha.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkFecha.Location = new System.Drawing.Point(815, 133);
+            this.chkFecha.Name = "chkFecha";
+            this.chkFecha.Size = new System.Drawing.Size(122, 17);
+            this.chkFecha.TabIndex = 10;
+            this.chkFecha.Text = "Busqueda por fecha";
+            this.chkFecha.UseVisualStyleBackColor = true;
+            this.chkFecha.CheckedChanged += new System.EventHandler(this.chkFecha_CheckedChanged);
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new System.Drawing.Point(219, 39);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(70, 13);
+            label1.TabIndex = 11;
+            label1.Text = "Fecha Inicial:";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new System.Drawing.Point(219, 86);
+            label2.Name = "label2";
+            label2.Size = new System.Drawing.Size(78, 13);
+            label2.TabIndex = 12;
+            label2.Text = "Fin de Periodo:";
+            // 
             // frmBitacora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(957, 501);
+            this.Controls.Add(label2);
+            this.Controls.Add(label1);
+            this.Controls.Add(this.chkFecha);
+            this.Controls.Add(this.dtPckrFin);
+            this.Controls.Add(this.dtPckrInicio);
             this.Controls.Add(this.fillByToolStrip1);
             this.Controls.Add(tablaLabel);
             this.Controls.Add(this.tablaComboBox);
@@ -473,10 +532,10 @@
 
         #endregion
 
-        private BitacoraDataSet bitacoraDataSet;
+        private DataSets.DataSets_Bitacora.BitacoraDataSet bitacoraDataSet;
         private System.Windows.Forms.BindingSource bitacoraBaseDeDatos_VistaBindingSource;
-        private BitacoraDataSetTableAdapters.BitacoraBaseDeDatos_VistaTableAdapter bitacoraBaseDeDatos_VistaTableAdapter;
-        private BitacoraDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private DataSets.DataSets_Bitacora.BitacoraDataSetTableAdapters.BitacoraBaseDeDatos_VistaTableAdapter bitacoraBaseDeDatos_VistaTableAdapter;
+        private DataSets.DataSets_Bitacora.BitacoraDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.BindingNavigator bitacoraBaseDeDatos_VistaBindingNavigator;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
@@ -491,10 +550,10 @@
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton bitacoraBaseDeDatos_VistaBindingNavigatorSaveItem;
         private System.Windows.Forms.DataGridView bitacoraBaseDeDatos_VistaDataGridView;
-        private ActuarioDataSet actuarioDataSet;
+        private DataSets.DataSets_Bitacora.ActuarioDataSet actuarioDataSet;
         private System.Windows.Forms.BindingSource bitacoraBaseDeDatosBindingSource;
-        private ActuarioDataSetTableAdapters.BitacoraBaseDeDatosTableAdapter bitacoraBaseDeDatosTableAdapter;
-        private ActuarioDataSetTableAdapters.TableAdapterManager tableAdapterManager1;
+        private DataSets.DataSets_Bitacora.ActuarioDataSetTableAdapters.BitacoraBaseDeDatosTableAdapter bitacoraBaseDeDatosTableAdapter;
+        private DataSets.DataSets_Bitacora.ActuarioDataSetTableAdapters.TableAdapterManager tableAdapterManager1;
         private System.Windows.Forms.ComboBox actuarioComboBox;
         private System.Windows.Forms.BindingSource bitacoraBaseDeDatosBindingSource2;
         private System.Windows.Forms.BindingSource bitacoraBaseDeDatosBindingSource1;
@@ -505,13 +564,16 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private TablaBitacoraDataSet tablaBitacoraDataSet;
+        private DataSets.DataSets_Bitacora.TablaBitacoraDataSet tablaBitacoraDataSet;
         private System.Windows.Forms.BindingSource bitacoraBaseDeDatosBindingSource3;
-        private TablaBitacoraDataSetTableAdapters.BitacoraBaseDeDatosTableAdapter bitacoraBaseDeDatosTableAdapter1;
-        private TablaBitacoraDataSetTableAdapters.TableAdapterManager tableAdapterManager2;
+        private DataSets.DataSets_Bitacora.TablaBitacoraDataSetTableAdapters.BitacoraBaseDeDatosTableAdapter bitacoraBaseDeDatosTableAdapter1;
+        private DataSets.DataSets_Bitacora.TablaBitacoraDataSetTableAdapters.TableAdapterManager tableAdapterManager2;
         private System.Windows.Forms.ComboBox tablaComboBox;
         private System.Windows.Forms.BindingSource bitacoraBaseDeDatosBindingSource4;
         private System.Windows.Forms.ToolStrip fillByToolStrip1;
         private System.Windows.Forms.ToolStripButton fillByToolStripButton1;
+        private System.Windows.Forms.DateTimePicker dtPckrInicio;
+        private System.Windows.Forms.DateTimePicker dtPckrFin;
+        private System.Windows.Forms.CheckBox chkFecha;
     }
 }

@@ -37,7 +37,7 @@
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.vista_MateriasBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.materiasDataSet = new Plantilla_Bonita.MateriasDataSet();
+            this.materiasDataSet = new Plantilla_Bonita.DataSets.DataSets_Bitacora.MateriasDataSet();
             this.descripcionComboBox = new System.Windows.Forms.ComboBox();
             this.ingenieriasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ingenieriasDataSet = new Plantilla_Bonita.DataSets.IngenieriasDataSet();
@@ -57,8 +57,8 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.ingenieriasBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.vista_MateriasTableAdapter = new Plantilla_Bonita.MateriasDataSetTableAdapters.Vista_MateriasTableAdapter();
-            this.tableAdapterManager1 = new Plantilla_Bonita.MateriasDataSetTableAdapters.TableAdapterManager();
+            this.vista_MateriasTableAdapter = new Plantilla_Bonita.DataSets.DataSets_Bitacora.MateriasDataSetTableAdapters.Vista_MateriasTableAdapter();
+            this.tableAdapterManager1 = new Plantilla_Bonita.DataSets.DataSets_Bitacora.MateriasDataSetTableAdapters.TableAdapterManager();
             this.btnAgregarNuevo = new FontAwesome.Sharp.IconPictureBox();
             descripcionLabel = new System.Windows.Forms.Label();
             this.pnlContenedor.SuspendLayout();
@@ -330,7 +330,7 @@
             // 
             this.tableAdapterManager1.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager1.Connection = null;
-            this.tableAdapterManager1.UpdateOrder = Plantilla_Bonita.MateriasDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager1.UpdateOrder = Plantilla_Bonita.DataSets.DataSets_Bitacora.MateriasDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // btnAgregarNuevo
             // 
@@ -397,10 +397,10 @@
         private System.Windows.Forms.ToolStripButton ingenieriasBindingNavigatorSaveItem;
         private System.Windows.Forms.ComboBox descripcionComboBox;
         private System.Windows.Forms.BindingSource ingenieriasBindingSource1;
-        private MateriasDataSet materiasDataSet;
+        private DataSets.DataSets_Bitacora.MateriasDataSet materiasDataSet;
         private System.Windows.Forms.BindingSource vista_MateriasBindingSource;
-        private MateriasDataSetTableAdapters.Vista_MateriasTableAdapter vista_MateriasTableAdapter;
-        private MateriasDataSetTableAdapters.TableAdapterManager tableAdapterManager1;
+        private DataSets.DataSets_Bitacora.MateriasDataSetTableAdapters.Vista_MateriasTableAdapter vista_MateriasTableAdapter;
+        private DataSets.DataSets_Bitacora.MateriasDataSetTableAdapters.TableAdapterManager tableAdapterManager1;
         private System.Windows.Forms.DataGridView vista_MateriasDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
