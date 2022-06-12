@@ -45,22 +45,29 @@ namespace SGA_ITSL.UI.FormasABC.Altas
                     MessageBox.Show("El registro no se ha realizado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     this.DialogResult = DialogResult.Cancel;
                 }
+
                 this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Porfavor verifique los campos");
             }
         }
 
         private bool Verificar()
         {
-            if (txtCodigo.Text==null)
+            if (txtCodigo.Text==null | txtCodigo.Text=="")
             {
                 MessageBox.Show("El campo Codigo no puede ir vacio");
                 return false;
             }
-            if (txtDescripcion.Text == null)
+
+            if (txtDescripcion.Text == null| txtDescripcion.Text=="")
             {
                 MessageBox.Show("El campo Descripcion no puede ir vacio");
                 return false;
             }
+
             if (descripcionComboBox.SelectedValue==null)
             {
                 MessageBox.Show("Porfavor seleccione una ingenieria");

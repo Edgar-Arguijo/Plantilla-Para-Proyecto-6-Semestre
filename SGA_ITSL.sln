@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominio", "Dominio\Dominio.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encriptado_Desencriptado", "Encriptado_Deesencriptado\Encriptado_Desencriptado.csproj", "{7849C279-1C27-45C6-AE8E-E5EE37F91E7A}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Instalador", "Instalador\Instalador.vdproj", "{BCA176F8-3D8F-4835-9241-DAC785D851FA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,8 @@ Global
 		{7849C279-1C27-45C6-AE8E-E5EE37F91E7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7849C279-1C27-45C6-AE8E-E5EE37F91E7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7849C279-1C27-45C6-AE8E-E5EE37F91E7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCA176F8-3D8F-4835-9241-DAC785D851FA}.Debug|Any CPU.ActiveCfg = Debug
+		{BCA176F8-3D8F-4835-9241-DAC785D851FA}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
