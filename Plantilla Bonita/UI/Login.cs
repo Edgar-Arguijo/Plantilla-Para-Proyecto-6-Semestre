@@ -41,8 +41,12 @@ namespace SGA_ITSL
                 {
                     ModeloDeUsuario obj = new ModeloDeUsuario();
                     this.result = TipoUsuario.ObtenerNivel(obj.Loggeo(txtUsuario.Text,  txtContraseña.Text));
-                    this.DialogResult = DialogResult.OK;
-                    this.generated = new Usuario(txtUsuario.Text);
+
+                    if (result!=TipoUsuario.NivelAutorizacion.Error)
+                    {
+                        this.DialogResult = DialogResult.OK;
+                        this.generated = new Usuario(txtUsuario.Text);
+                    }
                 }
               }
             catch (Exception ex)

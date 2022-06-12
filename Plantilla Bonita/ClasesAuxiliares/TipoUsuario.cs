@@ -20,7 +20,8 @@ namespace SGA_ITSL.ClasesAuxiliares
             Administrador,
             PersonalAdministrativo,
             Invitado,
-            Docente
+            Docente,
+            Error
         }
 
         //Objeto privado interno para la autorizacion
@@ -41,8 +42,8 @@ namespace SGA_ITSL.ClasesAuxiliares
         /// <returns>El tipo de autorizacion segun el enum</returns>
         public static NivelAutorizacion ObtenerNivel(string autorizacion) 
         {
-            if (autorizacion == "" | autorizacion == null)
-                MessageBox.Show("Credenciales incorrectas, por favor intentelo nuevamente");
+            //if (autorizacion == "" | autorizacion == null)
+            //    MessageBox.Show("Credenciales incorrectas, por favor intentelo nuevamente");
 
             switch (autorizacion.ToLower())
             {
@@ -54,6 +55,12 @@ namespace SGA_ITSL.ClasesAuxiliares
 
                 case "docente":
                     return NivelAutorizacion.Docente;
+
+                case "invitado":
+                    return NivelAutorizacion.Invitado;
+
+                case "error":
+                    return NivelAutorizacion.Error;
 
                 default:
                     return NivelAutorizacion.Invitado;
