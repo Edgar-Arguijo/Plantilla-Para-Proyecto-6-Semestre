@@ -219,7 +219,8 @@
             this.rolComboBox.Items.AddRange(new object[] {
             "Administrador",
             "Docente",
-            "Administrativo"});
+            "Administrativo",
+            "User"});
             this.rolComboBox.Location = new System.Drawing.Point(318, 43);
             this.rolComboBox.Name = "rolComboBox";
             this.rolComboBox.Size = new System.Drawing.Size(161, 21);
@@ -250,9 +251,12 @@
             this.nombreDeUsuarioTextBox.Name = "nombreDeUsuarioTextBox";
             this.nombreDeUsuarioTextBox.Size = new System.Drawing.Size(256, 20);
             this.nombreDeUsuarioTextBox.TabIndex = 2;
+            this.nombreDeUsuarioTextBox.TextChanged += new System.EventHandler(this.nombreDeUsuarioTextBox_TextChanged);
             // 
             // usuariosDataGridView
             // 
+            this.usuariosDataGridView.AllowUserToAddRows = false;
+            this.usuariosDataGridView.AllowUserToDeleteRows = false;
             this.usuariosDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.usuariosDataGridView.AutoGenerateColumns = false;
@@ -264,8 +268,11 @@
             this.usuariosDataGridView.DataSource = this.usuariosBindingSource;
             this.usuariosDataGridView.Location = new System.Drawing.Point(30, 142);
             this.usuariosDataGridView.Name = "usuariosDataGridView";
+            this.usuariosDataGridView.ReadOnly = true;
+            this.usuariosDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.usuariosDataGridView.Size = new System.Drawing.Size(705, 278);
             this.usuariosDataGridView.TabIndex = 0;
+            this.usuariosDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.usuariosDataGridView_CellClick);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -381,6 +388,7 @@
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Posición";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";

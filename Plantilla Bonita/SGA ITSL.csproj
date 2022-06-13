@@ -327,6 +327,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>frmUsuarios.resx</DependentUpon>
     </Compile>
+    <Compile Include="UI\Administrador\usuarioBC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Administrador\usuarioBC.Designer.cs">
+      <DependentUpon>usuarioBC.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\Alumnos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -466,6 +472,9 @@
     </Compile>
     <EmbeddedResource Include="UI\Administrador\frmBitacora.resx">
       <DependentUpon>frmBitacora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Administrador\usuarioBC.resx">
+      <DependentUpon>usuarioBC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Alumnos.resx">
       <DependentUpon>Alumnos.cs</DependentUpon>
