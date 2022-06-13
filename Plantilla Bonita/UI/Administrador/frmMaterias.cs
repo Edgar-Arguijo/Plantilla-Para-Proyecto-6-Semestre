@@ -1,5 +1,5 @@
-﻿using Plantilla_Bonita.ClasesAuxiliares;
-using Plantilla_Bonita.UI.FormasABC.Altas;
+﻿using SGA_ITSL.ClasesAuxiliares;
+using SGA_ITSL.UI.FormasABC.Altas;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Plantilla_Bonita
+namespace SGA_ITSL
 {
     public partial class frmMaterias : Form
     {

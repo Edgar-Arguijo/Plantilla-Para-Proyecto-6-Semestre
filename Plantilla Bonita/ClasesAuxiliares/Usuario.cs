@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Plantilla_Bonita.ClasesAuxiliares
+namespace SGA_ITSL.ClasesAuxiliares
 {
     /// <summary>
     /// Clase que nos servira para pasar parametros y registar cambios en bitacora

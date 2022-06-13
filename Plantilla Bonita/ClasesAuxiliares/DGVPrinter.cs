@@ -14,7 +14,7 @@ using System.Diagnostics;
 
 
 //[module:CLSCompliant(true)]
-namespace Plantilla_Bonita //AllocationRequest
+namespace SGA_ITSL //AllocationRequest
 {
     #region Supporting Classes
 

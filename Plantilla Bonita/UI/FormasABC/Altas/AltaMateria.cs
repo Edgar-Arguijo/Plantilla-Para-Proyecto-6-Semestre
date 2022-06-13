@@ -1,5 +1,5 @@
 ﻿using Dominio;
-using Plantilla_Bonita.ClasesAuxiliares;
+using SGA_ITSL.ClasesAuxiliares;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Plantilla_Bonita.UI.FormasABC.Altas
+namespace SGA_ITSL.UI.FormasABC.Altas
 {
     public partial class AltaMateria : Form
     {
@@ -45,22 +45,29 @@ namespace Plantilla_Bonita.UI.FormasABC.Altas
                     MessageBox.Show("El registro no se ha realizado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     this.DialogResult = DialogResult.Cancel;
                 }
+
                 this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Porfavor verifique los campos");
             }
         }
 
         private bool Verificar()
         {
-            if (txtCodigo.Text==null)
+            if (txtCodigo.Text==null | txtCodigo.Text=="")
             {
                 MessageBox.Show("El campo Codigo no puede ir vacio");
                 return false;
             }
-            if (txtDescripcion.Text == null)
+
+            if (txtDescripcion.Text == null| txtDescripcion.Text=="")
             {
                 MessageBox.Show("El campo Descripcion no puede ir vacio");
                 return false;
             }
+
             if (descripcionComboBox.SelectedValue==null)
             {
                 MessageBox.Show("Porfavor seleccione una ingenieria");

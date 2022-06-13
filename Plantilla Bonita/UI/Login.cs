@@ -6,12 +6,12 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Plantilla_Bonita.ClasesAuxiliares;
+using SGA_ITSL.ClasesAuxiliares;
 using Dominio;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 
-namespace Plantilla_Bonita
+namespace SGA_ITSL
 {
     public partial class Login : Form
     {
@@ -41,8 +41,12 @@ namespace Plantilla_Bonita
                 {
                     ModeloDeUsuario obj = new ModeloDeUsuario();
                     this.result = TipoUsuario.ObtenerNivel(obj.Loggeo(txtUsuario.Text,  txtContraseña.Text));
-                    this.DialogResult = DialogResult.OK;
-                    this.generated = new Usuario(txtUsuario.Text);
+
+                    if (result!=TipoUsuario.NivelAutorizacion.Error)
+                    {
+                        this.DialogResult = DialogResult.OK;
+                        this.generated = new Usuario(txtUsuario.Text);
+                    }
                 }
               }
             catch (Exception ex)

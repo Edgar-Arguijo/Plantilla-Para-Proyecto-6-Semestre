@@ -1,4 +1,4 @@
-﻿namespace Plantilla_Bonita
+﻿namespace SGA_ITSL
 {
     partial class frmPanelDeControl
     {
@@ -45,9 +45,9 @@
             this.btnAsistencia = new FontAwesome.Sharp.IconButton();
             this.btnDocentes = new FontAwesome.Sharp.IconButton();
             this.btnIniciarSesion = new FontAwesome.Sharp.IconButton();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pnlTituloApp = new System.Windows.Forms.Panel();
+            this.pctAppName = new System.Windows.Forms.PictureBox();
+            this.pctLogo = new System.Windows.Forms.PictureBox();
             this.btnCerrarSesion = new FontAwesome.Sharp.IconButton();
             this.BarraTitulo = new System.Windows.Forms.Panel();
             this.btnRestaurar = new System.Windows.Forms.PictureBox();
@@ -60,9 +60,9 @@
             this.pnlSubMenu1.SuspendLayout();
             this.pnlContenedorSubMenu1.SuspendLayout();
             this.pnlContenedorControles.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.pnlTituloApp.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pctAppName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctLogo)).BeginInit();
             this.BarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
@@ -212,7 +212,7 @@
             this.pnlContenedorControles.Controls.Add(this.btnAsistencia);
             this.pnlContenedorControles.Controls.Add(this.btnDocentes);
             this.pnlContenedorControles.Controls.Add(this.btnIniciarSesion);
-            this.pnlContenedorControles.Controls.Add(this.panel1);
+            this.pnlContenedorControles.Controls.Add(this.pnlTituloApp);
             this.pnlContenedorControles.Name = "pnlContenedorControles";
             // 
             // btnAforo
@@ -290,26 +290,26 @@
             this.btnIniciarSesion.UseVisualStyleBackColor = true;
             this.btnIniciarSesion.Click += new System.EventHandler(this.btnIniciarSesion_Click);
             // 
-            // panel1
+            // pnlTituloApp
             // 
-            this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Controls.Add(this.pictureBox2);
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Name = "panel1";
+            this.pnlTituloApp.Controls.Add(this.pctAppName);
+            this.pnlTituloApp.Controls.Add(this.pctLogo);
+            resources.ApplyResources(this.pnlTituloApp, "pnlTituloApp");
+            this.pnlTituloApp.Name = "pnlTituloApp";
             // 
-            // pictureBox3
+            // pctAppName
             // 
-            resources.ApplyResources(this.pictureBox3, "pictureBox3");
-            this.pictureBox3.Image = global::Plantilla_Bonita.Properties.Resources.Imagen21;
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.TabStop = false;
+            resources.ApplyResources(this.pctAppName, "pctAppName");
+            this.pctAppName.Image = global::SGA_ITSL.Properties.Resources.Imagen21;
+            this.pctAppName.Name = "pctAppName";
+            this.pctAppName.TabStop = false;
             // 
-            // pictureBox2
+            // pctLogo
             // 
-            resources.ApplyResources(this.pictureBox2, "pictureBox2");
-            this.pictureBox2.Image = global::Plantilla_Bonita.Properties.Resources.Imagen1;
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.TabStop = false;
+            resources.ApplyResources(this.pctLogo, "pctLogo");
+            this.pctLogo.Image = global::SGA_ITSL.Properties.Resources.Imagen1;
+            this.pctLogo.Name = "pctLogo";
+            this.pctLogo.TabStop = false;
             // 
             // btnCerrarSesion
             // 
@@ -341,7 +341,7 @@
             // 
             resources.ApplyResources(this.btnRestaurar, "btnRestaurar");
             this.btnRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRestaurar.Image = global::Plantilla_Bonita.Properties.Resources.Imagen5;
+            this.btnRestaurar.Image = global::SGA_ITSL.Properties.Resources.Imagen5;
             this.btnRestaurar.Name = "btnRestaurar";
             this.btnRestaurar.TabStop = false;
             this.btnRestaurar.Click += new System.EventHandler(this.btnRestaurar_Click);
@@ -350,7 +350,7 @@
             // 
             resources.ApplyResources(this.btnMinimizar, "btnMinimizar");
             this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMinimizar.Image = global::Plantilla_Bonita.Properties.Resources.Imagen4;
+            this.btnMinimizar.Image = global::SGA_ITSL.Properties.Resources.Imagen4;
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.TabStop = false;
             this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
@@ -359,7 +359,7 @@
             // 
             resources.ApplyResources(this.btnMaximizar, "btnMaximizar");
             this.btnMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMaximizar.Image = global::Plantilla_Bonita.Properties.Resources.Imagen2;
+            this.btnMaximizar.Image = global::SGA_ITSL.Properties.Resources.Imagen2;
             this.btnMaximizar.Name = "btnMaximizar";
             this.btnMaximizar.TabStop = false;
             this.btnMaximizar.Click += new System.EventHandler(this.btnMaximizar_Click);
@@ -368,7 +368,7 @@
             // 
             resources.ApplyResources(this.btnSalir, "btnSalir");
             this.btnSalir.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSalir.Image = global::Plantilla_Bonita.Properties.Resources.Imagen3;
+            this.btnSalir.Image = global::SGA_ITSL.Properties.Resources.Imagen3;
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.TabStop = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
@@ -376,7 +376,7 @@
             // btnslider
             // 
             this.btnslider.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnslider.Image = global::Plantilla_Bonita.Properties.Resources.Imagen6;
+            this.btnslider.Image = global::SGA_ITSL.Properties.Resources.Imagen6;
             resources.ApplyResources(this.btnslider, "btnslider");
             this.btnslider.Name = "btnslider";
             this.btnslider.TabStop = false;
@@ -407,9 +407,9 @@
             this.pnlContenedorSubMenu1.PerformLayout();
             this.pnlContenedorControles.ResumeLayout(false);
             this.pnlContenedorControles.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.pnlTituloApp.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pctAppName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctLogo)).EndInit();
             this.BarraTitulo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
@@ -444,9 +444,9 @@
         private System.Windows.Forms.Panel pnlContenedorControles;
         private FontAwesome.Sharp.IconButton btnAforo;
         private FontAwesome.Sharp.IconButton btnUsuarios;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pctLogo;
+        private System.Windows.Forms.PictureBox pctAppName;
+        private System.Windows.Forms.Panel pnlTituloApp;
         private FontAwesome.Sharp.IconButton btnCopiaSeguridad;
         private FontAwesome.Sharp.IconButton btnBitacora;
     }

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Plantilla_Bonita.ClasesAuxiliares
+namespace SGA_ITSL.ClasesAuxiliares
 {
     /// <summary>
     /// Clase para la definicio de controles en base a el tipo de usuario
@@ -20,7 +20,8 @@ namespace Plantilla_Bonita.ClasesAuxiliares
             Administrador,
             PersonalAdministrativo,
             Invitado,
-            Docente
+            Docente,
+            Error
         }
 
         //Objeto privado interno para la autorizacion
@@ -41,8 +42,8 @@ namespace Plantilla_Bonita.ClasesAuxiliares
         /// <returns>El tipo de autorizacion segun el enum</returns>
         public static NivelAutorizacion ObtenerNivel(string autorizacion) 
         {
-            if (autorizacion == "" | autorizacion == null)
-                MessageBox.Show("Credenciales incorrectas, por favor intentelo nuevamente");
+            //if (autorizacion == "" | autorizacion == null)
+            //    MessageBox.Show("Credenciales incorrectas, por favor intentelo nuevamente");
 
             switch (autorizacion.ToLower())
             {
@@ -54,6 +55,12 @@ namespace Plantilla_Bonita.ClasesAuxiliares
 
                 case "docente":
                     return NivelAutorizacion.Docente;
+
+                case "invitado":
+                    return NivelAutorizacion.Invitado;
+
+                case "error":
+                    return NivelAutorizacion.Error;
 
                 default:
                     return NivelAutorizacion.Invitado;

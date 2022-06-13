@@ -12,10 +12,10 @@ using Dominio;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
-using Plantilla_Bonita.ClasesAuxiliares;
-using Plantilla_Bonita.UI.Administrador;
+using SGA_ITSL.ClasesAuxiliares;
+using SGA_ITSL.UI.Administrador;
 
-namespace Plantilla_Bonita
+namespace SGA_ITSL
 {
     public partial class frmPanelDeControl : Form
     {

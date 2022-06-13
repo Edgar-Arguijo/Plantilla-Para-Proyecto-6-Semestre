@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Plantilla_Bonita.UI.Administrador
+namespace SGA_ITSL.UI.Administrador
 {
     enum Busqueda
     {

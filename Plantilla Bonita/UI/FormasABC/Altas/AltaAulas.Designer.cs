@@ -1,4 +1,4 @@
-﻿namespace Plantilla_Bonita.UI.FormasABC.Altas
+﻿namespace SGA_ITSL.UI.FormasABC.Altas
 {
     partial class AltaAulas
     {
@@ -38,10 +38,10 @@
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtCodigo = new System.Windows.Forms.TextBox();
-            this.edificiosDataSet = new Plantilla_Bonita.DataSets.EdificiosDataSet();
+            this.edificiosDataSet = new SGA_ITSL.DataSets.EdificiosDataSet();
             this.edificiosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.edificiosTableAdapter = new Plantilla_Bonita.DataSets.EdificiosDataSetTableAdapters.EdificiosTableAdapter();
-            this.tableAdapterManager = new Plantilla_Bonita.DataSets.EdificiosDataSetTableAdapters.TableAdapterManager();
+            this.edificiosTableAdapter = new SGA_ITSL.DataSets.EdificiosDataSetTableAdapters.EdificiosTableAdapter();
+            this.tableAdapterManager = new SGA_ITSL.DataSets.EdificiosDataSetTableAdapters.TableAdapterManager();
             this.edificiosBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
@@ -171,7 +171,7 @@
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.EdificiosTableAdapter = this.edificiosTableAdapter;
-            this.tableAdapterManager.UpdateOrder = Plantilla_Bonita.DataSets.EdificiosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UpdateOrder = SGA_ITSL.DataSets.EdificiosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // edificiosBindingNavigator
             // 
@@ -342,9 +342,10 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AltaAulas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "AltaAulas";
+            this.Text = "Registrar Aula";
             this.Load += new System.EventHandler(this.AltaAulas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.edificiosDataSet)).EndInit();

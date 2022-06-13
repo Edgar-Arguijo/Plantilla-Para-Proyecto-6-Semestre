@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Plantilla_Bonita
+namespace SGA_ITSL
 {
     static class Program
     {

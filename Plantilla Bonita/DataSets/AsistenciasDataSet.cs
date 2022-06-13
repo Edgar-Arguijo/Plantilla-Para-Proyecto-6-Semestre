@@ -1,4 +1,4 @@
-﻿namespace Plantilla_Bonita.DataSets
+﻿namespace SGA_ITSL.DataSets
 {
 
 
@@ -7,9 +7,11 @@
     }
 }
 
-namespace Plantilla_Bonita.DataSets.AsistenciasDataSetTableAdapters {
-    
-    
-    public partial class ListaAsistenciasTableAdapter {
+namespace SGA_ITSL.DataSets.AsistenciasDataSetTableAdapters
+{
+
+
+    public partial class ListaAsistenciasTableAdapter
+    {
     }
 }

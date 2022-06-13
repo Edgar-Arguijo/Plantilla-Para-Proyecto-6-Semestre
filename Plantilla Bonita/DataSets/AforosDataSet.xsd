@@ -4,7 +4,7 @@
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="AsistenciaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="AsistenciaConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Plantilla_Bonita.Properties.Settings.GlobalReference.Default.AsistenciaConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="AsistenciaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="AsistenciaConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SGA_ITSL.Properties.Settings.GlobalReference.Default.AsistenciaConnectionString" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Vista_AforosGeneralTableAdapter" GeneratorDataComponentClassName="Vista_AforosGeneralTableAdapter" Name="Vista_AforosGeneral" UserDataComponentName="Vista_AforosGeneralTableAdapter">
@@ -65,47 +65,47 @@ Where Edificio = @edificio And Aula = @aula And Fecha Between @inicio And @fin</
   <xs:element name="AforosDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="AforosDataSet" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="AforosDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Vista_AforosGeneral" msprop:Generator_RowClassName="Vista_AforosGeneralRow" msprop:Generator_RowEvHandlerName="Vista_AforosGeneralRowChangeEventHandler" msprop:Generator_RowDeletedName="Vista_AforosGeneralRowDeleted" msprop:Generator_RowDeletingName="Vista_AforosGeneralRowDeleting" msprop:Generator_RowEvArgName="Vista_AforosGeneralRowChangeEvent" msprop:Generator_TablePropName="Vista_AforosGeneral" msprop:Generator_RowChangedName="Vista_AforosGeneralRowChanged" msprop:Generator_UserTableName="Vista_AforosGeneral" msprop:Generator_RowChangingName="Vista_AforosGeneralRowChanging" msprop:Generator_TableClassName="Vista_AforosGeneralDataTable" msprop:Generator_TableVarName="tableVista_AforosGeneral">
+        <xs:element name="Vista_AforosGeneral" msprop:Generator_RowEvHandlerName="Vista_AforosGeneralRowChangeEventHandler" msprop:Generator_RowDeletedName="Vista_AforosGeneralRowDeleted" msprop:Generator_RowDeletingName="Vista_AforosGeneralRowDeleting" msprop:Generator_RowEvArgName="Vista_AforosGeneralRowChangeEvent" msprop:Generator_TablePropName="Vista_AforosGeneral" msprop:Generator_RowChangedName="Vista_AforosGeneralRowChanged" msprop:Generator_UserTableName="Vista_AforosGeneral" msprop:Generator_RowChangingName="Vista_AforosGeneralRowChanging" msprop:Generator_RowClassName="Vista_AforosGeneralRow" msprop:Generator_TableClassName="Vista_AforosGeneralDataTable" msprop:Generator_TableVarName="tableVista_AforosGeneral">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="Edificio" msprop:Generator_UserColumnName="Edificio" msprop:Generator_ColumnPropNameInTable="EdificioColumn" msprop:Generator_ColumnPropNameInRow="Edificio" msprop:Generator_ColumnVarNameInTable="columnEdificio">
+              <xs:element name="Edificio" msprop:Generator_ColumnPropNameInTable="EdificioColumn" msprop:Generator_ColumnPropNameInRow="Edificio" msprop:Generator_UserColumnName="Edificio" msprop:Generator_ColumnVarNameInTable="columnEdificio">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="3" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Aula" msprop:Generator_UserColumnName="Aula" msprop:Generator_ColumnPropNameInTable="AulaColumn" msprop:Generator_ColumnPropNameInRow="Aula" msprop:Generator_ColumnVarNameInTable="columnAula">
+              <xs:element name="Aula" msprop:Generator_ColumnPropNameInTable="AulaColumn" msprop:Generator_ColumnPropNameInRow="Aula" msprop:Generator_UserColumnName="Aula" msprop:Generator_ColumnVarNameInTable="columnAula">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="6" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Aforo" msprop:Generator_UserColumnName="Aforo" msprop:Generator_ColumnPropNameInTable="AforoColumn" msprop:Generator_ColumnPropNameInRow="Aforo" msprop:Generator_ColumnVarNameInTable="columnAforo" type="xs:int" minOccurs="0" />
-              <xs:element name="Fecha" msprop:Generator_UserColumnName="Fecha" msprop:Generator_ColumnPropNameInTable="FechaColumn" msprop:Generator_ColumnPropNameInRow="Fecha" msprop:Generator_ColumnVarNameInTable="columnFecha" type="xs:dateTime" minOccurs="0" />
-              <xs:element name="Docente" msprop:Generator_UserColumnName="Docente" msprop:Generator_ColumnPropNameInTable="DocenteColumn" msprop:Generator_ColumnPropNameInRow="Docente" msprop:Generator_ColumnVarNameInTable="columnDocente" minOccurs="0">
+              <xs:element name="Aforo" msprop:Generator_ColumnPropNameInTable="AforoColumn" msprop:Generator_ColumnPropNameInRow="Aforo" msprop:Generator_UserColumnName="Aforo" msprop:Generator_ColumnVarNameInTable="columnAforo" type="xs:int" minOccurs="0" />
+              <xs:element name="Fecha" msprop:Generator_ColumnPropNameInTable="FechaColumn" msprop:Generator_ColumnPropNameInRow="Fecha" msprop:Generator_UserColumnName="Fecha" msprop:Generator_ColumnVarNameInTable="columnFecha" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Docente" msprop:Generator_ColumnPropNameInTable="DocenteColumn" msprop:Generator_ColumnPropNameInRow="Docente" msprop:Generator_UserColumnName="Docente" msprop:Generator_ColumnVarNameInTable="columnDocente" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="2147483647" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Cod_Materia" msprop:Generator_UserColumnName="Cod_Materia" msprop:Generator_ColumnPropNameInTable="Cod_MateriaColumn" msprop:Generator_ColumnPropNameInRow="Cod_Materia" msprop:Generator_ColumnVarNameInTable="columnCod_Materia">
+              <xs:element name="Cod_Materia" msprop:Generator_ColumnPropNameInTable="Cod_MateriaColumn" msprop:Generator_ColumnPropNameInRow="Cod_Materia" msprop:Generator_UserColumnName="Cod_Materia" msprop:Generator_ColumnVarNameInTable="columnCod_Materia">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Materia" msprop:Generator_UserColumnName="Materia" msprop:Generator_ColumnPropNameInTable="MateriaColumn" msprop:Generator_ColumnPropNameInRow="Materia" msprop:Generator_ColumnVarNameInTable="columnMateria" minOccurs="0">
+              <xs:element name="Materia" msprop:Generator_ColumnPropNameInTable="MateriaColumn" msprop:Generator_ColumnPropNameInRow="Materia" msprop:Generator_UserColumnName="Materia" msprop:Generator_ColumnVarNameInTable="columnMateria" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="2147483647" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Semestre" msprop:Generator_UserColumnName="Semestre" msprop:Generator_ColumnPropNameInTable="SemestreColumn" msprop:Generator_ColumnPropNameInRow="Semestre" msprop:Generator_ColumnVarNameInTable="columnSemestre" type="xs:int" minOccurs="0" />
+              <xs:element name="Semestre" msprop:Generator_ColumnPropNameInTable="SemestreColumn" msprop:Generator_ColumnPropNameInRow="Semestre" msprop:Generator_UserColumnName="Semestre" msprop:Generator_ColumnVarNameInTable="columnSemestre" type="xs:int" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

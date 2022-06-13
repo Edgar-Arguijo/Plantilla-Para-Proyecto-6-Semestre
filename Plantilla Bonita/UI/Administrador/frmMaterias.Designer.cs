@@ -1,4 +1,4 @@
-﻿namespace Plantilla_Bonita
+﻿namespace SGA_ITSL
 {
     partial class frmMaterias
     {
@@ -37,13 +37,13 @@
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.vista_MateriasBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.materiasDataSet = new Plantilla_Bonita.DataSets.DataSets_Bitacora.MateriasDataSet();
+            this.materiasDataSet = new SGA_ITSL.DataSets.DataSets_Bitacora.MateriasDataSet();
             this.descripcionComboBox = new System.Windows.Forms.ComboBox();
             this.ingenieriasBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.ingenieriasDataSet = new Plantilla_Bonita.DataSets.IngenieriasDataSet();
+            this.ingenieriasDataSet = new SGA_ITSL.DataSets.IngenieriasDataSet();
             this.ingenieriasBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.ingenieriasTableAdapter = new Plantilla_Bonita.DataSets.IngenieriasDataSetTableAdapters.IngenieriasTableAdapter();
-            this.tableAdapterManager = new Plantilla_Bonita.DataSets.IngenieriasDataSetTableAdapters.TableAdapterManager();
+            this.ingenieriasTableAdapter = new SGA_ITSL.DataSets.IngenieriasDataSetTableAdapters.IngenieriasTableAdapter();
+            this.tableAdapterManager = new SGA_ITSL.DataSets.IngenieriasDataSetTableAdapters.TableAdapterManager();
             this.ingenieriasBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
@@ -57,8 +57,8 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.ingenieriasBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.vista_MateriasTableAdapter = new Plantilla_Bonita.DataSets.DataSets_Bitacora.MateriasDataSetTableAdapters.Vista_MateriasTableAdapter();
-            this.tableAdapterManager1 = new Plantilla_Bonita.DataSets.DataSets_Bitacora.MateriasDataSetTableAdapters.TableAdapterManager();
+            this.vista_MateriasTableAdapter = new SGA_ITSL.DataSets.DataSets_Bitacora.MateriasDataSetTableAdapters.Vista_MateriasTableAdapter();
+            this.tableAdapterManager1 = new SGA_ITSL.DataSets.DataSets_Bitacora.MateriasDataSetTableAdapters.TableAdapterManager();
             this.btnAgregarNuevo = new FontAwesome.Sharp.IconPictureBox();
             descripcionLabel = new System.Windows.Forms.Label();
             this.pnlContenedor.SuspendLayout();
@@ -194,7 +194,7 @@
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.Connection = null;
-            this.tableAdapterManager.UpdateOrder = Plantilla_Bonita.DataSets.IngenieriasDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UpdateOrder = SGA_ITSL.DataSets.IngenieriasDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // ingenieriasBindingNavigator
             // 
@@ -330,7 +330,7 @@
             // 
             this.tableAdapterManager1.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager1.Connection = null;
-            this.tableAdapterManager1.UpdateOrder = Plantilla_Bonita.DataSets.DataSets_Bitacora.MateriasDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager1.UpdateOrder = SGA_ITSL.DataSets.DataSets_Bitacora.MateriasDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // btnAgregarNuevo
             // 

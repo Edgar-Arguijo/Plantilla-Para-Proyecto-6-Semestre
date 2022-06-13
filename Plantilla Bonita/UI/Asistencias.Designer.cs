@@ -1,4 +1,4 @@
-﻿namespace Plantilla_Bonita
+﻿namespace SGA_ITSL
 {
     partial class Asistencias
     {
@@ -40,7 +40,7 @@
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.listaAsistenciasBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.asistenciasDataSet = new Plantilla_Bonita.DataSets.AsistenciasDataSet();
+            this.asistenciasDataSet = new SGA_ITSL.DataSets.AsistenciasDataSet();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lblSemestre = new System.Windows.Forms.Label();
@@ -49,12 +49,12 @@
             this.cboSemestre = new System.Windows.Forms.ComboBox();
             this.materiaComboBox = new System.Windows.Forms.ComboBox();
             this.vista_IngenieriasMateriaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.materiasDataSet = new Plantilla_Bonita.DataSets.MateriasDataSet();
+            this.materiasDataSet = new SGA_ITSL.DataSets.MateriasDataSet();
             this.descripcionComboBox = new System.Windows.Forms.ComboBox();
             this.ingenieriasBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.ingenieriasDataSet = new Plantilla_Bonita.DataSets.IngenieriasDataSet();
-            this.ingenieriasTableAdapter = new Plantilla_Bonita.DataSets.IngenieriasDataSetTableAdapters.IngenieriasTableAdapter();
-            this.tableAdapterManager = new Plantilla_Bonita.DataSets.IngenieriasDataSetTableAdapters.TableAdapterManager();
+            this.ingenieriasDataSet = new SGA_ITSL.DataSets.IngenieriasDataSet();
+            this.ingenieriasTableAdapter = new SGA_ITSL.DataSets.IngenieriasDataSetTableAdapters.IngenieriasTableAdapter();
+            this.tableAdapterManager = new SGA_ITSL.DataSets.IngenieriasDataSetTableAdapters.TableAdapterManager();
             this.ingenieriasBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
@@ -68,14 +68,14 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.ingenieriasBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.vista_IngenieriasMateriaTableAdapter = new Plantilla_Bonita.DataSets.MateriasDataSetTableAdapters.Vista_IngenieriasMateriaTableAdapter();
-            this.tableAdapterManager1 = new Plantilla_Bonita.DataSets.MateriasDataSetTableAdapters.TableAdapterManager();
+            this.vista_IngenieriasMateriaTableAdapter = new SGA_ITSL.DataSets.MateriasDataSetTableAdapters.Vista_IngenieriasMateriaTableAdapter();
+            this.tableAdapterManager1 = new SGA_ITSL.DataSets.MateriasDataSetTableAdapters.TableAdapterManager();
             this.fillByIngenieriaToolStrip = new System.Windows.Forms.ToolStrip();
             this.ingenieriaToolStripLabel = new System.Windows.Forms.ToolStripLabel();
             this.ingenieriaToolStripTextBox = new System.Windows.Forms.ToolStripTextBox();
             this.fillByIngenieriaToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.listaAsistenciasTableAdapter = new Plantilla_Bonita.DataSets.AsistenciasDataSetTableAdapters.ListaAsistenciasTableAdapter();
-            this.tableAdapterManager2 = new Plantilla_Bonita.DataSets.AsistenciasDataSetTableAdapters.TableAdapterManager();
+            this.listaAsistenciasTableAdapter = new SGA_ITSL.DataSets.AsistenciasDataSetTableAdapters.ListaAsistenciasTableAdapter();
+            this.tableAdapterManager2 = new SGA_ITSL.DataSets.AsistenciasDataSetTableAdapters.TableAdapterManager();
             this.fillToolStrip = new System.Windows.Forms.ToolStrip();
             this.codMateriaToolStripLabel = new System.Windows.Forms.ToolStripLabel();
             this.codMateriaToolStripTextBox = new System.Windows.Forms.ToolStripTextBox();
@@ -353,7 +353,7 @@
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.Connection = null;
-            this.tableAdapterManager.UpdateOrder = Plantilla_Bonita.DataSets.IngenieriasDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UpdateOrder = SGA_ITSL.DataSets.IngenieriasDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // ingenieriasBindingNavigator
             // 
@@ -489,7 +489,7 @@
             // 
             this.tableAdapterManager1.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager1.Connection = null;
-            this.tableAdapterManager1.UpdateOrder = Plantilla_Bonita.DataSets.MateriasDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager1.UpdateOrder = SGA_ITSL.DataSets.MateriasDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // fillByIngenieriaToolStrip
             // 
@@ -531,7 +531,7 @@
             // 
             this.tableAdapterManager2.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager2.Connection = null;
-            this.tableAdapterManager2.UpdateOrder = Plantilla_Bonita.DataSets.AsistenciasDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager2.UpdateOrder = SGA_ITSL.DataSets.AsistenciasDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // fillToolStrip
             // 

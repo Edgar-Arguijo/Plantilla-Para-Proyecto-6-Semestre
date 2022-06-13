@@ -16,7 +16,7 @@ namespace Acceso_A_Datos
         public SQLConection()
         {
             //Cargamos la cadena de conexion desde el Settings.settings
-            conectionString = $"{ConfigurationManager.ConnectionStrings["Plantilla_Bonita.Properties.Settings.AsistenciaConnectionString"].ConnectionString}";
+            conectionString = $"{ConfigurationManager.ConnectionStrings["SGA_ITSL.Properties.Settings.AsistenciaConnectionString"].ConnectionString}";
         }
 
         /// <summary>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SGA_ITSL.UI.Administrador;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Plantilla_Bonita
+namespace SGA_ITSL
 {
     public partial class frmUsuarios : Form
     {
@@ -62,6 +63,21 @@ namespace Plantilla_Bonita
         {
             this.contraseñaTextBox.Text = Encriptado_Desencriptado.Encriptado_Desencriptado.Encriptar(contraseñaTextBox.Text);
             contraseñaTextBox.UseSystemPasswordChar = true;
+        }
+
+        private void nombreDeUsuarioTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void usuariosDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string usuario = usuariosDataGridView.SelectedCells[0].Value.ToString();
+            string contra = usuariosDataGridView.SelectedCells[1].Value.ToString();
+            int rol = rolComboBox.SelectedIndex;
+
+            usuarioBC form = new usuarioBC(usuario, contra, rol);
+            form.ShowDialog();
         }
     }
 }

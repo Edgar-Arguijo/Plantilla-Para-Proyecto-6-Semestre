@@ -1,4 +1,4 @@
-﻿namespace Plantilla_Bonita
+﻿namespace SGA_ITSL
 {
     partial class frmUsuarios
     {
@@ -43,15 +43,15 @@
             this.btnNuevo = new FontAwesome.Sharp.IconPictureBox();
             this.rolComboBox = new System.Windows.Forms.ComboBox();
             this.usuariosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.usuariosDataSet = new Plantilla_Bonita.DataSets.UsuariosDataSet();
+            this.usuariosDataSet = new SGA_ITSL.DataSets.UsuariosDataSet();
             this.contraseñaTextBox = new System.Windows.Forms.TextBox();
             this.nombreDeUsuarioTextBox = new System.Windows.Forms.TextBox();
             this.usuariosDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.usuariosTableAdapter = new Plantilla_Bonita.DataSets.UsuariosDataSetTableAdapters.UsuariosTableAdapter();
-            this.tableAdapterManager = new Plantilla_Bonita.DataSets.UsuariosDataSetTableAdapters.TableAdapterManager();
+            this.usuariosTableAdapter = new SGA_ITSL.DataSets.UsuariosDataSetTableAdapters.UsuariosTableAdapter();
+            this.tableAdapterManager = new SGA_ITSL.DataSets.UsuariosDataSetTableAdapters.TableAdapterManager();
             this.usuariosBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
@@ -219,7 +219,8 @@
             this.rolComboBox.Items.AddRange(new object[] {
             "Administrador",
             "Docente",
-            "Administrativo"});
+            "Administrativo",
+            "User"});
             this.rolComboBox.Location = new System.Drawing.Point(318, 43);
             this.rolComboBox.Name = "rolComboBox";
             this.rolComboBox.Size = new System.Drawing.Size(161, 21);
@@ -250,9 +251,12 @@
             this.nombreDeUsuarioTextBox.Name = "nombreDeUsuarioTextBox";
             this.nombreDeUsuarioTextBox.Size = new System.Drawing.Size(256, 20);
             this.nombreDeUsuarioTextBox.TabIndex = 2;
+            this.nombreDeUsuarioTextBox.TextChanged += new System.EventHandler(this.nombreDeUsuarioTextBox_TextChanged);
             // 
             // usuariosDataGridView
             // 
+            this.usuariosDataGridView.AllowUserToAddRows = false;
+            this.usuariosDataGridView.AllowUserToDeleteRows = false;
             this.usuariosDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.usuariosDataGridView.AutoGenerateColumns = false;
@@ -264,8 +268,11 @@
             this.usuariosDataGridView.DataSource = this.usuariosBindingSource;
             this.usuariosDataGridView.Location = new System.Drawing.Point(30, 142);
             this.usuariosDataGridView.Name = "usuariosDataGridView";
+            this.usuariosDataGridView.ReadOnly = true;
+            this.usuariosDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.usuariosDataGridView.Size = new System.Drawing.Size(705, 278);
             this.usuariosDataGridView.TabIndex = 0;
+            this.usuariosDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.usuariosDataGridView_CellClick);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -295,7 +302,7 @@
             // tableAdapterManager
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.UpdateOrder = Plantilla_Bonita.DataSets.UsuariosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UpdateOrder = SGA_ITSL.DataSets.UsuariosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.UsuariosTableAdapter = this.usuariosTableAdapter;
             // 
             // usuariosBindingNavigator
@@ -381,6 +388,7 @@
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Posición";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";

@@ -311,14 +311,31 @@ namespace Acceso_A_Datos
                     {
                         //Se define el tipo de procedimiento
                         cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.Clear();
+
                         //Se definene los parametros
-                        cmd.Parameters.AddWithValue("@usuario", usuario);
+                        cmd.Parameters.AddWithValue("@usuario", usuario); 
                         cmd.Parameters.AddWithValue("@contraseña", Encriptado_Desencriptado.Encriptado_Desencriptado.Encriptar(contraseña));
                         cmd.Parameters.AddWithValue("@fecha", DateTime.Now);
+
                         //Parametro de salida del nivel
-                        cmd.Parameters.Add("@level", SqlDbType.VarChar, Int32.MaxValue).Direction = ParameterDirection.Output;
+                        cmd.Parameters.Add("@level", SqlDbType.VarChar, int.MaxValue).Direction = ParameterDirection.Output;
+                        cmd.Parameters.Add("@mensaje", SqlDbType.VarChar, 15).Direction = ParameterDirection.Output;
+                        
                         //Ejecutamos el procedimiento
                         cmd.ExecuteNonQuery();
+
+                        if (cmd.Parameters["@mensaje"].Value.ToString() == "NOUSER")
+                        {
+                            MessageBox.Show("El usuario no se encuentra registrado", "¡Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            return "error";
+                        }
+
+                        if (cmd.Parameters["@mensaje"].Value.ToString() == "BADPASSWORD")
+                        {
+                            MessageBox.Show("La contraseña proporcionada es incorrecta", "¡Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            return "error";
+                        }
 
                         return cmd.Parameters["@level"].Value.ToString();
                     }

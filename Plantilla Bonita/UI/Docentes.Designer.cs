@@ -1,5 +1,5 @@
 ﻿
-namespace Plantilla_Bonita
+namespace SGA_ITSL
 {
     partial class Docentes
     {
@@ -36,7 +36,7 @@ namespace Plantilla_Bonita
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.vista_DocentesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.docentesDataSet = new Plantilla_Bonita.DataSets.DocentesDataSet();
+            this.docentesDataSet = new SGA_ITSL.DataSets.DocentesDataSet();
             this.vista_DocentesBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
@@ -50,8 +50,8 @@ namespace Plantilla_Bonita
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.vista_DocentesBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.vista_DocentesTableAdapter = new Plantilla_Bonita.DataSets.DocentesDataSetTableAdapters.Vista_DocentesTableAdapter();
-            this.tableAdapterManager = new Plantilla_Bonita.DataSets.DocentesDataSetTableAdapters.TableAdapterManager();
+            this.vista_DocentesTableAdapter = new SGA_ITSL.DataSets.DocentesDataSetTableAdapters.Vista_DocentesTableAdapter();
+            this.tableAdapterManager = new SGA_ITSL.DataSets.DocentesDataSetTableAdapters.TableAdapterManager();
             this.panelDocentes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.vista_DocentesDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vista_DocentesBindingSource)).BeginInit();
@@ -243,7 +243,7 @@ namespace Plantilla_Bonita
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.Connection = null;
-            this.tableAdapterManager.UpdateOrder = Plantilla_Bonita.DataSets.DocentesDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UpdateOrder = SGA_ITSL.DataSets.DocentesDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // Docentes
             // 

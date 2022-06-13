@@ -1,4 +1,4 @@
-﻿namespace Plantilla_Bonita
+﻿namespace SGA_ITSL
 {
     partial class frmAforos
     {
@@ -39,7 +39,7 @@
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.vista_AforosGeneralBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.aforosDataSet = new Plantilla_Bonita.DataSets.AforosDataSet();
+            this.aforosDataSet = new SGA_ITSL.DataSets.AforosDataSet();
             this.chkFecha = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -47,18 +47,18 @@
             this.dtTPckFin = new System.Windows.Forms.DateTimePicker();
             this.codigoAulaComboBox = new System.Windows.Forms.ComboBox();
             this.aulasBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.aulasDataSet = new Plantilla_Bonita.DataSets.AulasDataSet();
+            this.aulasDataSet = new SGA_ITSL.DataSets.AulasDataSet();
             this.aulasBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.codigoEdificioComboBox = new System.Windows.Forms.ComboBox();
             this.edificiosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.edificiosDataSet = new Plantilla_Bonita.DataSets.EdificiosDataSet();
+            this.edificiosDataSet = new SGA_ITSL.DataSets.EdificiosDataSet();
             this.edificiosBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.edificiosTableAdapter = new Plantilla_Bonita.DataSets.EdificiosDataSetTableAdapters.EdificiosTableAdapter();
-            this.tableAdapterManager = new Plantilla_Bonita.DataSets.EdificiosDataSetTableAdapters.TableAdapterManager();
-            this.aulasTableAdapter = new Plantilla_Bonita.DataSets.AulasDataSetTableAdapters.AulasTableAdapter();
-            this.tableAdapterManager1 = new Plantilla_Bonita.DataSets.AulasDataSetTableAdapters.TableAdapterManager();
-            this.vista_AforosGeneralTableAdapter = new Plantilla_Bonita.DataSets.AforosDataSetTableAdapters.Vista_AforosGeneralTableAdapter();
-            this.tableAdapterManager2 = new Plantilla_Bonita.DataSets.AforosDataSetTableAdapters.TableAdapterManager();
+            this.edificiosTableAdapter = new SGA_ITSL.DataSets.EdificiosDataSetTableAdapters.EdificiosTableAdapter();
+            this.tableAdapterManager = new SGA_ITSL.DataSets.EdificiosDataSetTableAdapters.TableAdapterManager();
+            this.aulasTableAdapter = new SGA_ITSL.DataSets.AulasDataSetTableAdapters.AulasTableAdapter();
+            this.tableAdapterManager1 = new SGA_ITSL.DataSets.AulasDataSetTableAdapters.TableAdapterManager();
+            this.vista_AforosGeneralTableAdapter = new SGA_ITSL.DataSets.AforosDataSetTableAdapters.Vista_AforosGeneralTableAdapter();
+            this.tableAdapterManager2 = new SGA_ITSL.DataSets.AforosDataSetTableAdapters.TableAdapterManager();
             codigoEdificioLabel = new System.Windows.Forms.Label();
             codigoAulaLabel = new System.Windows.Forms.Label();
             this.pnlContendor.SuspendLayout();
@@ -320,7 +320,7 @@
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.EdificiosTableAdapter = this.edificiosTableAdapter;
-            this.tableAdapterManager.UpdateOrder = Plantilla_Bonita.DataSets.EdificiosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UpdateOrder = SGA_ITSL.DataSets.EdificiosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // aulasTableAdapter
             // 
@@ -330,7 +330,7 @@
             // 
             this.tableAdapterManager1.AulasTableAdapter = this.aulasTableAdapter;
             this.tableAdapterManager1.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager1.UpdateOrder = Plantilla_Bonita.DataSets.AulasDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager1.UpdateOrder = SGA_ITSL.DataSets.AulasDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // vista_AforosGeneralTableAdapter
             // 
@@ -340,7 +340,7 @@
             // 
             this.tableAdapterManager2.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager2.Connection = null;
-            this.tableAdapterManager2.UpdateOrder = Plantilla_Bonita.DataSets.AforosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager2.UpdateOrder = SGA_ITSL.DataSets.AforosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // frmAforos
             // 
