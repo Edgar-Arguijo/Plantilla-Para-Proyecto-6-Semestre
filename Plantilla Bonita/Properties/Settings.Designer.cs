@@ -26,7 +26,8 @@ namespace SGA_ITSL.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-J06FE2O;Initial Catalog=Asistencia;Integrated Security=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=sgaitsldb.database.windows.net;Initial Catalog=Asistencia;Persist Sec" +
+            "urity Info=True;User ID=victor;Password=4KvpUD")]
         public string AsistenciaConnectionString {
             get {
                 return ((string)(this["AsistenciaConnectionString"]));
