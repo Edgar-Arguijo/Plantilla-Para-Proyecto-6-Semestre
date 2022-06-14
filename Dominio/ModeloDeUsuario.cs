@@ -69,6 +69,10 @@ namespace Dominio
         { 
             return obj.CopiaDeSeguridad();
         }
+        /*public bool ActualizarUsuario(string usuario, string contra, string rol, string newName, string newPass, string newRol)
+        {
+            return obj.ActualizarUsuario(usuario, contra, rol, newName, newPass, newRol);
+        }*/
 
         /// <summary>
         /// Metodo de acceso a BuscarCodIngenieria

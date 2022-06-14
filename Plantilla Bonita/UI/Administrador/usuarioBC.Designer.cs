@@ -40,6 +40,7 @@
             this.pnlContendor = new System.Windows.Forms.Panel();
             this.btnCerrar = new FontAwesome.Sharp.IconPictureBox();
             this.pnlEncabezado = new System.Windows.Forms.Panel();
+            this.btnEditar = new FontAwesome.Sharp.IconPictureBox();
             nombreDeUsuarioLabel = new System.Windows.Forms.Label();
             contraseñaLabel = new System.Windows.Forms.Label();
             rolLabel = new System.Windows.Forms.Label();
@@ -48,6 +49,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnMostrarContra)).BeginInit();
             this.pnlContendor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnEditar)).BeginInit();
             this.SuspendLayout();
             // 
             // nombreDeUsuarioLabel
@@ -102,7 +104,7 @@
             this.btnDelete.IconChar = FontAwesome.Sharp.IconChar.TrashAlt;
             this.btnDelete.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.btnDelete.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnDelete.Location = new System.Drawing.Point(262, 242);
+            this.btnDelete.Location = new System.Drawing.Point(24, 242);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(32, 32);
             this.btnDelete.TabIndex = 12;
@@ -121,6 +123,7 @@
             this.btnGuardar.Size = new System.Drawing.Size(32, 32);
             this.btnGuardar.TabIndex = 11;
             this.btnGuardar.TabStop = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnMostrarContra
             // 
@@ -154,6 +157,7 @@
             // pnlContendor
             // 
             this.pnlContendor.BackColor = System.Drawing.Color.LemonChiffon;
+            this.pnlContendor.Controls.Add(this.btnEditar);
             this.pnlContendor.Controls.Add(this.btnCerrar);
             this.pnlContendor.Controls.Add(this.pnlEncabezado);
             this.pnlContendor.Controls.Add(rolLabel);
@@ -196,6 +200,21 @@
             this.pnlEncabezado.Size = new System.Drawing.Size(355, 37);
             this.pnlEncabezado.TabIndex = 18;
             // 
+            // btnEditar
+            // 
+            this.btnEditar.BackColor = System.Drawing.Color.Transparent;
+            this.btnEditar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEditar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnEditar.IconChar = FontAwesome.Sharp.IconChar.PencilAlt;
+            this.btnEditar.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.btnEditar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnEditar.Location = new System.Drawing.Point(262, 242);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(32, 32);
+            this.btnEditar.TabIndex = 20;
+            this.btnEditar.TabStop = false;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+            // 
             // usuarioBC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -212,6 +231,7 @@
             this.pnlContendor.ResumeLayout(false);
             this.pnlContendor.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnEditar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -227,5 +247,6 @@
         private System.Windows.Forms.Panel pnlContendor;
         private System.Windows.Forms.Panel pnlEncabezado;
         private FontAwesome.Sharp.IconPictureBox btnCerrar;
+        private FontAwesome.Sharp.IconPictureBox btnEditar;
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Dominio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +14,8 @@ namespace SGA_ITSL.UI.Administrador
     public partial class usuarioBC : Form
     {
         private Usuario local;
+        private bool editing = false;
+
 
         internal class Usuario 
         {
@@ -34,9 +37,13 @@ namespace SGA_ITSL.UI.Administrador
                 this.rol = rol;
             }
 
-            public string convertirContra() 
+            public string revelarContra() 
             {
                 return Encriptado_Desencriptado.Encriptado_Desencriptado.Desencriptar(this.contra);
+            }
+            public static string EnriptarNueva(string newContra) 
+            {
+                return Encriptado_Desencriptado.Encriptado_Desencriptado.Encriptar(newContra);
             }
 
         }
@@ -63,7 +70,7 @@ namespace SGA_ITSL.UI.Administrador
 
         private void btnMostrarContra_MouseDown(object sender, MouseEventArgs e)
         {
-            txtContraseña.Text = local.convertirContra();
+            txtContraseña.Text = local.revelarContra();
             txtContraseña.UseSystemPasswordChar = false;
         }
 
@@ -71,6 +78,29 @@ namespace SGA_ITSL.UI.Administrador
         {
             txtContraseña.Text = local.Contra;
             txtContraseña.UseSystemPasswordChar = true;
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            txtContraseña.UseSystemPasswordChar = false;
+            txtContraseña.Text = local.revelarContra();
+            editing = true;
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            ///Por implementar
+
+            /*if (editing)
+            {
+                ModeloDeUsuario obj = new ModeloDeUsuario();
+                //obj.ActualizarUsuario();
+
+            }
+            else
+            {
+                MessageBox.Show("Porfavor realizce un cambio presionando el boton de editar");
+            }*/
         }
     }
 }
