@@ -67,6 +67,34 @@ namespace Acceso_A_Datos
             }
         }
 
+
+        /*
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="usuario"></param>
+        /// <param name="contra"></param>
+        /// <param name="rol"></param>
+        /// <param name="newName"></param>
+        /// <param name="newPass"></param>
+        /// <param name="newRol"></param>
+        /// <returns></returns>
+        /// <exception cref="NotImplementedException"></exception>
+        public bool ActualizarUsuario(string usuario, string contra, string rol, string newName, string newPass, string newRol)
+        {
+            try
+            {
+
+
+
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }*/
+
         #region Altas
 
         /// <summary>

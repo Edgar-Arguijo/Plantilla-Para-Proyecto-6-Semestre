@@ -29,7 +29,6 @@ namespace SGA_ITSL
         {
             // TODO: esta línea de código carga datos en la tabla 'usuariosDataSet.Usuarios' Puede moverla o quitarla según sea necesario.
             this.usuariosTableAdapter.Fill(this.usuariosDataSet.Usuarios);
-            contraseñaTextBox.UseSystemPasswordChar = true;
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
@@ -53,24 +52,7 @@ namespace SGA_ITSL
             this.usuariosTableAdapter.Fill(this.usuariosDataSet.Usuarios);
         }
 
-        private void btnMostrarContra_MouseDown(object sender, MouseEventArgs e)
-        {
-            this.contraseñaTextBox.Text = Encriptado_Desencriptado.Encriptado_Desencriptado.Desencriptar(contraseñaTextBox.Text);
-            contraseñaTextBox.UseSystemPasswordChar = false;
-        }
-
-        private void btnMostrarContra_MouseUp(object sender, MouseEventArgs e)
-        {
-            this.contraseñaTextBox.Text = Encriptado_Desencriptado.Encriptado_Desencriptado.Encriptar(contraseñaTextBox.Text);
-            contraseñaTextBox.UseSystemPasswordChar = true;
-        }
-
-        private void nombreDeUsuarioTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void usuariosDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void usuariosDataGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             string usuario = usuariosDataGridView.SelectedCells[0].Value.ToString();
             string contra = usuariosDataGridView.SelectedCells[1].Value.ToString();
