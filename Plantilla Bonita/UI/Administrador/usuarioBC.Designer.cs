@@ -38,8 +38,8 @@
             this.btnMostrarContra = new FontAwesome.Sharp.IconPictureBox();
             this.rolComboBox = new System.Windows.Forms.ComboBox();
             this.pnlContendor = new System.Windows.Forms.Panel();
-            this.pnlEncabezado = new System.Windows.Forms.Panel();
             this.btnCerrar = new FontAwesome.Sharp.IconPictureBox();
+            this.pnlEncabezado = new System.Windows.Forms.Panel();
             nombreDeUsuarioLabel = new System.Windows.Forms.Label();
             contraseñaLabel = new System.Windows.Forms.Label();
             rolLabel = new System.Windows.Forms.Label();
@@ -49,6 +49,36 @@
             this.pnlContendor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.SuspendLayout();
+            // 
+            // nombreDeUsuarioLabel
+            // 
+            nombreDeUsuarioLabel.AutoSize = true;
+            nombreDeUsuarioLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
+            nombreDeUsuarioLabel.Location = new System.Drawing.Point(19, 63);
+            nombreDeUsuarioLabel.Name = "nombreDeUsuarioLabel";
+            nombreDeUsuarioLabel.Size = new System.Drawing.Size(148, 25);
+            nombreDeUsuarioLabel.TabIndex = 13;
+            nombreDeUsuarioLabel.Text = "Nombre De Usuario:";
+            // 
+            // contraseñaLabel
+            // 
+            contraseñaLabel.AutoSize = true;
+            contraseñaLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
+            contraseñaLabel.Location = new System.Drawing.Point(19, 127);
+            contraseñaLabel.Name = "contraseñaLabel";
+            contraseñaLabel.Size = new System.Drawing.Size(98, 25);
+            contraseñaLabel.TabIndex = 14;
+            contraseñaLabel.Text = "Contraseña:";
+            // 
+            // rolLabel
+            // 
+            rolLabel.AutoSize = true;
+            rolLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
+            rolLabel.Location = new System.Drawing.Point(127, 197);
+            rolLabel.Name = "rolLabel";
+            rolLabel.Size = new System.Drawing.Size(38, 25);
+            rolLabel.TabIndex = 16;
+            rolLabel.Text = "Rol:";
             // 
             // txtNombre
             // 
@@ -92,26 +122,6 @@
             this.btnGuardar.TabIndex = 11;
             this.btnGuardar.TabStop = false;
             // 
-            // nombreDeUsuarioLabel
-            // 
-            nombreDeUsuarioLabel.AutoSize = true;
-            nombreDeUsuarioLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
-            nombreDeUsuarioLabel.Location = new System.Drawing.Point(19, 63);
-            nombreDeUsuarioLabel.Name = "nombreDeUsuarioLabel";
-            nombreDeUsuarioLabel.Size = new System.Drawing.Size(148, 25);
-            nombreDeUsuarioLabel.TabIndex = 13;
-            nombreDeUsuarioLabel.Text = "Nombre De Usuario:";
-            // 
-            // contraseñaLabel
-            // 
-            contraseñaLabel.AutoSize = true;
-            contraseñaLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
-            contraseñaLabel.Location = new System.Drawing.Point(19, 127);
-            contraseñaLabel.Name = "contraseñaLabel";
-            contraseñaLabel.Size = new System.Drawing.Size(98, 25);
-            contraseñaLabel.TabIndex = 14;
-            contraseñaLabel.Text = "Contraseña:";
-            // 
             // btnMostrarContra
             // 
             this.btnMostrarContra.BackColor = System.Drawing.Color.Transparent;
@@ -125,16 +135,8 @@
             this.btnMostrarContra.Size = new System.Drawing.Size(28, 32);
             this.btnMostrarContra.TabIndex = 15;
             this.btnMostrarContra.TabStop = false;
-            // 
-            // rolLabel
-            // 
-            rolLabel.AutoSize = true;
-            rolLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
-            rolLabel.Location = new System.Drawing.Point(127, 197);
-            rolLabel.Name = "rolLabel";
-            rolLabel.Size = new System.Drawing.Size(38, 25);
-            rolLabel.TabIndex = 16;
-            rolLabel.Text = "Rol:";
+            this.btnMostrarContra.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnMostrarContra_MouseDown);
+            this.btnMostrarContra.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnMostrarContra_MouseUp);
             // 
             // rolComboBox
             // 
@@ -169,15 +171,6 @@
             this.pnlContendor.Size = new System.Drawing.Size(355, 312);
             this.pnlContendor.TabIndex = 18;
             // 
-            // pnlEncabezado
-            // 
-            this.pnlEncabezado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
-            this.pnlEncabezado.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlEncabezado.Location = new System.Drawing.Point(0, 0);
-            this.pnlEncabezado.Name = "pnlEncabezado";
-            this.pnlEncabezado.Size = new System.Drawing.Size(355, 37);
-            this.pnlEncabezado.TabIndex = 18;
-            // 
             // btnCerrar
             // 
             this.btnCerrar.BackColor = System.Drawing.Color.LemonChiffon;
@@ -194,6 +187,15 @@
             this.btnCerrar.TabStop = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
+            // pnlEncabezado
+            // 
+            this.pnlEncabezado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.pnlEncabezado.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlEncabezado.Location = new System.Drawing.Point(0, 0);
+            this.pnlEncabezado.Name = "pnlEncabezado";
+            this.pnlEncabezado.Size = new System.Drawing.Size(355, 37);
+            this.pnlEncabezado.TabIndex = 18;
+            // 
             // usuarioBC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -203,6 +205,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "usuarioBC";
             this.Text = "usuarioBC";
+            this.Load += new System.EventHandler(this.usuarioBC_Load);
             ((System.ComponentModel.ISupportInitialize)(this.btnDelete)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnGuardar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMostrarContra)).EndInit();

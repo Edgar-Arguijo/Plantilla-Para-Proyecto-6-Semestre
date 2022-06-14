@@ -31,21 +31,16 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.Label nombreDeUsuarioLabel;
-            System.Windows.Forms.Label contraseñaLabel;
-            System.Windows.Forms.Label rolLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmUsuarios));
+            System.Windows.Forms.Label nombreDeUsuarioLabel;
+            System.Windows.Forms.Label rolLabel;
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnMostrarContra = new FontAwesome.Sharp.IconPictureBox();
             this.btnUpdateData = new FontAwesome.Sharp.IconPictureBox();
             this.btnDelete = new FontAwesome.Sharp.IconPictureBox();
             this.btnGuardar = new FontAwesome.Sharp.IconPictureBox();
             this.btnNuevo = new FontAwesome.Sharp.IconPictureBox();
-            this.rolComboBox = new System.Windows.Forms.ComboBox();
             this.usuariosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.usuariosDataSet = new SGA_ITSL.DataSets.UsuariosDataSet();
-            this.contraseñaTextBox = new System.Windows.Forms.TextBox();
-            this.nombreDeUsuarioTextBox = new System.Windows.Forms.TextBox();
             this.usuariosDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -65,11 +60,11 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.usuariosBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.nombreDeUsuarioTextBox = new System.Windows.Forms.TextBox();
+            this.rolComboBox = new System.Windows.Forms.ComboBox();
             nombreDeUsuarioLabel = new System.Windows.Forms.Label();
-            contraseñaLabel = new System.Windows.Forms.Label();
             rolLabel = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMostrarContra)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnUpdateData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDelete)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnGuardar)).BeginInit();
@@ -81,48 +76,15 @@
             this.usuariosBindingNavigator.SuspendLayout();
             this.SuspendLayout();
             // 
-            // nombreDeUsuarioLabel
-            // 
-            nombreDeUsuarioLabel.AutoSize = true;
-            nombreDeUsuarioLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
-            nombreDeUsuarioLabel.Location = new System.Drawing.Point(25, 16);
-            nombreDeUsuarioLabel.Name = "nombreDeUsuarioLabel";
-            nombreDeUsuarioLabel.Size = new System.Drawing.Size(148, 25);
-            nombreDeUsuarioLabel.TabIndex = 1;
-            nombreDeUsuarioLabel.Text = "Nombre De Usuario:";
-            // 
-            // contraseñaLabel
-            // 
-            contraseñaLabel.AutoSize = true;
-            contraseñaLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
-            contraseñaLabel.Location = new System.Drawing.Point(25, 73);
-            contraseñaLabel.Name = "contraseñaLabel";
-            contraseñaLabel.Size = new System.Drawing.Size(98, 25);
-            contraseñaLabel.TabIndex = 3;
-            contraseñaLabel.Text = "Contraseña:";
-            // 
-            // rolLabel
-            // 
-            rolLabel.AutoSize = true;
-            rolLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
-            rolLabel.Location = new System.Drawing.Point(313, 16);
-            rolLabel.Name = "rolLabel";
-            rolLabel.Size = new System.Drawing.Size(38, 25);
-            rolLabel.TabIndex = 5;
-            rolLabel.Text = "Rol:";
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.btnMostrarContra);
             this.panel1.Controls.Add(this.btnUpdateData);
             this.panel1.Controls.Add(this.btnDelete);
             this.panel1.Controls.Add(this.btnGuardar);
             this.panel1.Controls.Add(this.btnNuevo);
             this.panel1.Controls.Add(rolLabel);
             this.panel1.Controls.Add(this.rolComboBox);
-            this.panel1.Controls.Add(contraseñaLabel);
-            this.panel1.Controls.Add(this.contraseñaTextBox);
             this.panel1.Controls.Add(nombreDeUsuarioLabel);
             this.panel1.Controls.Add(this.nombreDeUsuarioTextBox);
             this.panel1.Controls.Add(this.usuariosDataGridView);
@@ -131,22 +93,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(758, 450);
             this.panel1.TabIndex = 0;
-            // 
-            // btnMostrarContra
-            // 
-            this.btnMostrarContra.BackColor = System.Drawing.Color.White;
-            this.btnMostrarContra.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnMostrarContra.IconChar = FontAwesome.Sharp.IconChar.Eye;
-            this.btnMostrarContra.IconColor = System.Drawing.SystemColors.ControlText;
-            this.btnMostrarContra.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnMostrarContra.IconSize = 28;
-            this.btnMostrarContra.Location = new System.Drawing.Point(294, 104);
-            this.btnMostrarContra.Name = "btnMostrarContra";
-            this.btnMostrarContra.Size = new System.Drawing.Size(28, 32);
-            this.btnMostrarContra.TabIndex = 12;
-            this.btnMostrarContra.TabStop = false;
-            this.btnMostrarContra.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnMostrarContra_MouseDown);
-            this.btnMostrarContra.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnMostrarContra_MouseUp);
             // 
             // btnUpdateData
             // 
@@ -157,7 +103,7 @@
             this.btnUpdateData.IconChar = FontAwesome.Sharp.IconChar.Sync;
             this.btnUpdateData.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.btnUpdateData.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnUpdateData.Location = new System.Drawing.Point(703, 104);
+            this.btnUpdateData.Location = new System.Drawing.Point(699, 32);
             this.btnUpdateData.Name = "btnUpdateData";
             this.btnUpdateData.Size = new System.Drawing.Size(32, 32);
             this.btnUpdateData.TabIndex = 11;
@@ -173,7 +119,7 @@
             this.btnDelete.IconChar = FontAwesome.Sharp.IconChar.TrashAlt;
             this.btnDelete.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.btnDelete.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnDelete.Location = new System.Drawing.Point(589, 104);
+            this.btnDelete.Location = new System.Drawing.Point(585, 32);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(32, 32);
             this.btnDelete.TabIndex = 10;
@@ -189,7 +135,7 @@
             this.btnGuardar.IconChar = FontAwesome.Sharp.IconChar.Save;
             this.btnGuardar.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.btnGuardar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnGuardar.Location = new System.Drawing.Point(665, 104);
+            this.btnGuardar.Location = new System.Drawing.Point(661, 32);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(32, 32);
             this.btnGuardar.TabIndex = 9;
@@ -205,26 +151,12 @@
             this.btnNuevo.IconChar = FontAwesome.Sharp.IconChar.Plus;
             this.btnNuevo.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
             this.btnNuevo.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnNuevo.Location = new System.Drawing.Point(627, 104);
+            this.btnNuevo.Location = new System.Drawing.Point(623, 32);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(32, 32);
             this.btnNuevo.TabIndex = 7;
             this.btnNuevo.TabStop = false;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
-            // 
-            // rolComboBox
-            // 
-            this.rolComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usuariosBindingSource, "Rol", true));
-            this.rolComboBox.FormattingEnabled = true;
-            this.rolComboBox.Items.AddRange(new object[] {
-            "Administrador",
-            "Docente",
-            "Administrativo",
-            "User"});
-            this.rolComboBox.Location = new System.Drawing.Point(318, 43);
-            this.rolComboBox.Name = "rolComboBox";
-            this.rolComboBox.Size = new System.Drawing.Size(161, 21);
-            this.rolComboBox.TabIndex = 6;
             // 
             // usuariosBindingSource
             // 
@@ -235,23 +167,6 @@
             // 
             this.usuariosDataSet.DataSetName = "UsuariosDataSet";
             this.usuariosDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // contraseñaTextBox
-            // 
-            this.contraseñaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usuariosBindingSource, "Contraseña", true));
-            this.contraseñaTextBox.Location = new System.Drawing.Point(30, 102);
-            this.contraseñaTextBox.Name = "contraseñaTextBox";
-            this.contraseñaTextBox.Size = new System.Drawing.Size(256, 20);
-            this.contraseñaTextBox.TabIndex = 4;
-            // 
-            // nombreDeUsuarioTextBox
-            // 
-            this.nombreDeUsuarioTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usuariosBindingSource, "NombreDeUsuario", true));
-            this.nombreDeUsuarioTextBox.Location = new System.Drawing.Point(30, 44);
-            this.nombreDeUsuarioTextBox.Name = "nombreDeUsuarioTextBox";
-            this.nombreDeUsuarioTextBox.Size = new System.Drawing.Size(256, 20);
-            this.nombreDeUsuarioTextBox.TabIndex = 2;
-            this.nombreDeUsuarioTextBox.TextChanged += new System.EventHandler(this.nombreDeUsuarioTextBox_TextChanged);
             // 
             // usuariosDataGridView
             // 
@@ -266,13 +181,13 @@
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3});
             this.usuariosDataGridView.DataSource = this.usuariosBindingSource;
-            this.usuariosDataGridView.Location = new System.Drawing.Point(30, 142);
+            this.usuariosDataGridView.Location = new System.Drawing.Point(30, 94);
             this.usuariosDataGridView.Name = "usuariosDataGridView";
             this.usuariosDataGridView.ReadOnly = true;
             this.usuariosDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.usuariosDataGridView.Size = new System.Drawing.Size(705, 278);
+            this.usuariosDataGridView.Size = new System.Drawing.Size(705, 326);
             this.usuariosDataGridView.TabIndex = 0;
-            this.usuariosDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.usuariosDataGridView_CellClick);
+            this.usuariosDataGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.usuariosDataGridView_CellDoubleClick);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -280,6 +195,7 @@
             this.dataGridViewTextBoxColumn1.DataPropertyName = "NombreDeUsuario";
             this.dataGridViewTextBoxColumn1.HeaderText = "NombreDeUsuario";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn2
             // 
@@ -287,6 +203,7 @@
             this.dataGridViewTextBoxColumn2.DataPropertyName = "Contraseña";
             this.dataGridViewTextBoxColumn2.HeaderText = "Contraseña";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn3
             // 
@@ -294,6 +211,7 @@
             this.dataGridViewTextBoxColumn3.DataPropertyName = "Rol";
             this.dataGridViewTextBoxColumn3.HeaderText = "Rol";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
             // 
             // usuariosTableAdapter
             // 
@@ -388,7 +306,6 @@
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Posición";
             this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -431,6 +348,48 @@
             this.usuariosBindingNavigatorSaveItem.Text = "Guardar datos";
             this.usuariosBindingNavigatorSaveItem.Click += new System.EventHandler(this.usuariosBindingNavigatorSaveItem_Click);
             // 
+            // nombreDeUsuarioTextBox
+            // 
+            this.nombreDeUsuarioTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usuariosBindingSource, "NombreDeUsuario", true));
+            this.nombreDeUsuarioTextBox.Location = new System.Drawing.Point(30, 44);
+            this.nombreDeUsuarioTextBox.Name = "nombreDeUsuarioTextBox";
+            this.nombreDeUsuarioTextBox.Size = new System.Drawing.Size(256, 20);
+            this.nombreDeUsuarioTextBox.TabIndex = 2;
+            // 
+            // nombreDeUsuarioLabel
+            // 
+            nombreDeUsuarioLabel.AutoSize = true;
+            nombreDeUsuarioLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
+            nombreDeUsuarioLabel.Location = new System.Drawing.Point(25, 16);
+            nombreDeUsuarioLabel.Name = "nombreDeUsuarioLabel";
+            nombreDeUsuarioLabel.Size = new System.Drawing.Size(148, 25);
+            nombreDeUsuarioLabel.TabIndex = 1;
+            nombreDeUsuarioLabel.Text = "Nombre De Usuario:";
+            // 
+            // rolComboBox
+            // 
+            this.rolComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usuariosBindingSource, "Rol", true));
+            this.rolComboBox.FormattingEnabled = true;
+            this.rolComboBox.Items.AddRange(new object[] {
+            "Administrador",
+            "Docente",
+            "Administrativo",
+            "User"});
+            this.rolComboBox.Location = new System.Drawing.Point(318, 43);
+            this.rolComboBox.Name = "rolComboBox";
+            this.rolComboBox.Size = new System.Drawing.Size(161, 21);
+            this.rolComboBox.TabIndex = 6;
+            // 
+            // rolLabel
+            // 
+            rolLabel.AutoSize = true;
+            rolLabel.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F);
+            rolLabel.Location = new System.Drawing.Point(313, 16);
+            rolLabel.Name = "rolLabel";
+            rolLabel.Size = new System.Drawing.Size(38, 25);
+            rolLabel.TabIndex = 5;
+            rolLabel.Text = "Rol:";
+            // 
             // frmUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -444,7 +403,6 @@
             this.Load += new System.EventHandler(this.frmUsuarios_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMostrarContra)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnUpdateData)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDelete)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnGuardar)).EndInit();
@@ -480,9 +438,6 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton usuariosBindingNavigatorSaveItem;
-        private System.Windows.Forms.ComboBox rolComboBox;
-        private System.Windows.Forms.TextBox contraseñaTextBox;
-        private System.Windows.Forms.TextBox nombreDeUsuarioTextBox;
         private System.Windows.Forms.DataGridView usuariosDataGridView;
         private FontAwesome.Sharp.IconPictureBox btnNuevo;
         private FontAwesome.Sharp.IconPictureBox btnGuardar;
@@ -491,6 +446,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private FontAwesome.Sharp.IconPictureBox btnDelete;
         private FontAwesome.Sharp.IconPictureBox btnUpdateData;
-        private FontAwesome.Sharp.IconPictureBox btnMostrarContra;
+        private System.Windows.Forms.ComboBox rolComboBox;
+        private System.Windows.Forms.TextBox nombreDeUsuarioTextBox;
     }
 }

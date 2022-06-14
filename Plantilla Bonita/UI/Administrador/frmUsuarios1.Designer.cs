@@ -123,16 +123,6 @@ namespace SGA_ITSL.UI.Administrador {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Boolean similar a False.
         /// </summary>
-        public static bool contraseñaLabel_GenerateMember {
-            get {
-                object obj = ResourceManager.GetObject("contraseñaLabel.GenerateMember", resourceCulture);
-                return ((bool)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Boolean similar a False.
-        /// </summary>
         public static bool nombreDeUsuarioLabel_GenerateMember {
             get {
                 object obj = ResourceManager.GetObject("nombreDeUsuarioLabel.GenerateMember", resourceCulture);
